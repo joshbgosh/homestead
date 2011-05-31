@@ -1,0 +1,22 @@
+<h1>New battle! (smart)</h1>
+
+<p>
+<%= image_tag(@opponent_1.image.url(:medium)) %> </br>
+<%= @opponent_1.name %>  
+</p>
+vs.
+<p>
+<%= image_tag(@opponent_2.image.url(:medium)) %> </br>
+<%= @opponent_2.name %> 
+</p>
+
+<p>
+Both are totally enraged.
+</p>
+
+<p>
+Who will win?
+</p>
+<%= render 'form' %>
+
+<%= link_to 'Back', battles_path %>

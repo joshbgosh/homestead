@@ -1,0 +1,37 @@
+<%= form_for(@battle) do |f| %>
+  <% if @battle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+
+      <ul>
+      <% @battle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <%= f.hidden_field :winner_id, :value=> @opponent_1.id %><br />
+    <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %><br />
+  <div class="actions">
+    <%= f.submit :value => @opponent_1.name %>
+  </div>
+<% end %>
+
+<%= form_for(@battle) do |f| %>
+  <% if @battle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+
+      <ul>
+      <% @battle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <%= f.hidden_field :winner_id, :value=> @opponent_2.id %><br />
+    <%= f.hidden_field :loser_id, :value=> @opponent_1.id %><br />
+  <div class="actions">
+    <%= f.submit :value => @opponent_2.name %>
+  </div>
+<% end %>

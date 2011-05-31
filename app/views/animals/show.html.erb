@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= @animal.name %> </b>
+</p>
+
+<p>
+  <%= image_tag @animal.image.url(:medium)%>
+</p>
+
+<p> Wins  : <%= @animal.wins.count %> </p>
+<p> Losses: <%= @animal.losses.count %> </p>
+
+
+<%= link_to 'Edit', edit_animal_path(@animal) %> |
+<%= link_to 'Back', animals_path %>
