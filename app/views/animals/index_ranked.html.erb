@@ -13,7 +13,7 @@
   <tr>
     <td><%= animal.name %></td>
     <td><%= image_tag(animal.image.url(:thumb)) %></td>
-	<td> <%= animal.wins.count %> Wins &#47; <%= animal.losses.count %> Losses (<%= (animal.win_percentage * 100).round(1) %>% wins) (<%= animal.battles_count %> battles)</td>
+	<td> <%= animal.wins.count %> Wins &#47; <%= animal.losses.count %> Losses (<%= (animal.win_percentage * 100).round(1) %>% wins)</td>
     <td><%= link_to 'Show', animal %></td>
   </tr>
 <% end %>

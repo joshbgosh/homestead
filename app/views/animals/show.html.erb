@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b><%= @animal.name %> </b>
+  <b><%= @animal.name %></b>
 </p>
 
 <p>
@@ -10,6 +10,13 @@
 
 <p> Wins  : <%= @animal.wins.count %> </p>
 <p> Losses: <%= @animal.losses.count %> </p>
+
+
+<% if @animal.arch_nemesis %>
+<p> Arch-Nemesis: <%=  link_to @animal.arch_nemesis.name, @animal.arch_nemesis %> (defeated <%= @animal.name %> <%= pluralize(@animal.defeats_by(@animal.arch_nemesis).count, "time")%>!)</p>
+<% else %>
+<p> Arch-Nemesis: <%= @animal.name %> has no arch-nemesis. <%= @animal.name %> is UNDEFEATED! </p>
+<% end%>
 
 
 <%= link_to 'Edit', edit_animal_path(@animal) %> |

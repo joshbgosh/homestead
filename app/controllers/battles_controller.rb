@@ -37,7 +37,7 @@ class BattlesController < ApplicationController
   
   def new_smart
     @battle = Battle.new
-	@opponent_1 = Animal.by_fewest_battles.last
+	@opponent_1 = Animal.by_fewest_battles.first
 	@opponent_2 = @opponent_1.random_opponent
 	
     respond_to do |format|
@@ -58,10 +58,10 @@ class BattlesController < ApplicationController
 
     respond_to do |format|
       if @battle.save
-        format.html { redirect_to(new_battle_path, :notice => 'Battle was successfully created.') }
+        format.html { redirect_to(:action => :new_smart, :notice => 'Battle was successfully created.') }
         format.xml  { render :xml => @battle, :status => :created, :location => @battle }
       else
-        format.html { render :action => "new_smart" }
+        format.html { render :action => :new_smart }
         format.xml  { render :xml => @battle.errors, :status => :unprocessable_entity }
       end
     end

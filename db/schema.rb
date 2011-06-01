@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(:version => 20110529190723) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "battles_count"
+    t.integer  "wins_count"
+    t.integer  "losses_count"
   end
 
   create_table "battles", :force => true do |t|
