@@ -12,6 +12,7 @@
   <% end %>
     <%= f.hidden_field :winner_id, :value=> @opponent_1.id %><br />
     <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %><br />
+    <%= f.hidden_field :battle_type, :value => @battle_type %> <br/>
   <div class="actions">
     <%= f.submit :value => @opponent_1.name %>
   </div>
@@ -29,8 +30,9 @@
       </ul>
     </div>
   <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_2.id %><br />
-    <%= f.hidden_field :loser_id, :value=> @opponent_1.id %><br />
+    <%= f.hidden_field :winner_id, :value=> @opponent_2.id %>
+    <%= f.hidden_field :loser_id, :value=> @opponent_1.id %>
+	<%= f.hidden_field :battle_type, :value => @battle_type %> <br/>
   <div class="actions">
     <%= f.submit :value => @opponent_2.name %>
   </div>

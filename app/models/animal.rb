@@ -14,7 +14,7 @@ class Animal < ActiveRecord::Base
     
     opponent = Animal.random
     while (self == opponent)
-      opponent = Animal.random
+      opponent = Animal.random()
     end
     opponent
   end
@@ -22,6 +22,33 @@ class Animal < ActiveRecord::Base
 	def self.by_fewest_battles
 		Animal.all.sort!{|a,b| a.battles.count <=> b.battles.count}
 	end
+	
+	def closely_matched_opponent #TODO: should be cleaned up
+	  raise "can't find opponent (only one animal in database)" unless Animal.all.count > 0
+	  
+	  
+	  animals_ranked_by_win_percentage = Animal.ranked_by_win_percentage
+	  
+	  def neighbors(a, index, distance)
+	    from = [index - distance, 0].max
+	    to = [index + distance, a.length - 1].min
+	    neighbors = []
+	    (from..to).each do |i| 
+	      if i != index 
+	        neighbors.push(a[i]) 
+	      end
+	    end
+	    neighbors
+	  end 
+	  
+	  my_index = animals_ranked_by_win_percentage.index(self)
+	  distance = 3
+	  nearby_opponents = neighbors(animals_ranked_by_win_percentage, my_index, 3);
+	  closely_matched_opponent = nearby_opponents[rand(nearby_opponents.length)]
+	end
+	
+	
+	
 	
 	# needs a rewrite for clarity
 	def self.ranked_by_win_percentage
@@ -63,29 +90,49 @@ class Animal < ActiveRecord::Base
 	  end                 
 	end
 	
+	def dominates #who I beat the most, with minimal losses (TODO: needs optimization)
+	  enemies_beaten_records = Animal.find_by_sql(["SELECT loser_id AS \"id\", COUNT(*)
+                        FROM animals JOIN battles ON winner_id = ?
+                        GROUP BY loser_id
+                        ORDER BY COUNT(*) DESC", self.id])
+    
+    if enemies_beaten_records.count > 0
+      fewest_losses_enemy_id = enemies_beaten_records[0].id
+      fewest_losses = self.defeats_by(Animal.find(fewest_losses_enemy_id)).count
+      enemies_beaten_records.each do |current_enemy_record|
+        if fewest_losses == 0
+          return Animal.find(fewest_losses_enemy_id)
+        else
+          current_enemy_losses = self.defeats_by(Animal.find(current_enemy_record.id)).count
+          if fewest_losses <= current_enemy_losses
+            next
+          else
+            fewest_losses = current_enemy_losses
+            fewest_losses_enemy_id = current_enemy_record.id
+            next
+          end
+        end
+      end
+    
+      if ((fewest_losses * TOLERABLE_LOSS_RATIO) > self.wins_against(Animal.find(fewest_losses_enemy_id))) 
+        #if we haven't beaten this animal at least 10 to 1, don't even bother
+        nil
+      else
+        Animal.find(fewest_losses_enemy_id)
+      end
+    else
+      nil
+    end      
+	end
+	
+	def wins_against(opponent)
+	  Battle.where(:winner_id => self.id, :loser_id => opponent.id)
+	end
+	
 	def defeats_by(opponent)
 	  Battle.where(:winner_id => opponent.id, :loser_id => self.id)
 	end
-	
-	def enemies_by_my_losses
-	
-	end
-	
-	def worthy_opponent #the opponent I am most closely matched with
-	end
-	
-	def dominates #I beat this the most
-	end
-	#def wins # these are sort of inefficient, but who cares for now.
-	#	Battle.where(:winner_id => self.id)
-	# end
-	
-	#def losses
-	#	Battle.where(:loser_id => self.id)
-	# end
-	
-	
-	
+
 	def battles
 		self.wins + self.losses
 		#Battle.where("winner_id = :id OR loser_id = :id AND winner_id != loser_id", {:id => self.id})

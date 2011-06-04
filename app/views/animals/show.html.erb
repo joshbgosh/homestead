@@ -18,6 +18,16 @@
 <p> Arch-Nemesis: <%= @animal.name %> has no arch-nemesis. <%= @animal.name %> is UNDEFEATED! </p>
 <% end%>
 
+<% if @animal.dominates %>
+<p> Dominates: <%= link_to @animal.dominates.name, @animal.dominates %> (<%= @animal.name%> has beaten <%= link_to @animal.dominates.name, @animal.dominates%> <%= pluralize(@animal.wins_against(@animal.dominates).count, "time") %>,
+<% if @animal.defeats_by(@animal.dominates).count == 0 %>
+and has never been defeated by it.) </p>
+<% else %>
+and has been defeated by it only <%= pluralize(@animal.defeats_by(@animal.dominates).count, "time")%>.) </p>
+<% end %>
 
+<% else %>
+<p> Dominates: <%= @animal.name %> dominates no one. <%= @animal.name %> has never beaten anyone :( . </p>
+<% end %>
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>

@@ -1,8 +1,21 @@
 BothAreTotallyEnraged::Application.routes.draw do
-  match "/animals/index_ranked" => "animals#index_ranked"
-  match "/battles/new_smart" => "battles#new_smart"
-  resources :battles
-  resources :animals
+  #match "/animals/index_ranked" => "animals#index_ranked" #, :as => :index_ranked
+  
+  #match "/battles/new_smart" => "battles#new_smart" #, :as => :new_smart
+  #match "/battles/new_close_match" => "battles#new_close_match" #S, :as => :new_close_match
+  
+  resources :battles do
+    collection do
+      get "new_random"
+      get "new_smart"
+      get "new_close_match"
+    end
+  end
+  resources :animals do
+    collection do
+      get "index_ranked"
+    end
+  end
  
   root :to => "home#index"
   

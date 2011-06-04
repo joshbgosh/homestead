@@ -23,11 +23,37 @@ class BattlesController < ApplicationController
 
   # GET /battles/new
   # GET /battles/new.xml
+   
   def new
     @battle = Battle.new
-	
-	@opponent_1 = Animal.random
-	@opponent_2 = @opponent_1.random_opponent
+    @opponent_1, @opponent_2 = pick_opponents
+      
+      respond_to do |format|
+        format.html # new.html.erb
+        format.xml  { render :xml => @battle }
+      end
+  end
+  
+  def pick_opponents
+    n = rand(100)
+    
+    if n < 40
+      BattlesController.make_random_close_match
+    elsif n < 50
+      BattlesController.make_new_close_match
+    elsif n < 90
+      BattlesController.make_random_match
+    else
+      BattlesController.make_new_random_match
+    end
+  end
+  
+  def new_random
+    @battle = Battle.new
+    
+	  @battle_type = :new
+	  
+	  @opponent_1, @opponent_2 = self.make_random_match
 	
     respond_to do |format|
       format.html # new.html.erb
@@ -37,11 +63,26 @@ class BattlesController < ApplicationController
   
   def new_smart
     @battle = Battle.new
-	@opponent_1 = Animal.by_fewest_battles.first
-	@opponent_2 = @opponent_1.random_opponent
+    
+    @battle_type = :new_smart
+    
+	  @opponent_1, @opponent_2 = self.make_close_match
 	
     respond_to do |format|
       format.html # new_smart.html.erb
+      format.xml  { render :xml => @battle }
+    end
+  end
+  
+  def new_close_match
+    @battle = Battle.new
+    
+    @battle_type = :new_close_match #doing it like this seems hackable TODO: change
+    
+    @opponent_1, @opponent_2 = self.make_close_match
+    
+    respond_to do |format|
+      format.html # new_close_match.html.erb
       format.xml  { render :xml => @battle }
     end
   end
@@ -54,14 +95,21 @@ class BattlesController < ApplicationController
   # POST /battles
   # POST /battles.xml
   def create
-    @battle = Battle.new(params[:battle])
+    #TODO: remove this hack
+    battle_type = params[:battle][:battle_type]
+    @battle = Battle.new(params[:battle].delete(:battle_type))
 
     respond_to do |format|
       if @battle.save
-        format.html { redirect_to(:action => :new_smart, :notice => 'Battle was successfully created.') }
+        #if battle_type.eql?("new") or battle_type.eql?("new_smart") or battle_type.eql?("new_close_match")
+        #   redirect_action = battle_type
+        #else
+        #    redirect_action = :new
+        #end
+        format.html { redirect_to(:action => :new, :notice => 'Battle was successfully created.') }
         format.xml  { render :xml => @battle, :status => :created, :location => @battle }
       else
-        format.html { render :action => :new_smart }
+        format.html { render :action => :new}
         format.xml  { render :xml => @battle.errors, :status => :unprocessable_entity }
       end
     end
@@ -95,8 +143,42 @@ class BattlesController < ApplicationController
     end
   end
   
-  def self.random_animal #lets you fight yourself for now...
-    ids = connection.select_all("SELECT id FROM animals")
-    find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
+  def self.make_random_match
+    opponent_1 = Animal.random
+    opponent_2 = opponent_1.random_opponent
+    return opponent_1, opponent_2
+  end
+  
+  def self.make_new_random_match
+    opponent_1 = Animal.by_fewest_battles.first
+    opponent_2 = opponent_1.random_opponent
+    if rand(1) == 1
+      tmp = opponent_1
+      opponent_1 = opponent_2
+      opponent_2 = tmp
+    end
+    return opponent_1, opponent_2
+  end
+    
+  def self.make_new_close_match
+    opponent_1 = Animal.by_fewest_battles.first
+    opponent_2 = opponent_1.closely_matched_opponent
+    if rand(1) == 1
+      tmp = opponent_1
+      opponent_1 = opponent_2
+      opponent_2 = tmp
+    end
+    return opponent_1, opponent_2
+  end
+  
+  def self.make_random_close_match
+    opponent_1 = Animal.random
+    opponent_2 = opponent_1.closely_matched_opponent
+    if rand(1) == 1
+      tmp = opponent_1
+      opponent_1 = opponent_2
+      opponent_2 = tmp
+    end
+    return opponent_1, opponent_2
   end
 end
