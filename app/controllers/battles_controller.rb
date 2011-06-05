@@ -94,6 +94,7 @@ class BattlesController < ApplicationController
 
   # POST /battles
   # POST /battles.xml
+  
   def create
     #TODO: remove this hack
     battle_type = params[:battle][:battle_type]

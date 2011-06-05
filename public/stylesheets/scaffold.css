@@ -54,3 +54,49 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.animal_area {
+	border: 5px solid #000;
+	margin: 0 5px 5px 0;
+	width: 300px;
+	height: 320px;
+	float: left;
+	display :inline;
+}
+
+.animal_area span {
+	text-align: center;
+	display: inline;
+	float: left
+}
+
+.animal_image {
+	vertical-align :bottom;
+}
+
+.animal_image_form {
+   text-align :center;	
+   display: box;
+   box-align: center;
+   box-pack: center;
+   border: 5px solid #008000;
+   width: 300px;
+   height: 300px;
+}
+
+#battle {
+	position: relative;
+	height: 300px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 5px solid #000;
+}
+
+
+/*
+#battle div{
+	display: inline;
+	float: left;
+}
+*/

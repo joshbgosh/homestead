@@ -17,22 +17,16 @@ $(document).ready(function() {
 </script>
 
 <p>
-<%= image_tag(@opponent_1.image.url(:medium)) %> </br>
-<%= @opponent_1.name %>  
-</p>
-vs.
-<p>
-<%= image_tag(@opponent_2.image.url(:medium)) %> </br>
-<%= @opponent_2.name %> 
+Who will win?
 </p>
 
+<%= render 'form' %>
+<div>
 <p>
 Both are totally enraged.
 </p>
+</div>
 
-<p>
-Who will win?
-</p>
-<%= render 'form' %>
+
 
 <%= link_to 'Back To Rankings', index_ranked_animals_path %>

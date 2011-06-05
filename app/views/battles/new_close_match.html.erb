@@ -1,14 +1,8 @@
 <h1>New battle! (close match)</h1>
 
-<p>
-<%= image_tag(@opponent_1.image.url(:medium)) %> </br>
-<%= @opponent_1.name %>  
-</p>
-vs.
-<p>
-<%= image_tag(@opponent_2.image.url(:medium)) %> </br>
-<%= @opponent_2.name %> 
-</p>
+
+
+<%= render 'form' %>
 
 <p>
 Both are totally enraged.
@@ -17,6 +11,5 @@ Both are totally enraged.
 <p>
 Who will win?
 </p>
-<%= render 'form' %>
 
 <%= link_to 'Back To Rankings', index_ranked_animals_path %>

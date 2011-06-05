@@ -1,4 +1,7 @@
-<%= form_for(@battle) do |f| %>
+<div id="battle">
+<div class= "animal_area" id="left_animal_area">
+<%= form_for @battle do |f| %>
+  <div class = "animal_image_form">
   <% if @battle.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
@@ -10,15 +13,19 @@
       </ul>
     </div>
   <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_1.id %><br />
-    <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %><br />
-    <%= f.hidden_field :battle_type, :value => @battle_type %> <br/>
-  <div class="actions">
-    <%= f.submit :value => @opponent_1.name %>
+    <%= f.hidden_field :winner_id, :value=> @opponent_1.id %>
+    <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %>
+    <%= f.hidden_field :battle_type, :value => @battle_type %>
+
+	<%= image_submit_tag(@opponent_1.image.url(:medium), :value => @opponent_1.name, :class => "animal_image") %>
   </div>
 <% end %>
 
-<%= form_for(@battle) do |f| %>
+<span> <%= @opponent_1.name %> </span>
+</div>
+<div class = "animal_area" id="right_animal_area">
+<%= form_for @battle do |f| %>
+ <div class = "animal_image_form">
   <% if @battle.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
@@ -32,8 +39,11 @@
   <% end %>
     <%= f.hidden_field :winner_id, :value=> @opponent_2.id %>
     <%= f.hidden_field :loser_id, :value=> @opponent_1.id %>
-	<%= f.hidden_field :battle_type, :value => @battle_type %> <br/>
-  <div class="actions">
-    <%= f.submit :value => @opponent_2.name %>
-  </div>
+	<%= f.hidden_field :battle_type, :value => @battle_type %>
+ 
+    <%= image_submit_tag(@opponent_2.image.url(:medium), :value => @opponent_2.name, :id => "right_animal_image", :class => "animal_image") %>
+   </div>
 <% end %>
+<span> <%= @opponent_2.name %> </span>
+</div>
+</div>
