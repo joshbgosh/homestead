@@ -55,43 +55,72 @@ div.field, div.actions {
   list-style: square;
 }
 
-.animal_area {
-	border: 5px solid #000;
-	margin: 0 5px 5px 0;
+#battle_header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#who_will_win {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+#both_are_totally_enraged {
+	margin-left: auto;
+	margin-right: auto;
 	width: 300px;
-	height: 320px;
-	float: left;
-	display :inline;
-}
-
-.animal_area span {
-	text-align: center;
-	display: inline;
-	float: left
-}
-
-.animal_image {
-	vertical-align :bottom;
-}
-
-.animal_image_form {
-   text-align :center;	
-   display: box;
-   box-align: center;
-   box-pack: center;
-   border: 5px solid #008000;
-   width: 300px;
-   height: 300px;
+	margin-top:20px;
+	margin-bottom: 20px;
 }
 
 #battle {
 	position: relative;
-	height: 300px;
-	width: 700px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	height: 350px;
+	width: 830px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 5px solid #000;
 }
+
+.animal_area {
+	border: 1px solid #999;
+	background: #fff;
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 360px;
+	height: 360px;
+	float: left;
+	display :inline;
+	text-align: center;
+}
+
+.animal_image_form {
+   text-align: center;	
+   width: 300px;
+   height: 300px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.animal_image{
+	height:300px;
+	width:300px;
+}
+
+
+
+
+
+
 
 
 /*

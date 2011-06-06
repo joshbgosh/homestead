@@ -29,6 +29,9 @@ class BattlesController < ApplicationController
     @opponent_1, @opponent_2 = pick_opponents
       
       respond_to do |format|
+        if request.xhr?
+          render :partial => "home/magic", :layout => false, :status => :created
+        end
         format.html # new.html.erb
         format.xml  { render :xml => @battle }
       end
