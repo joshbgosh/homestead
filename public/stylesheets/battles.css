@@ -1,0 +1,77 @@
+#content_area_wrapper_battle {
+	border-radius: 20px;
+	margin: 0px auto;
+    text-align: left;
+	background-color: white;
+	max-width: 650px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#battle_header {
+
+}
+
+
+
+#who_will_win {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#both_are_totally_enraged {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#battle {
+}
+
+#battle_area {
+	/*background-image: url("../images/middle_of_the_ocean_400x830.png"); */
+	background-repeat: no-repeat;
+	position: relative;
+	width: 600px;
+	height: 250px;
+	margin-right: auto;
+	margin-left: auto;	
+	text-align: center;
+}
+
+
+
+.animal_area {
+	background-color: transparent;
+	float: left;
+	display :inline;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.animal_area span {
+	font-size: 18px;
+	font-style: bold;
+}
+
+.animal_image_form {
+
+   text-align: center;	
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.animal_image{
+}
+
+.crazy_vert_align_hack_div {
+}

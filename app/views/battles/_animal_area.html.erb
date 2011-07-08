@@ -1,53 +1,32 @@
-<div id="battle">
-<div class= "animal_area" id="left_animal_area">
-<%= form_for @battle do |f| %>
-  <div class = "animal_image_form">
-  <% if @battle.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+<div class="animal_area_verticaltastic_wrapper">
 
+<div class= "animal_area">
+<div class="crazy_vert_align_hack_div" style="padding-bottom:<%= ((200 - winner.image.height(:medium)) / 2) %>px;">
+</div>
+<%= form_for battle, :remote => true, :html => { :'data-type' => 'html', :'class' => 'animal_image_form_real'} do |f| %>
+  <div class = "animal_image_form">
+
+  <% if battle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+  	   
       <ul>
-      <% @battle.errors.full_messages.each do |msg| %>
+      <% battle.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_1.id %>
-    <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %>
-    <%= f.hidden_field :battle_type, :value => @battle_type %>
+    <%= f.hidden_field :winner_id, :value=> winner.id %>
+    <%= f.hidden_field :loser_id, :value=>  loser.id %>
+    <%= f.hidden_field :match_id, :value => battle.match.id %>
 	<div class="animal_image_wrapper">
-	<%= image_submit_tag(@opponent_1.image.url(:medium), :value => @opponent_1.name, :class => "animal_image") %>
+	<%= image_submit_tag(winner.image.url(:medium), :value => winner.name, :class => "animal_image") %>
 	</div>  
 </div>
 <% end %>
 
-<span> <%= @opponent_1.name %> </span>
+<div> <span> <%= winner.name %> </span> </div>
+</div>
 </div>
 
-
-<div class = "animal_area" id="right_animal_area">
-<%= form_for @battle do |f| %>
- <div class = "animal_image_form">
-  <% if @battle.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
-
-      <ul>
-      <% @battle.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_2.id %>
-    <%= f.hidden_field :loser_id, :value=> @opponent_1.id %>
-	<%= f.hidden_field :battle_type, :value => @battle_type %>
- 	<div class="animal_image_wrapper">
-    <%= image_submit_tag(@opponent_2.image.url(:medium), :value => @opponent_2.name, :id => "right_animal_image", :class => "animal_image") %>
-	</div>   
-</div>
-<% end %>
-<span> <%= @opponent_2.name %> </span>
-</div>
-</div>

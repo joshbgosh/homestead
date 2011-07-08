@@ -1,0 +1,21 @@
+
+.percentage_text {
+	font-size: 32px;
+	font-family: Komikax;
+}
+
+#agree_text {
+	color: green;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#disagree_text {
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.animal_results {
+	margin-bottom: 10px;
+}

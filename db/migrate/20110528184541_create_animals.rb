@@ -8,7 +8,7 @@ class CreateAnimals < ActiveRecord::Migration
 	  t.integer :image_file_size
 	  t.datetime :image_updated_at
 	  
-	  t.integer :wins_count
+	  t.integer :wins_count # TODO: are these being used?
 	  t.integer :losses_count
     end
   end

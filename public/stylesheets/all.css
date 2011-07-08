@@ -1,0 +1,97 @@
+@font-face {
+        font-family: 'Komikax';
+        src: url('../fonts/KOMIKAX.ttf') format('truetype');
+}
+
+
+
+body { background-color: #9C0606; color: #333; text-align: center; }
+
+body, p, ol, ul, td {
+  font-family: Trebuche MS, verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+h1, h2, h3 {
+	font-family: Komikax;
+}
+
+a {
+	font-size: 16px;
+	font-style: bold;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#content_area {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+img {
+	display: block;
+	margin-bottom: 10px;
+    
+}
+
+img, .animal_area input {
+	box-shadow: 3px 3px 12px #111;
+}

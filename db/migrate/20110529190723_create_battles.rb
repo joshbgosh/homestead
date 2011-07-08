@@ -3,6 +3,7 @@ class CreateBattles < ActiveRecord::Migration
     create_table :battles do |t|
       t.integer :winner_id
       t.integer :loser_id
+      t.integer :match_id
 
       t.timestamps
     end

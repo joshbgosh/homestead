@@ -1,14 +1,31 @@
 class Animal < ActiveRecord::Base
-	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>"}
+	has_attached_file :image, :styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"}
+	
+	has_many :matches
 	
 	has_many :wins, :class_name => "Battle", :foreign_key => "winner_id"
 	has_many :losses, :class_name => "Battle", :foreign_key => "loser_id"
 	
-	def self.random #lets you fight yourself for now...
-		ids = connection.select_all("SELECT id FROM animals")
-		find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
-	end
-	
+	def battles
+    self.wins + self.losses
+  end
+  
+  def wins_against(opponent)
+    Battle.where(:winner_id => self.id, :loser_id => opponent.id)
+  end
+  
+  def defeats_by(opponent)
+    Battle.where(:winner_id => opponent.id, :loser_id => self.id)
+  end
+  
+  def win_percentage
+    if self.wins.count == 0
+      0
+    else
+      self.wins.count.to_f / self.battles.count.to_f
+    end
+  end
+  
 	def random_opponent
     raise "can't find opponent (only one animal in database)" unless Animal.all.count > 0
     
@@ -18,10 +35,6 @@ class Animal < ActiveRecord::Base
     end
     opponent
   end
-	
-	def self.by_fewest_battles
-		Animal.all.sort!{|a,b| a.battles.count <=> b.battles.count}
-	end
 	
 	def closely_matched_opponent #TODO: should be cleaned up
 	  raise "can't find opponent (only one animal in database)" unless Animal.all.count > 0
@@ -47,51 +60,23 @@ class Animal < ActiveRecord::Base
 	  closely_matched_opponent = nearby_opponents[rand(nearby_opponents.length)]
 	end
 	
-	
-	
-	
-	# needs a rewrite for clarity
-	def self.ranked_by_win_percentage
-		animals = Animal.all
-		animals.sort! do |a,b|
-			result = b.win_percentage <=> a.win_percentage
-			if result == 0
-			    result = b.wins.count <=> a.wins.count #in a tie-breaker, whoever has the most wins, wins!
-				if result == 0
-					a.losses.count <=> b.losses.count
-				else
-					result
-				end
-			else
-				result
-			end
-		end
-		animals
-	end
-	
-	def win_percentage
-		if self.wins.count == 0
-			0
-		else
-			self.wins.count.to_f / self.battles.count.to_f
-		end
-	end
-	
-	def arch_nemesis #beats me the most (TODO: clean this method up)
-	  enemies_lost_to = Animal.find_by_sql(["SELECT winner_id, COUNT(*)
-	                      FROM animals JOIN battles ON loser_id = ?
-	                      GROUP BY winner_id
-	                      ORDER BY COUNT(*) DESC", self.id])
-	  if enemies_lost_to.count > 0
-	    arch_nemesis_id = enemies_lost_to[0].winner_id
-	    Animal.find(arch_nemesis_id)
-	  else
-	    nil
-	  end                 
-	end
-	
-	def dominates #who I beat the most, with minimal losses (TODO: needs optimization)
-	  enemies_beaten_records = Animal.find_by_sql(["SELECT loser_id AS \"id\", COUNT(*)
+	def arch_nemesis #beats me the most
+    enemies_lost_to_records = Animal.find_by_sql(["SELECT winner_id, COUNT(*)
+                        FROM animals JOIN battles ON loser_id = ?
+                        GROUP BY winner_id
+                        ORDER BY COUNT(*) DESC", self.id])
+    if enemies_lost_to_records.count > 0
+      arch_nemesis_id = enemies_lost_to_records[0].winner_id
+      Animal.find(arch_nemesis_id)
+    else
+      nil
+    end                 
+  end
+  
+  @@TOLERABLE_WINS_RATIO = 10/1 #otherwise you don't count as 'dominating' that animal
+  
+  def dominates #who I beat the most, with minimal losses (TODO: needs optimization)
+    enemies_beaten_records = Animal.find_by_sql(["SELECT loser_id AS \"id\", COUNT(*)
                         FROM animals JOIN battles ON winner_id = ?
                         GROUP BY loser_id
                         ORDER BY COUNT(*) DESC", self.id])
@@ -114,7 +99,7 @@ class Animal < ActiveRecord::Base
         end
       end
     
-      if ((fewest_losses * TOLERABLE_LOSS_RATIO) > self.wins_against(Animal.find(fewest_losses_enemy_id))) 
+      if ((fewest_losses * @@TOLERABLE_WINS_RATIO) > self.wins_against(Animal.find(fewest_losses_enemy_id)).count) 
         #if we haven't beaten this animal at least 10 to 1, don't even bother
         nil
       else
@@ -123,18 +108,33 @@ class Animal < ActiveRecord::Base
     else
       nil
     end      
-	end
+  end
 	
-	def wins_against(opponent)
-	  Battle.where(:winner_id => self.id, :loser_id => opponent.id)
-	end
-	
-	def defeats_by(opponent)
-	  Battle.where(:winner_id => opponent.id, :loser_id => self.id)
-	end
-
-	def battles
-		self.wins + self.losses
-		#Battle.where("winner_id = :id OR loser_id = :id AND winner_id != loser_id", {:id => self.id})
-	end
+	def self.random
+    ids = connection.select_all("SELECT id FROM animals")
+    find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
+  end
+  
+  def self.by_fewest_battles
+    Animal.all.sort!{|a,b| a.battles.count <=> b.battles.count}
+  end
+  
+  #TODO: needs a rewrite for clarity
+  def self.ranked_by_win_percentage
+    animals = Animal.all
+    animals.sort! do |a,b|
+      result = b.win_percentage <=> a.win_percentage
+      if result == 0
+          result = b.wins.count <=> a.wins.count #in a tie-breaker, whoever has the most wins, wins!
+        if result == 0
+          a.losses.count <=> b.losses.count
+        else
+          result
+        end
+      else
+        result
+      end
+    end
+    animals
+  end
 end

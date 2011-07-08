@@ -1,9 +1,17 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  image_name: MyString
+porcupine:
+  id: 1
+  name: Porcupine
 
-two:
-  name: MyString
-  image_name: MyString
+stork:
+  id: 2
+  name: Stork
+  
+wolf:
+  id: 3
+  name: Wolf
+  
+walrus:
+  id: 4
+  name: Walrus

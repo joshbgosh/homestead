@@ -1,53 +1,105 @@
 <div id="battle">
-<div class= "animal_area" id="left_animal_area">
-<%= form_for @battle do |f| %>
-  <div class = "animal_image_form">
-  <% if @battle.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
 
-      <ul>
-      <% @battle.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_1.id %>
-    <%= f.hidden_field :loser_id, :value=>  @opponent_2.id %>
-    <%= f.hidden_field :battle_type, :value => @battle_type %>
-	<div class="animal_image_wrapper">
-	<%= image_submit_tag(@opponent_1.image.url(:medium), :value => @opponent_1.name, :class => "animal_image") %>
-	</div>  
-</div>
+<div id="battle_area">
+<% if rand(2) == 0 %>
+<%= render 'animal_area', :winner => battle.match.opponent_1, :loser => battle.match.opponent_2, :battle => battle %>
+<%= render 'animal_area', :winner => battle.match.opponent_2, :loser => battle.match.opponent_1, :battle => battle %>
+<% else %>
+<%= render 'animal_area', :winner => battle.match.opponent_2, :loser => battle.match.opponent_1, :battle => battle %>
+<%= render 'animal_area', :winner => battle.match.opponent_1, :loser => battle.match.opponent_2, :battle => battle %>
 <% end %>
 
-<span> <%= @opponent_1.name %> </span>
 </div>
+<h2 id="who_will_win">
+Who will win?
+</h2>
+<h3 id="both_are_totally_enraged">
+Both are totally enraged.
+</h3>
 
 
-<div class = "animal_area" id="right_animal_area">
-<%= form_for @battle do |f| %>
- <div class = "animal_image_form">
-  <% if @battle.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
 
-      <ul>
-      <% @battle.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-    <%= f.hidden_field :winner_id, :value=> @opponent_2.id %>
-    <%= f.hidden_field :loser_id, :value=> @opponent_1.id %>
-	<%= f.hidden_field :battle_type, :value => @battle_type %>
- 	<div class="animal_image_wrapper">
-    <%= image_submit_tag(@opponent_2.image.url(:medium), :value => @opponent_2.name, :id => "right_animal_image", :class => "animal_image") %>
-	</div>   
+
+<div id="toggle_comments">
+<%= link_to "Show Comments", show_comments_match_path(@battle.match), :remote => true, :html => { 'data-type' => 'html'}, :id => "show_comments_link"%>
+<span id="throbber_area">
+</span>
 </div>
-<% end %>
-<span> <%= @opponent_2.name %> </span>
+
+<div id="comments_container">
 </div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	
+  function vote(comment_id, event) {
+  	$.ajax
+  }	
+  $('.animal_image_form_real').bind('ajax:success', function(evt, data, status, xhr){
+  	$('#battle').replaceWith(xhr.responseText);
+  });
+  
+  
+   
+
+  //TODO: need to handle error conditions
+  
+  //$('#toggle_comments').click(function() {
+  	
+  //});
+   
+  $('#toggle_comments').data("load_state", "not loaded");
+  $('#toggle_comments').data("expanded", false);
+  
+   //TODO: don't use beforeSend as a proxy for click. This is written like a retard
+   //TODO: handle over-jamming (don't let them click link until it's fully expanded/retracted)
+   //TODO: hide link while transition is occurring
+  $('#toggle_comments').bind('ajax:beforeSend', function(evt, data, status, xhr){
+  	if ($('#toggle_comments').data("expanded")) {
+  		//hide
+  		$('#comments_container').slideUp();
+  		//$('#after_toggle').slideUp();
+  		$('#toggle_comments').data("expanded", false);
+  		$("#show_comments_link").text('Show Comments');
+  	} else {
+  		if ($('#toggle_comments').data("load_state") == "loaded") {
+  			//$('#after_toggle').slideDown();
+
+  			//show
+  			$('#toggle_comments').data("expanded", true);
+  			$('#comments_container').slideDown();
+  			$("#show_comments_link").text('Hide Comments');
+  		} else if ($('#toggle_comments').data("load_state") == "not loaded"){
+  			//wait to show in ajax:success.
+  			$('#toggle_comments').data("load_state", "loading");
+     		//$("#show_comments_link").text('Loading...');
+     		$('#show_comments_link').hide();
+     		$.throbberShow({parent: "#throbber_area"});
+  		} else {
+  			return false; //we're in the middle of loading. Stop jamming on the button!
+  		}
+  	}
+  	
+     if ($('#toggle_comments').data("load_state") != "loading") {
+  		return false; //cancel the ajax call
+ 	 } 
+  });
+	
+  $('#toggle_comments').bind('ajax:success', function(evt, data, status, xhr){
+  	$('#toggle_comments').data("load_state", "loaded");
+  	$('#comments_container').hide();
+  	$('#comments_container').append(xhr.responseText); //#show_comments
+  	$('#comments_container').slideDown();
+  	$('#toggle_comments').data("expanded", true);
+  	
+  	
+  	$("#show_comments_link").text('Hide Comments');
+  	$('#show_comments_link').show();
+  	$.throbberHide();
+  });
+  
+});
+</script>
 </div>

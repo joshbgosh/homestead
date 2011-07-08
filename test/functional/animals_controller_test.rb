@@ -2,13 +2,12 @@ require 'test_helper'
 
 class AnimalsControllerTest < ActionController::TestCase
   setup do
-    @animal = animals(:one)
+    @animal = animals(:porcupine)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:animals)
   end
 
   test "should get new" do

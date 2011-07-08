@@ -2,29 +2,21 @@ class AnimalsController < ApplicationController
   # GET /animals
   # GET /animals.xml
   def index
-    @animals = Animal.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @animals }
-    end
+    @animals_ranked = Animal.ranked_by_win_percentage
+    respond_to do | format|
+      format.html
+   end
   end
 
   # GET /animals/1
   # GET /animals/1.xml
   def show
     @animal = Animal.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @animal }
     end
-  end
-  
-  def index_ranked
-  @animals_ranked = Animal.ranked_by_win_percentage
-  respond_to do | format|
-	format.html
-  end
   end
 
   # GET /animals/new
@@ -50,7 +42,7 @@ class AnimalsController < ApplicationController
 
     respond_to do |format|
       if @animal.save
-        format.html { redirect_to(@animal, :notice => @animal) }
+        format.html { redirect_to(@animal) }
         format.xml  { render :xml => @animal, :status => :created, :location => @animal }
       else
         format.html { render :action => "new" }

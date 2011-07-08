@@ -1,11 +1,16 @@
+<div id= "everything">
+<div id ="content_area_wrapper_stats">
+<div id="content_area">
+	
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b><%= @animal.name %></b>
+  
 </p>
 
-<p>
+<p id="stats_figure">
   <%= image_tag @animal.image.url(:medium)%>
+  <b><%= @animal.name %></b>
 </p>
 
 <p> Wins  : <%= @animal.wins.count %> </p>
@@ -13,21 +18,25 @@
 
 
 <% if @animal.arch_nemesis %>
-<p> Arch-Nemesis: <%=  link_to @animal.arch_nemesis.name, @animal.arch_nemesis %> (defeated <%= @animal.name %> <%= pluralize(@animal.defeats_by(@animal.arch_nemesis).count, "time")%>!)</p>
+<p> Arch-Nemesis: <%=  link_to @animal.arch_nemesis.name, @animal.arch_nemesis %> (<%= pluralize(@animal.defeats_by(@animal.arch_nemesis).count, "loss")%>)</p>
 <% else %>
 <p> Arch-Nemesis: <%= @animal.name %> has no arch-nemesis. <%= @animal.name %> is UNDEFEATED! </p>
 <% end%>
 
 <% if @animal.dominates %>
-<p> Dominates: <%= link_to @animal.dominates.name, @animal.dominates %> (<%= @animal.name%> has beaten <%= link_to @animal.dominates.name, @animal.dominates%> <%= pluralize(@animal.wins_against(@animal.dominates).count, "time") %>,
+<p> Dominates: <%= link_to @animal.dominates.name, @animal.dominates %> (<%= pluralize(@animal.wins_against(@animal.dominates).count, "win")%>
 <% if @animal.defeats_by(@animal.dominates).count == 0 %>
-and has never been defeated by it.) </p>
+and no losses) </p>
 <% else %>
-and has been defeated by it only <%= pluralize(@animal.defeats_by(@animal.dominates).count, "time")%>.) </p>
+and only <%= pluralize(@animal.defeats_by(@animal.dominates).count, "loss")%>.) </p>
 <% end %>
 
 <% else %>
-<p> Dominates: <%= @animal.name %> dominates no one. <%= @animal.name %> has never beaten anyone :( . </p>
+<p> Dominates: <%= @animal.name %> dominates no one :( </p>
 <% end %>
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>
+
+</div>
+</div>
+</div>

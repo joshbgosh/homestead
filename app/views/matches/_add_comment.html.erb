@@ -1,0 +1,52 @@
+<div id="add_comment_box">
+<% if user_signed_in? %>
+<%= form_tag add_comment_match_path(match),:id => "add_comment", :remote => true, :method => "post", :action => 'add_comment' do %>
+  <%= hidden_field_tag "id", match.id %>
+  <%= text_area_tag "comment[comment]" %>
+  <%= submit_tag 'Post' %>
+<% end %>
+<% else %>
+<p><%= link_to 'Register', new_user_registration_path%> or <%= link_to "Sign in", new_user_session_path %> to comment. </p>
+<% end %>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  $('#add_comment').submit(function() {
+  	$('input[type=submit]', this).attr('disabled', 'disabled');
+  });
+  
+  $('#add_comment').bind('ajax:beforeSend', function(evt, data, status, xhr){
+  	$('#add_comment textarea').val("Submitting..."); //clear the form
+  }).bind('ajax:success', function(evt, data, status, xhr){
+  	$('#add_comment textarea').val(""); //clear the form
+    $('#actual_comments_area').prepend(xhr.responseText);
+  }).bind('ajax:complete', function(evt, data, status, xhr){
+
+  }).bind('ajax:error', function(evt, data, status, xhr){
+  	var $form = $(this),
+  		errors
+  		errorText;
+  		
+  	try {
+  		errors = xhr.responseText;
+  	} catch (err) {
+  		errors = {message: "Whoops!"} //TODO: do better here
+  	}
+  	
+  	errorText = "There were errors with the submission: \n<ul>";
+  	
+  	for (error in errors) {
+  		errorText += "<li>" + error + ": " + errors[error] + "</li>";
+  	}
+  	
+  	errorText += "</ul>";
+  	
+    //Insert error list into form
+    $form.find('div.validation-error').html(errorText);
+   });
+});
+
+</script>

@@ -3,11 +3,20 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 gem "paperclip", "~> 2.3"
 gem 'jquery-rails', '>= 1.0.3'
+gem "tasteful_routes", "~> 0.1.3"
+
+gem "devise"
+gem 'recaptcha', :require => 'recaptcha/rails'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+gem "acts_as_commentable", "~> 3.0.1"
+
+gem 'yaml_db', "~> 0.2.1"
 
 # Use unicorn as the web server
 # gem 'unicorn'

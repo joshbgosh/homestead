@@ -1,0 +1,30 @@
+<div id ="show_comments">
+	<%= render "add_comment", :match => match %>
+	<div id="actual_comments_area">
+	<% comments.each do |comment|  %>
+		<%= render 'show_comment', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
+	<% end %>
+	</div>
+</div>
+
+<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$(".vote_button").click(function() {
+		$.ajax( {
+			url: "<%= toggle_vote_on_comment_match_path(match) %>",
+			type: "POST",
+			data: {comment_id : $(this).data("comment_id")},
+			authenticity_token: encodeURIComponent( AUTH_TOKEN )
+		});
+		if ($(this).hasClass("voted_up")) {
+			$(this).removeClass("voted_up").addClass("no_vote");
+		} else {
+			$(this).removeClass("no_vote").addClass("voted_up");
+		}
+	});
+	
+});
+</script>

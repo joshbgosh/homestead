@@ -1,6 +1,8 @@
 BothAreTotallyEnraged::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  #ENV['RECAPTCHA_PUBLIC_KEY'] = 'MY_PUBLIC_KEY'
+#ENV['RECAPTCHA_PRIVATE_KEY'] = 'MY_PRIVATE_KEY' 
+  #TODO: stick production recaptcha keys here. They're in the file recaptcha_bate.com
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.cache_classes = true

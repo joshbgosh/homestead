@@ -1,0 +1,47 @@
+
+
+#toggle_comments{
+	text-align: center;
+}
+
+#throbber_area {
+	width: 20px;
+	height: 20px;
+}
+
+#comments_container {
+	text-align: center;
+}
+
+.comment {
+	max-width: 500px;
+	min-width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comment .user_name {
+	font-style: bold;
+	font-size: 10px;
+}
+
+.comment .time {
+	color: gray;
+	font-size: 10px;
+}
+
+.animal_area_verticaltastic_wrapper {
+	position: relative;
+}
+
+.voted_up {
+	background-image: url("../images/small_arrow_full.png");
+	width: 18px;
+	height: 18px;
+}
+
+.no_vote {
+	background-image: url("../images/small_arrow_empty.png");
+	width: 18px;
+	height: 18px;
+}

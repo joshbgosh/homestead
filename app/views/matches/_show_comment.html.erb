@@ -1,0 +1,13 @@
+<div class="comment">
+	
+<p class="content"><% if user_signed_in? && current_user.voted_for?(comment)%>
+<div class="vote_button voted_up" data-comment_id="<%= comment.id %>"> </div>
+<% else %>
+<div class="vote_button no_vote" data-comment_id="<%= comment.id %>"></div>
+<% end %>
+<%= comment.comment %> 
+</p>
+<div class="metadata">
+	<span class="user_name"><%= comment.user_name %> </span><span class="time"><%= time_ago_in_words comment.created_at %> ago </span>
+	</div>
+</div>

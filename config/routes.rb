@@ -1,25 +1,19 @@
 BothAreTotallyEnraged::Application.routes.draw do
-  #match "/animals/index_ranked" => "animals#index_ranked" #, :as => :index_ranked
   
-  #match "/battles/new_smart" => "battles#new_smart" #, :as => :new_smart
-  #match "/battles/new_close_match" => "battles#new_close_match" #S, :as => :new_close_match
-  
-  resources :battles do
-    collection do
-      get "new_random"
-      get "new_smart"
-      get "new_close_match"
+  devise_for :users
+
+  resources :matches do
+    member do
+      get 'show_comments'
+      post 'add_comment'
+      post 'toggle_vote_on_comment' #TODO: consider making the comment id part of GET variables?
     end
   end
-  resources :animals do
-    collection do
-      get "index_ranked"
-    end
-  end
- 
-  root :to => "home#index"
+  resources :battles
+  resources :animals
   
-  match "/home/magic" => "home#magic"
+  root :to => "battles#new"
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

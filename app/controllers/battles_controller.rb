@@ -1,6 +1,10 @@
 class BattlesController < ApplicationController
   # GET /battles
   # GET /battles.xml
+  respond_to :html, :xml, :json
+  
+  #TODO: Some battle stuff might be better to calculate through matches (and cache in matches)
+  
   def index
     @battles = Battle.all
 
@@ -24,93 +28,39 @@ class BattlesController < ApplicationController
   # GET /battles/new
   # GET /battles/new.xml
    
-  def new
-    @battle = Battle.new
-    @opponent_1, @opponent_2 = pick_opponents
-      
+  def new #TODO: needs to do something better when there's no animals in DB (error with finding opponent)
+    @battle = new_battle_helper
+        
       respond_to do |format|
-        if request.xhr?
-          render :partial => "home/magic", :layout => false, :status => :created
+        format.html do
+          if request.xhr?
+            render :partial => "battles/battle", :locals => {:battle => @battle}, :layout => true, :status => :created
+          else
+            format.html # new.html.erb
+          end
         end
-        format.html # new.html.erb
         format.xml  { render :xml => @battle }
       end
-  end
-  
-  def pick_opponents
-    n = rand(100)
-    
-    if n < 40
-      BattlesController.make_random_close_match
-    elsif n < 50
-      BattlesController.make_new_close_match
-    elsif n < 90
-      BattlesController.make_random_match
-    else
-      BattlesController.make_new_random_match
-    end
-  end
-  
-  def new_random
-    @battle = Battle.new
-    
-	  @battle_type = :new
-	  
-	  @opponent_1, @opponent_2 = self.make_random_match
-	
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @battle }
-    end
-  end
-  
-  def new_smart
-    @battle = Battle.new
-    
-    @battle_type = :new_smart
-    
-	  @opponent_1, @opponent_2 = self.make_close_match
-	
-    respond_to do |format|
-      format.html # new_smart.html.erb
-      format.xml  { render :xml => @battle }
-    end
-  end
-  
-  def new_close_match
-    @battle = Battle.new
-    
-    @battle_type = :new_close_match #doing it like this seems hackable TODO: change
-    
-    @opponent_1, @opponent_2 = self.make_close_match
-    
-    respond_to do |format|
-      format.html # new_close_match.html.erb
-      format.xml  { render :xml => @battle }
-    end
-  end
-
-  # GET /battles/1/edit
-  def edit
-    @battle = Battle.find(params[:id])
   end
 
   # POST /battles
   # POST /battles.xml
-  
-  def create
-    #TODO: remove this hack
-    battle_type = params[:battle][:battle_type]
-    @battle = Battle.new(params[:battle].delete(:battle_type))
-
+  def create #TODO: code is kinda hacky. Better way to do this? Maybe with callbacks?
+    battle_params = params[:battle]
+    
+    #might want to put match creation back here again @match = Match.get_or_create_with(Animal.find(battle_params[:winner_id]), Animal.find(battle_params[:loser_id]))#
+    @battle = Battle.create(battle_params)
+    
     respond_to do |format|
       if @battle.save
-        #if battle_type.eql?("new") or battle_type.eql?("new_smart") or battle_type.eql?("new_close_match")
-        #   redirect_action = battle_type
-        #else
-        #    redirect_action = :new
-        #end
-        format.html { redirect_to(:action => :new, :notice => 'Battle was successfully created.') }
+        format.html do
+          if request.xhr?
+            @battle = new_battle_helper
+            render :partial => "battles/battle", :locals => {:battle => @battle}, :layout => false, :status => :created
+          else 
+           redirect_to(:action => :new, :notice => 'Battle was successfully created.') 
+          end
+        end 
         format.xml  { render :xml => @battle, :status => :created, :location => @battle }
       else
         format.html { render :action => :new}
@@ -145,6 +95,32 @@ class BattlesController < ApplicationController
       format.html { redirect_to(battles_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  
+    #TODO: why can't I call these with self or just plain?
+  def pick_opponents
+    n = rand(100)
+    
+    if n < 40
+      BattlesController.make_random_close_match
+    elsif n < 50
+      BattlesController.make_new_close_match
+    elsif n < 90
+      BattlesController.make_random_match
+    else
+      BattlesController.make_new_random_match
+    end
+  end
+  
+  def new_battle_helper
+    battle = Battle.new
+    opponent_1, opponent_2 = pick_opponents
+    match = Match.get_or_create_with(opponent_1, opponent_2)
+    battle.match_id = match.id
+    match.save
+    battle
   end
   
   def self.make_random_match

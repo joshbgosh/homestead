@@ -1,25 +1,50 @@
-<h1>Listing animals</h1>
+<div id= "everything">
+<div id= "content_area_wrapper_rankings">
+<div id="content_area">
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Image name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Most Enraged</h1>
 
-<% @animals.each do |animal| %>
-  <tr>
-    <td><%= animal.name %></td>
-    <td><%= image_tag(animal.image.url(:thumb)) %></td>
-    <td><%= link_to 'Show', animal %></td>
-    <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-    <td><%= link_to 'Destroy', animal, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+
+
+<% rank = 1%>
+<% @animals_ranked.each do |animal| %>
+<div class = "ranked_animal_row">
+	<div class="rank_numeral_container">
+	<h3 class="rank_numeral"><%= rank %>.</h3>
+	</div>
+<div class= "ranked_animal_figure">
+<%= image_tag(animal.image.url(:thumb))%>
+<h4 class ="figure_caption">
+<%= animal.name %>
+</h4>
+</div>
+<div class="stats_area">
+<div class="stats_area_inner">
+<span class="wins_and_losses_text">
+<span class="wins_text"><%= animal.wins.count %> Wins </span> - <span class="losses_text"><%= animal.losses.count %> Losses </span>
+</span>
+<span class="percentage_wins_text"><%= (animal.win_percentage * 100).round(1) %>% wins </span>
+<%= link_to 'Full Stats', animal %>
+</div>
+</div>
+</div>
+
+	
+	<!--
+	
+	<td><td>
+	<td><%= image_tag(animal.image.url(:thumb))%></br><%= animal.name %></td>
+    <td><span class="wins_text"><%= animal.wins.count %> Wins </span> &#47; <span class="losses_text"><%= animal.losses.count %> Losses </span> </br>(<%= (animal.win_percentage * 100).round(1) %>% wins)</td>  
+    <td><%= link_to 'Show More Stats', animal %></td>
+-->
+	
+<% rank = rank + 1%>
 <% end %>
-</table>
+</br>
 
-<br />
+<%= link_to 'Create a New Animal', new_animal_path, :id => "create_a_new_animal" %> <%= link_to 'Start Battling!', new_battle_path, :id => "start_battling" %>
 
-<%= link_to 'New Animal', new_animal_path %>
+
+</div>
+</div>
+</div>
