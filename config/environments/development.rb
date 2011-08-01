@@ -1,6 +1,6 @@
 BothAreTotallyEnraged::Application.configure do
   
-  PAPERCLIP_STORAGE_OTPIONS = {}
+  PAPERCLIP_STORAGE_OPTIONS = {}
   
   config.action_mailer.default_url_options = { :host => 'localhost:3000' } #for devise authentication
   ENV['RECAPTCHA_PUBLIC_KEY'] = '6LeEmMUSAAAAAFWWXukV_aFvZiix7NiEWIUIR3jb'
