@@ -30,6 +30,10 @@ GEM
     activesupport (3.0.7)
     acts_as_commentable (3.0.1)
     arel (2.0.10)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     bcrypt-ruby (2.1.4)
     bcrypt-ruby (2.1.4-x86-mingw32)
     builder (2.1.2)
@@ -88,6 +92,7 @@ GEM
     tzinfo (0.3.29)
     warden (1.0.5)
       rack (>= 1.0)
+    xml-simple (1.1.0)
     yaml_db (0.2.1)
 
 PLATFORMS
@@ -96,6 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_commentable (~> 3.0.1)
+  aws-s3
   devise
   jquery-rails (>= 1.0.3)
   paperclip (~> 2.3)
