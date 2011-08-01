@@ -1,5 +1,7 @@
 class Animal < ActiveRecord::Base
-	has_attached_file :image, :styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"}
+  
+	has_attached_file :image, {:styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"}
+  }.merge(PAPERCLIP_STORAGE_OPTIONS)
 	
 	has_many :matches
 	

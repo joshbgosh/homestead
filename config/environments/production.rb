@@ -1,4 +1,9 @@
 BothAreTotallyEnraged::Application.configure do
+  
+  PAPERCLIP_STORAGE_OPTIONS = {:storage => :s3,
+      :s3_credentials => "#{Rails.root}/config/s3.yml",
+      :path => "/:style/:id/:filename"}
+      
   # Settings specified here will take precedence over those in config/application.rb
   #ENV['RECAPTCHA_PUBLIC_KEY'] = 'MY_PUBLIC_KEY'
 #ENV['RECAPTCHA_PRIVATE_KEY'] = 'MY_PRIVATE_KEY' 

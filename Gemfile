@@ -6,6 +6,7 @@ gem 'jquery-rails', '>= 1.0.3'
 gem "tasteful_routes", "~> 0.1.3"
 
 gem "devise"
+gem "aws-s3"
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 
