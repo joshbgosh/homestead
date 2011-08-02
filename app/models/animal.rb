@@ -3,7 +3,7 @@ class Animal < ActiveRecord::Base
 	has_attached_file :image, 
 	  :styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"},
 	  :storage => :s3,
-	  :bucket => 'botharetotallyenraged_test'
+	  :bucket => 'botharetotallyenraged_test',
 	  :s3_credentials => {
 	    :access_key_id => "AKIAJ5G7BDT3MXY3IPGA",
 	    :secret_access_key => "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"
