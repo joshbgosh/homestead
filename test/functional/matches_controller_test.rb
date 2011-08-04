@@ -2,8 +2,8 @@ require 'test_helper'
 
 class MatchesControllerTest < ActionController::TestCase
   setup do
-    @match = matches(:porcupine_v_stork)
-    @comment = comments(:one)
+    @match = create(:match)
+    @comment = create(:comment)
   end
 
   test "should get index" do

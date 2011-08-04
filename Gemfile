@@ -1,9 +1,12 @@
 source 'http://rubygems.org'
-gem 'rake', '0.8.7'
+
 gem 'rails', '3.0.7'
 gem "paperclip", "~> 2.3"
+gem "paperclip-meta"
 gem 'jquery-rails', '>= 1.0.3'
 gem "tasteful_routes", "~> 0.1.3"
+
+gem "factory_girl_rails"
 
 gem "devise"
 gem "aws-s3"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110626212345) do
+ActiveRecord::Schema.define(:version => 20110804184703) do
 
   create_table "animals", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110626212345) do
     t.datetime "image_updated_at"
     t.integer  "wins_count"
     t.integer  "losses_count"
+    t.text     "image_meta"
   end
 
   create_table "battles", :force => true do |t|

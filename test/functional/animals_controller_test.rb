@@ -2,7 +2,7 @@ require 'test_helper'
 
 class AnimalsControllerTest < ActionController::TestCase
   setup do
-    @animal = animals(:porcupine)
+    @animal = create(:animal)
   end
 
   test "should get index" do

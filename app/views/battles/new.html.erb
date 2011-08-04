@@ -1,6 +1,6 @@
 <div id= "everything">
 
-<% if user_signed_in? %>
+<% if signed_in?(:user) %>
 <p><%= link_to 'Sign out', destroy_user_session_path %></p>
 <% else %>
 <p><%= link_to 'Sign up', new_user_registration_path %></p>

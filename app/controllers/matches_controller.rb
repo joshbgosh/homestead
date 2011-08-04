@@ -102,7 +102,7 @@ class MatchesController < ApplicationController
     @match = Match.find(params[:id])
     params[:comment][:user_id] = current_user
       comment = @match.comments.create(params[:comment])
-      @match.add_comment(comment) #hopefully this isn't necessary, due to the commentable_id and commentable_type being correct
+      #@match.add_comment(comment) #hopefully this isn't necessary, due to the commentable_id and commentable_type being correct
     
       respond_to do |format|
         format.html do

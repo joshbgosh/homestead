@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BattlesControllerTest < ActionController::TestCase
   setup do
-    @battle = battles(:porcupine_beats_stork_1)
+    @battle = create(:battle)
   end
 
   test "should get index" do
