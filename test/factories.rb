@@ -17,7 +17,7 @@ end
 
 Factory.define(:comment) do |f|
   f.comment "Technically the porcupine is superior because bla bla bla..."
-  f.association :commentable, :factory => :match
+  f.association :commentable_id, :factory => :match
   f.commentable_type "Match"
 end
 

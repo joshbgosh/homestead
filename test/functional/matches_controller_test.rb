@@ -3,7 +3,6 @@ require 'test_helper'
 class MatchesControllerTest < ActionController::TestCase
   setup do
     @match = create(:match)
-    @comment = create(:comment)
   end
 
   test "should get index" do
@@ -49,23 +48,10 @@ class MatchesControllerTest < ActionController::TestCase
   end
   
   test "should render some comments" do
+    @comment = create(:comment)
     put :show_comments, :id => @match.id
     assert_response :success
-    assert_select '.comment', @comment.comment
-  end
-  
-  test "should create comment" do
-    comment_text = "blam!"
-    put :add_comment, :id => @match.id, :comment => comment_text, :commentable_id => @match.id, :commentable_type => "Match"
-    assert_response :success
-    assert_equal(3, @match.comments.count)
-  end
-  
-  test "creating comment should respond with comment contents" do
-    comment_text = "blam!"
-    put :add_comment, :id => @match.id, :comment => comment_text, :commentable_id => @match.id, :commentable_type =>"Match"
-    assert_response :success
-    assert_select '.comment', comment_text
+    assert_select '.comment_text', @comment.comment
   end
     
 end
