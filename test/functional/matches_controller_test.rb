@@ -4,6 +4,10 @@ class MatchesControllerTest < ActionController::TestCase
   setup do
     @match = create(:match)
   end
+  
+  teardown do
+    @match.destroy
+  end
 
   test "should get index" do
     get :index

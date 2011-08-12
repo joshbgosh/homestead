@@ -4,6 +4,10 @@ class BattlesControllerTest < ActionController::TestCase
   setup do
     @battle = create(:battle)
   end
+  
+  teardown do
+    @battle.destroy
+  end
 
   test "should get index" do
     get :index
@@ -40,5 +44,13 @@ class BattlesControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to battles_path
+  end
+  
+  test "no internal error when starting battle with no animals" do
+    Animal.all.each do |animal|
+      animal.destroy #make sure there aren't any damn animals in the database. Not sure why there would be any, but there are...
+    end
+    get :new
+    assert (response.status == 400 or response.status == 302)
   end
 end

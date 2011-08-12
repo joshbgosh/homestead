@@ -35,13 +35,13 @@
 }
 
 .voted_up {
-	background-image: url("../images/small_arrow_full.png");
-	width: 18px;
-	height: 18px;
+	background-image: url("/images/likebutton2.png");
+	width: 30px;
+	height: 26px;
 }
 
 .no_vote {
-	background-image: url("../images/small_arrow_empty.png");
-	width: 18px;
-	height: 18px;
+	background-image: url("/images/likebutton2_notactive.png");
+	width: 30px;
+	height: 26px;
 }

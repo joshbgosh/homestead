@@ -8,6 +8,12 @@ class MatchTest < ActiveSupport::TestCase
     @a3 = create(:animal)
   end
   
+  teardown do
+    @a1.destroy
+    @a2.destroy
+    @a3.destroy
+  end
+  
   test "finding matches" do
     m = Match.create(:opponent_1 => @a1, :opponent_2 => @a2)
     assert Match.find_with(@a1, @a2)

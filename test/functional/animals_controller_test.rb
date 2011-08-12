@@ -4,6 +4,10 @@ class AnimalsControllerTest < ActionController::TestCase
   setup do
     @animal = create(:animal)
   end
+  
+  teardown do
+    @animal.destroy
+  end
 
   test "should get index" do
     get :index

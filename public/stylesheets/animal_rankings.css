@@ -23,6 +23,8 @@
 	display: inline-block;
 	text-align: center;
 	height: 180px;
+}
 
-
+.ranked_animal_figure img {
+	height: 150px;
 }

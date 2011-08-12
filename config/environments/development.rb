@@ -31,6 +31,6 @@ BothAreTotallyEnraged::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
   
-  Paperclip.options[:command_path] = "C:/PROGRA~1/ImageMagick-6.7.0-Q16"
+  Paperclip.options[:command_path] = "/opt/local/bin" #what happens with this on heroku though?
 end
 

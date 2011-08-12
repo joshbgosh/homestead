@@ -5,7 +5,7 @@
 
 
 
-body { background-color: #9C0606; color: #333; text-align: center; }
+body { background-color: #9C0606; color: #333; text-align: center; margin: 0; padding: 0}
 
 body, p, ol, ul, td {
   font-family: Trebuche MS, verdana, arial, helvetica, sans-serif;
@@ -44,8 +44,26 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 
-#notice {
-  color: green;
+.notice {
+  color: #128C1A;
+  background-color: #45E650;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  margin: 0;
+  vertical-align: baseline;
+  border-bottom: 3px solid #128C1A;
+}
+
+.alert {
+  color: #5C3E09;
+  background-color: #F2A31B;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  margin: 0;
+  vertical-align: baseline;
+  border-bottom: 3px solid #5C3E09;
 }
 
 .field_with_errors {

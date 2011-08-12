@@ -1,38 +1,24 @@
 class AnimalsController < ApplicationController
+  
+  before_filter :find_animal, :only => [:show, :edit, :update, :destroy]
+  
+  
   # GET /animals
-  # GET /animals.xml
   def index
     @animals_ranked = Animal.ranked_by_win_percentage
-    respond_to do | format|
-      format.html
-   end
   end
 
   # GET /animals/1
-  # GET /animals/1.xml
   def show
-    @animal = Animal.find(params[:id])
-    
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @animal }
-    end
   end
 
   # GET /animals/new
-  # GET /animals/new.xml
   def new
     @animal = Animal.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @animal }
-    end
   end
 
   # GET /animals/1/edit
   def edit
-    @animal = Animal.find(params[:id])
   end
 
   # POST /animals
@@ -54,8 +40,6 @@ class AnimalsController < ApplicationController
   # PUT /animals/1
   # PUT /animals/1.xml
   def update
-    @animal = Animal.find(params[:id])
-
     respond_to do |format|
       if @animal.update_attributes(params[:animal])
         format.html { redirect_to(@animal, :notice => 'Animal was successfully updated.') }
@@ -70,12 +54,17 @@ class AnimalsController < ApplicationController
   # DELETE /animals/1
   # DELETE /animals/1.xml
   def destroy
-    @animal = Animal.find(params[:id])
     @animal.destroy
 
     respond_to do |format|
       format.html { redirect_to(animals_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  protected
+  
+  def find_animal
+    @animal = Animal.find(params[:id])
   end
 end

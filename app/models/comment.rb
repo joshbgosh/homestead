@@ -15,6 +15,16 @@ class Comment < ActiveRecord::Base
   belongs_to :user
   #TODO: is this okay?
   
+  def toggle_vote
+    if current_user.voted_for?(self)
+      #remove that vote
+      vote = current_user.votes.find_by_voteable_id(self.id)
+      vote.destroy
+    else
+      current_user.vote_for(self)
+    end
+  end
+  
   def user_name
     (self.user and self.user.username) or 'Anonymous'
   end

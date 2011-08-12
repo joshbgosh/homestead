@@ -5,6 +5,11 @@ class Match < ActiveRecord::Base
   
   acts_as_commentable
   
+  def get_ranked_comments
+    comments = self.comments.all
+    comments.sort_by!{|comment| comment.magic_ranking} #this may not work with pagination, see http://stackoverflow.com/questions/657654/how-do-you-normally-sort-items-in-rails
+  end
+  
   def self.get_or_create_with(animal_1, animal_2) #TODO: could be cleaner
     match = find_with(animal_1, animal_2)
     if match

@@ -32,7 +32,7 @@ class Animal < ActiveRecord::Base
   end
   
 	def random_opponent
-    raise "can't find opponent (only one animal in database)" unless Animal.all.count > 0
+    raise NotEnoughAnimalsLoadedException, "can't find an opponent (only one animal in database)" unless Animal.all.count > 1
     
     opponent = Animal.random
     while (self == opponent)
@@ -42,7 +42,7 @@ class Animal < ActiveRecord::Base
   end
 	
 	def closely_matched_opponent #TODO: should be cleaned up
-	  raise "can't find opponent (only one animal in database)" unless Animal.all.count > 0
+	  raise NotEnoughAnimalsLoadedException, "can't find opponent (only one animal in database)" unless Animal.all.count > 1
 	  
 	  
 	  animals_ranked_by_win_percentage = Animal.ranked_by_win_percentage
@@ -116,8 +116,10 @@ class Animal < ActiveRecord::Base
   end
 	
 	def self.random
+	  raise NotEnoughAnimalsLoadedException, "Couldn't find a random animal, since there are no animals in the database" unless Animal.count > 0
+    
     ids = connection.select_all("SELECT id FROM animals")
-    find(ids[rand(ids.length)]["id"].to_i) unless ids.blank?
+    find(ids[rand(ids.length)]["id"].to_i) 
   end
   
   def self.by_fewest_battles
@@ -142,4 +144,6 @@ class Animal < ActiveRecord::Base
     end
     animals
   end
+
+  class NotEnoughAnimalsLoadedException < Exception; end
 end
