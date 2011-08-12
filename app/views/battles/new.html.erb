@@ -1,11 +1,6 @@
 <div id= "everything">
 
-<% if signed_in?(:user) %>
-<p><%= link_to 'Sign out', destroy_user_session_path %></p>
-<% else %>
-<p><%= link_to 'Sign up', new_user_registration_path %></p>
-  <p><%= link_to 'Sign in', new_user_session_path %></p>
-<% end -%>
+
 
 <div id="battle_results_sidebar" style="float: left; height 250px; width: 190px;">
 <div class="animal_results" id="picked animal" style=" height=100px;">

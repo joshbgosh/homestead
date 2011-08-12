@@ -17,8 +17,30 @@
 <% if alert %>
 <div class="alert"> <%= alert %></div>
 <% end %>
+
+<div id="header_bar">
+<div id="header_contents">
+	<h1 id="logo">Both Are Totally Enraged</h1>
+	
+	<ul id="header_nav_links">
+	<li><%= link_to "Most Enraged", animals_path %></li>
+	<li><%= link_to "New Battle", new_battle_path %></li>
+	</ul>
+	
+	<ul id="user_links">
+	<% if signed_in?(:user) %>
+		<li> <%= link_to 'Sign out', destroy_user_session_path %></li>
+	<% else %>	
+	<li> <%= link_to "Register", new_user_registration_path %></li>
+	<li> <%= link_to "Sign In", new_user_session_path %></li>
+	<% end %>
+	</ul>
+</div>
+</div>
+
 <%= yield %>
 
-
+<div id="footer">
+</div>
 </body>
 </html>
