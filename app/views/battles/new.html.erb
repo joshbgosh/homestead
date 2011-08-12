@@ -5,11 +5,11 @@
 <div id="battle_results_sidebar" style="float: left; height 250px; width: 190px;">
 <div class="animal_results" id="picked animal" style=" height=100px;">
 <span style="position: relative; top: 15px; font-weight: bold; color: #D6D6D6; ">Your Pick</span>
-<img src="<%=@battle.match.opponent_1.image.url(:thumb) %>" style="margin-bottom: 15px; border-style: solid; border-color: grey; border-radius: 20px; border-width: 15px 15px 15px 15px; border-height: 5px;">	
+<img src="<%=@battle.match.opponent_1.image.url(:thumb) %>" style=" height: 64px; width: 64px; margin-bottom: 15px; border-style: solid; border-color: grey; border-radius: 20px; border-width: 15px 15px 15px 15px; border-height: 5px;">	
 <span id="agree_text"> <span class="percentage_text">60%</span> agree </span>
 </div>
 <div class="animal_results">
-<img src="<%=@battle.match.opponent_2.image.url(:thumb) %>" style="margin-bottom: 15px; margin-left: 15px;">	
+<img src="<%=@battle.match.opponent_2.image.url(:thumb) %>" style="height: 64px; width: 64px; margin-bottom: 15px; margin-left: 15px;">	
 <span id="disagree_text"> <span class="percentage_text">40%</span> disagree </span>
 </div>
 </div>

@@ -3,18 +3,60 @@
 	margin: 0px auto;
     text-align: left;
 	background-color: white;
-	max-width: 650px;
-	padding-left: 10px;
-	padding-right: 10px;
+	max-width: 600px; /* see what you think of a larger one, like 1200px */
     margin-top: 35px;
     margin-bottom: 35px;
+
+	background-color: #ffffbf;
 }
 
-#battle_header {
 
+
+#battle {
+}
+
+#battle_area {
+	position: relative;
+	text-align: center;	
+}
+
+.animal_area_verticaltastic_wrapper {
+	display: inline-block;
+	margin: 16px 16px 16px 16px;
+}
+
+#vs {
+	font-size: 16px;
+	font-weight: bold;
+	display: inline;
+	position: relative;
+	top: -112px;
+}
+
+.animal_area {
+	background-color: transparent;
+	display :inline;
+	text-align: center;
 }
 
 
+
+
+
+.animal_area span {
+	font-size: 18px;
+	font-style: bold;
+}
+
+.animal_image_form_real {
+   margin-bottom: 16px;
+}
+
+.animal_image{
+}
+
+.crazy_vert_align_hack_div {
+}
 
 #who_will_win {
 	margin-left: auto;
@@ -22,56 +64,4 @@
 	margin-top: 10px;
 	margin-bottom: 20px;
 	text-align: center;
-}
-
-#both_are_totally_enraged {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:20px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-#battle {
-}
-
-#battle_area {
-	/*background-image: url("../images/middle_of_the_ocean_400x830.png"); */
-	background-repeat: no-repeat;
-	position: relative;
-	width: 600px;
-	height: 320px;
-	margin-right: auto;
-	margin-left: auto;	
-	text-align: center;
-}
-
-
-
-.animal_area {
-	background-color: transparent;
-	float: left;
-	display :inline;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-}
-
-.animal_area span {
-	font-size: 18px;
-	font-style: bold;
-}
-
-.animal_image_form {
-
-   text-align: center;	
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
-
-.animal_image{
-}
-
-.crazy_vert_align_hack_div {
 }

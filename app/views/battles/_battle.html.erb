@@ -3,9 +3,11 @@
 <div id="battle_area">
 <% if rand(2) == 0 %>
 <%= render 'animal_area', :winner => battle.match.opponent_1, :loser => battle.match.opponent_2, :battle => battle %>
+<div id="vs">vs.</div>
 <%= render 'animal_area', :winner => battle.match.opponent_2, :loser => battle.match.opponent_1, :battle => battle %>
 <% else %>
 <%= render 'animal_area', :winner => battle.match.opponent_2, :loser => battle.match.opponent_1, :battle => battle %>
+<div id="vs">vs.</div>
 <%= render 'animal_area', :winner => battle.match.opponent_1, :loser => battle.match.opponent_2, :battle => battle %>
 <% end %>
 
@@ -13,9 +15,6 @@
 <h2 id="who_will_win">
 Who will win?
 </h2>
-<h3 id="both_are_totally_enraged">
-Both are totally enraged.
-</h3>
 
 
 
