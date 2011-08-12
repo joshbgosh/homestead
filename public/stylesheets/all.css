@@ -83,7 +83,7 @@ pre {
 	 /* Firefox 3.6+ */ background: -moz-linear-gradient(top,  #ffdd22, #ffbb00); 
 	/* IE 10 */ background: -ms-linear-gradient(top,  #ffcc33, #ff9900); 
 	/* Opera 11.10+ */ background: -o-linear-gradient(top,  #ffcc33, #ff9900); 
-		/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffcc33), to(#ff9900));
+		/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffcc33), to(#ffa000));
 	
 }
 
