@@ -1,10 +1,31 @@
 class Battle < ActiveRecord::Base
-belongs_to :winner, :class_name => "Animal" #, :foreign_key => "winner_id"
-belongs_to :loser,  :class_name => "Animal" #, :foreign_key => "loser_id"
+  belongs_to :winner, :class_name => "Animal" #, :foreign_key => "winner_id"
+  belongs_to :loser,  :class_name => "Animal" #, :foreign_key => "loser_id"
 
-belongs_to :match
+  belongs_to :match
 
-  def self.generate_new
+  validates_presence_of :match
+
+  before_validation do
+    self.match = Match.get_or_create_with(self.winner, self.loser) #TODO: what are the performance implications of this?
+  end
+
+	def battles
+		Battle.find(:conditions => ["winner_id = ? OR loser_id = ?", id, id])
+	end
+	
+	def stats
+	  num_battles = self.match.battle_count
+	  if num_battles > 1
+	    wins = self.match.wins_for(self.winner).count
+	    losses = num_battles - wins
+	    return BattleStats::PriorVotes.new(self.winner, wins, losses)
+	  else
+	    return BattleStats::NoPriorVotes.new
+	  end
+	end
+	
+	def self.generate_new
     battle = Battle.new
     opponent_1, opponent_2 = pick_opponents
     match = Match.get_or_create_with(opponent_1, opponent_2)
@@ -12,10 +33,6 @@ belongs_to :match
     match.save
     battle
   end
-
-	def battles
-		Battle.find(:conditions => ["winner_id = ? OR loser_id = ?", id, id])
-	end
 	
 	
 	#---------

@@ -20,7 +20,7 @@ class BattlesController < ApplicationController
   # GET /battles/new
   # GET /battles/new.xml
    
-  def new #TODO: needs to do something better when there's no animals in DB (error with finding opponent)
+  def new
     begin
       @battle = Battle.generate_new
         
@@ -36,7 +36,7 @@ class BattlesController < ApplicationController
       end
       
     rescue Animal::NotEnoughAnimalsLoadedException => e
-      redirect_to(new_animal_path, :notice => "We need more animals in the database to create a battle. Add more animals.") #TODO: will need to change this once making new animals is behind password.
+      redirect_to(new_animal_path, :alert => "We need more animals in the database to create a battle. Add more animals.") #TODO: will need to change this once making new animals is behind password.
     end
   end
 
@@ -45,7 +45,8 @@ class BattlesController < ApplicationController
   def create #TODO: code is kinda hacky. Better way to do this? Maybe with callbacks?
     battle_params = params[:battle]
     
-    #might want to put match creation back here again @match = Match.get_or_create_with(Animal.find(battle_params[:winner_id]), Animal.find(battle_params[:loser_id]))#
+    @previous_battle = Battle.find(battle_params[:battle_id]) #TODO: this probably isn't a hot idea. Is there a problem if users forge this?
+    
     @battle = Battle.create(battle_params)
     
     respond_to do |format|
@@ -53,7 +54,7 @@ class BattlesController < ApplicationController
         format.html do
           if request.xhr?
             @battle = Battle.generate_new
-            render :partial => "battles/battle", :locals => {:battle => @battle}, :layout => false, :status => :created
+            render :partial => "battles/battle", :locals => {:battle => @battle, :previous_battle => @battle}, :layout => false, :status => :created
           else 
            redirect_to(:action => :new, :notice => 'Battle was successfully created.') 
           end
