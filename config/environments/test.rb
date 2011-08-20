@@ -16,6 +16,8 @@ BothAreTotallyEnraged::Application.configure do
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
+  
+  config.session_store = :active_record_store  #TODO: change to improve performance
 
   # Raise exceptions instead of rendering exception templates
   config.action_dispatch.show_exceptions = false

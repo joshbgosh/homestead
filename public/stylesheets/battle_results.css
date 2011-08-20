@@ -1,0 +1,67 @@
+#battle_results_sidebar {
+	text-align: center;
+	float: left;
+	height: 250px;
+	width: 128px;
+	margin-left: 64px;
+}
+
+.results_animal {
+	margin-bottom: 16px;
+}
+
+#picked_animal_header {
+	font-weight: bold;
+	color: #d6d6d6;
+	margin: 8px;
+
+}
+
+.results_animal img {
+	height: 64px;
+	width: 64px;
+	margin-bottom: 8px;
+}
+
+.picked.results_animal img {
+	box-shadow: 2px 2px 12px #111;
+	border-color: rgba(225,225,133, 0.7);
+	border-width: 8px;
+	border-style: solid;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.not_picked.results_animal img {
+	box-shadow: 2px 2px 12px #111;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#agree_text {
+	color: #ffffbf;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#disagree_text {
+	color: #ffffbf;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#no_prior_votes_text {
+	color: #ffffbf;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.percentage_text {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+

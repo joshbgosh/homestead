@@ -15,6 +15,8 @@ BothAreTotallyEnraged::Application.configure do
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  
+  config.session_store = :active_record_store  #TODO: change to improve performance
 
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"

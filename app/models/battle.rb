@@ -3,7 +3,9 @@ class Battle < ActiveRecord::Base
   belongs_to :loser,  :class_name => "Animal" #, :foreign_key => "loser_id"
 
   belongs_to :match
-
+  
+  validates_presence_of :winner
+  validates_presence_of :loser
   validates_presence_of :match
 
   before_validation do

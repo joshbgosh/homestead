@@ -23,6 +23,7 @@ class BattlesController < ApplicationController
   def new
     begin
       @battle = Battle.generate_new
+      session[:current_battle] = @battle
         
       respond_to do |format|
         format.html do
@@ -45,18 +46,21 @@ class BattlesController < ApplicationController
   def create #TODO: code is kinda hacky. Better way to do this? Maybe with callbacks?
     battle_params = params[:battle]
     
-    @previous_battle = Battle.find(battle_params[:battle_id]) #TODO: this probably isn't a hot idea. Is there a problem if users forge this?
+    #if battle_params[:battle_id] && battle_params[:battle_id] != "" #TODO: watch out for SQL injection here.
+    #  @previous_battle = Battle.find(battle_params[:battle_id]) #TODO: this probably isn't a hot idea. Is there a problem if users forge this?
+    #end
     
-    @battle = Battle.create(battle_params)
+    @previous_battle = Battle.create(battle_params)
     
     respond_to do |format|
-      if @battle.save
+      if @previous_battle.save
         format.html do
+         @battle = Battle.generate_new
           if request.xhr?
-            @battle = Battle.generate_new
-            render :partial => "battles/battle", :locals => {:battle => @battle, :previous_battle => @battle}, :layout => false, :status => :created
+            render :partial => "battles/battle", :locals => {:battle => @battle, :previous_battle => @previous_battle}, :layout => false, :status => :created
           else 
-           redirect_to(:action => :new, :notice => 'Battle was successfully created.') 
+           #redirect_to(:action => :new, :notice => 'Battle was successfully created.') 
+            render :new, :locals => {:battle => @battle, :previous_battle => @previous_battle}
           end
         end 
         format.xml  { render :xml => @battle, :status => :created, :location => @battle }

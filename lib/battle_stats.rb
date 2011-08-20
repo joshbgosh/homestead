@@ -1,5 +1,8 @@
 class BattleStats
   class NoPriorVotes < BattleStats
+    def had_prior_votes?
+      false
+    end
   end
 
   class PriorVotes < BattleStats
@@ -14,6 +17,10 @@ class BattleStats
       
       @percent_agreed = previous_wins / previous_battles.to_f * 100
       @percent_disagreed = previous_losses / previous_battles.to_f * 100
+    end
+    
+    def had_prior_votes?
+      return true
     end
   end
 end

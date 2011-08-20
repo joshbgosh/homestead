@@ -76,10 +76,12 @@ class MatchesController < ApplicationController
   end
   
   def add_comment
-    params[:comment][:user_id] = current_user
+    params[:comment][:user_id] = current_user.id
+    puts current_user.username
+    puts params[:comment]
     comment = @match.comments.create(params[:comment])
       #@match.add_comment(comment) #hopefully this isn't necessary, due to the commentable_id and commentable_type being correct
-    
+    puts "w00t" + comment.user_name
       respond_to do |format|
         format.html do
           render :partial => "matches/show_comment", :locals => {:comment => comment}, :layout => false, :status => :created

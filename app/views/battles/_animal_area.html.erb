@@ -3,7 +3,7 @@
 <div class= "animal_area">
 <div class="crazy_vert_align_hack_div" style="padding-bottom:<%= ((224 - winner.image.height(:medium)) / 2) %>px;">
 </div>
-<%= form_for battle, :remote => true, :html => { :'data-type' => 'html', :'class' => 'animal_image_form_real'} do |f| %>
+<%= form_for battle, :remote => false, :html => { :'data-type' => 'html', :'class' => 'animal_image_form_real'} do |f| %>
   <div class = "animal_image_form">
 
   <% if battle.errors.any? %>
@@ -20,7 +20,6 @@
     <%= f.hidden_field :winner_id, :value=> winner.id %>
     <%= f.hidden_field :loser_id, :value=>  loser.id %>
     <%= f.hidden_field :match_id, :value => battle.match.id %>
-	<%= f.hidden_field :battle_id, :value => battle.id %>
 	<div class="animal_image_wrapper">
 	<%= image_submit_tag(winner.image.url(:medium), :value => winner.name, :class => "animal_image") %>
 	</div>  

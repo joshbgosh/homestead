@@ -53,4 +53,10 @@ class BattlesControllerTest < ActionController::TestCase
     get :new
     assert (response.status == 400 or response.status == 302)
   end
+  
+  test "can't submit battle results without getting that battle first" do
+    b = attributes_for(:battle)
+    post :create, :battle => b
+    assert_response :error
+  end
 end

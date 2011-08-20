@@ -48,4 +48,5 @@ class MatchTest < ActiveSupport::TestCase
     assert_equal 3, match.battle_count  
   end
   
+
 end

@@ -31,15 +31,18 @@ h1 {
 h2 {
 	font-size: 30px;
 	font-family: Komikax;
+	margin: 16px;
 }
 
 h3 {
 	font-size: 24px;
 	font-family: Komikax;
+	margin: 12px;
 }
 
 h4 {
 	font-size: 16px;
+	margin: 8px;
 }
 
 a:visited { color: #333; }
@@ -49,6 +52,10 @@ pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+}
+
+input {
+	margin: 8px;
 }
 
 .notice {
@@ -79,11 +86,11 @@ pre {
 	background-color: #FF9900;
 	text-align: center;
 
-	 /* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #ffdd22, #ffbb00);
-	 /* Firefox 3.6+ */ background: -moz-linear-gradient(top,  #ffdd22, #ffbb00); 
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #ffdd22, #ffbb00);
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top,  #ffdd22, #ffbb00); 
 	/* IE 10 */ background: -ms-linear-gradient(top,  #ffdd22, #ffbb00); 
 	/* Opera 11.10+ */ background: -o-linear-gradient(top,  #ffdd22, #ffbb00); 
-		/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffdd22), to(#ffbb00));
+	/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffdd22), to(#ffbb00));
 	
 }
 
@@ -130,6 +137,16 @@ pre {
 	line-height: 24px;
 }
 
+.content_area_wrapper {
+	background-color: #ffffbf;	
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px; /* see what you think of a larger one, like 1200px */
+	border-radius: 20px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}	
+
 #content_area {
 	padding-top: 16px;
 	padding-left: 16px;
@@ -155,23 +172,24 @@ div.field, div.actions {
 .field_with_errors {
   padding: 2px;
   background-color: red;
-  display: table;
+  display: inline-table;
 }
 
 #error_explanation {
-  width: 450px;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+  display: inline-block;
 }
 
 #error_explanation h2 {
-  text-align: left;
+
   font-weight: bold;
   padding: 5px 5px 5px 15px;
   font-size: 12px;
+  font-family: Trebuche MS, verdana, arial, helvetica, sans-serif;
   margin: -7px;
   margin-bottom: 0px;
   background-color: #c00;

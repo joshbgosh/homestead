@@ -1,18 +1,13 @@
-<div id= "everything">
-<div id ="content_area_wrapper_stats">
+<div class="stats content_area_wrapper">
 <div id="content_area">
-	
-<p id="notice"><%= notice %></p>
 
-<p>
-  
-</p>
-
-<p id="stats_figure">
+<div id= "main_stats_content">
+<span id="stats_figure">
   <%= image_tag @animal.image.url(:medium)%>
   <b><%= @animal.name %></b>
-</p>
+</span>
 
+<span id="stats_infotext">
 <p> Wins  : <%= @animal.wins.count %> </p>
 <p> Losses: <%= @animal.losses.count %> </p>
 
@@ -34,8 +29,8 @@ and only <%= pluralize(@animal.defeats_by(@animal.dominates).count, "loss")%>.) 
 <% else %>
 <p> Dominates: <%= @animal.name %> dominates no one :( </p>
 <% end %>
-<%= link_to 'Edit', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>
+-<%= link_to 'Show in Rankings', animals_path %>
+</span>
 
 </div>
 </div>
