@@ -1,7 +1,7 @@
 class AnimalsController < ApplicationController
   
+  before_filter :authenticate_admin!, :except => [:show, :index]
   before_filter :find_animal, :only => [:show, :edit, :update, :destroy]
-  
   
   # GET /animals
   def index

@@ -11,12 +11,6 @@
 
 
 <body>
-<% if notice %>
-<div class="notice"><%= notice %></div>
-<% end %>
-<% if alert %>
-<div class="alert"> <%= alert %></div>
-<% end %>
 
 <div id="header_bar">
 <div id="header_contents">
@@ -30,13 +24,21 @@
 	<ul id="user_links">
 	<% if signed_in?(:user) %>
 		<li> <%= link_to 'Sign out', destroy_user_session_path %></li>
+	<% elsif signed_in?(:admin)%>
+	    <li> <%= link_to 'Sign out (admin)', destroy_admin_session_path %></li>
 	<% else %>	
-	<li> <%= link_to "Register", new_user_registration_path %></li>
+	<li> <%= link_to "Sign Up", new_user_registration_path %></li>
 	<li> <%= link_to "Sign In", new_user_session_path %></li>
 	<% end %>
 	</ul>
 </div>
 </div>
+<% if notice %>
+<div class="notice"><%= notice %></div>
+<% end %>
+<% if alert %>
+<div class="alert"> <%= alert %></div>
+<% end %>
 
 <%= yield %>
 

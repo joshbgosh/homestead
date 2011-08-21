@@ -29,7 +29,7 @@ and only <%= pluralize(@animal.defeats_by(@animal.dominates).count, "loss")%>.) 
 <% else %>
 <p> Dominates: <%= @animal.name %> dominates no one :( </p>
 <% end %>
--<%= link_to 'Show in Rankings', animals_path %>
+-<%= link_to 'Back to Rankings', animals_path %>
 </span>
 
 </div>

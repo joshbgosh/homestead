@@ -1,14 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
-
 ADMIN_USERNAME = "mlinnem"
 ADMIN_PASSWORD = "changeme" #TODO: best to not have this when it comes time for production.
-
 admin_accounts_that_look_like_me = Admin.where(:username => ADMIN_USERNAME)
 
 if admin_accounts_that_look_like_me.count == 0

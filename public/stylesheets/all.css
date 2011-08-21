@@ -45,6 +45,9 @@ h4 {
 	margin: 8px;
 }
 
+a {
+	color: #444;
+}
 a:visited { color: #333; }
 a:hover { color: #fff; background-color:#000; }
 

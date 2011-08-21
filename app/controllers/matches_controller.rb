@@ -1,5 +1,6 @@
 class MatchesController < ApplicationController
   
+  before_filter :authenticate_admin!, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
   before_filter :authenticate_user!, :only => [:add_comment, :toggle_vote_on_comment]
   before_filter :find_match, :only => [:show, :edit, :update, :destroy, :show_comments, :add_comment]
   
@@ -77,11 +78,8 @@ class MatchesController < ApplicationController
   
   def add_comment
     params[:comment][:user_id] = current_user.id
-    puts current_user.username
-    puts params[:comment]
     comment = @match.comments.create(params[:comment])
       #@match.add_comment(comment) #hopefully this isn't necessary, due to the commentable_id and commentable_type being correct
-    puts "w00t" + comment.user_name
       respond_to do |format|
         format.html do
           render :partial => "matches/show_comment", :locals => {:comment => comment}, :layout => false, :status => :created
