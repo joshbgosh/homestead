@@ -23,7 +23,7 @@ BothAreTotallyEnraged::Application.configure do
   config.action_controller.perform_caching = false
   
   #added by hand
-  config.session_store = :active_record_store  
+  config.session_store = :active_record_store  #TODO: change to improve performance
 
   # Don't care if the mailer can't sends
   config.action_mailer.raise_delivery_errors = false
