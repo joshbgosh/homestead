@@ -1,0 +1,206 @@
+/* General Purpose Stuff */
+
+@font-face {
+        font-family: 'Komikax';
+        src: url('../fonts/KOMIKAX.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	background-color: #9C0606;
+	 color: #000;
+	 text-align: center;
+	 margin: 0;
+	 padding: 0
+}
+
+body, p, ol, ul, td {
+  font-family: Trebuche MS, verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+}
+
+h1 {
+	font-size: 36px;
+	font-family: Komikax;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: Komikax;
+	margin: 16px;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: Komikax;
+	margin: 12px;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 8px;
+}
+
+a {
+	color: #444;
+}
+a:visited { color: #333; }
+a:hover { color: #fff; background-color:#000; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+input {
+	margin: 8px;
+}
+
+.notice {
+  color: #128C1A;
+  background-color: #45E650;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  vertical-align: baseline;
+  border-bottom: 3px solid #128C1A;
+}
+
+.alert {
+  color: #5C3E09;
+  background-color: #F2A31B;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  vertical-align: baseline;
+  border-bottom: 3px solid #5C3E09;
+}
+
+/* Particular elements that will appear on all pages */
+
+#header_bar {
+	height: 64px;
+	margin: 0 auto;	
+	background-color: #FF9900;
+	text-align: center;
+
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #ffdd22, #ffbb00);
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top,  #ffdd22, #ffbb00); 
+	/* IE 10 */ background: -ms-linear-gradient(top,  #ffdd22, #ffbb00); 
+	/* Opera 11.10+ */ background: -o-linear-gradient(top,  #ffdd22, #ffbb00); 
+	/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffdd22), to(#ffbb00));
+	
+}
+
+#header_contents {
+	margin: 0 auto;
+	min-width: 1024px;
+	max-width: 1124px;
+}
+
+#header_contents #logo {
+	display: inline;
+	line-height: 52px;
+	float: left;
+	margin: 0 16px 0 16px;
+}
+
+#header_nav_links {
+	display: inline;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 64px;
+}
+#header_nav_links ul {
+	list-style-type: none;
+}
+#header_nav_links li {
+	list-style-type: none;
+	display: inline;
+	margin: 0px 8px 0px 8px;
+}
+
+#user_links {
+	display: inline;
+	font-size: 12px;
+	font-weight: bold;
+	float:right;
+	margin: 0px 16px 0px 16px;
+}
+#user_links ul {
+}
+#user_links li {
+	list-style-type: none;
+	margin: 0px 8px 0px 8px;
+	line-height: 24px;
+}
+
+.content_area_wrapper {
+	background-color: #ffffbf;	
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px; /* see what you think of a larger one, like 1200px */
+	border-radius: 20px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}	
+
+#content_area {
+	padding-top: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+}
+
+img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+img, .animal_area input {
+	box-shadow: 3px 3px 12px #111;
+}
+
+/* ? */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: inline-table;
+}
+
+#error_explanation {
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  display: inline-block;
+}
+
+#error_explanation h2 {
+
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  font-family: Trebuche MS, verdana, arial, helvetica, sans-serif;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
