@@ -12,6 +12,8 @@ gem "devise"
 gem "aws-s3"
 gem 'recaptcha', :require => 'recaptcha/rails'
 
+gem "jammit"
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
