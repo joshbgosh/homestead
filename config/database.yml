@@ -14,6 +14,12 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
+  
+performance:
+    adapter: sqlite3
+    database: db/performance.sqlite3
+    pool: 5
+    timeout: 5000  
 
 production:
   adapter: sqlite3

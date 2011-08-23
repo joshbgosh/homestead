@@ -14,6 +14,11 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 
 gem "jammit"
 
+gem "taps"
+
+gem "ruby-prof"
+
+gem "test-unit"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

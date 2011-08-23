@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110821165355) do
+ActiveRecord::Schema.define(:version => 20110821165210) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(:version => 20110821165355) do
     t.string   "username"
   end
 
-  add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
+  add_index "admins", ["username"], :name => "index_admins_on_username", :unique => true
 
   create_table "animals", :force => true do |t|
     t.string   "name"
