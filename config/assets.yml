@@ -1,0 +1,12 @@
+#embed_assets: on
+
+javascripts:
+    workspace:
+        - public/javascripts/*.js
+
+stylesheets:
+    workspace:
+        - public/stylesheets/*.css
+
+        
+        
