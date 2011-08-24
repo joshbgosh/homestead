@@ -1,0 +1,252 @@
+---
+comments_001:
+  id: 1
+  comment: This is tough. I kind of think of rhinos and hippos as the same animal.
+  commentable_id: 142
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:11:43.799208+0000'
+  updated_at: '2011-08-21 20:11:43.799208+0000'
+comments_002:
+  id: 2
+  comment: Even if a sloth is TOTALLY ENRAGED, I don't think it can move fast enough
+    to inflict much damage.
+  commentable_id: 159
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:13:15.701999+0000'
+  updated_at: '2011-08-21 20:13:15.701999+0000'
+comments_003:
+  id: 3
+  comment: polar bear has a thicker coat, and is generally more of a badass, IMHO.
+  commentable_id: 160
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-21 20:13:48.525949+0000'
+  updated_at: '2011-08-21 20:13:48.525949+0000'
+comments_004:
+  id: 4
+  comment: Black widow spiders rarely kill humans, but their bite might have enough
+    venom to take down a rooster.  But if the rooster steps on the spider immediately
+    after being bit (thus easily killing it), and takes a few hours to die, does the
+    rooster still win because it lasted the longest?
+  commentable_id: 161
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:16:13.678718+0000'
+  updated_at: '2011-08-21 20:16:13.678718+0000'
+comments_005:
+  id: 5
+  comment: An adult male polar bear weighs 770-1,200 lbs.  An adult male white rhino
+    can weigh more than 7,700 lbs.  Gotta go with Rhino on this one.
+  commentable_id: 133
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:19:03.538719+0000'
+  updated_at: '2011-08-21 20:19:03.538719+0000'
+comments_006:
+  id: 6
+  comment: Walrus is one of few animals that gives less of a shit than honey badger.  Dude
+    could just roll over and squash that clever little fuck.
+  commentable_id: 201
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:20:30.728809+0000'
+  updated_at: '2011-08-21 20:20:30.728809+0000'
+comments_007:
+  id: 7
+  comment: ladycrappo is right on this one, fo sho. Thanks for the mad factz ladycrappo.
+  commentable_id: 133
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-21 20:22:21.699873+0000'
+  updated_at: '2011-08-21 20:22:21.699873+0000'
+comments_008:
+  id: 8
+  comment: Giraffe seems like a gawky nerd next to the stout footballer that is mountain
+    goat.  Giraffe is probably much bigger, but I just don't see it having much fight.
+  commentable_id: 222
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:25:28.178434+0000'
+  updated_at: '2011-08-21 20:25:28.178434+0000'
+comments_009:
+  id: 9
+  comment: you'd think mr. mammal would win for sure, but that beetle is a badass!
+    Decisions decisions...
+  commentable_id: 259
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-21 20:31:32.418528+0000'
+  updated_at: '2011-08-21 20:31:32.418528+0000'
+comments_010:
+  id: 10
+  comment: ! 'Good general rule of thumb: domesticated animals are far stupider and
+    less capable than their wild counterparts. Macaw FTW.'
+  commentable_id: 81
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:33:05.297308+0000'
+  updated_at: '2011-08-21 20:33:05.297308+0000'
+comments_011:
+  id: 11
+  comment: Aww, it's like "Humans" vs. "Babies."
+  commentable_id: 285
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:34:53.632795+0000'
+  updated_at: '2011-08-21 20:34:53.632795+0000'
+comments_012:
+  id: 12
+  comment: Sloth very slowly raises arm to swipe at beetle.  Beetle scurries past
+    and begins eating sloth's eyeballs with its busy little pincers.
+  commentable_id: 309
+  commentable_type: Match
+  user_id: 2
+  created_at: '2011-08-21 20:37:03.903829+0000'
+  updated_at: '2011-08-21 20:37:03.903829+0000'
+comments_013:
+  id: 13
+  comment: scarlet macaw gets in some good bites, but wolverine triumphs.
+  commentable_id: 315
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-21 20:38:46.290362+0000'
+  updated_at: '2011-08-21 20:38:46.290362+0000'
+comments_014:
+  id: 14
+  comment: Kinda tough. Imma go with buffalo, since it has horns and I suspect it's
+    bigger.
+  commentable_id: 329
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-21 20:41:04.179278+0000'
+  updated_at: '2011-08-21 20:41:04.179278+0000'
+comments_015:
+  id: 15
+  comment: All depends on whether or not the sloth can eat the spider before the spider
+    bites it!  Could be both would lose if spider bit the sloth and then the sloth
+    ate the spider.  Spider would die first, though.  Therefore, I vote sloth!
+  commentable_id: 359
+  commentable_type: Match
+  user_id: 3
+  created_at: '2011-08-21 22:28:44.919352+0000'
+  updated_at: '2011-08-21 22:28:44.919352+0000'
+comments_016:
+  id: 16
+  comment: Close one!
+  commentable_id: 240
+  commentable_type: Match
+  user_id: 3
+  created_at: '2011-08-21 23:06:53.922132+0000'
+  updated_at: '2011-08-21 23:06:53.922132+0000'
+comments_017:
+  id: 17
+  comment: wolverine is crazier,doesn't care if he's damaged
+  commentable_id: 437
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:07:14.651008+0000'
+  updated_at: '2011-08-21 23:07:14.651008+0000'
+comments_018:
+  id: 18
+  comment: Is the chipmunk allergic?  This might be like the black widow where ultimately
+    they will both die.
+  commentable_id: 441
+  commentable_type: Match
+  user_id: 3
+  created_at: '2011-08-21 23:10:10.756751+0000'
+  updated_at: '2011-08-21 23:10:10.756751+0000'
+comments_019:
+  id: 19
+  comment: roly-poly totally defensive
+  commentable_id: 391
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:10:59.619343+0000'
+  updated_at: '2011-08-21 23:10:59.619343+0000'
+comments_020:
+  id: 20
+  comment: Another tough one!
+  commentable_id: 162
+  commentable_type: Match
+  user_id: 3
+  created_at: '2011-08-21 23:11:34.262142+0000'
+  updated_at: '2011-08-21 23:11:34.262142+0000'
+comments_021:
+  id: 21
+  comment: Geez.  Ya' know it depends on whether the buffalo can stomp the python
+    before the python can wrap itself around the buffalo.
+  commentable_id: 108
+  commentable_type: Match
+  user_id: 3
+  created_at: '2011-08-21 23:13:31.181035+0000'
+  updated_at: '2011-08-21 23:13:31.181035+0000'
+comments_022:
+  id: 22
+  comment: Sasquatch has secret powers,intilect and smells bad.No contest
+  commentable_id: 382
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:14:17.112185+0000'
+  updated_at: '2011-08-21 23:14:17.112185+0000'
+comments_023:
+  id: 23
+  comment: honey badger wants it more. Fox has been bad vibing HB Pissed him off
+  commentable_id: 299
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:16:54.530387+0000'
+  updated_at: '2011-08-21 23:16:54.530387+0000'
+comments_024:
+  id: 24
+  comment: Boar cuts giraffe off at ankles. Giraffe cant get down to boar's level
+    Wouldn't stoop that low
+  commentable_id: 14
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:18:55.940229+0000'
+  updated_at: '2011-08-21 23:18:55.940229+0000'
+comments_025:
+  id: 25
+  comment: Hard to say depends on the battlefield. In flooded amazon MG disoriented
+    not a great swimmer. In mountains snake torpid. Ms. MG wears python as necklace
+  commentable_id: 333
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:24:28.695614+0000'
+  updated_at: '2011-08-21 23:24:28.695614+0000'
+comments_026:
+  id: 26
+  comment: Sasquatch will use anteater to clean out dingleberries and armpits. Odor
+    alone will daze.
+  commentable_id: 281
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:28:05.900280+0000'
+  updated_at: '2011-08-21 23:28:05.900280+0000'
+comments_027:
+  id: 27
+  comment: Boarmore agressive Orangutan too nice a guy
+  commentable_id: 464
+  commentable_type: Match
+  user_id: 4
+  created_at: '2011-08-21 23:30:17.856587+0000'
+  updated_at: '2011-08-21 23:30:17.856587+0000'
+comments_028:
+  id: 28
+  comment: Tough one. I think the Lion is more aggressive, but is the grizzly bear
+    bigger? And the lion doesn't seem to have much of a protective coat.
+  commentable_id: 472
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-22 13:32:03.299825+0000'
+  updated_at: '2011-08-22 13:32:03.299825+0000'
+comments_029:
+  id: 29
+  comment: hmm....
+  commentable_id: 490
+  commentable_type: Match
+  user_id: 1
+  created_at: '2011-08-22 22:11:39.444656+0000'
+  updated_at: '2011-08-22 22:11:39.444656+0000'

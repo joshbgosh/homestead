@@ -1,6 +1,6 @@
 class AddUsernameToAdmin < ActiveRecord::Migration
   def self.up
-    #add_column :admins, :username, :string
+    add_column :admins, :username, :string
   end
 
   def self.down
