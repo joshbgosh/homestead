@@ -1,8 +1,9 @@
+<a>Hide</a>
 <div id ="show_comments">
-	<%= render "add_comment", :match => match %>
+	<%= render "matches/add_comment", :match => match %>
 	<div id="actual_comments_area">
 	<% comments.each do |comment|  %>
-		<%= render 'show_comment', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
+		<%= render 'matches/show_comment', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
 	<% end %>
 	</div>
 </div>

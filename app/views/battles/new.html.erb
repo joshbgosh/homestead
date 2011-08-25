@@ -7,6 +7,8 @@
 
 <%= render 'battle', :battle => @battle %>
 
+<%= render 'comments_area', :show_comments => comments_visibility_preference(), :match => @battle.match %>
+
 <div id="content_area_footer">
 </div>
 </div>

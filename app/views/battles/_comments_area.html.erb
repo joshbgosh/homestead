@@ -1,0 +1,120 @@
+<div id="comments_container">
+	
+	<% if show_comments %>
+		<a id="show_comments_link">Show Comments</a>
+		<a id="hide_comments_link" style="display: none;">Hide Comments</a>
+		<div id="comments_content">
+		<%= render "matches/show_comments", :match => match, :comments => match.comments %>
+		</div>
+	<% else %>
+		<a id="hide_comments_link">Hide Comments</a>
+	    <a id="show_comments_link" style="display: none;">Show Comments</a>
+		<div id="comments_content">
+		</div>
+	<% end %>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	
+  function vote(comment_id, event) {
+  	$.ajax
+  }	
+/*
+  $('.animal_image_form_real').bind('ajax:success', function(evt, data, status, xhr){
+  	$('#battle').replaceWith(xhr.responseText);
+  });
+*/
+  
+  function show_comments() {
+	//when we want to show comments...
+		//set the cookie to show that we want the comments shown
+		//remove 'show comments' link and any other associated stuff
+		//if we don't have the comment data yet
+			//show a throbber
+			//fetch the comment data from the server
+		    //receive the comment data
+			//remove the throbber
+
+		//make the comment data slide down all cute-like
+		//else (we are doing this as part of the initial load)
+			//just make it appear regular-style
+			
+  }
+ 
+  function hide_comments() {
+	//when we want to hide comments...
+		//set the cookie to show that we want comments hidden
+		//slide the comment data up all cute-like
+		//make a 'show comments' link and whatever other associated stuff we like appear
+  }
+
+  var comments_visibility_preference = $.cookie("comments_visibility_preference")
+  if (comments_visibility_preference == "show") {
+  } else {
+	
+  }
+
+   
+
+  //TODO: need to handle error conditions
+  
+  //$('#toggle_comments').click(function() {
+  	
+  //});
+   
+  $('#toggle_comments').data("load_state", "not loaded");
+  $('#toggle_comments').data("expanded", false);
+  
+   //TODO: don't use beforeSend as a proxy for click. This is written like a retard
+   //TODO: handle over-jamming (don't let them click link until it's fully expanded/retracted)
+   //TODO: hide link while transition is occurring
+  $('#toggle_comments').bind('ajax:beforeSend', function(evt, data, status, xhr){
+  	if ($('#toggle_comments').data("expanded")) {
+  		//hide
+  		$('#comments_container').slideUp();
+  		//$('#after_toggle').slideUp();
+  		$('#toggle_comments').data("expanded", false);
+  		$("#show_comments_link").text('Show Comments');
+  	} else {
+  		if ($('#toggle_comments').data("load_state") == "loaded") {
+  			//$('#after_toggle').slideDown();
+
+  			//show
+  			$('#toggle_comments').data("expanded", true);
+  			$('#comments_container').slideDown();
+  			$("#show_comments_link").text('Hide Comments');
+  		} else if ($('#toggle_comments').data("load_state") == "not loaded"){
+  			//wait to show in ajax:success.
+  			$('#toggle_comments').data("load_state", "loading");
+     		//$("#show_comments_link").text('Loading...');
+     		$('#show_comments_link').hide();
+     		$.throbberShow({parent: "#throbber_area"});
+  		} else {
+  			return false; //we're in the middle of loading. Stop jamming on the button!
+  		}
+  	}
+  	
+     if ($('#toggle_comments').data("load_state") != "loading") {
+  		return false; //cancel the ajax call
+ 	 } 
+  });
+	
+  $('#toggle_comments').bind('ajax:success', function(evt, data, status, xhr){
+  	$('#toggle_comments').data("load_state", "loaded");
+  	$('#comments_container').hide();
+  	$('#comments_container').append(xhr.responseText); //#show_comments
+  	$('#comments_container').slideDown();
+  	$('#toggle_comments').data("expanded", true);
+  	
+  	
+  	$("#show_comments_link").text('Hide Comments');
+  	$('#show_comments_link').show();
+  	$.throbberHide();
+  });
+  
+});
+</script>
+</div>
