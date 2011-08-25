@@ -25,10 +25,10 @@ class Animal < ActiveRecord::Base
   end
   
   def win_percentage
-    if self.wins_count_cache == 0
+    if self.wins_count_cache == 0 && self.losses_count_cache == 0
       0
     else
-      self.wins_count_cache / (self.wins_count_cache + self.losses_count_cache)
+      self.wins_count_cache.to_f / (self.wins_count_cache + self.losses_count_cache)
     end
   end
   
@@ -120,12 +120,12 @@ class Animal < ActiveRecord::Base
   
   def wins_count_cache
     cache_key = "Animal." + self.id.to_s + ".wins_count"
-    Rails.cache.fetch(cache_key) { wins.count}
+    Rails.cache.fetch(cache_key) { wins.count }
   end
   
   def losses_count_cache
     cache_key = "Animal." + self.id.to_s + ".losses_count"
-    Rails.cache.fetch(cache_key) { losses.count}
+    Rails.cache.fetch(cache_key) { losses.count }
   end
   
   def battles_count_cache
