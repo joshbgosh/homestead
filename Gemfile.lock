@@ -42,6 +42,7 @@ GEM
     bcrypt-ruby (2.1.4-x86-mingw32)
     builder (2.1.2)
     cocaine (0.1.0)
+    dalli (1.0.5)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -132,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   acts_as_commentable (~> 3.0.1)
   aws-s3
+  dalli
   devise
   factory_girl_rails
   jammit

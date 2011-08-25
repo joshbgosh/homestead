@@ -5,7 +5,7 @@ class AnimalsController < ApplicationController
   
   # GET /animals
   def index
-    @animals_ranked = Animal.ranked_by_win_percentage
+    @animals_ranked = Animal.ranked_by_win_percentage_cached
   end
 
   # GET /animals/1

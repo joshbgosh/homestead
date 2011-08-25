@@ -25,10 +25,10 @@ class Animal < ActiveRecord::Base
   end
   
   def win_percentage
-    if self.wins.count == 0
+    if self.wins_count_cache == 0
       0
     else
-      self.wins.count.to_f / self.battles.count.to_f
+      self.wins_count_cache / (self.wins_count_cache + self.losses_count_cache)
     end
   end
   
@@ -46,7 +46,7 @@ class Animal < ActiveRecord::Base
 	  raise NotEnoughAnimalsLoadedException, "can't find opponent (only one animal in database)" unless Animal.all.count > 1
 	  
 	  
-	  animals_ranked_by_win_percentage = Animal.ranked_by_win_percentage
+	  animals_ranked_by_win_percentage = Animal.ranked_by_win_percentage_cached
 	  
 	  def neighbors(a, index, distance)
 	    from = [index - distance, 0].max
@@ -115,6 +115,30 @@ class Animal < ActiveRecord::Base
       nil
     end      
   end
+  
+  #### Cache Stuff ####
+  
+  def wins_count_cache
+    cache_key = "Animal." + self.id.to_s + ".wins_count"
+    Rails.cache.fetch(cache_key) { wins.count}
+  end
+  
+  def losses_count_cache
+    cache_key = "Animal." + self.id.to_s + ".losses_count"
+    Rails.cache.fetch(cache_key) { losses.count}
+  end
+  
+  def battles_count_cache
+    wins_count_cache + losses_count_cache
+  end
+  
+  def expire_battle_caches
+    cache_key = "Animal." + self.id.to_s
+    Rails.cache.delete(cache_key + ".wins_count")
+    Rails.cache.delete(cache_key + ".losses_count")
+  end
+  
+  #### Class-Level Stuff ####
 	
 	def self.random
 	  raise NotEnoughAnimalsLoadedException, "Couldn't find a random animal, since there are no animals in the database" unless Animal.count > 0
@@ -124,7 +148,7 @@ class Animal < ActiveRecord::Base
   end
   
   def self.by_fewest_battles
-    Animal.all.sort!{|a,b| a.battles.count <=> b.battles.count}
+    Animal.all.sort!{|a,b| a.battles_count_cache <=> b.battles_count_cache}
   end
   
   #TODO: needs a rewrite for clarity
@@ -133,9 +157,9 @@ class Animal < ActiveRecord::Base
     animals.sort! do |a,b|
       result = b.win_percentage <=> a.win_percentage
       if result == 0
-          result = b.wins.count <=> a.wins.count #in a tie-breaker, whoever has the most wins, wins!
+          result = b.wins_count_cache <=> a.wins_count_cache #in a tie-breaker, whoever has the most wins, wins!
         if result == 0
-          a.losses.count <=> b.losses.count
+          a.losses_count_cache <=> b.losses_count_cache
         else
           result
         end
@@ -144,6 +168,10 @@ class Animal < ActiveRecord::Base
       end
     end
     animals
+  end
+  
+  def self.ranked_by_win_percentage_cached
+    Rails.cache.fetch("Animal.ranked_by_win_percentage", :race_condition_ttl => 30.seconds, :expires_in => 5.minutes) { ranked_by_win_percentage }
   end
 
   class NotEnoughAnimalsLoadedException < Exception; end

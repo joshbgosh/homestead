@@ -15,6 +15,21 @@ task :profile do
   FileUtils.mv Dir.glob("#{Rails.root}/test/fixtures/*.yml"), "#{Rails.root}/test/fixtures_for_performance/" 
 end
 
+task :benchmark do
+  FileUtils.mv Dir.glob("#{Rails.root}/test/fixtures_for_performance/*.yml"), "#{Rails.root}/test/fixtures/"
+  
+  FileUtils.cp "#{Rails.root}/config/environments/test.rb", "#{Rails.root}/config/environments/test_backup.rb"
+  FileUtils.cp "#{Rails.root}/config/environments/performance.rb", "#{Rails.root}/config/environments/test.rb"
+  
+  #FileUtils.cp "#{Rails.root}/db/performance_backup.sqlite3", "#{Rails.root}/db/performance.sqlite3"
+  
+  Rake::Task['test:benchmark'].execute
+  
+  FileUtils.cp "#{Rails.root}/config/environments/test_backup.rb", "#{Rails.root}/config/environments/test.rb" 
+  
+  FileUtils.mv Dir.glob("#{Rails.root}/test/fixtures/*.yml"), "#{Rails.root}/test/fixtures_for_performance/" 
+end
+
 task :profileergerg => :environment do
   
   FileUtils.cp "#{Rails.root}/config/environments/test.sqlite3", "#{Rails.root}/db/test_backup.sqlite3"

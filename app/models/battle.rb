@@ -11,6 +11,14 @@ class Battle < ActiveRecord::Base
   before_validation do
     self.match = Match.get_or_create_with(self.winner, self.loser) #TODO: what are the performance implications of this?
   end
+  
+  after_save :expire_animal_battle_caches
+  after_destroy :expire_animal_battle_caches
+  
+  def expire_animal_battle_caches
+    winner.expire_battle_caches
+    loser.expire_battle_caches
+  end
 
 	def battles
 		Battle.find(:conditions => ["winner_id = ? OR loser_id = ?", id, id])

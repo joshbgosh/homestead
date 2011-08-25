@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110821165355) do
+ActiveRecord::Schema.define(:version => 20110825150912) do
 
   create_table "admins", :force => true do |t|
     t.string    "email",                                 :default => "", :null => false
@@ -51,6 +51,9 @@ ActiveRecord::Schema.define(:version => 20110821165355) do
     t.timestamp "created_at"
     t.timestamp "updated_at"
   end
+
+  add_index "battles", ["loser_id"], :name => "index_battles_on_loser_id"
+  add_index "battles", ["winner_id"], :name => "index_battles_on_winner_id"
 
   create_table "comments", :force => true do |t|
     t.text      "comment"
