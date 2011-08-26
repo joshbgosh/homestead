@@ -1,6 +1,6 @@
 class DeviseCreateAdmins < ActiveRecord::Migration
   def self.up
-     create_table(:admins) do |t|
+    /# create_table(:admins) do |t|
         t.database_authenticatable :null => false
         t.recoverable
         t.rememberable
@@ -20,6 +20,7 @@ class DeviseCreateAdmins < ActiveRecord::Migration
       # add_index :admins, :confirmation_token,   :unique => true
       # add_index :admins, :unlock_token,         :unique => true
       # add_index :admins, :authentication_token, :unique => true
+      #/
   end
 
   def self.down
