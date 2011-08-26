@@ -1,15 +1,19 @@
 <div id="comments_container">
 	
 	<% if show_comments %>
-		<a id="show_comments_link">Show Comments</a>
-		<a id="hide_comments_link" style="display: none;">Hide Comments</a>
+		<a class="hide comments_link">Hide Comments</a>
+	    <a class="show comments_link" style="display: none;">Show Comments</a>	
+		<div id="comments_content_wrapper">
 		<div id="comments_content">
 		<%= render "matches/show_comments", :match => match, :comments => match.comments %>
 		</div>
+		</div>
 	<% else %>
-		<a id="hide_comments_link">Hide Comments</a>
-	    <a id="show_comments_link" style="display: none;">Show Comments</a>
-		<div id="comments_content">
+		<a class="show comments_link">Show Comments</a>
+		<a class="hide comments_link" style="display: none;">Hide Comments</a>
+		<div id="comments_content_wrapper">
+			<div id="comments_content">
+		    </div>
 		</div>
 	<% end %>
 </div>
@@ -18,7 +22,7 @@
 
 $(document).ready(function() {
 	
-	
+//OLD LINE FOR SHOWING COMMENTS <%= link_to "Show Comments", show_comments_match_path(@battle.match), :remote => true, :html => { 'data-type' => 'html'}, :id => "show_comments_link"%>	
   function vote(comment_id, event) {
   	$.ajax
   }	

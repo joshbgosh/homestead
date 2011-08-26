@@ -1,15 +1,21 @@
 <div class="comment">
-	
-<p class="content"><% if user_signed_in? && current_user.voted_for?(comment)%>
-<div class="vote_button voted_up" data-comment_id="<%= comment.id %>"> </div>
-<% else %>
-<div class="vote_button no_vote" data-comment_id="<%= comment.id %>"></div>
-<% end %>
-<div class="comment_text">
-<%= comment.comment %> 
-</div>
-</p>
-	<div class="metadata">
-	<span class="user_name"><%= comment.user_name %> </span><span class="time"><%= time_ago_in_words comment.created_at %> ago </span>
+
+	<div class="content_and_metadata">	
+		<div class="content">
+			<span class="comment_text">
+				<%= comment.comment %> 
+			</span>
+		</div>
+		<div class="metadata">
+			<span class="user_name"><%= comment.user_name %> </span><span class="time"><%= time_ago_in_words comment.created_at %> ago </span>
+		</div>
+	</div>
+
+	<div class="vote_button_area">
+	<% if user_signed_in? && current_user.voted_for?(comment)%>
+	<span class="vote_button voted_up" data-comment_id="<%= comment.id %>"> </span>
+	<% else %>
+	<span class="vote_button no_vote" data-comment_id="<%= comment.id %>"></span>
+	<% end %>
 	</div>
 </div>

@@ -20,11 +20,7 @@ Who will win?
 
 
 <div id="toggle_comments">
-<%= link_to "Show Comments", show_comments_match_path(@battle.match), :remote => true, :html => { 'data-type' => 'html'}, :id => "show_comments_link"%>
 <span id="throbber_area">
 </span>
 </div>
-
-<% render 'comments_area', :show_comments => comments_visibility_preference(), :match => battle.match %>
-
 </div>

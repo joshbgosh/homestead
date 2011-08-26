@@ -11,25 +11,71 @@
 	text-align: center;
 }
 
+.content_and_metadata {
+	display: inline-block;
+	width: 256px;
+}
+
+.content {
+	text-align: left;
+	display: inline-block;
+}
+
 .comment {
-	max-width: 500px;
-	min-width: 50px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 0;
+}
+
+#comments_content {
+	padding: 12px;
+	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.comment_text {
+	display: inline-block;
+	text-align: left;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 256px;
+}
+
+.vote_button_area {
+	display: inline-block;
+	width: 59px;
+	text-align: center;
+}
+
+
+
+.comment .metadata {
+	text-align: left;
+}
+
 .comment .user_name {
-	font-style: bold;
-	font-size: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333;
 }
 
 .comment .time {
 	color: gray;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .animal_area_verticaltastic_wrapper {
 	position: relative;
+}
+
+
+
+
+.vote_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
 }
 
 .voted_up {
@@ -43,3 +89,24 @@
 	width: 30px;
 	height: 26px;
 }
+
+#comments_content_wrapper {
+	background-color: #E1E185;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+
+
+.comments_link {
+	display: block;
+	margin: 8px;
+	width: 150px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
