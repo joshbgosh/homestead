@@ -1,10 +1,10 @@
 <div id ="show_comments">
 	<% if comments.count == 0 %>
-		<div id="no_comments_area">
+		<div class="no comments_area">
 			<p> Nobody has commented on this battle yet. </p>
 		</div>
 	<% else %>
-		<div id="top_comments_area">
+		<div class="top comments_area">
 			<h4>Top Comments</h4>
 			<%= render 'matches/show_comment', :comment => comments.first, :match => match %>
 			<% if comments.count > 1 %>
@@ -12,9 +12,9 @@
 			<% end %>
 		</div>
 	<% end %>
-	<div id="all_comments_area">
+	<div class="all comments_area">
 		<% if comments.count > 2 %>
-		<h4>All Comments</h4>
+		<h4>Recent Comments</h4>
 		<% end %>
 		<%= render "matches/add_comment", :match => match %>
 		<% if comments.count > 2 %>
