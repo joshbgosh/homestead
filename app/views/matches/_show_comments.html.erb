@@ -18,12 +18,14 @@
 		<% end %>
 		<%= render "matches/add_comment", :match => match %>
 		<% if comments.count > 2 %>
-			<div id="actual_comments_area"> <!-- TODO: change the name of this thing, and other comment areas -->
+			<div class="recent comments_area"> <!-- TODO: change the name of this thing, and other comment areas -->
 				<% comments.slice(2..(comments.length-1)).each do |comment|   %>
 				<%= render 'matches/show_comment', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
 				<% end %>
-				<% end %>
 			</div>
+		<% else %>
+			<div class="your_new comments_area" style="display: none;"></div>
+		<% end %>
 	</div>
 </div>
 

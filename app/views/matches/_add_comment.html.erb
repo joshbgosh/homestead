@@ -22,7 +22,13 @@ $(document).ready(function() {
   	$('#add_comment textarea').val("Submitting..."); //clear the form
   }).bind('ajax:success', function(evt, data, status, xhr){
   	$('#add_comment textarea').val(""); //clear the form
-    $('#actual_comments_area').prepend(xhr.responseText);
+	if (recentCommentsAreaExists()) {
+		$('.recent.comments_area').prepend(xhr.responseText);
+	} else {
+		$('.your_new.comments_area').prepend(xhr.responseText);
+		$('.your_new.comments_area').show();
+	}
+
   }).bind('ajax:complete', function(evt, data, status, xhr){
 
   }).bind('ajax:error', function(evt, data, status, xhr){
@@ -48,5 +54,9 @@ $(document).ready(function() {
     $form.find('div.validation-error').html(errorText);
    });
 });
+
+function recentCommentsAreaExists() {
+	return $('.recent.comments_area').length > 0;
+}
 
 </script>
