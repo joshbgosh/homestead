@@ -205,3 +205,8 @@ div.field, div.actions {
   list-style: square;
 }
 
+.throbber {
+	box-shadow: none;
+	display: inline-block;
+	margin-bottom: 0;	
+}
