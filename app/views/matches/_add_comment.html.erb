@@ -28,6 +28,7 @@ $(document).ready(function() {
 		$('(.recent.comments_area):first-child').fadeIn();
 	} else {
 		$('.your_new.comments_area').prepend(xhr.responseText);
+		$('(.recent.comments_area):first-child').show();
 		$('.your_new.comments_area').fadeIn();
 	}
 
