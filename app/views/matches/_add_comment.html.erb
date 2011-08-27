@@ -22,11 +22,13 @@ $(document).ready(function() {
   	$('#add_comment textarea').val("Submitting..."); //clear the form
   }).bind('ajax:success', function(evt, data, status, xhr){
   	$('#add_comment textarea').val(""); //clear the form
+	$('.no.comments_area').fadeOut();
 	if (recentCommentsAreaExists()) {
 		$('.recent.comments_area').prepend(xhr.responseText);
+		$('(.recent.comments_area):first-child').fadeIn();
 	} else {
 		$('.your_new.comments_area').prepend(xhr.responseText);
-		$('.your_new.comments_area').show();
+		$('.your_new.comments_area').fadeIn();
 	}
 
   }).bind('ajax:complete', function(evt, data, status, xhr){

@@ -12,6 +12,9 @@ class Animal < ActiveRecord::Base
 	has_many :wins, :class_name => "Battle", :foreign_key => "winner_id"
 	has_many :losses, :class_name => "Battle", :foreign_key => "loser_id"
 	
+	after_save :expire_ranked_by_win_percentage_cache
+	after_destroy :expire_ranked_by_win_percentage_cache
+	
 	def battles
     self.wins + self.losses
   end
@@ -136,6 +139,10 @@ class Animal < ActiveRecord::Base
     cache_key = "Animal." + self.id.to_s
     Rails.cache.delete(cache_key + ".wins_count")
     Rails.cache.delete(cache_key + ".losses_count")
+  end
+  
+  def expire_ranked_by_win_percentage_cache
+    Rails.cache.delete("Animal.ranked_by_win_percentage")
   end
   
   #### Class-Level Stuff ####

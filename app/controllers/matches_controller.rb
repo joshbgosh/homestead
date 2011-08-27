@@ -82,7 +82,7 @@ class MatchesController < ApplicationController
       #@match.add_comment(comment) #hopefully this isn't necessary, due to the commentable_id and commentable_type being correct
       respond_to do |format|
         format.html do
-          render :partial => "matches/show_comment", :locals => {:comment => comment}, :layout => false, :status => :created
+          render :partial => "matches/show_comment", :locals => {:comment => comment, :hide_at_first => true}, :layout => false, :status => :created
         end
         format.xml  { render :xml => comment }
       end
