@@ -15,7 +15,7 @@ class Comment < ActiveRecord::Base
   belongs_to :user
   #TODO: is this okay?
   
-  def toggle_vote
+  def toggle_vote(current_user)
     if current_user.voted_for?(self)
       #remove that vote
       vote = current_user.votes.find_by_voteable_id(self.id)
@@ -30,7 +30,6 @@ class Comment < ActiveRecord::Base
   end
 
    def magic_ranking
-     
       time_since_creation = (Time.now - self.created_at).to_i
       votes_score = self.votes_for + 1 #to avoid division by zero_partly
       

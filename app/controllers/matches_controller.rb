@@ -90,13 +90,13 @@ class MatchesController < ApplicationController
   
   def toggle_vote_on_comment
     comment = Comment.find(params[:comment_id]) #TODO: make sure someone can't do crazy shit like vote for every comment on the site with a script
-    comment.toggle_vote
+    comment.toggle_vote(current_user)
     render :nothing => true
   end
   
-  #TODO: make private
-    #low rank is good
-    
+  
+  
+      
   protected
   
   def find_match
