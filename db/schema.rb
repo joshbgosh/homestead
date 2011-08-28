@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110825150912) do
+ActiveRecord::Schema.define(:version => 20110827175328) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -113,6 +113,7 @@ ActiveRecord::Schema.define(:version => 20110825150912) do
   end
 
   add_index "votes", ["voteable_id", "voteable_type"], :name => "fk_voteables"
+  add_index "votes", ["voter_id", "voter_type", "voteable_id", "voteable_type"], :name => "uniq_one_vote_only", :unique => true
   add_index "votes", ["voter_id", "voter_type"], :name => "fk_voters"
 
 end

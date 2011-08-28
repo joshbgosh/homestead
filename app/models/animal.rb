@@ -13,7 +13,7 @@ class Animal < ActiveRecord::Base
 	has_many :losses, :class_name => "Battle", :foreign_key => "loser_id"
 	
 	after_save :expire_ranked_by_win_percentage_cache
-	after_destroy :expire_ranked_by_win_percentage_cache
+	after_destroy :expire_ranked_by_win_percentage_cache, :expire_battle_caches
 	
 	def battles
     self.wins + self.losses

@@ -15,6 +15,38 @@ class Comment < ActiveRecord::Base
   belongs_to :user
   #TODO: is this okay?
   
+  def vote_for_this(current_user)
+    if current_user.voted_on?(self)
+        # update the old vote
+        vote = current_user.votes.find_by_voteable_id(self.id)
+        vote.vote = true
+        vote.save
+    else 
+       current_user.vote_for(self)
+    end
+      
+  end
+  
+  def vote_against_this(current_user)
+    if current_user.voted_on?(self)
+        # update the old vote
+        vote = current_user.votes.find_by_voteable_id(self.id)
+        vote.vote = false
+        vote.save
+    else 
+       current_user.vote_against(self)
+    end
+  end
+    
+  def undo_vote_on_this(current_user)
+     if current_user.voted_on?(self)
+         vote = current_user.votes.find_by_voteable_id(self.id)
+         vote.destroy
+     else
+       return #can't undo nothin'!
+     end
+  end
+  
   def toggle_vote(current_user)
     if current_user.voted_for?(self)
       #remove that vote

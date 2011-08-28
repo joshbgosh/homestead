@@ -12,4 +12,5 @@ class AnimalTest < ActiveSupport::TestCase
     assert a.image.width
     assert a.image.height
   end
+  
 end
