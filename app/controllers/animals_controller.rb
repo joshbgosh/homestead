@@ -1,6 +1,5 @@
 class AnimalsController < ApplicationController
   
-  before_filter :deletethismethod
   before_filter :authenticate_admin!, :except => [:show, :index]
   before_filter :find_animal, :only => [:show, :edit, :update, :destroy]
   
@@ -21,18 +20,11 @@ class AnimalsController < ApplicationController
   # GET /animals/1/edit
   def edit
   end
-  
-  def deletethismethod
-    puts "admin signed in?:" + admin_signed_in?.to_s
-    puts "current_admin" + current_admin.to_s
-  end
 
   # POST /animals
   # POST /animals.xml
   def create
-    logger.info "In: AnimalsController#create"
     @animal = Animal.create(params[:animal])
-    logger.info "after the animal should have been created in the controller"
     respond_to do |format|
       if @animal.save
         format.html { redirect_to(@animal) }

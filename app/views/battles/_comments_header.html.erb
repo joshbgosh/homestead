@@ -1,0 +1,94 @@
+<div id="comments_container">
+	
+	<% if show_comments %>
+		<div id="comments_control_area">
+			<a class="hide comments_link">Hide Comments</a>
+			<span id="show_comments_throbber_wrapper"></span>
+	    	<a class="show comments_link" style="display: none;">Show Comments</a>
+		</div>
+	
+		<div id="comments_container_errors"></div>
+	<% else %>
+		<a class="show comments_link">Show Comments</a>
+	    <span id="show_comments_throbber_wrapper"></span>
+		<a class="hide comments_link" style="display: none;">Hide Comments</a>
+		
+		<div id="show_comments_errors"></div>
+	<% end %>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  function hideComments() {
+	//remove 'hide comments' link and any other associated stuff
+	$(".hide.comments_link").hide();
+	//set the cookie to show that we want comments hidden
+	$.cookie("show_comments", false);
+	//clear any errors we've had
+	$("#comments_container_errors").empty();
+	//show 'show comments' link TODO: what happens if they click this again before we're done?
+	$(".show.comments_link").show();
+	//slide the comment data up all cute-like
+	$("#comments_content_wrapper").slideUp();
+  }
+
+  $('.hide.comments_link').click(hideComments);
+
+  function showComments() {
+	//remove 'show comments' link and any other associated stuff
+	$(".show.comments_link").hide();
+	//set the cookie to show that we want comments shown
+	$.cookie("show_comments", true);
+	//clear any errors we've had
+	$("#comments_container_errors").empty();
+	//if we don't have the comment data yet
+	if (weHaveCommentsData()) {
+		//go ahead and show the comment data, since we already have it loaded!
+		finishShowingComments();
+	} else {
+		//show a throbber
+		$.throbberShow({parent: "#show_comments_throbber_wrapper"});
+		//fetch the comment data from the server asynchronously, and set up a receiver.
+		$.ajax("<%=show_comments_match_path(@battle.match) %>",
+			{accept : "html", success : receive_commentsData_and_finish, error : handle_receiveCommentsData_error});	
+	}
+  }
+
+
+  $('.show.comments_link').click(showComments);
+
+  function handle_receiveCommentsData_error(jqXHR, textStatus, errorThrown) {
+	//add an error message to our error area
+	$("#comments_container_errors").append(
+		"Whoops! We encountered an error trying to get these comments. Try again later. (error was \"" + errorThrown + "\")");
+	//remove the throbber
+	$.throbberHide();
+	//show the "show comments" link again, since we failed
+	$(".show.comments_link").show();
+  }
+
+  function receive_commentsData_and_finish(data, textStatus, jqXHR) {
+	//receive and append the comment data
+  	$('#comments_content').html(jqXHR.responseText);
+	//remove the throbber
+	$.throbberHide();
+
+	finishShowingComments();
+  }
+
+  function finishShowingComments() {
+	//show the "hide comments" link
+	$(".hide.comments_link").show();
+	//make the comment data slide down all cute-like
+	$('#comments_content_wrapper').slideDown();
+  }
+
+  function weHaveCommentsData() {
+	return $("#comments_content:empty").length == 0;
+  }
+});
+
+</script>
+</div>

@@ -7,14 +7,16 @@ BothAreTotallyEnraged::Application.routes.draw do
     member do
       get 'show_comments'
       post 'add_comment'
-      post 'toggle_vote_on_comment' #TODO: consider making the comment id part of GET variables?
+      post 'vote_for_comment' #TODO: consider making the comment id part of GET variables?
+      post 'vote_against_comment'
+      post 'undo_vote_on_comment' #TODO: this is a clear sign that I need to make a separate comment controller
     end
   end
   resources :battles
   resources :animals
   
   root :to => "battles#new"
-  
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

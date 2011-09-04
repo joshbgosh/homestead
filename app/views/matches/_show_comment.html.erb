@@ -15,11 +15,8 @@ style="display: none;"
 		</div>
 	</div>
 
-	<div class="vote_button_area">
-	<% if user_signed_in? && current_user.voted_for?(comment)%>
-	<span class="vote_button voted_up" data-comment_id="<%= comment.id %>"> </span>
-	<% else %>
-	<span class="vote_button no_vote" data-comment_id="<%= comment.id %>"></span>
-	<% end %>
+	<div class="vote_button_panel <%= vote_status(comment) %>" data-comment_id="<%= comment.id %>">
+	<button type="button" class="vote_up"><img></img></button>
+	<button type="button" class="vote_down"><img></img></button>
 	</div>
 </div>

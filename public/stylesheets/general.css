@@ -11,7 +11,7 @@
 }
 
 body { 
-	background-color: #9C0606;
+	background-color: #9C0606; 
 	 color: #000;
 	 text-align: center;
 	 margin: 0;
@@ -146,7 +146,7 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 600px; /* see what you think of a larger one, like 1200px */
-	border-radius: 20px;
+	border-radius: 16px;
     margin-top: 36px;
     margin-bottom: 36px;
 }	

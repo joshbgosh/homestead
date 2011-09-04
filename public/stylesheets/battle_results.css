@@ -12,10 +12,12 @@
 
 #picked_animal_header {
 	font-weight: bold;
-	color: #d6d6d6;
+	color: #daad69; 
 	margin: 8px;
-
+	text-shadow: #222222 2px 2px 3px;
 }
+
+
 
 .results_animal img {
 	height: 64px;

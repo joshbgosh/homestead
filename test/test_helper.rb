@@ -16,9 +16,7 @@ class ActionController::TestCase
   include Devise::TestHelpers
 end
 
-class ActionDispatch::IntegrationTest
-  include Devise::TestHelpers
-end
+
 
 
 class Test::Unit::TestCase

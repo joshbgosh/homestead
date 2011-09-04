@@ -25,4 +25,42 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me
+  
+  #TODO: check if double votes are still possible somehow. Should be prevented in database and comment model ideally.
+  #TODO: make sure that voting for comments that don't exist doesn't cause crappiness.
+  
+  def unique_vote_for(comment)
+    if voted_against?(comment)
+        # update the old vote
+        vote = votes.find_by_voteable_id(comment.id)
+        vote.vote = true
+        vote.save
+    elsif voted_for?(comment)
+      return
+    else
+       vote_for(comment)
+    end    
+  end
+  
+  def unique_vote_against(comment)
+    if voted_for?(comment)
+        # update the old vote
+        vote = votes.find_by_voteable_id(comment.id)
+        vote.vote = false
+        vote.save
+    elsif voted_against?(comment)
+      return
+    else 
+       vote_against(comment)
+    end
+  end
+    
+  def unique_undo_vote_on(comment)
+     if voted_on?(comment)
+         vote = votes.find_by_voteable_id(comment.id)
+         vote.destroy
+     else
+       return #can't undo that which was never done!
+     end
+  end
 end

@@ -25,35 +25,18 @@ class AnimalsControllerTest < ActionController::TestCase
   end
 
   test "should create animal" do
-    logger.info "In: should create animal"
     a = create(:admin)
-    sleep(1)
-    logger.info "okay, so I should've just created it, and now I'm gonna sign in with it"
-    sleep(1)
-    debugger
     result = sign_in :admin, a
-    puts result.to_s + "...result"
-    logger.info "right after sign-in, should create animal"
     assert_difference('Animal.count') do
-      logger.info "about to post"
       r = post :create, :animal_id => @animal.id
-      puts response
-      puts @response.body
-      puts response.body
-      puts r
-      puts response.headers
-      puts response.body.to_s
-      logger.info "after post. What went wrong?"
     end
 
     assert_redirected_to animal_path(assigns(:animal))
   end
 
   test "should show animal" do
-    logger.info "In: show animal"
     get :show, :id => @animal.to_param
     assert_response :success
-    logger.info "Leaving show animal"
   end
 
   test "should get edit" do

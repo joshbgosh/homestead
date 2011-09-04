@@ -34,19 +34,104 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-	$(".vote_button").click(function() {
-		$.ajax( {
-			url: "<%= toggle_vote_on_comment_match_path(match) %>",
-			type: "POST",
-			data: {comment_id : $(this).data("comment_id")},
-			authenticity_token: encodeURIComponent( AUTH_TOKEN )
-		});
-		if ($(this).hasClass("voted_up")) {
-			$(this).removeClass("voted_up").addClass("no_vote");
-		} else {
-			$(this).removeClass("no_vote").addClass("voted_up");
-		}
-	});
 	
+	function on_voteUp_click() {
+		var buttonPanel = $(this).parent();
+		
+		if (! buttonPanel.hasClass("voted_for")) {	
+			//they are indeed executing an upvote
+
+			show_upVote(buttonPanel);
+
+			send_voteAction("voteUp", buttonPanel);
+		} else {
+			//they are undoing their previous upvote
+
+			show_no_vote(buttonPanel);
+
+			send_voteAction("undo_voteUp", buttonPanel);
+		}
+	}
+	$("button.vote_up").click(on_voteUp_click);
+	
+	function on_voteDown_click() {
+		var buttonPanel = $(this).parent();
+		
+		if (! buttonPanel.hasClass("voted_against")) {	
+			//they are indeed executing a downvote
+
+			show_downVote(buttonPanel);
+
+			send_voteAction("voteDown", buttonPanel);
+		} else {
+			//they are undoing their previous downvote
+
+			show_no_vote(buttonPanel);
+
+			send_voteAction("undo_voteDown", buttonPanel);
+		}
+	}
+	$("button.vote_down").click(on_voteDown_click);
+	
+	function send_voteAction(action, buttonPanel) {
+		$.ajax( {
+			url: voteAction_to_URL[action],
+			type: "POST",
+			data: {comment_id : buttonPanel.data("comment_id")},
+			authenticity_token: encodeURIComponent( AUTH_TOKEN),
+			//nothing special to do on success, since we are already showing the vote change to the user.
+			error: voteAction_to_errorHandler[action](buttonPanel)
+		});
+	}
+	
+	//TODO: should these be locally scoped? will that work?
+	
+	voteAction_to_URL = {
+		voteUp : "<%= vote_for_comment_match_path(match) %>",
+		voteDown: "<%= vote_against_comment_match_path(match) %>",
+		undo_voteUp: "<%= undo_vote_on_comment_match_path(match) %>",
+		undo_voteDown: "<%= undo_vote_on_comment_match_path(match) %>"
+	};
+	
+
+
+	voteAction_to_errorHandler = {
+		voteUp : make_partial_errorHandler("record your up-vote", show_upVote),
+		voteDown: make_partial_errorHandler("record your down-vote", show_downVote),
+		undo_voteUp: make_partial_errorHandler("undo your vote", show_no_vote),
+		undo_voteDown: make_partial_errorHandler("undo your vote", show_no_vote)
+	};
+	
+	
+	function show_upVote(buttonPanel) {
+		buttonPanel.addClass("voted_for");
+		buttonPanel.removeClass("voted_against");
+	}
+	
+	function show_downVote(buttonPanel) {
+		buttonPanel.addClass("voted_against");
+		buttonPanel.removeClass("voted_for");
+	}
+	
+	function show_no_vote(buttonPanel) {
+		buttonPanel.removeClass("voted_for voted_against");
+	}
+	
+	function make_partial_errorHandler(actionDescription, revertFunction) {
+		var parameterizeMeWithAButtonPanel = function(buttonPanel) {
+			var finalizedHandler = function (jqXHR, textStatus, errorThrown) {
+				add_votingErrorMessage(actionDescription, errorThrown);
+				revertFunction(buttonPanel);
+			}
+			return finalizedHandler;
+		}
+		return parameterizeMeWithAButtonPanel;
+	}
+	
+	//TODO: consider parameterizing the error message facility on the client. (this code appears elsewhere very similar)
+	function add_votingErrorMessage(actionDescription, errorThrown) {
+		$("#comments_container_errors").append(
+			"Whoops! We encountered an error trying to " + actionDescription + ". Try again later. (error was \"" + errorThrown + "\")");
+	}
 });
 </script>
