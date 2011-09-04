@@ -35,8 +35,12 @@
 
 $(document).ready(function() {
 	
+	$(".vote_button_panel button").tooltip();
+	
 	function on_voteUp_click() {
 		var buttonPanel = $(this).parent();
+		
+		$(".tooltip").hide();
 		
 		if (! buttonPanel.hasClass("voted_for")) {	
 			//they are indeed executing an upvote
@@ -56,6 +60,8 @@ $(document).ready(function() {
 	
 	function on_voteDown_click() {
 		var buttonPanel = $(this).parent();
+		
+		$(".tooltip").hide();
 		
 		if (! buttonPanel.hasClass("voted_against")) {	
 			//they are indeed executing a downvote
@@ -96,10 +102,10 @@ $(document).ready(function() {
 
 
 	voteAction_to_errorHandler = {
-		voteUp : make_partial_errorHandler("record your up-vote", show_upVote),
-		voteDown: make_partial_errorHandler("record your down-vote", show_downVote),
-		undo_voteUp: make_partial_errorHandler("undo your vote", show_no_vote),
-		undo_voteDown: make_partial_errorHandler("undo your vote", show_no_vote)
+		voteUp : make_partial_errorHandler("record your up-vote", show_no_vote),
+		voteDown: make_partial_errorHandler("record your down-vote", show_no_vote),
+		undo_voteUp: make_partial_errorHandler("undo your vote", show_upVote),
+		undo_voteDown: make_partial_errorHandler("undo your vote", show_downVote)
 	};
 	
 	
@@ -131,7 +137,7 @@ $(document).ready(function() {
 	//TODO: consider parameterizing the error message facility on the client. (this code appears elsewhere very similar)
 	function add_votingErrorMessage(actionDescription, errorThrown) {
 		$("#comments_container_errors").append(
-			"Whoops! We encountered an error trying to " + actionDescription + ". Try again later. (error was \"" + errorThrown + "\")");
+			"<p>Whoops! We encountered an error trying to " + actionDescription + ". Try again later. (error was \"" + errorThrown + "\")</p>");
 	}
 });
 </script>

@@ -84,6 +84,21 @@ input {
 
 /* Particular elements that will appear on all pages */
 
+.tooltip {
+	display:none;
+	border-radius: 16px;
+	background: #ffffbf;
+	font-size:12px;
+	height: 16px;
+	width: 70px;
+	padding: 4px;
+	color: black;	
+	border: 2px solid black;
+	margin-bottom: 64px;
+	box-shadow: #333 1px 1px 3px;
+}
+
+
 #header_bar {
 	height: 64px;
 	margin: 0 auto;	

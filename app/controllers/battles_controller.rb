@@ -23,9 +23,26 @@ class BattlesController < ApplicationController
    
   def new
     begin
-      @battle = Battle.generate_new 
-      session[:current_match_id] = @battle.match_id
+      if session[:current_match_id] == nil
+        #we're ready to really make a new battle
+        @battle = Battle.generate_new 
+        session[:current_match_id] = @battle.match_id
+      else 
+        #re-serve the same old battle, because they haven't voted on it yet
+        @battle = Battle.new(:match => Match.find(session[:current_match_id]))
+      end
         
+      previous_battle_id = session[:previous_battle_id]
+      if previous_battle_id != nil
+        @previous_battle = Battle.find(previous_battle_id)
+      end
+      
+      #show a special message if it's the user's first time visiting.
+      if ! cookies[:been_here_before]
+        flash[:notice] = "Click the animal you think will win in the battle below!"
+        puts "I am getting activated"
+      end
+      
       respond_to do |format|
         format.html do
           if request.xhr?
@@ -36,6 +53,7 @@ class BattlesController < ApplicationController
         end
         format.xml  { render :xml => @battle }
       end
+  
       
     rescue Animal::NotEnoughAnimalsLoadedException => e
       redirect_to(new_animal_path, :alert => "We need more animals in the database to create a battle. Add more animals.") #TODO: will need to change this once making new animals is behind password.
@@ -55,13 +73,19 @@ class BattlesController < ApplicationController
       case winner_id.to_i #TODO: they could rig it so it's not an integer. Watch out.
       when current_match.opponent_1.id 
         @previous_battle = Battle.create(:winner => current_match.opponent_1, :loser => current_match.opponent_2)
+        session[:previous_battle_id] = @previous_battle.id
       when current_match.opponent_2.id 
         @previous_battle = Battle.create(:winner => current_match.opponent_2, :loser => current_match.opponent_1)
+        session[:previous_battle_id] = @previous_battle.id
       else
         flash[:error] = "It looks like you tried to vote for an animal that wasn't in the most recent battle we sent you. Try voting in this new battle."
         #TODO: what if they vote for an animal in an old battle which also participates in the new battle?
         @previous_battle = nil
     end
+    
+    #clean up session so we know to serve a fresh one from 'new'
+    session[:current_match_id] = nil
+    session[:current_battle_id] = nil
   end
     
     

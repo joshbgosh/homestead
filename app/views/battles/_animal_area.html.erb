@@ -1,9 +1,9 @@
 <div class="animal_area_verticaltastic_wrapper">
 
-<div class= "animal_area">
+<div class= "animal_area <%= winner.id %>">
 <div class="crazy_vert_align_hack_div" style="padding-bottom:<%= ((224 - winner.image.height(:medium)) / 2) %>px;">
 </div>
-<%= form_tag battles_path, :remote => false, :html => { :'data-type' => 'html', :'class' => 'animal_image_form_real'} do |f| %>
+<%= form_tag battles_path, :remote => false, :class => 'animal_image_form_real ' + winner.id.to_s do |f| %>
   <div class = "animal_image_form">
 
   <% if battle.errors.any? %>
@@ -24,7 +24,7 @@
 </div>
 <% end %>
 
-<div> <span> <%= winner.name %> </span> </div>
+<div> <a onMouseOut="animalLabel_mouseOut(<%= winner.id %>)" onMouseOver="animalLabel_mouseOver(<%= winner.id %>)" onclick="$('.animal_image_form_real.<%= winner.id %>').submit();"> <%= winner.name %> </a> </div>
 </div>
 </div>
 

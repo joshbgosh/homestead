@@ -68,8 +68,33 @@
 	background: url("/images/dislikebutton2_notactive5.png");
 }
 
+/**
+.vote_button_panel button.vote_up img:hover {
+	background: url("/images/likebutton_green.png");
+}
+.vote_button_panel button.vote_down img:hover {
+	background: url("/images/dislikebutton_red.png");
+}
+**/
+
+.vote_button_panel button.vote_up img:active {
+	position: relative;
+	top: 2px;
+	background: url("/images/likebutton_green.png");
+}
+.vote_button_panel button.vote_down img:active {
+	position: relative;
+	top: 2px;
+	background: url("/images/dislikebutton_red.png");
+}
+
+.vote_button_panel button:active {
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#dbce79),to(#faf0aa));
+}
+
+
 .vote_button_panel.voted_for button.vote_up img {
-	background: url("/images/likebutton2.png");
+	background: url("/images/likebutton_green.png");
 }
 .vote_button_panel.voted_for button.vote_down img {
 	background: url("/images/dislikebutton2_notactive5.png")
@@ -79,7 +104,7 @@
 	background: url("/images/likebutton2_notactive5.png");
 }
 .vote_button_panel.voted_against button.vote_down img {
-	background: url("/images/dislikebutton.png");
+	background: url("/images/dislikebutton_red.png");
 }
 
 .vote_button_panel button {
