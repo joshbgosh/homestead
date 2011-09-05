@@ -35,6 +35,18 @@
 
 $(document).ready(function() {
 	
+	//TODO: get rid of this. It's just for toying around.
+	$("#donkulation[rel]").overlay({ // load mask a little faster
+	speed: "fast",
+	mask: {
+
+			// you might also consider a "transparent" color for the mask
+			color: '#ffffbf',
+			loadSpeed: 50,
+			// very transparent
+			opacity: 0.5
+		}});
+	
 	$(".vote_button_panel button").tooltip();
 	
 	function on_voteUp_click() {

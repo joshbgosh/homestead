@@ -2,6 +2,8 @@ BothAreTotallyEnraged::Application.routes.draw do
   devise_for :admins
 
   devise_for :users
+  #custom signup_signin route
+  match "/users/signup_or_signin" => "signup_signin#signup_or_signin"
 
   resources :matches do
     member do

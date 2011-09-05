@@ -9,7 +9,7 @@
 <%= render 'battle', :battle => @battle %>
 
 
-
+<a id="donkulation" rel="#signup_signin_overlay">Let's get donkulous!</a>
 <div id="content_area_footer"> </div>
 <%= render 'comments_header', :show_comments => comments_visibility_preference(), :match => @battle.match %>
 </div>
@@ -18,6 +18,10 @@
 </div>
 
 
+</div>
+
+<div id="signup_signin_overlay" class="content_area_wrapper">
+<%= render 'signup_signin/signup_or_signin'%>
 </div>
 
 

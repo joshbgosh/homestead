@@ -1,5 +1,3 @@
-
-
 class BattlesController < ApplicationController
   # GET /battles
   # GET /battles.xml

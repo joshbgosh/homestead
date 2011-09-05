@@ -84,6 +84,62 @@ input {
 
 /* Particular elements that will appear on all pages */
 
+#signup_signin_overlay {
+	
+	/* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	
+	max-width: none;
+	width: 800px;
+	/* styling */
+	border:1px solid #666;
+	
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;
+}
+
+#signup_signin_overlay h4 {
+	margin: 0 0 24px 0;
+}
+
+.divide {
+	border-right: #666 solid 3px;
+}
+
+.overlay_form {
+	display: inline-block;
+	float: left;
+	width: 334px;
+	padding: 0 16px 0 16px;
+}
+
+#signin_or_signup_message {
+	margin: 16px 32px 32px 32px;
+}
+
+
+
+#signin_or_signup_content {
+	padding: 32px;	
+}
+
+.clear {
+	clear: both;
+}
+
+#sign_up_overlay .close {
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
 .tooltip {
 	display:none;
 	border-radius: 16px;
