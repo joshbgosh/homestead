@@ -31,23 +31,23 @@
 
 <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 
+<%= javascript_tag "var USER_SIGNED_IN = #{user_signed_in?}" %>
+
 <script type="text/javascript">
 
 $(document).ready(function() {
 	
-	//TODO: get rid of this. It's just for toying around.
-	$("#donkulation[rel]").overlay({ // load mask a little faster
+	var SIGNUP_SIGNIN_OVERLAY_PARAMETERS = {
 	speed: "fast",
-	mask: {
+		mask: {
 
-			// you might also consider a "transparent" color for the mask
 			color: '#ffffbf',
 			loadSpeed: 50,
-			// very transparent
 			opacity: 0.5
-		}});
+		}
+	};
 	
-	$(".vote_button_panel button").tooltip();
+	$(".vote_button_panel button").tooltip({ predelay: 220, effect: "fade"});
 	
 	function on_voteUp_click() {
 		var buttonPanel = $(this).parent();
@@ -68,7 +68,6 @@ $(document).ready(function() {
 			send_voteAction("undo_voteUp", buttonPanel);
 		}
 	}
-	$("button.vote_up").click(on_voteUp_click);
 	
 	function on_voteDown_click() {
 		var buttonPanel = $(this).parent();
@@ -89,7 +88,18 @@ $(document).ready(function() {
 			send_voteAction("undo_voteDown", buttonPanel);
 		}
 	}
-	$("button.vote_down").click(on_voteDown_click);
+	
+	if (USER_SIGNED_IN) {
+		$("button.vote_up").click(on_voteUp_click);
+		$("button.vote_down").click(on_voteDown_click);
+	} else {
+		//TODO: make it so we can select both buttons with one css selector
+		$("button.vote_up").attr("rel", "#signup_signin_overlay");
+		$("button.vote_down").attr("rel", "#signup_signin_overlay");
+		$("button.vote_up[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
+		$("button.vote_down[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
+	}
+
 	
 	function send_voteAction(action, buttonPanel) {
 		$.ajax( {

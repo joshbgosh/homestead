@@ -131,13 +131,14 @@ input {
 	clear: both;
 }
 
-#sign_up_overlay .close {
+#signup_signin_overlay .close {
 	position:absolute;
 	right:-15px;
 	top:-15px;
 	cursor:pointer;
 	height:35px;
 	width:35px;
+	background-image: url("../images/close.png");
 }
 
 .tooltip {

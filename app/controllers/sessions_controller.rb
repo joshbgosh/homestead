@@ -1,4 +1,6 @@
 class SessionsController < Devise::RegistrationsController  
+    #TODO: is this being used?
+
     #Renders a page with both sign-in and sign-up pages, which isn't well supported by devise out of the box.
    prepend_before_filter :require_no_authentication, :only => [ :new, :create, :cancel, :signup_or_signin]
 
@@ -12,5 +14,4 @@ class SessionsController < Devise::RegistrationsController
       resource = build_resource({})
       respond_with_navigational(resource){ render_with_scope :new }
     end
-  end
 end

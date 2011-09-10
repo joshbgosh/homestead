@@ -30,7 +30,7 @@ class AnimalsController < ApplicationController
         format.html { redirect_to(@animal) }
         format.xml  { render :xml => @animal, :status => :created, :location => @animal }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "show_current" }
         format.xml  { render :xml => @animal.errors, :status => :unprocessable_entity }
       end
     end

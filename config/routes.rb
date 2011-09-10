@@ -14,10 +14,16 @@ BothAreTotallyEnraged::Application.routes.draw do
       post 'undo_vote_on_comment' #TODO: this is a clear sign that I need to make a separate comment controller
     end
   end
-  resources :battles
+  
+  resources :battles do
+    collection do
+      get 'show_current'
+    end
+  end
+  
   resources :animals
   
-  root :to => "battles#new"
+  root :to => "battles#show_current"
 
   
   # The priority is based upon order of creation:
