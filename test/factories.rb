@@ -9,7 +9,7 @@ Factory.define(:match) do |f|
   f.association :opponent_2, :factory => :animal
 end
 
-Factory.define(:battle) do |f|
+Factory.define(:ballot) do |f|
   f.association :winner, :factory => :animal
   f.association :loser, :factory => :animal
   f.association :match

@@ -1,4 +1,4 @@
-module BattlesHelper
+module BallotsHelper
   
   SHOW_COMMENTS_BY_DEFAULT = true
   
@@ -15,7 +15,7 @@ module BattlesHelper
     end
   end
   
-  #helps me use devise partials from battle land.
+  #helps me use devise partials from ballot land.
   
     def resource_name
       :user

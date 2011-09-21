@@ -22,42 +22,34 @@ class AnimalsController < ApplicationController
   end
 
   # POST /animals
-  # POST /animals.xml
   def create
     @animal = Animal.create(params[:animal])
     respond_to do |format|
       if @animal.save
         format.html { redirect_to(@animal) }
-        format.xml  { render :xml => @animal, :status => :created, :location => @animal }
       else
         format.html { render :action => "show_current" }
-        format.xml  { render :xml => @animal.errors, :status => :unprocessable_entity }
       end
     end
   end
 
   # PUT /animals/1
-  # PUT /animals/1.xml
   def update
     respond_to do |format|
       if @animal.update_attributes(params[:animal])
         format.html { redirect_to(@animal, :notice => 'Animal was successfully updated.') }
-        format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @animal.errors, :status => :unprocessable_entity }
       end
     end
   end
 
   # DELETE /animals/1
-  # DELETE /animals/1.xml
   def destroy
     @animal.destroy
 
     respond_to do |format|
       format.html { redirect_to(animals_url) }
-      format.xml  { head :ok }
     end
   end
   

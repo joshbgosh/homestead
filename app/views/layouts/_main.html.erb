@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BothAreTotallyEnraged</title>
-  <%= include_javascripts :workspace %>
-  <%= include_stylesheets :workspace %>
-  <%= csrf_meta_tag %>
+	<title>BothAreTotallyEnraged</title>
+	<%= include_javascripts :workspace %>
+	<%= include_stylesheets :workspace %>
+	<%= csrf_meta_tag %>
 	<link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
-	
+
 	<div id="header_bar">
-	<div id="header_contents">
-		<h1 id="logo">Both Are Totally Enraged</h1>
+		<div id="header_contents">
+			<h1 id="logo">Both Are Totally Enraged</h1>
 
-		<ul id="header_nav_links">
-		<li><%= link_to "Most Enraged", animals_path %></li>
-		<% if local_assigns[:showing_battle] && showing_battle %>
-		<li><%= link_to "New Battle", new_battle_path %></li>
-		<% else %>
-		<li><%= link_to "Back to Battle", show_current_battles_path %></li>
-		<% end %>
-		</ul>
+			<ul id="header_nav_links">
+				<li><%= link_to "Most Enraged", animals_path %></li>
+				<% if local_assigns[:showing_ballot] && showing_ballot %>
+				<li><%= link_to "New Ballot", new_ballot_path %></li>
+				<% else %>
+				<li><%= link_to "Back to Ballot", show_current_ballots_path %></li>
+				<% end %>
+			</ul>
 
-		<ul id="user_links">
-		<% if signed_in?(:user) %>
-			<li> <%= link_to 'Sign out', destroy_user_session_path %></li>
-		<% elsif signed_in?(:admin)%>
-		    <li> <%= link_to 'Sign out (admin)', destroy_admin_session_path %></li>
-		<% else %>	
-		<li> <%= link_to "Sign Up", new_user_registration_path %></li>
-		<li> <%= link_to "Sign In", new_user_session_path %></li>
-		<% end %>
-		</ul>
-	</div>
+			<ul id="user_links">
+				<% if signed_in?(:user) %>
+				<li> <%= link_to 'Sign out', destroy_user_session_path %></li>
+				<% else %>	
+				<li> <%= link_to "Sign Up", new_user_registration_path %></li>
+				<li> <%= link_to "Sign In", new_user_session_path %></li>
+				<% end %>
+				<% if signed_in?(:admin)%>
+				<li> <%= link_to 'Sign Out (admin)', destroy_admin_session_path %></li>
+				<% end %>
+			</ul>
+		</div>
 	</div>
 	<% if notice %>
 	<div class="notice"><%= notice %></div>
@@ -40,9 +41,9 @@
 	<% if alert %>
 	<div class="alert"> <%= alert %></div>
 	<% end %>
-<%= yield %>
+	<%= yield %>
 
-<div id="footer">
-</div>
+	<div id="footer">
+	</div>
 </body>
 </html>

@@ -1,25 +1,24 @@
-<%= form_for @animal, :html => { :multipart => true } do |f| %>
-  <% if @animal.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+“<%= form_for @animal, :html => { :multipart => true } do |f| %>
+<% if @animal.errors.any? %>
+<div id    = "error_explanation">
+	<h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+	<ul>
+		<% @animal.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-      <ul>
-      <% @animal.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br />
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class = "field">
+	<%= f.label :name %><br />
+	<%= f.text_field :name %>
+</div>
+<div class = "field">
+	<%= f.label :image %><br />
+	<%= f.file_field :image %>
+</div>
+<div class = "actions">
+	<%= f.submit %>
+</div>
 <% end %>

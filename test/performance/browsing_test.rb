@@ -3,7 +3,7 @@ require 'rails/performance_test_help'
 
 # Profiling results for each test method are written to tmp/performance.
 class BrowsingTest < ActionDispatch::PerformanceTest
-  def test_getting_a_new_battle_from_scratch
+  def test_getting_a_new_ballot_from_scratch
     10.times do
       get '/'
     end
@@ -14,8 +14,8 @@ class BrowsingTest < ActionDispatch::PerformanceTest
     get '/'
     
     10.times do
-      one_of_the_animals_id = assigns(:battle).match.opponent_1.id
-      post '/battles/', :winner_id => one_of_the_animals_id.to_s
+      one_of_the_animals_id = assigns(:ballot).match.opponent_1.id
+      post '/ballots/', :winner_id => one_of_the_animals_id.to_s
     end
   end
 end

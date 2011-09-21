@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110827175328) do
+ActiveRecord::Schema.define(:version => 20110910221357) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20110827175328) do
     t.text     "image_meta"
   end
 
-  create_table "battles", :force => true do |t|
+  create_table "ballots", :force => true do |t|
     t.integer  "winner_id"
     t.integer  "loser_id"
     t.integer  "match_id"
@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(:version => 20110827175328) do
     t.datetime "updated_at"
   end
 
-  add_index "battles", ["loser_id"], :name => "index_battles_on_loser_id"
-  add_index "battles", ["winner_id"], :name => "index_battles_on_winner_id"
+  add_index "ballots", ["loser_id"], :name => "index_battles_on_loser_id"
+  add_index "ballots", ["winner_id"], :name => "index_battles_on_winner_id"
 
   create_table "comments", :force => true do |t|
     t.text     "comment"

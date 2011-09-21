@@ -1,5 +1,5 @@
 class Match < ActiveRecord::Base
-  has_many :battles
+  has_many :ballots
   belongs_to :opponent_1, :class_name => "Animal"
   belongs_to :opponent_2, :class_name => "Animal"
   
@@ -8,17 +8,17 @@ class Match < ActiveRecord::Base
   def wins_for(animal)
     raise ArgumentError, "you can't find the number of wins for a given animal in a match unless that animal is one of the animals in a match"  unless animal == self.opponent_1 or animal == self.opponent_2
     
-    self.battles.where("winner_id = ?", animal.id)
+    self.ballots.where("winner_id = ?", animal.id)
   end
   
   def losses_for(animal)
     raise ArgumentError, "you can't find the number of wins for a given animal in a match unless that animal is one of the animals in a match" unless animal == self.opponent_1 or animal == self.opponent_2
         
-    self.battles.where("loser_id = ?", animal.id)
+    self.ballots.where("loser_id = ?", animal.id)
   end
   
-  def battle_count
-    self.battles.count
+  def ballot_count
+    self.ballots.count
   end
   
   def get_ranked_comments

@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class BattlesHelperTest < ActionView::TestCase
+class BallotsHelperTest < ActionView::TestCase
 end

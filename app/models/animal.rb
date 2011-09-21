@@ -9,22 +9,22 @@ class Animal < ActiveRecord::Base
 	
 	has_many :matches
 	
-	has_many :wins, :class_name => "Battle", :foreign_key => "winner_id"
-	has_many :losses, :class_name => "Battle", :foreign_key => "loser_id"
+	has_many :wins, :class_name => "Ballot", :foreign_key => "winner_id"
+	has_many :losses, :class_name => "Ballot", :foreign_key => "loser_id"
 	
 	after_save :expire_ranked_by_win_percentage_cache
-	after_destroy :expire_ranked_by_win_percentage_cache, :expire_battle_caches
+	after_destroy :expire_ranked_by_win_percentage_cache, :expire_ballot_caches
 	
-	def battles
+	def ballots
     self.wins + self.losses
   end
   
   def wins_against(opponent)
-    Battle.where(:winner_id => self.id, :loser_id => opponent.id)
+    Ballot.where(:winner_id => self.id, :loser_id => opponent.id)
   end
   
   def defeats_by(opponent)
-    Battle.where(:winner_id => opponent.id, :loser_id => self.id)
+    Ballot.where(:winner_id => opponent.id, :loser_id => self.id)
   end
   
   def win_percentage
@@ -71,7 +71,7 @@ class Animal < ActiveRecord::Base
 	
 	def arch_nemesis #beats me the most
     enemies_lost_to_records = Animal.find_by_sql(["SELECT winner_id, COUNT(*)
-                        FROM animals JOIN battles ON loser_id = ?
+                        FROM animals JOIN ballots ON loser_id = ?
                         GROUP BY winner_id
                         ORDER BY COUNT(*) DESC", self.id])
     if enemies_lost_to_records.count > 0
@@ -86,7 +86,7 @@ class Animal < ActiveRecord::Base
   
   def dominates #who I beat the most, with minimal losses (TODO: needs optimization)
     enemies_beaten_records = Animal.find_by_sql(["SELECT loser_id AS \"id\", COUNT(*)
-                        FROM animals JOIN battles ON winner_id = ?
+                        FROM animals JOIN ballots ON winner_id = ?
                         GROUP BY loser_id
                         ORDER BY COUNT(*) DESC", self.id])
     
@@ -131,11 +131,11 @@ class Animal < ActiveRecord::Base
     Rails.cache.fetch(cache_key) { losses.count }
   end
   
-  def battles_count_cache
+  def ballots_count_cache
     wins_count_cache + losses_count_cache
   end
   
-  def expire_battle_caches
+  def expire_ballot_caches
     cache_key = "Animal." + self.id.to_s
     Rails.cache.delete(cache_key + ".wins_count")
     Rails.cache.delete(cache_key + ".losses_count")
@@ -154,8 +154,8 @@ class Animal < ActiveRecord::Base
     find(ids[rand(ids.length)]["id"].to_i) 
   end
   
-  def self.by_fewest_battles
-    Animal.all.sort!{|a,b| a.battles_count_cache <=> b.battles_count_cache}
+  def self.by_fewest_ballots
+    Animal.all.sort!{|a,b| a.ballots_count_cache <=> b.ballots_count_cache}
   end
   
   #TODO: needs a rewrite for clarity

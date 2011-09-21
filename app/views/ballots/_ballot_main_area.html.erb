@@ -1,0 +1,34 @@
+<div id="ballot">
+
+<div id="ballot_area">
+<% if rand(2) == 0 %>
+<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2 %>
+<div id="vs">vs.</div>
+<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1 %>
+<% else %>
+<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1 %>
+<div id="vs">vs.</div>
+<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2 %>
+<% end %>
+
+</div>
+<h2 id="who_will_win">
+Who will win?
+</h2>
+
+<div id="toggle_comments">
+<span id="throbber_area">
+</span>
+</div>
+</div>
+
+<script type="text/javascript">
+function animalLabel_mouseOver(animalID) {
+	$(".animal_area." + animalID + " .animal_image").css("border", "#FF9900 solid 2px");
+}
+
+function animalLabel_mouseOut(animalID) {
+	$(".animal_area." + animalID + " .animal_image").css("border", "");
+}
+
+</script>

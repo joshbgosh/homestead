@@ -1,14 +1,15 @@
 <div id ="show_comments">
+	<% comments = match.get_ranked_comments %>
 	<% if comments.count == 0 %>
 		<div class="no comments_area">
-			<p> Nobody has commented on this battle yet. </p>
+			<p> Nobody has commented on this ballot yet. </p>
 		</div>
 	<% else %>
 		<div class="top comments_area">
 			<h4>Top Comments</h4>
-			<%= render 'matches/show_comment', :comment => comments.first, :match => match %>
+			<%= render 'comments/show', :comment => comments.first, :match => match %>
 			<% if comments.count > 1 %>
-				<%= render 'matches/show_comment', :comment => comments[1], :match => match %>
+				<%= render 'comments/show', :comment => comments[1], :match => match %>
 			<% end %>
 		</div>
 	<% end %>
@@ -16,11 +17,11 @@
 		<% if comments.count > 2 %>
 		<h4>Recent Comments</h4>
 		<% end %>
-		<%= render "matches/add_comment", :match => match %>
+		<%= render "comments/create", :match => match %>
 		<% if comments.count > 2 %>
 			<div class="recent comments_area"> <!-- TODO: change the name of this thing, and other comment areas -->
 				<% comments.slice(2..(comments.length-1)).each do |comment|   %>
-				<%= render 'matches/show_comment', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
+				<%= render 'comments/show', :comment => comment, :match => match %> <!-- TODO: shouldn't have to add match here> -->
 				<% end %>
 			</div>
 		<% else %>
@@ -54,18 +55,21 @@ $(document).ready(function() {
 		
 		$(".tooltip").hide();
 		
+		//so we can undo our vote on the client if the server fails.
+		var revertFunction = get_revertFunction(buttonPanel);
+		
 		if (! buttonPanel.hasClass("voted_for")) {	
 			//they are indeed executing an upvote
 
 			show_upVote(buttonPanel);
 
-			send_voteAction("voteUp", buttonPanel);
+			send_voteAction("voteUp", buttonPanel, revertFunction);
 		} else {
 			//they are undoing their previous upvote
 
 			show_no_vote(buttonPanel);
 
-			send_voteAction("undo_voteUp", buttonPanel);
+			send_voteAction("undo_voteUp", buttonPanel, revertFunction);
 		}
 	}
 	
@@ -74,18 +78,21 @@ $(document).ready(function() {
 		
 		$(".tooltip").hide();
 		
+		//so we can undo our vote on the client if the server fails.
+		var revertFunction = get_revertFunction(buttonPanel);
+		
 		if (! buttonPanel.hasClass("voted_against")) {	
 			//they are indeed executing a downvote
-
+			
 			show_downVote(buttonPanel);
 
-			send_voteAction("voteDown", buttonPanel);
+			send_voteAction("voteDown", buttonPanel, revertFunction);
 		} else {
 			//they are undoing their previous downvote
 
 			show_no_vote(buttonPanel);
 
-			send_voteAction("undo_voteDown", buttonPanel);
+			send_voteAction("undo_voteDown", buttonPanel, revertFunction);
 		}
 	}
 	
@@ -101,36 +108,35 @@ $(document).ready(function() {
 	}
 
 	
-	function send_voteAction(action, buttonPanel) {
+	function send_voteAction(action, buttonPanel, revertFunction) {
 		$.ajax( {
-			url: voteAction_to_URL[action],
+			url: generate_URLForAction(action, buttonPanel.data("comment_id")),
 			type: "POST",
-			data: {comment_id : buttonPanel.data("comment_id")},
 			authenticity_token: encodeURIComponent( AUTH_TOKEN),
 			//nothing special to do on success, since we are already showing the vote change to the user.
-			error: voteAction_to_errorHandler[action](buttonPanel)
+			error: make_errorHandler(action, buttonPanel, revertFunction)
 		});
 	}
 	
 	//TODO: should these be locally scoped? will that work?
 	
-	voteAction_to_URL = {
-		voteUp : "<%= vote_for_comment_match_path(match) %>",
-		voteDown: "<%= vote_against_comment_match_path(match) %>",
-		undo_voteUp: "<%= undo_vote_on_comment_match_path(match) %>",
-		undo_voteDown: "<%= undo_vote_on_comment_match_path(match) %>"
-	};
-	
+	function generate_URLForAction (voteAction, commentID) {
+		//TODO: start up here, do case on voteUp and whatnot
+		var prefix = "comments/" + commentID + "/";
+		
+		switch(voteAction) {
+			case "voteUp": var actionInURL = "vote_for/"; break;
+			case "voteDown": var actionInURL = "vote_against/"; break;
+			case "undo_voteUp": var actionInURL = "undo_vote/"; break;
+			case "undo_voteDown": var actionInURL = "undo_vote/"; break;
+			default:
+				window.alert("vote action '" + voteAction + "' is not recognized. If you see this error message, that would be quite unusual.");
+		}
+		
+		var finalURL = prefix + actionInURL;
+		return finalURL;
+	}
 
-
-	voteAction_to_errorHandler = {
-		voteUp : make_partial_errorHandler("record your up-vote", show_no_vote),
-		voteDown: make_partial_errorHandler("record your down-vote", show_no_vote),
-		undo_voteUp: make_partial_errorHandler("undo your vote", show_upVote),
-		undo_voteDown: make_partial_errorHandler("undo your vote", show_downVote)
-	};
-	
-	
 	function show_upVote(buttonPanel) {
 		buttonPanel.addClass("voted_for");
 		buttonPanel.removeClass("voted_against");
@@ -145,15 +151,32 @@ $(document).ready(function() {
 		buttonPanel.removeClass("voted_for voted_against");
 	}
 	
-	function make_partial_errorHandler(actionDescription, revertFunction) {
-		var parameterizeMeWithAButtonPanel = function(buttonPanel) {
-			var finalizedHandler = function (jqXHR, textStatus, errorThrown) {
-				add_votingErrorMessage(actionDescription, errorThrown);
-				revertFunction(buttonPanel);
-			}
-			return finalizedHandler;
+	function get_revertFunction(buttonPanel) {
+		if (buttonPanel.hasClass("voted_for")) {
+			return show_upVote;
+		} else if (buttonPanel.hasClass("voted_against")) {
+			return show_downVote;
+		} else {
+			return show_no_vote;
 		}
-		return parameterizeMeWithAButtonPanel;
+	}
+	
+	
+	voteAction_to_errorDescription = {
+		voteUp : "record your up-vote",
+		voteDown:"record your down-vote",
+		undo_voteUp: "undo your vote",
+		undo_voteDown: "undo your vote"
+	};
+	
+	function make_errorHandler(voteAction, buttonPanel, revertFunction) {
+		var errorDescription = voteAction_to_errorDescription[voteAction];
+		var finalizedHandler = function (jqXHR, textStatus, errorThrown) {
+			add_votingErrorMessage(errorDescription, errorThrown);
+			revertFunction(buttonPanel);
+		}
+		
+		return finalizedHandler;
 	}
 	
 	//TODO: consider parameterizing the error message facility on the client. (this code appears elsewhere very similar)

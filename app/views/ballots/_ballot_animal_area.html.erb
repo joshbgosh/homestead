@@ -1,0 +1,26 @@
+<div class="animal_area_verticaltastic_wrapper">
+
+	<div class= "animal_area <%= winner.id %>">
+		<div class="crazy_vert_align_hack_div" style="padding-bottom:<%= ((224 - winner.image.height(:medium)) / 2) %>px;">
+		</div>
+		<%= form_tag ballots_path, :remote => false, :class => 'animal_image_form_real ' + winner.id.to_s do |f| %>
+		<div class = "animal_image_form">
+
+			<%= hidden_field_tag :winner_id, winner.id %>
+			<div class="animal_image_wrapper">
+				<%= image_submit_tag(winner.image.url(:medium), :value => winner.name, :class => "animal_image") %>
+			</div>  
+		</div>
+		<% end %>
+
+		<div>
+			<a 
+			onMouseOut="animalLabel_mouseOut(<%= winner.id %>)" 
+			onMouseOver="animalLabel_mouseOver(<%= winner.id %>)" 
+			onclick="$('.animal_image_form_real.<%= winner.id %>').submit();">
+			<%= winner.name %> 
+		</a>
+	</div>
+</div>
+</div>
+

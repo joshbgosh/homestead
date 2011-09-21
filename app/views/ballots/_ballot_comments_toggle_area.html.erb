@@ -51,7 +51,7 @@ $(document).ready(function() {
 		//show a throbber
 		$.throbberShow({parent: "#show_comments_throbber_wrapper"});
 		//fetch the comment data from the server asynchronously, and set up a receiver.
-		$.ajax("<%=show_comments_match_path(@battle.match) %>",
+		$.ajax("<%=show_current_comments_ballots_path %>",
 			{accept : "html", success : receive_commentsData_and_finish, error : handle_receiveCommentsData_error});	
 	}
   }

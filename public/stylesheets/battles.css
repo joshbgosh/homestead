@@ -1,8 +1,8 @@
-.battle.content_area_wrapper {
+.ballot.content_area_wrapper {
 	margin-bottom: 0px;
 }
 
-#battle_content_area_bottom {
+#ballot_content_area_bottom {
 	background-color: #ffffbf;	
 	margin-left: auto;
 	margin-right: auto;
@@ -13,10 +13,10 @@
 	height: 16px;
 }
 
-#battle {
+#ballot {
 }
 
-#battle_area {
+#ballot_area {
 	position: relative;
 	text-align: center;	
 }

@@ -1,4 +1,5 @@
 BothAreTotallyEnraged::Application.routes.draw do
+
   devise_for :admins
 
   devise_for :users
@@ -7,25 +8,33 @@ BothAreTotallyEnraged::Application.routes.draw do
 
   resources :matches do
     member do
-      get 'show_comments'
+      get 'show_comments' #TODO: will want to implement this for real eventually. Currently old.
       post 'add_comment'
-      post 'vote_for_comment' #TODO: consider making the comment id part of GET variables?
-      post 'vote_against_comment'
-      post 'undo_vote_on_comment' #TODO: this is a clear sign that I need to make a separate comment controller
     end
   end
-  
-  resources :battles do
+
+  resources :comments do
+    member do
+      post 'vote_for' #TODO: consider making the comment id part of GET variables?
+      post 'vote_against'
+      post 'undo_vote'
+    end
+  end
+
+  resources :animals
+
+  resources :ballots do
+    member do
+      get 'show_my_comments'
+    end
     collection do
       get 'show_current'
+      get 'show_current_comments'
     end
   end
   
-  resources :animals
-  
-  root :to => "battles#show_current"
+  root :to => "ballots#show_current"
 
-  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

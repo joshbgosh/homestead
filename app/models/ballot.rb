@@ -1,4 +1,4 @@
-class Battle < ActiveRecord::Base
+class Ballot < ActiveRecord::Base
   belongs_to :winner, :class_name => "Animal" #, :foreign_key => "winner_id"
   belongs_to :loser,  :class_name => "Animal" #, :foreign_key => "loser_id"
 
@@ -12,36 +12,36 @@ class Battle < ActiveRecord::Base
     self.match = Match.get_or_create_with(self.winner, self.loser) #TODO: what are the performance implications of this?
   end
   
-  after_save :expire_animal_battle_caches
-  after_destroy :expire_animal_battle_caches
+  after_save :expire_animal_ballot_caches
+  after_destroy :expire_animal_ballot_caches
   
-  def expire_animal_battle_caches
-    winner.expire_battle_caches
-    loser.expire_battle_caches
+  def expire_animal_ballot_caches
+    winner.expire_ballot_caches
+    loser.expire_ballot_caches
   end
 
-	def battles
-		Battle.find(:conditions => ["winner_id = ? OR loser_id = ?", id, id])
+	def ballots
+		Ballot.find(:conditions => ["winner_id = ? OR loser_id = ?", id, id])
 	end
 	
 	def stats
-	  num_battles = self.match.battle_count
-	  if num_battles > 1
+	  num_ballots = self.match.ballot_count
+	  if num_ballots > 1
 	    wins = self.match.wins_for(self.winner).count
-	    losses = num_battles - wins
-	    return BattleStats::PriorVotes.new(self.winner, wins, losses)
+	    losses = num_ballots - wins
+	    return BallotStats::PriorVotes.new(self.winner, wins, losses)
 	  else
-	    return BattleStats::NoPriorVotes.new
+	    return BallotStats::NoPriorVotes.new
 	  end
 	end
 	
 	def self.generate_new
-    battle = Battle.new
+    ballot = Ballot.new
     opponent_1, opponent_2 = pick_opponents
     match = Match.get_or_create_with(opponent_1, opponent_2)
-    battle.match_id = match.id
+    ballot.match_id = match.id
     match.save
-    battle
+    ballot
   end
 	
 	
@@ -52,13 +52,13 @@ def self.pick_opponents
   n = rand(100)
   
   if n < 70
-    Battle.make_random_close_match
+    Ballot.make_random_close_match
   elsif n < 75
-    Battle.make_new_close_match
+    Ballot.make_new_close_match
   elsif n < 95
-    Battle.make_random_match
+    Ballot.make_random_match
   else
-    Battle.make_new_random_match
+    Ballot.make_new_random_match
   end
 end
 
@@ -73,7 +73,7 @@ end
 def self.make_new_random_match
   confirm_enough_animals(2)
   
-  opponent_1 = Animal.by_fewest_battles.first
+  opponent_1 = Animal.by_fewest_ballots.first
   opponent_2 = opponent_1.random_opponent
   if rand(1) == 1
     tmp = opponent_1
@@ -86,8 +86,8 @@ end
 def self.make_new_close_match
   confirm_enough_animals(2)
   
-  animals_ranked_by_fewest_battles = Animal.by_fewest_battles
-  opponent_1 = animals_ranked_by_fewest_battles.first
+  animals_ranked_by_fewest_ballots = Animal.by_fewest_ballots
+  opponent_1 = animals_ranked_by_fewest_ballots.first
   opponent_2 = opponent_1.closely_matched_opponent
   if rand(1) == 1
     tmp = opponent_1

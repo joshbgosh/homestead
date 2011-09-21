@@ -1,0 +1,26 @@
+<% if @previous_ballot %>
+<%= render 'ballot_previous_results', :previous_ballot => @previous_ballot %>
+<% end %>
+
+<div id= "extra_ballot_content_area_wrapper">
+<div class="ballot content_area_wrapper">
+<div id="content_area">
+
+<%= render 'ballot_main_area', :match => @ballot.match %>
+
+<div id="content_area_footer"> </div>
+<%= render 'ballot_comments_toggle_area', :show_comments => comments_visibility_preference(), :match => @ballot.match %>
+</div>
+</div>
+<%= render "ballot_comments_area", :show_comments => comments_visibility_preference(), :match => @ballot.match %>
+</div>
+
+
+</div>
+
+<div id="signup_signin_overlay" class="content_area_wrapper">
+<%= render 'signup_signin/signup_or_signin'%>
+</div>
+
+
+

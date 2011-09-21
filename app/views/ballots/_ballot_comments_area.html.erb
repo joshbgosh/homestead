@@ -1,7 +1,7 @@
 <% if show_comments %>
 <div id="comments_content_wrapper">
-<div id="comments_content">
-<%= render "matches/show_comments", :match => match, :comments => match.comments %>
+	<div id="comments_content">
+	<%= render "ballot_comment_contents", :match => match %>
 </div>
 </div>
 

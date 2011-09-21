@@ -39,13 +39,13 @@ class MatchTest < ActiveSupport::TestCase
     a1 = create(:animal)
     a2 = create(:animal)
 
-    Battle.create(:winner => a1, :loser => a2)
-    Battle.create(:winner => a1, :loser => a2)
-    match = Battle.create(:winner => a2, :loser => a1).match
+    Ballot.create(:winner => a1, :loser => a2)
+    Ballot.create(:winner => a1, :loser => a2)
+    match = Ballot.create(:winner => a2, :loser => a1).match
     
     assert_equal 1, match.wins_for(a2).count
     assert_equal 2, match.wins_for(a1).count
-    assert_equal 3, match.battle_count  
+    assert_equal 3, match.ballot_count  
   end
   
 
