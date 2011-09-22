@@ -16,9 +16,9 @@
 			<ul id="header_nav_links">
 				<li><%= link_to "Most Enraged", animals_path %></li>
 				<% if local_assigns[:showing_ballot] && showing_ballot %>
-				<li><%= link_to "New Ballot", new_ballot_path %></li>
+				<li><%= link_to "New Battle", new_ballot_path %></li>
 				<% else %>
-				<li><%= link_to "Back to Ballot", show_current_ballots_path %></li>
+				<li><%= link_to "Back to Battle", show_current_ballots_path %></li>
 				<% end %>
 			</ul>
 
