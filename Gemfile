@@ -18,6 +18,8 @@ gem "taps"
 
 gem "ruby-prof"
 
+gem "ruby-graphviz"
+
 gem "test-unit"
 
 gem "dalli"
@@ -39,7 +41,7 @@ gem 'yaml_db', "~> 0.2.1"
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
-gem 'ruby-debug19', :require => 'ruby-debug'
+# gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Bundle the extra gems:
 # gem 'bj'
