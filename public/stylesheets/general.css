@@ -47,10 +47,9 @@ h4 {
 }
 
 a {
-	color: #444;
+	color: #222;
 }
-a:visited { color: #333; }
-a:hover { color: #fff; background-color:#000; }
+a:hover {color: #000; text-shadow: 0px 0px 10px #ffffbf}
 
 pre {
   background-color: #eee;
@@ -65,17 +64,18 @@ input {
 .notice {
   color: #128C1A;
   background-color: #45E650;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   padding: 12px;
   vertical-align: baseline;
   border-bottom: 3px solid #128C1A;
+  text-shadow: 0 1px 1px #45E650;
 }
 
 .alert {
   color: #5C3E09;
   background-color: #F2A31B;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   padding: 12px;
   vertical-align: baseline;
@@ -167,7 +167,6 @@ input {
 	/* IE 10 */ background: -ms-linear-gradient(top,  #ffdd22, #ffbb00); 
 	/* Opera 11.10+ */ background: -o-linear-gradient(top,  #ffdd22, #ffbb00); 
 	/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffdd22), to(#ffbb00));
-	
 }
 
 #header_contents {

@@ -51,7 +51,7 @@ class BallotsController < ApplicationController
     when current_match.opponent_2.id 
       submitted_ballot = Ballot.create(:winner => current_match.opponent_2, :loser => current_match.opponent_1)
     else
-      flash[:alert] = "It looks like you tried to vote using an old ballot. Here's your current ballot to vote on instead."
+      flash[:alert] = "Oops! It looks like you tried to vote for an old battle. Here's your current battle to vote on instead."
       redirect_to :action => :show_current and return
     end
 
@@ -126,7 +126,7 @@ class BallotsController < ApplicationController
 
     #show a special message if it's the user's first time visiting.
     if ! cookies[:been_here_before]
-      flash[:notice] = "Click the animal you think will win in the ballot below!"
+      flash[:notice] = "Hello! Click the animal that wins in the battle below!"
       cookies[:been_here_before] = true
     end
 

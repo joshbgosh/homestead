@@ -4,6 +4,7 @@
 	height: 250px;
 	width: 128px;
 	margin-left: 64px;
+	margin-top: 44px;
 }
 
 .results_animal {
@@ -12,7 +13,7 @@
 
 #picked_animal_header {
 	font-weight: bold;
-	color: #FF9900;  /** #daad69**/
+	color: #ffbb00;  /** #daad69**/
 	margin: 8px;
 	text-shadow: #222222 2px 2px 3px;
 }
@@ -27,7 +28,7 @@
 
 .picked.results_animal img {
 	box-shadow: 2px 2px 12px #111;
-	border-color:  #FF9900; /** rgba(225,225,133, 0.7); **/
+	border-color:  #ffbb00; /** rgba(225,225,133, 0.7); **/
 	border-width: 2px; /** 8 **/
 	border-style: solid;
 	margin-left: auto;
