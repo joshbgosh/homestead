@@ -1,5 +1,7 @@
 .ballot.content_area_wrapper {
 	margin-bottom: 0px;
+	height: 368px;
+	background-image: url("/images/Speed_Lines.png");
 }
 
 #ballot_content_area_bottom {
@@ -17,6 +19,7 @@
 }
 
 #ballot_area {
+	margin-top: 8px;
 	position: relative;
 	text-align: center;	
 }
@@ -42,10 +45,28 @@
 
 .animal_area input {
 	margin: 0px;
+
+	
 }
 
 
+.animal_image.left.facing_Left {
+	 -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+       -ms-filter: "FlipH";
+}
 
+.animal_image.right.facing_Right {
+	 -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
 
 
 .animal_area a {
@@ -66,7 +87,10 @@
 }
 
 .animal_image {
-	border: #222 solid 2px;
+	border: 2px solid black;
+	
+	width: 198px;
+	height: 160px;
 }
 
 .animal_image:hover {
@@ -79,7 +103,7 @@
 #who_will_win {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: center;
 }

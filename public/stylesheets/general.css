@@ -15,7 +15,12 @@ body {
 	 color: #000;
 	 text-align: center;
 	 margin: 0;
-	 padding: 0
+	 padding: 0;
+	 background: url("/images/Scratched_Background.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 body, p, ol, ul, td {
@@ -162,11 +167,13 @@ input {
 	background-color: #FF9900;
 	text-align: center;
 
-	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #ffdd22, #ffbb00);
-	/* Firefox 3.6+ */ background: -moz-linear-gradient(top,  #ffdd22, #ffbb00); 
-	/* IE 10 */ background: -ms-linear-gradient(top,  #ffdd22, #ffbb00); 
-	/* Opera 11.10+ */ background: -o-linear-gradient(top,  #ffdd22, #ffbb00); 
-	/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffdd22), to(#ffbb00));
+	 background: url("/images/Header_Scratched_Background.png") center center fixed; 
+	 background-size: contain;
+
+	 -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px 5px 4px rgba(0, 0, 0, 0.75);
+box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
+
 }
 
 #header_contents {
@@ -235,7 +242,10 @@ img {
 }
 
 img, .animal_area input {
-	box-shadow: 3px 3px 12px #111;
+	/* Should this be in this file? */
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px 2px 2px rgba(0, 0, 0, 0.75);
+box-shadow:         0px 2px 2px rgba(0, 0, 0, 0.75);
 }
 
 /* ? */

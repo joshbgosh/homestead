@@ -85,7 +85,7 @@ class BallotsController < ApplicationController
   def show_current_comments
     match_id = session[:current_match_id]
     match = Match.find(match_id)
-    render :partial => "ballot_comments_content", :locals => {:match => match}
+    render :partial => "ballot_comment_contents", :locals => {:match => match}
   end
 
   def show_my_comments

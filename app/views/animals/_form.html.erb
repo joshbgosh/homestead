@@ -1,4 +1,4 @@
-“<%= form_for @animal, :html => { :multipart => true } do |f| %>
+<%= form_for @animal, :html => { :multipart => true } do |f| %>
 <% if @animal.errors.any? %>
 <div id    = "error_explanation">
 	<h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
@@ -17,6 +17,11 @@
 <div class = "field">
 	<%= f.label :image %><br />
 	<%= f.file_field :image %>
+</div>
+
+<div class = "field">
+	<%= f.label :facing %><br />
+	<%= f.text_field :facing %>
 </div>
 <div class = "actions">
 	<%= f.submit %>

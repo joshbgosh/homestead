@@ -2,13 +2,13 @@
 
 <div id="ballot_area">
 <% if rand(2) == 0 %>
-<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2 %>
+<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2, :side => "left" %>
 <div id="vs">vs.</div>
-<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1 %>
+<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1, :side => "right"%>
 <% else %>
-<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1 %>
+<%= render 'ballot_animal_area', :winner => match.opponent_2, :loser => match.opponent_1, :side => "left" %>
 <div id="vs">vs.</div>
-<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2 %>
+<%= render 'ballot_animal_area', :winner => match.opponent_1, :loser => match.opponent_2, :side => "right"%>
 <% end %>
 
 </div>
@@ -24,7 +24,7 @@ Who will win?
 
 <script type="text/javascript">
 function animalLabel_mouseOver(animalID) {
-	$(".animal_area." + animalID + " .animal_image").css("border", "#FF9900 solid 2px");
+	$(".animal_area." + animalID + " .animal_image").css("border", "#FFCC11 solid 2px");
 }
 
 function animalLabel_mouseOut(animalID) {

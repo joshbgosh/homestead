@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910221357) do
+ActiveRecord::Schema.define(:version => 20130217234922) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20110910221357) do
     t.integer  "wins_count"
     t.integer  "losses_count"
     t.text     "image_meta"
+    t.string   "facing",             :limit => nil
   end
 
   create_table "ballots", :force => true do |t|

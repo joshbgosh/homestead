@@ -8,7 +8,7 @@
 
 			<%= hidden_field_tag :winner_id, winner.id %>
 			<div class="animal_image_wrapper">
-				<%= image_submit_tag(winner.image.url(:medium), :value => winner.name, :class => "animal_image") %>
+				<%= image_submit_tag(winner.image.url(:medium), :value => winner.name, :class => "animal_image " + "facing_" + winner.facing + " " + side) %>
 			</div>  
 		</div>
 		<% end %>

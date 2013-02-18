@@ -6,6 +6,9 @@ gem "paperclip-meta"
 gem 'jquery-rails', '>= 1.0.3'
 gem "tasteful_routes", "~> 0.1.3"
 
+gem "rake", "0.9.2"
+
+
 gem "factory_girl_rails"
 
 gem "devise"

@@ -52,8 +52,8 @@
 }
 
 .vote_button_panel img {
-	width: 30px;
-	height: 26px;
+	width: 24px;
+	height: 24px;
 	box-shadow: none;
 	left-margin: auto;
 	right-margin: auto;
@@ -62,30 +62,30 @@
 }
 
 .vote_button_panel button.vote_up img {
-	background: url("/images/likebutton2_notactive5.png")
+	background: url("/images/Thumbs_up_faded.png")
 }
 .vote_button_panel button.vote_down img {
-	background: url("/images/dislikebutton2_notactive5.png");
+	background: url("/images/Thumbs_down_faded.png");
 }
 
 /**
 .vote_button_panel button.vote_up img:hover {
-	background: url("/images/likebutton_green.png");
+	background: url("/images/Thumbs_up.png");
 }
 .vote_button_panel button.vote_down img:hover {
-	background: url("/images/dislikebutton_red.png");
+	background: url("/images/Thumbs_down.png");
 }
 **/
 
 .vote_button_panel button.vote_up img:active {
 	position: relative;
 	top: 2px;
-	background: url("/images/likebutton_green.png");
+	background: url("/images/Thumbs_up.png");
 }
 .vote_button_panel button.vote_down img:active {
 	position: relative;
 	top: 2px;
-	background: url("/images/dislikebutton_red.png");
+	background: url("/images/Thumbs_down.png");
 }
 
 .vote_button_panel button:active {
@@ -94,25 +94,25 @@
 
 
 .vote_button_panel.voted_for button.vote_up img {
-	background: url("/images/likebutton_green.png");
+	background: url("/images/Thumbs_up.png");
 }
 .vote_button_panel.voted_for button.vote_down img {
-	background: url("/images/dislikebutton2_notactive5.png")
+	background: url("/images/Thumbs_down_faded.png")
 }
 
 .vote_button_panel.voted_against button.vote_up img {
-	background: url("/images/likebutton2_notactive5.png");
+	background: url("/images/Thumbs_up_faded.png");
 }
 .vote_button_panel.voted_against button.vote_down img {
-	background: url("/images/dislikebutton_red.png");
+	background: url("/images/Thumbs_down.png");
 }
 
 .vote_button_panel button {
 	border-radius: 3px;
 	border: 1px solid #CCC;
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#faf0aa),to(#dbce79));
-	width: 44px;
-	height: 36px;
+	width: 30px;
+	height: 30px;
 }
 
 .comment .metadata {
@@ -142,15 +142,15 @@
 }
 
 .voted_up {
-	background-image: url("/images/likebutton2.png");
-	width: 30px;
-	height: 26px;
+	background-image: url("/images/Thumbs_up.png");
+	width: 24px;
+	height: 24px;
 }
 
 .button_panel.voted_up .no_vote {
-	background-image: url("/images/likebutton2_notactive5.png");
-	width: 30px;
-	height: 26px;
+	background-image: url("/images/Thumbs_up_faded.png");
+	width: 24px;
+	height: 24px;
 }
 
 #comments_content_wrapper {
@@ -160,9 +160,12 @@
 	max-width: 550px; /* see what you think of a larger one, like 1200px */
 
     margin-bottom: 36px;
-	
-
+	min-height: 64px;
 	border-top: 8px solid #99925e;
+
+ 
+
+    box-shadow: inset 0 0 50px #dc9352, 0px 5px 4px rgba(0, 0, 0, 0.75);
 	
 	/**
 	border-left: 16px solid #9C0606;
@@ -173,7 +176,7 @@
 	
 	/** border-bottom: 16px solid #fffdcf; **/
 
-	background-color: #E5E185;
+	background-color: #fffbbb;
 	
 	
 }
@@ -221,12 +224,17 @@
 	margin-top: 16px;
 }
 
+.no.comments_area p {
+	font-size: 14px;
+}
+
 .all.comments_area {
 	margin-bottom: 0px;
 }
 
 #sign_in_to_comment_info {
 	text-align: center;
+	font-size: 14px;
 }
 
 
