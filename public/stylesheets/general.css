@@ -176,9 +176,10 @@ box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
 
 }
 
+/** TODO: Will have to change this is I make the website more responsive for mobile. **/
 #header_contents {
 	margin: 0 auto;
-	min-width: 1024px;
+	min-width: 1050px;
 	max-width: 1124px;
 }
 
