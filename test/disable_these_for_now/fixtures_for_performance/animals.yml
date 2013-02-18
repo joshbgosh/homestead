@@ -1,0 +1,1081 @@
+---
+animals_001:
+  id: 1
+  name: Hummingbird
+  created_at: '2011-08-21 19:35:44.587668+0000'
+  updated_at: '2011-08-21 19:35:44.587668+0000'
+  image_file_name: 699hummingbird.jpg
+  image_content_type: image/jpeg
+  image_file_size: 93091
+  image_updated_at: '2011-08-21 19:35:44.235994+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAlgCOgtoZWlnaHRpAogCOglzaXpl
+
+    aQOjawE6Cmxhcmdlewg7BmkBzzsHaQHgOwhpAgBHOgttZWRpdW17CDsGaQHP
+
+    OwdpAeA7CGkCAEc6CnRodW1iewg7BmkBzzsHaQHgOwhpAgBH
+
+'
+animals_002:
+  id: 2
+  name: Grizzly Bear
+  created_at: '2011-08-21 19:36:03.276042+0000'
+  updated_at: '2011-08-21 19:36:03.276042+0000'
+  image_file_name: adult-grizzly-bear-1024x768.jpg
+  image_content_type: image/jpeg
+  image_file_size: 169933
+  image_updated_at: '2011-08-21 19:36:02.683409+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgAEOgtoZWlnaHRpAgADOglzaXpl
+
+    aQPNlwI6Cmxhcmdlewg7BmkB4DsHaQGoOwhpAp8sOgttZWRpdW17CDsGaQHg
+
+    OwdpAag7CGkCnyw6CnRodW1iewg7BmkB4DsHaQGoOwhpAp8s
+
+'
+animals_003:
+  id: 3
+  name: ALF
+  created_at: '2011-08-21 19:36:14.746433+0000'
+  updated_at: '2011-08-21 19:36:14.746433+0000'
+  image_file_name: ALF.jpg
+  image_content_type: image/jpeg
+  image_file_size: 18301
+  image_updated_at: '2011-08-21 19:36:14.397048+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAkABOgtoZWlnaHRpAfA6CXNpemVp
+
+    An1HOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQIRJDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAhEkOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQIRJA==
+
+'
+animals_004:
+  id: 4
+  name: Aphid
+  created_at: '2011-08-21 19:36:24.875557+0000'
+  updated_at: '2011-08-21 19:36:24.875557+0000'
+  image_file_name: aphid.jpg
+  image_content_type: image/jpeg
+  image_file_size: 51564
+  image_updated_at: '2011-08-21 19:36:24.506259+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAuABOgtoZWlnaHRpAkABOglzaXpl
+
+    aQJsyToKbGFyZ2V7CDsGaQHgOwdpAZU7CGkC4TU6C21lZGl1bXsIOwZpAeA7
+
+    B2kBlTsIaQLhNToKdGh1bWJ7CDsGaQHgOwdpAZU7CGkC4TU=
+
+'
+animals_005:
+  id: 5
+  name: Asian Elephant
+  created_at: '2011-08-21 19:36:38.790442+0000'
+  updated_at: '2011-08-21 19:36:38.790442+0000'
+  image_file_name: asianelephant.jpg
+  image_content_type: image/jpeg
+  image_file_size: 53561
+  image_updated_at: '2011-08-21 19:36:38.491252+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvQBOgtoZWlnaHRpAkkBOglzaXpl
+
+    aQI50ToKbGFyZ2V7CDsGaQHgOwdpAZM7CGkCYSk6C21lZGl1bXsIOwZpAeA7
+
+    B2kBkzsIaQJhKToKdGh1bWJ7CDsGaQHgOwdpAZM7CGkCYSk=
+
+'
+animals_006:
+  id: 6
+  name: Beaver
+  created_at: '2011-08-21 19:36:51.305930+0000'
+  updated_at: '2011-08-21 19:36:51.305930+0000'
+  image_file_name: beaver.jpg
+  image_content_type: image/jpeg
+  image_file_size: 232673
+  image_updated_at: '2011-08-21 19:36:50.944992+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvIBOgtoZWlnaHRpAvQBOglzaXpl
+
+    aQPhjAM6Cmxhcmdlewg7BmkB3zsHaQHgOwhpArSsOgttZWRpdW17CDsGaQHf
+
+    OwdpAeA7CGkCtKw6CnRodW1iewg7BmkB3zsHaQHgOwhpArSs
+
+'
+animals_007:
+  id: 7
+  name: Black Widow
+  created_at: '2011-08-21 19:37:02.837197+0000'
+  updated_at: '2011-08-21 19:37:02.837197+0000'
+  image_file_name: black widow.jpg
+  image_content_type: image/jpeg
+  image_file_size: 6674
+  image_updated_at: '2011-08-21 19:37:02.555119+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    AhIaOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQIlFjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAiUWOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQIlFg==
+
+'
+animals_008:
+  id: 8
+  name: Buffalo
+  created_at: '2011-08-21 19:37:16.447453+0000'
+  updated_at: '2011-08-21 19:37:16.447453+0000'
+  image_file_name: buffalo.jpg
+  image_content_type: image/jpeg
+  image_file_size: 30439
+  image_updated_at: '2011-08-21 19:37:16.092563+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpApABOgtoZWlnaHRpAiwBOglzaXpl
+
+    aQLndjoKbGFyZ2V7CDsGaQHgOwdpAag7CGkCvCY6C21lZGl1bXsIOwZpAeA7
+
+    B2kBqDsIaQK8JjoKdGh1bWJ7CDsGaQHgOwdpAag7CGkCvCY=
+
+'
+animals_009:
+  id: 9
+  name: Capybara
+  created_at: '2011-08-21 19:37:26.328616+0000'
+  updated_at: '2011-08-21 19:37:26.328616+0000'
+  image_file_name: capybara.jpg
+  image_content_type: image/jpeg
+  image_file_size: 12617
+  image_updated_at: '2011-08-21 19:37:26.048864+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgIBOgtoZWlnaHRpAcM6CXNpemVp
+
+    AkkxOgpsYXJnZXsIOwZpAeA7B2kBqTsIaQIUKzoLbWVkaXVtewg7BmkB4DsH
+
+    aQGpOwhpAhQrOgp0aHVtYnsIOwZpAeA7B2kBqTsIaQIUKw==
+
+'
+animals_010:
+  id: 10
+  name: Chipmunk
+  created_at: '2011-08-21 19:37:36.518382+0000'
+  updated_at: '2011-08-21 19:37:36.518382+0000'
+  image_file_name: chipmunk.jpg
+  image_content_type: image/jpeg
+  image_file_size: 8945
+  image_updated_at: '2011-08-21 19:37:36.211407+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAeE6C2hlaWdodGkB4ToJc2l6ZWkC
+
+    8SI6Cmxhcmdlewg7BmkB4DsHaQHgOwhpAqomOgttZWRpdW17CDsGaQHgOwdp
+
+    AeA7CGkCqiY6CnRodW1iewg7BmkB4DsHaQHgOwhpAqom
+
+'
+animals_011:
+  id: 11
+  name: Donkey
+  created_at: '2011-08-21 19:37:48.704451+0000'
+  updated_at: '2011-08-21 19:37:48.704451+0000'
+  image_file_name: donkey.jpg
+  image_content_type: image/jpeg
+  image_file_size: 854113
+  image_updated_at: '2011-08-21 19:37:48.168852+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgAEOgtoZWlnaHRpAgADOglzaXpl
+
+    aQNhCA06Cmxhcmdlewg7BmkB4DsHaQGoOwhpA50wAToLbWVkaXVtewg7BmkB
+
+    4DsHaQGoOwhpA50wAToKdGh1bWJ7CDsGaQHgOwdpAag7CGkDnTAB
+
+'
+animals_012:
+  id: 12
+  name: Duck
+  created_at: '2011-08-21 19:37:58.189693+0000'
+  updated_at: '2011-08-21 19:37:58.189693+0000'
+  image_file_name: duck.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9964
+  image_updated_at: '2011-08-21 19:37:57.870852+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAd06C2hlaWdodGkB5DoJc2l6ZWkC
+
+    7CY6Cmxhcmdlewg7BmkB2TsHaQHgOwhpAqctOgttZWRpdW17CDsGaQHZOwdp
+
+    AeA7CGkCpy06CnRodW1iewg7BmkB2TsHaQHgOwhpAqct
+
+'
+animals_013:
+  id: 13
+  name: Ladybug
+  created_at: '2011-08-21 19:38:05.077287+0000'
+  updated_at: '2011-08-21 19:42:43.841878+0000'
+  image_file_name: ladybug.jpg
+  image_content_type: image/jpeg
+  image_file_size: 551048
+  image_updated_at: '2011-08-21 19:42:43.048611+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAuAEOgtoZWlnaHRpAuAEOglzaXpl
+
+    aQOIaAg6Cmxhcmdlewg7BmkB4DsHaQHgOwhpAqOSOgttZWRpdW17CDsGaQHg
+
+    OwdpAeA7CGkCo5I6CnRodW1iewg7BmkB4DsHaQHgOwhpAqOS
+
+'
+animals_014:
+  id: 14
+  name: Fox
+  created_at: '2011-08-21 19:39:11.365954+0000'
+  updated_at: '2011-08-21 19:39:11.365954+0000'
+  image_file_name: fox.jpg
+  image_content_type: image/jpeg
+  image_file_size: 10845
+  image_updated_at: '2011-08-21 19:39:09.975952+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAfE6C2hlaWdodGkB0ToJc2l6ZWkC
+
+    XSo6Cmxhcmdlewg7BmkB4DsHaQHCOwhpAh0tOgttZWRpdW17CDsGaQHgOwdp
+
+    AcI7CGkCHS06CnRodW1iewg7BmkB4DsHaQHCOwhpAh0t
+
+'
+animals_015:
+  id: 15
+  name: Fruit Bat
+  created_at: '2011-08-21 19:39:20.904992+0000'
+  updated_at: '2011-08-21 19:39:20.904992+0000'
+  image_file_name: fruit_bat.jpg
+  image_content_type: image/jpeg
+  image_file_size: 7789
+  image_updated_at: '2011-08-21 19:39:20.553649+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAg4BOgtoZWlnaHRpAbs6CXNpemVp
+
+    Am0eOgpsYXJnZXsIOwZpAeA7B2kBmzsIaQJAGzoLbWVkaXVtewg7BmkB4DsH
+
+    aQGbOwhpAkAbOgp0aHVtYnsIOwZpAeA7B2kBmzsIaQJAGw==
+
+'
+animals_016:
+  id: 16
+  name: Gazelle
+  created_at: '2011-08-21 19:39:31.563691+0000'
+  updated_at: '2011-08-21 19:39:31.563691+0000'
+  image_file_name: gazelle.jpg
+  image_content_type: image/jpeg
+  image_file_size: 7962
+  image_updated_at: '2011-08-21 19:39:31.256750+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAd86C2hlaWdodGkB4joJc2l6ZWkC
+
+    Gh86Cmxhcmdlewg7BmkB3TsHaQHgOwhpAtAlOgttZWRpdW17CDsGaQHdOwdp
+
+    AeA7CGkC0CU6CnRodW1iewg7BmkB3TsHaQHgOwhpAtAl
+
+'
+animals_017:
+  id: 17
+  name: Giant Anteater
+  created_at: '2011-08-21 19:39:44.248448+0000'
+  updated_at: '2011-08-21 19:39:44.248448+0000'
+  image_file_name: giant_anteater.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9950
+  image_updated_at: '2011-08-21 19:39:43.946054+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    At4mOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQJ1IDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpAnUgOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQJ1IA==
+
+'
+animals_018:
+  id: 18
+  name: Giraffe
+  created_at: '2011-08-21 19:39:58.253431+0000'
+  updated_at: '2011-08-21 19:39:58.253431+0000'
+  image_file_name: giraffe.jpg
+  image_content_type: image/jpeg
+  image_file_size: 11863
+  image_updated_at: '2011-08-21 19:39:57.892796+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAbc6C2hlaWdodGkCEwE6CXNpemVp
+
+    AlcuOgpsYXJnZXsIOwZpAZU7B2kB4DsIaQLNJDoLbWVkaXVtewg7BmkBlTsH
+
+    aQHgOwhpAs0kOgp0aHVtYnsIOwZpAZU7B2kB4DsIaQLNJA==
+
+'
+animals_019:
+  id: 19
+  name: Great Horned Owl
+  created_at: '2011-08-21 19:40:13.268704+0000'
+  updated_at: '2011-08-21 19:40:13.268704+0000'
+  image_file_name: great_horned_owl.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9245
+  image_updated_at: '2011-08-21 19:40:12.983016+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAbc6C2hlaWdodGkCEwE6CXNpemVp
+
+    Ah0kOgpsYXJnZXsIOwZpAZU7B2kB4DsIaQIvHToLbWVkaXVtewg7BmkBlTsH
+
+    aQHgOwhpAi8dOgp0aHVtYnsIOwZpAZU7B2kB4DsIaQIvHQ==
+
+'
+animals_020:
+  id: 20
+  name: Green Frog
+  created_at: '2011-08-21 19:40:32.555155+0000'
+  updated_at: '2011-08-21 19:40:32.555155+0000'
+  image_file_name: green frog.jpg
+  image_content_type: image/jpeg
+  image_file_size: 103732
+  image_updated_at: '2011-08-21 19:40:32.220871+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAoACOgtoZWlnaHRpAqwBOglzaXpl
+
+    aQM0lQE6Cmxhcmdlewg7BmkB4DsHaQGWOwhpAh1KOgttZWRpdW17CDsGaQHg
+
+    OwdpAZY7CGkCHUo6CnRodW1iewg7BmkB4DsHaQGWOwhpAh1K
+
+'
+animals_021:
+  id: 21
+  name: Hippopotamus
+  created_at: '2011-08-21 19:40:48.003981+0000'
+  updated_at: '2011-08-21 19:40:48.003981+0000'
+  image_file_name: hippopotamus.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9677
+  image_updated_at: '2011-08-21 19:40:47.639811+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    As0lOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQJoIjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAmgiOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQJoIg==
+
+'
+animals_022:
+  id: 22
+  name: Honey Badger
+  created_at: '2011-08-21 19:41:00.418175+0000'
+  updated_at: '2011-08-21 19:41:00.418175+0000'
+  image_file_name: honeybadge.jpg
+  image_content_type: image/jpeg
+  image_file_size: 7992
+  image_updated_at: '2011-08-21 19:41:00.140660+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    AjgfOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQJNHToLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpAk0dOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQJNHQ==
+
+'
+animals_023:
+  id: 23
+  name: Hornet
+  created_at: '2011-08-21 19:41:15.636809+0000'
+  updated_at: '2011-08-21 19:41:15.636809+0000'
+  image_file_name: hornet.jpg
+  image_content_type: image/jpeg
+  image_file_size: 35180
+  image_updated_at: '2011-08-21 19:41:15.342559+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAmoBOgtoZWlnaHRpAmEBOglzaXpl
+
+    aQJsiToKbGFyZ2V7CDsGaQHgOwdpAdo7CGkC1kM6C21lZGl1bXsIOwZpAeA7
+
+    B2kB2jsIaQLWQzoKdGh1bWJ7CDsGaQHgOwdpAdo7CGkC1kM=
+
+'
+animals_024:
+  id: 24
+  name: Hyena
+  created_at: '2011-08-21 19:41:26.579734+0000'
+  updated_at: '2011-08-21 19:41:26.579734+0000'
+  image_file_name: hyenas1.jpg
+  image_content_type: image/jpeg
+  image_file_size: 48120
+  image_updated_at: '2011-08-21 19:41:26.236237+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvQBOgtoZWlnaHRpAk0BOglzaXpl
+
+    aQL4uzoKbGFyZ2V7CDsGaQHgOwdpAZU7CGkCRi86C21lZGl1bXsIOwZpAeA7
+
+    B2kBlTsIaQJGLzoKdGh1bWJ7CDsGaQHgOwdpAZU7CGkCRi8=
+
+'
+animals_025:
+  id: 25
+  name: Kangaroo
+  created_at: '2011-08-21 19:41:39.294814+0000'
+  updated_at: '2011-08-21 19:41:39.294814+0000'
+  image_file_name: Kangaroo.jpg
+  image_content_type: image/jpeg
+  image_file_size: 11670
+  image_updated_at: '2011-08-21 19:41:38.971850+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    ApYtOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQIMJjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpAgwmOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQIMJg==
+
+'
+animals_026:
+  id: 26
+  name: Komodo Dragon
+  created_at: '2011-08-21 19:43:13.177132+0000'
+  updated_at: '2011-08-21 19:43:13.177132+0000'
+  image_file_name: komodo dragon.jpg
+  image_content_type: image/jpeg
+  image_file_size: 6926
+  image_updated_at: '2011-08-21 19:43:12.883336+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAh4BOgtoZWlnaHRpAbA6CXNpemVp
+
+    Ag4bOgpsYXJnZXsIOwZpAeA7B2kBijsIaQLDEjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGKOwhpAsMSOgp0aHVtYnsIOwZpAeA7B2kBijsIaQLDEg==
+
+'
+animals_027:
+  id: 27
+  name: Lion
+  created_at: '2011-08-21 19:43:28.333176+0000'
+  updated_at: '2011-08-21 19:43:28.333176+0000'
+  image_file_name: lion.jpg
+  image_content_type: image/jpeg
+  image_file_size: 30617
+  image_updated_at: '2011-08-21 19:43:28.064406+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAsIBOgtoZWlnaHRpAiwBOglzaXpl
+
+    aQKZdzoKbGFyZ2V7CDsGaQHgOwdpAZU7CGkCgS86C21lZGl1bXsIOwZpAeA7
+
+    B2kBlTsIaQKBLzoKdGh1bWJ7CDsGaQHgOwdpAZU7CGkCgS8=
+
+'
+animals_028:
+  id: 28
+  name: Mountain Goat
+  created_at: '2011-08-21 19:43:39.858454+0000'
+  updated_at: '2011-08-21 19:43:39.858454+0000'
+  image_file_name: mountain_goat.jpg
+  image_content_type: image/jpeg
+  image_file_size: 10497
+  image_updated_at: '2011-08-21 19:43:39.538899+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhgBOgtoZWlnaHRpAbQ6CXNpemVp
+
+    AgEpOgpsYXJnZXsIOwZpAeA7B2kBkDsIaQJwIDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGQOwhpAnAgOgp0aHVtYnsIOwZpAeA7B2kBkDsIaQJwIA==
+
+'
+animals_029:
+  id: 29
+  name: Mountain Gorilla
+  created_at: '2011-08-21 19:43:53.854661+0000'
+  updated_at: '2011-08-21 19:43:53.854661+0000'
+  image_file_name: mountaingorilla.jpg
+  image_content_type: image/jpeg
+  image_file_size: 70701
+  image_updated_at: '2011-08-21 19:43:53.433971+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpApUBOgtoZWlnaHRpAiwBOglzaXpl
+
+    aQMtFAE6Cmxhcmdlewg7BmkB4DsHaQGmOwhpAj2EOgttZWRpdW17CDsGaQHg
+
+    OwdpAaY7CGkCPYQ6CnRodW1iewg7BmkB4DsHaQGmOwhpAj2E
+
+'
+animals_030:
+  id: 30
+  name: Orangutan
+  created_at: '2011-08-21 19:44:08.510932+0000'
+  updated_at: '2011-08-21 19:44:08.510932+0000'
+  image_file_name: orangutan.jpg
+  image_content_type: image/jpeg
+  image_file_size: 93345
+  image_updated_at: '2011-08-21 19:44:08.054342+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvMBOgtoZWlnaHRpAmIBOglzaXpl
+
+    aQOhbAE6Cmxhcmdlewg7BmkB4DsHaQGfOwhpAnpeOgttZWRpdW17CDsGaQHg
+
+    OwdpAZ87CGkCel46CnRodW1iewg7BmkB4DsHaQGfOwhpAnpe
+
+'
+animals_031:
+  id: 31
+  name: Pidgeon
+  created_at: '2011-08-21 19:44:20.484408+0000'
+  updated_at: '2011-08-21 19:44:20.484408+0000'
+  image_file_name: pidgeon.jpg
+  image_content_type: image/jpeg
+  image_file_size: 6565
+  image_updated_at: '2011-08-21 19:44:20.181464+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAfk6C2hlaWdodGkByzoJc2l6ZWkC
+
+    pRk6Cmxhcmdlewg7BmkB4DsHaQG3OwhpAsEXOgttZWRpdW17CDsGaQHgOwdp
+
+    Abc7CGkCwRc6CnRodW1iewg7BmkB4DsHaQG3OwhpAsEX
+
+'
+animals_032:
+  id: 32
+  name: Polar Bear
+  created_at: '2011-08-21 19:44:34.821698+0000'
+  updated_at: '2011-08-21 19:44:34.821698+0000'
+  image_file_name: polar bear.jpg
+  image_content_type: image/jpeg
+  image_file_size: 40523
+  image_updated_at: '2011-08-21 19:44:34.452426+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAnECOgtoZWlnaHRpAsIBOglzaXpl
+
+    aQJLnjoKbGFyZ2V7CDsGaQHgOwdpAaE7CGkChB06C21lZGl1bXsIOwZpAeA7
+
+    B2kBoTsIaQKEHToKdGh1bWJ7CDsGaQHgOwdpAaE7CGkChB0=
+
+'
+animals_033:
+  id: 33
+  name: Porcupine
+  created_at: '2011-08-21 19:44:46.363778+0000'
+  updated_at: '2011-08-21 19:44:46.363778+0000'
+  image_file_name: porcupine.jpg
+  image_content_type: image/jpeg
+  image_file_size: 11644
+  image_updated_at: '2011-08-21 19:44:46.070669+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgIBOgtoZWlnaHRpAcQ6CXNpemVp
+
+    AnwtOgpsYXJnZXsIOwZpAeA7B2kBqjsIaQJjKToLbWVkaXVtewg7BmkB4DsH
+
+    aQGqOwhpAmMpOgp0aHVtYnsIOwZpAeA7B2kBqjsIaQJjKQ==
+
+'
+animals_034:
+  id: 34
+  name: Praying Mantis
+  created_at: '2011-08-21 19:45:00.036292+0000'
+  updated_at: '2011-08-21 19:45:00.036292+0000'
+  image_file_name: praying_mantis.jpg
+  image_content_type: image/jpeg
+  image_file_size: 5685
+  image_updated_at: '2011-08-21 19:44:59.648194+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    AjUWOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQLAFToLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpAsAVOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQLAFQ==
+
+'
+animals_035:
+  id: 35
+  name: Python
+  created_at: '2011-08-21 19:45:14.354942+0000'
+  updated_at: '2011-08-21 19:45:14.354942+0000'
+  image_file_name: python.jpg
+  image_content_type: image/jpeg
+  image_file_size: 17009
+  image_updated_at: '2011-08-21 19:45:13.827569+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    AnFCOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQIfNjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAh82Ogp0aHVtYnsIOwZpAeA7B2kBqDsIaQIfNg==
+
+'
+animals_036:
+  id: 36
+  name: Raccoon
+  created_at: '2011-08-21 19:45:27.377778+0000'
+  updated_at: '2011-08-21 19:45:27.377778+0000'
+  image_file_name: raccoon.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9882
+  image_updated_at: '2011-08-21 19:45:27.004700+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgoBOgtoZWlnaHRpAb06CXNpemVp
+
+    ApomOgpsYXJnZXsIOwZpAeA7B2kBnzsIaQKwIzoLbWVkaXVtewg7BmkB4DsH
+
+    aQGfOwhpArAjOgp0aHVtYnsIOwZpAeA7B2kBnzsIaQKwIw==
+
+'
+animals_037:
+  id: 37
+  name: Rhino
+  created_at: '2011-08-21 19:45:43.152999+0000'
+  updated_at: '2011-08-21 19:45:43.152999+0000'
+  image_file_name: rhino.jpg
+  image_content_type: image/jpeg
+  image_file_size: 12666
+  image_updated_at: '2011-08-21 19:45:42.809820+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    AnoxOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQLeJDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpAt4kOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQLeJA==
+
+'
+animals_038:
+  id: 38
+  name: Ring-tailed Lemur
+  created_at: '2011-08-21 19:45:56.856646+0000'
+  updated_at: '2011-08-21 19:45:56.856646+0000'
+  image_file_name: Ring-tailed-Lemur.jpg
+  image_content_type: image/jpeg
+  image_file_size: 93111
+  image_updated_at: '2011-08-21 19:45:56.352322+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAlgCOgtoZWlnaHRpAlgCOglzaXpl
+
+    aQO3awE6Cmxhcmdlewg7BmkB4DsHaQHgOwhpAt9QOgttZWRpdW17CDsGaQHg
+
+    OwdpAeA7CGkC31A6CnRodW1iewg7BmkB4DsHaQHgOwhpAt9Q
+
+'
+animals_039:
+  id: 39
+  name: Roly-Poly
+  created_at: '2011-08-21 19:46:11.594744+0000'
+  updated_at: '2011-08-21 19:46:11.594744+0000'
+  image_file_name: rolypoly.jpg
+  image_content_type: image/jpeg
+  image_file_size: 91909
+  image_updated_at: '2011-08-21 19:46:11.162490+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAiADOgtoZWlnaHRpAlgCOglzaXpl
+
+    aQMFZwE6Cmxhcmdlewg7BmkB4DsHaQGoOwhpAlk8OgttZWRpdW17CDsGaQHg
+
+    OwdpAag7CGkCWTw6CnRodW1iewg7BmkB4DsHaQGoOwhpAlk8
+
+'
+animals_040:
+  id: 40
+  name: Rooster
+  created_at: '2011-08-21 19:46:23.957455+0000'
+  updated_at: '2011-08-21 19:46:23.957455+0000'
+  image_file_name: rooster.jpg
+  image_content_type: image/jpeg
+  image_file_size: 66134
+  image_updated_at: '2011-08-21 19:46:23.522887+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAsABOgtoZWlnaHRpAq8BOglzaXpl
+
+    aQNWAgE6Cmxhcmdlewg7BmkB4DsHaQHYOwhpAttAOgttZWRpdW17CDsGaQHg
+
+    OwdpAdg7CGkC20A6CnRodW1iewg7BmkB4DsHaQHYOwhpAttA
+
+'
+animals_041:
+  id: 41
+  name: Sasquatch
+  created_at: '2011-08-21 19:46:37.730497+0000'
+  updated_at: '2011-08-21 19:46:37.730497+0000'
+  image_file_name: sasquatch.jpg
+  image_content_type: image/jpeg
+  image_file_size: 57161
+  image_updated_at: '2011-08-21 19:46:37.367383+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAn0BOgtoZWlnaHRpAj8COglzaXpl
+
+    aQJJ3zoKbGFyZ2V7CDsGaQGUOwdpAeA7CGkC2TA6C21lZGl1bXsIOwZpAZQ7
+
+    B2kB4DsIaQLZMDoKdGh1bWJ7CDsGaQGUOwdpAeA7CGkC2TA=
+
+'
+animals_042:
+  id: 42
+  name: Sloth
+  created_at: '2011-08-21 19:46:47.336626+0000'
+  updated_at: '2011-08-21 19:46:47.336626+0000'
+  image_file_name: sloth.jpg
+  image_content_type: image/jpeg
+  image_file_size: 10808
+  image_updated_at: '2011-08-21 19:46:47.068651+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    AjgqOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQKMJToLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAowlOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQKMJQ==
+
+'
+animals_043:
+  id: 43
+  name: Squirrel
+  created_at: '2011-08-21 19:46:57.612728+0000'
+  updated_at: '2011-08-21 19:46:57.612728+0000'
+  image_file_name: squirrel.jpg
+  image_content_type: image/jpeg
+  image_file_size: 11404
+  image_updated_at: '2011-08-21 19:46:57.241370+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgQBOgtoZWlnaHRpAcI6CXNpemVp
+
+    AowsOgpsYXJnZXsIOwZpAeA7B2kBpzsIaQKRJjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGnOwhpApEmOgp0aHVtYnsIOwZpAeA7B2kBpzsIaQKRJg==
+
+'
+animals_044:
+  id: 44
+  name: Stork
+  created_at: '2011-08-21 19:47:07.461350+0000'
+  updated_at: '2011-08-21 19:47:07.461350+0000'
+  image_file_name: stork.jpg
+  image_content_type: image/jpeg
+  image_file_size: 12575
+  image_updated_at: '2011-08-21 19:47:07.212152+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAdk6C2hlaWdodGkB6DoJc2l6ZWkC
+
+    HzE6Cmxhcmdlewg7BmkB0jsHaQHgOwhpAlw3OgttZWRpdW17CDsGaQHSOwdp
+
+    AeA7CGkCXDc6CnRodW1iewg7BmkB0jsHaQHgOwhpAlw3
+
+'
+animals_045:
+  id: 45
+  name: Tapir
+  created_at: '2011-08-21 19:47:18.917557+0000'
+  updated_at: '2011-08-21 19:47:18.917557+0000'
+  image_file_name: tapir.jpg
+  image_content_type: image/jpeg
+  image_file_size: 6932
+  image_updated_at: '2011-08-21 19:47:18.618075+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAbQ6C2hlaWdodGkBkDoJc2l6ZWkC
+
+    FBs6Cmxhcmdlewg7BmkB4DsHaQGzOwhpAkghOgttZWRpdW17CDsGaQHgOwdp
+
+    AbM7CGkCSCE6CnRodW1iewg7BmkB4DsHaQGzOwhpAkgh
+
+'
+animals_046:
+  id: 46
+  name: Tasmanian Devil
+  created_at: '2011-08-21 19:47:30.886761+0000'
+  updated_at: '2011-08-21 19:47:30.886761+0000'
+  image_file_name: Tasmanian_devil.jpg
+  image_content_type: image/jpeg
+  image_file_size: 7830
+  image_updated_at: '2011-08-21 19:47:30.636958+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAcg6C2hlaWdodGkBvzoJc2l6ZWkC
+
+    lh46Cmxhcmdlewg7BmkB4DsHaQHWOwhpAvEoOgttZWRpdW17CDsGaQHgOwdp
+
+    AdY7CGkC8Sg6CnRodW1iewg7BmkB4DsHaQHWOwhpAvEo
+
+'
+animals_047:
+  id: 47
+  name: Walrus
+  created_at: '2011-08-21 19:47:41.594841+0000'
+  updated_at: '2011-08-21 19:47:41.594841+0000'
+  image_file_name: walrus.jpg
+  image_content_type: image/jpeg
+  image_file_size: 9055
+  image_updated_at: '2011-08-21 19:47:41.313712+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    Al8jOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQJ3IDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAncgOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQJ3IA==
+
+'
+animals_048:
+  id: 48
+  name: Wildebeest
+  created_at: '2011-08-21 19:47:52.003540+0000'
+  updated_at: '2011-08-21 19:47:52.003540+0000'
+  image_file_name: wildebeest.jpg
+  image_content_type: image/jpeg
+  image_file_size: 6849
+  image_updated_at: '2011-08-21 19:47:51.641551+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAhMBOgtoZWlnaHRpAbc6CXNpemVp
+
+    AsEaOgpsYXJnZXsIOwZpAeA7B2kBlTsIaQKcGDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGVOwhpApwYOgp0aHVtYnsIOwZpAeA7B2kBlTsIaQKcGA==
+
+'
+animals_049:
+  id: 49
+  name: Wolf
+  created_at: '2011-08-21 19:48:01.461875+0000'
+  updated_at: '2011-08-21 19:48:01.461875+0000'
+  image_file_name: wolf.jpg
+  image_content_type: image/jpeg
+  image_file_size: 7231
+  image_updated_at: '2011-08-21 19:48:01.126236+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAggBOgtoZWlnaHRpAb86CXNpemVp
+
+    Aj8cOgpsYXJnZXsIOwZpAeA7B2kBojsIaQLbGjoLbWVkaXVtewg7BmkB4DsH
+
+    aQGiOwhpAtsaOgp0aHVtYnsIOwZpAeA7B2kBojsIaQLbGg==
+
+'
+animals_050:
+  id: 50
+  name: Wolverine
+  created_at: '2011-08-21 19:48:11.718883+0000'
+  updated_at: '2011-08-21 19:48:11.718883+0000'
+  image_file_name: wolverine.jpg
+  image_content_type: image/jpeg
+  image_file_size: 10964
+  image_updated_at: '2011-08-21 19:48:11.445517+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAgMBOgtoZWlnaHRpAcI6CXNpemVp
+
+    AtQqOgpsYXJnZXsIOwZpAeA7B2kBqDsIaQLlJDoLbWVkaXVtewg7BmkB4DsH
+
+    aQGoOwhpAuUkOgp0aHVtYnsIOwZpAeA7B2kBqDsIaQLlJA==
+
+'
+animals_051:
+  id: 51
+  name: Zebra
+  created_at: '2011-08-21 19:49:51.308405+0000'
+  updated_at: '2011-08-21 19:49:51.308405+0000'
+  image_file_name: zebra.jpg
+  image_content_type: image/jpeg
+  image_file_size: 60412
+  image_updated_at: '2011-08-21 19:49:50.827275+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAmgBOgtoZWlnaHRpAl0BOglzaXpl
+
+    aQL86zoKbGFyZ2V7CDsGaQHgOwdpAdk7CGkCqMY6C21lZGl1bXsIOwZpAeA7
+
+    B2kB2TsIaQKoxjoKdGh1bWJ7CDsGaQHgOwdpAdk7CGkCqMY=
+
+'
+animals_052:
+  id: 52
+  name: Brown Pelican
+  created_at: '2011-08-21 19:50:46.811777+0000'
+  updated_at: '2011-08-21 19:50:46.811777+0000'
+  image_file_name: Brown_Pelican.jpg
+  image_content_type: image/jpeg
+  image_file_size: 256554
+  image_updated_at: '2011-08-21 19:50:46.191280+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAosFOgtoZWlnaHRpAsADOglzaXpl
+
+    aQMq6gM6Cmxhcmdlewg7BmkB4DsHaQGYOwhpAksmOgttZWRpdW17CDsGaQHg
+
+    OwdpAZg7CGkCSyY6CnRodW1iewg7BmkB4DsHaQGYOwhpAksm
+
+'
+animals_053:
+  id: 53
+  name: Scarlet Macaw
+  created_at: '2011-08-21 19:53:36.180741+0000'
+  updated_at: '2011-08-21 19:53:36.180741+0000'
+  image_file_name: Scarlet_Macaw.jpg
+  image_content_type: image/jpeg
+  image_file_size: 958523
+  image_updated_at: '2011-08-21 19:53:35.587038+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAqgCOgtoZWlnaHRpAv0COglzaXpl
+
+    aQM7oA46Cmxhcmdlewg7BmkBxzsHaQHgOwhpA3ZlAToLbWVkaXVtewg7BmkB
+
+    xzsHaQHgOwhpA3ZlAToKdGh1bWJ7CDsGaQHHOwdpAeA7CGkDdmUB
+
+'
+animals_054:
+  id: 54
+  name: Atlas Beetle
+  created_at: '2011-08-21 19:54:42.269318+0000'
+  updated_at: '2011-08-21 19:54:42.269318+0000'
+  image_file_name: Atlas_Beetle.jpg
+  image_content_type: image/jpeg
+  image_file_size: 409933
+  image_updated_at: '2011-08-21 19:54:41.674965+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAoAEOgtoZWlnaHRpAmADOglzaXpl
+
+    aQNNQQY6Cmxhcmdlewg7BmkB4DsHaQGoOwhpAmBsOgttZWRpdW17CDsGaQHg
+
+    OwdpAag7CGkCYGw6CnRodW1iewg7BmkB4DsHaQGoOwhpAmBs
+
+'
+animals_055:
+  id: 55
+  name: Sugar Glider
+  created_at: '2011-08-21 19:56:22.032508+0000'
+  updated_at: '2011-08-21 19:56:22.032508+0000'
+  image_file_name: Sugar_Glider.jpg
+  image_content_type: image/jpeg
+  image_file_size: 89473
+  image_updated_at: '2011-08-21 19:56:21.686236+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvQBOgtoZWlnaHRpAfs6CXNpemVp
+
+    A4FdAToKbGFyZ2V7CDsGaQHgOwdpdTsIaQKgszoLbWVkaXVtewg7BmkB4DsH
+
+    aXU7CGkCoLM6CnRodW1iewg7BmkB4DsHaXU7CGkCoLM=
+
+'
+animals_056:
+  id: 56
+  name: Boar
+  created_at: '2011-08-21 19:58:22.120006+0000'
+  updated_at: '2011-08-21 20:03:31.873481+0000'
+  image_file_name: Wild_Boar.jpg
+  image_content_type: image/jpeg
+  image_file_size: 51183
+  image_updated_at: '2011-08-21 20:03:31.496472+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAloBOgtoZWlnaHRpAlMBOglzaXpl
+
+    aQLvxzoKbGFyZ2V7CDsGaQHgOwdpAds7CGkChF86C21lZGl1bXsIOwZpAeA7
+
+    B2kB2zsIaQKEXzoKdGh1bWJ7CDsGaQHgOwdpAds7CGkChF8=
+
+'
+animals_057:
+  id: 57
+  name: Lynx
+  created_at: '2011-08-21 19:59:48.674464+0000'
+  updated_at: '2011-08-21 19:59:48.674464+0000'
+  image_file_name: Lynx.jpg
+  image_content_type: image/jpeg
+  image_file_size: 172809
+  image_updated_at: '2011-08-21 19:59:47.976577+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAiADOgtoZWlnaHRpAiMCOglzaXpl
+
+    aQMJowI6Cmxhcmdlewg7BmkB4DsHaQGZOwhpAlc/OgttZWRpdW17CDsGaQHg
+
+    OwdpAZk7CGkCVz86CnRodW1iewg7BmkB4DsHaQGZOwhpAlc/
+
+'
+animals_058:
+  id: 58
+  name: Cheetah
+  created_at: '2011-08-21 21:07:48.593315+0000'
+  updated_at: '2011-08-21 21:07:48.593315+0000'
+  image_file_name: cheetah.jpg
+  image_content_type: image/jpeg
+  image_file_size: 20812
+  image_updated_at: '2011-08-21 21:07:48.197947+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAkACOgtoZWlnaHRpAnkBOglzaXpl
+
+    aQJMUToKbGFyZ2V7CDsGaQHgOwdpAZM7CGkCWx46C21lZGl1bXsIOwZpAeA7
+
+    B2kBkzsIaQJbHjoKdGh1bWJ7CDsGaQHgOwdpAZM7CGkCWx4=
+
+'
+animals_059:
+  id: 59
+  name: Guinea Pig
+  created_at: '2011-08-21 21:09:11.937478+0000'
+  updated_at: '2011-08-21 21:09:11.937478+0000'
+  image_file_name: guinea_pig1.jpg
+  image_content_type: image/jpeg
+  image_file_size: 167043
+  image_updated_at: '2011-08-21 21:09:11.450741+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAvQBOgtoZWlnaHRpAk0BOglzaXpl
+
+    aQODjAI6Cmxhcmdlewg7BmkB4DsHaQGVOwhpAtiPOgttZWRpdW17CDsGaQHg
+
+    OwdpAZU7CGkC2I86CnRodW1iewg7BmkB4DsHaQGVOwhpAtiP
+
+'
+animals_060:
+  id: 60
+  name: Moose
+  created_at: '2011-08-21 21:10:21.759709+0000'
+  updated_at: '2011-08-21 21:10:21.759709+0000'
+  image_file_name: moose.jpg
+  image_content_type: image/jpeg
+  image_file_size: 49940
+  image_updated_at: '2011-08-21 21:10:21.413540+0000'
+  wins_count: !!null 
+  losses_count: !!null 
+  image_meta: ! 'BAh7CToNb3JpZ2luYWx7CDoKd2lkdGhpAtQBOgtoZWlnaHRpArgBOglzaXpl
+
+    aQIUwzoKbGFyZ2V7CDsGaQHgOwdpAdM7CGkC6zQ6C21lZGl1bXsIOwZpAeA7
+
+    B2kB0zsIaQLrNDoKdGh1bWJ7CDsGaQHgOwdpAdM7CGkC6zQ=
+
+'

@@ -1,0 +1,4551 @@
+---
+ballots_001:
+  id: 1
+  winner_id: 46
+  loser_id: 54
+  match_id: 2
+  created_at: '2011-08-21 20:00:13.831363+0000'
+  updated_at: '2011-08-21 20:00:13.831363+0000'
+ballots_002:
+  id: 2
+  winner_id: 16
+  loser_id: 15
+  match_id: 3
+  created_at: '2011-08-21 20:00:19.406458+0000'
+  updated_at: '2011-08-21 20:00:19.406458+0000'
+ballots_003:
+  id: 3
+  winner_id: 38
+  loser_id: 39
+  match_id: 4
+  created_at: '2011-08-21 20:00:32.403512+0000'
+  updated_at: '2011-08-21 20:00:32.403512+0000'
+ballots_004:
+  id: 4
+  winner_id: 41
+  loser_id: 42
+  match_id: 5
+  created_at: '2011-08-21 20:01:38.321307+0000'
+  updated_at: '2011-08-21 20:01:38.321307+0000'
+ballots_005:
+  id: 5
+  winner_id: 14
+  loser_id: 1
+  match_id: 6
+  created_at: '2011-08-21 20:01:43.035260+0000'
+  updated_at: '2011-08-21 20:01:43.035260+0000'
+ballots_006:
+  id: 6
+  winner_id: 2
+  loser_id: 47
+  match_id: 7
+  created_at: '2011-08-21 20:01:46.264701+0000'
+  updated_at: '2011-08-21 20:01:46.264701+0000'
+ballots_007:
+  id: 7
+  winner_id: 51
+  loser_id: 31
+  match_id: 9
+  created_at: '2011-08-21 20:01:53.331411+0000'
+  updated_at: '2011-08-21 20:01:53.331411+0000'
+ballots_008:
+  id: 8
+  winner_id: 36
+  loser_id: 34
+  match_id: 10
+  created_at: '2011-08-21 20:02:01.231551+0000'
+  updated_at: '2011-08-21 20:02:01.231551+0000'
+ballots_009:
+  id: 9
+  winner_id: 53
+  loser_id: 35
+  match_id: 11
+  created_at: '2011-08-21 20:02:10.059011+0000'
+  updated_at: '2011-08-21 20:02:10.059011+0000'
+ballots_010:
+  id: 10
+  winner_id: 41
+  loser_id: 57
+  match_id: 12
+  created_at: '2011-08-21 20:02:17.876576+0000'
+  updated_at: '2011-08-21 20:02:17.876576+0000'
+ballots_011:
+  id: 11
+  winner_id: 33
+  loser_id: 31
+  match_id: 8
+  created_at: '2011-08-21 20:02:19.667391+0000'
+  updated_at: '2011-08-21 20:02:19.667391+0000'
+ballots_012:
+  id: 12
+  winner_id: 2
+  loser_id: 52
+  match_id: 13
+  created_at: '2011-08-21 20:02:21.536496+0000'
+  updated_at: '2011-08-21 20:02:21.536496+0000'
+ballots_013:
+  id: 13
+  winner_id: 22
+  loser_id: 19
+  match_id: 15
+  created_at: '2011-08-21 20:02:30.514520+0000'
+  updated_at: '2011-08-21 20:02:30.514520+0000'
+ballots_014:
+  id: 14
+  winner_id: 14
+  loser_id: 55
+  match_id: 18
+  created_at: '2011-08-21 20:03:45.637061+0000'
+  updated_at: '2011-08-21 20:03:45.637061+0000'
+ballots_015:
+  id: 15
+  winner_id: 42
+  loser_id: 43
+  match_id: 17
+  created_at: '2011-08-21 20:03:46.400006+0000'
+  updated_at: '2011-08-21 20:03:46.400006+0000'
+ballots_016:
+  id: 16
+  winner_id: 37
+  loser_id: 39
+  match_id: 19
+  created_at: '2011-08-21 20:03:49.352733+0000'
+  updated_at: '2011-08-21 20:03:49.352733+0000'
+ballots_017:
+  id: 17
+  winner_id: 51
+  loser_id: 10
+  match_id: 20
+  created_at: '2011-08-21 20:03:51.405863+0000'
+  updated_at: '2011-08-21 20:03:51.405863+0000'
+ballots_018:
+  id: 18
+  winner_id: 8
+  loser_id: 15
+  match_id: 22
+  created_at: '2011-08-21 20:03:53.114372+0000'
+  updated_at: '2011-08-21 20:03:53.114372+0000'
+ballots_019:
+  id: 19
+  winner_id: 56
+  loser_id: 45
+  match_id: 23
+  created_at: '2011-08-21 20:03:57.171936+0000'
+  updated_at: '2011-08-21 20:03:57.171936+0000'
+ballots_020:
+  id: 20
+  winner_id: 19
+  loser_id: 15
+  match_id: 21
+  created_at: '2011-08-21 20:03:59.012070+0000'
+  updated_at: '2011-08-21 20:03:59.012070+0000'
+ballots_021:
+  id: 21
+  winner_id: 21
+  loser_id: 3
+  match_id: 24
+  created_at: '2011-08-21 20:04:02.661874+0000'
+  updated_at: '2011-08-21 20:04:02.661874+0000'
+ballots_022:
+  id: 22
+  winner_id: 29
+  loser_id: 43
+  match_id: 25
+  created_at: '2011-08-21 20:04:04.006820+0000'
+  updated_at: '2011-08-21 20:04:04.006820+0000'
+ballots_023:
+  id: 23
+  winner_id: 8
+  loser_id: 46
+  match_id: 26
+  created_at: '2011-08-21 20:04:07.455732+0000'
+  updated_at: '2011-08-21 20:04:07.455732+0000'
+ballots_024:
+  id: 24
+  winner_id: 24
+  loser_id: 3
+  match_id: 27
+  created_at: '2011-08-21 20:04:08.731998+0000'
+  updated_at: '2011-08-21 20:04:08.731998+0000'
+ballots_025:
+  id: 25
+  winner_id: 5
+  loser_id: 7
+  match_id: 29
+  created_at: '2011-08-21 20:04:13.062118+0000'
+  updated_at: '2011-08-21 20:04:13.062118+0000'
+ballots_026:
+  id: 26
+  winner_id: 11
+  loser_id: 3
+  match_id: 30
+  created_at: '2011-08-21 20:04:17.034309+0000'
+  updated_at: '2011-08-21 20:04:17.034309+0000'
+ballots_027:
+  id: 27
+  winner_id: 29
+  loser_id: 24
+  match_id: 31
+  created_at: '2011-08-21 20:04:21.769165+0000'
+  updated_at: '2011-08-21 20:04:21.769165+0000'
+ballots_028:
+  id: 28
+  winner_id: 16
+  loser_id: 22
+  match_id: 28
+  created_at: '2011-08-21 20:04:22.365635+0000'
+  updated_at: '2011-08-21 20:04:22.365635+0000'
+ballots_029:
+  id: 29
+  winner_id: 16
+  loser_id: 14
+  match_id: 33
+  created_at: '2011-08-21 20:04:25.591424+0000'
+  updated_at: '2011-08-21 20:04:25.591424+0000'
+ballots_030:
+  id: 30
+  winner_id: 2
+  loser_id: 3
+  match_id: 32
+  created_at: '2011-08-21 20:04:26.492644+0000'
+  updated_at: '2011-08-21 20:04:26.492644+0000'
+ballots_031:
+  id: 31
+  winner_id: 26
+  loser_id: 44
+  match_id: 34
+  created_at: '2011-08-21 20:04:29.402499+0000'
+  updated_at: '2011-08-21 20:04:29.402499+0000'
+ballots_032:
+  id: 32
+  winner_id: 44
+  loser_id: 19
+  match_id: 35
+  created_at: '2011-08-21 20:04:32.253704+0000'
+  updated_at: '2011-08-21 20:04:32.253704+0000'
+ballots_033:
+  id: 33
+  winner_id: 32
+  loser_id: 48
+  match_id: 37
+  created_at: '2011-08-21 20:04:39.088714+0000'
+  updated_at: '2011-08-21 20:04:39.088714+0000'
+ballots_034:
+  id: 34
+  winner_id: 14
+  loser_id: 42
+  match_id: 36
+  created_at: '2011-08-21 20:04:40.222804+0000'
+  updated_at: '2011-08-21 20:04:40.222804+0000'
+ballots_035:
+  id: 35
+  winner_id: 41
+  loser_id: 6
+  match_id: 38
+  created_at: '2011-08-21 20:04:42.619373+0000'
+  updated_at: '2011-08-21 20:04:42.619373+0000'
+ballots_036:
+  id: 36
+  winner_id: 57
+  loser_id: 45
+  match_id: 40
+  created_at: '2011-08-21 20:04:47.107808+0000'
+  updated_at: '2011-08-21 20:04:47.107808+0000'
+ballots_037:
+  id: 37
+  winner_id: 6
+  loser_id: 20
+  match_id: 39
+  created_at: '2011-08-21 20:04:51.230071+0000'
+  updated_at: '2011-08-21 20:04:51.230071+0000'
+ballots_038:
+  id: 38
+  winner_id: 38
+  loser_id: 36
+  match_id: 41
+  created_at: '2011-08-21 20:04:53.877557+0000'
+  updated_at: '2011-08-21 20:04:53.877557+0000'
+ballots_039:
+  id: 39
+  winner_id: 31
+  loser_id: 39
+  match_id: 42
+  created_at: '2011-08-21 20:04:55.425333+0000'
+  updated_at: '2011-08-21 20:04:55.425333+0000'
+ballots_040:
+  id: 40
+  winner_id: 32
+  loser_id: 26
+  match_id: 43
+  created_at: '2011-08-21 20:05:00.297473+0000'
+  updated_at: '2011-08-21 20:05:00.297473+0000'
+ballots_041:
+  id: 41
+  winner_id: 48
+  loser_id: 52
+  match_id: 44
+  created_at: '2011-08-21 20:05:01.222970+0000'
+  updated_at: '2011-08-21 20:05:01.222970+0000'
+ballots_042:
+  id: 42
+  winner_id: 5
+  loser_id: 40
+  match_id: 45
+  created_at: '2011-08-21 20:05:02.858860+0000'
+  updated_at: '2011-08-21 20:05:02.858860+0000'
+ballots_043:
+  id: 43
+  winner_id: 57
+  loser_id: 56
+  match_id: 46
+  created_at: '2011-08-21 20:05:03.346893+0000'
+  updated_at: '2011-08-21 20:05:03.346893+0000'
+ballots_044:
+  id: 44
+  winner_id: 14
+  loser_id: 40
+  match_id: 47
+  created_at: '2011-08-21 20:05:07.084425+0000'
+  updated_at: '2011-08-21 20:05:07.084425+0000'
+ballots_045:
+  id: 45
+  winner_id: 37
+  loser_id: 10
+  match_id: 48
+  created_at: '2011-08-21 20:05:09.569624+0000'
+  updated_at: '2011-08-21 20:05:09.569624+0000'
+ballots_046:
+  id: 46
+  winner_id: 25
+  loser_id: 55
+  match_id: 50
+  created_at: '2011-08-21 20:05:12.744225+0000'
+  updated_at: '2011-08-21 20:05:12.744225+0000'
+ballots_047:
+  id: 47
+  winner_id: 25
+  loser_id: 18
+  match_id: 49
+  created_at: '2011-08-21 20:05:13.810986+0000'
+  updated_at: '2011-08-21 20:05:13.810986+0000'
+ballots_048:
+  id: 48
+  winner_id: 25
+  loser_id: 4
+  match_id: 51
+  created_at: '2011-08-21 20:05:15.538392+0000'
+  updated_at: '2011-08-21 20:05:15.538392+0000'
+ballots_049:
+  id: 49
+  winner_id: 48
+  loser_id: 36
+  match_id: 52
+  created_at: '2011-08-21 20:05:17.866371+0000'
+  updated_at: '2011-08-21 20:05:17.866371+0000'
+ballots_050:
+  id: 50
+  winner_id: 15
+  loser_id: 39
+  match_id: 53
+  created_at: '2011-08-21 20:05:20.045676+0000'
+  updated_at: '2011-08-21 20:05:20.045676+0000'
+ballots_051:
+  id: 51
+  winner_id: 31
+  loser_id: 23
+  match_id: 54
+  created_at: '2011-08-21 20:05:21.755149+0000'
+  updated_at: '2011-08-21 20:05:21.755149+0000'
+ballots_052:
+  id: 52
+  winner_id: 52
+  loser_id: 10
+  match_id: 55
+  created_at: '2011-08-21 20:05:25.939794+0000'
+  updated_at: '2011-08-21 20:05:25.939794+0000'
+ballots_053:
+  id: 53
+  winner_id: 21
+  loser_id: 11
+  match_id: 56
+  created_at: '2011-08-21 20:05:26.789307+0000'
+  updated_at: '2011-08-21 20:05:26.789307+0000'
+ballots_054:
+  id: 54
+  winner_id: 26
+  loser_id: 28
+  match_id: 58
+  created_at: '2011-08-21 20:05:30.823769+0000'
+  updated_at: '2011-08-21 20:05:30.823769+0000'
+ballots_055:
+  id: 55
+  winner_id: 26
+  loser_id: 25
+  match_id: 57
+  created_at: '2011-08-21 20:05:32.396488+0000'
+  updated_at: '2011-08-21 20:05:32.396488+0000'
+ballots_056:
+  id: 56
+  winner_id: 30
+  loser_id: 12
+  match_id: 59
+  created_at: '2011-08-21 20:05:37.255704+0000'
+  updated_at: '2011-08-21 20:05:37.255704+0000'
+ballots_057:
+  id: 57
+  winner_id: 8
+  loser_id: 38
+  match_id: 60
+  created_at: '2011-08-21 20:05:39.263940+0000'
+  updated_at: '2011-08-21 20:05:39.263940+0000'
+ballots_058:
+  id: 58
+  winner_id: 50
+  loser_id: 15
+  match_id: 62
+  created_at: '2011-08-21 20:05:43.800703+0000'
+  updated_at: '2011-08-21 20:05:43.800703+0000'
+ballots_059:
+  id: 59
+  winner_id: 9
+  loser_id: 13
+  match_id: 61
+  created_at: '2011-08-21 20:05:45.463979+0000'
+  updated_at: '2011-08-21 20:05:45.463979+0000'
+ballots_060:
+  id: 60
+  winner_id: 34
+  loser_id: 4
+  match_id: 63
+  created_at: '2011-08-21 20:05:49.211234+0000'
+  updated_at: '2011-08-21 20:05:49.211234+0000'
+ballots_061:
+  id: 61
+  winner_id: 25
+  loser_id: 14
+  match_id: 65
+  created_at: '2011-08-21 20:05:57.623283+0000'
+  updated_at: '2011-08-21 20:05:57.623283+0000'
+ballots_062:
+  id: 62
+  winner_id: 18
+  loser_id: 31
+  match_id: 66
+  created_at: '2011-08-21 20:05:59.803265+0000'
+  updated_at: '2011-08-21 20:05:59.803265+0000'
+ballots_063:
+  id: 63
+  winner_id: 5
+  loser_id: 33
+  match_id: 67
+  created_at: '2011-08-21 20:06:08.369412+0000'
+  updated_at: '2011-08-21 20:06:08.369412+0000'
+ballots_064:
+  id: 64
+  winner_id: 53
+  loser_id: 9
+  match_id: 64
+  created_at: '2011-08-21 20:06:10.941660+0000'
+  updated_at: '2011-08-21 20:06:10.941660+0000'
+ballots_065:
+  id: 65
+  winner_id: 49
+  loser_id: 17
+  match_id: 68
+  created_at: '2011-08-21 20:06:12.244804+0000'
+  updated_at: '2011-08-21 20:06:12.244804+0000'
+ballots_066:
+  id: 66
+  winner_id: 45
+  loser_id: 20
+  match_id: 69
+  created_at: '2011-08-21 20:06:13.953265+0000'
+  updated_at: '2011-08-21 20:06:13.953265+0000'
+ballots_067:
+  id: 67
+  winner_id: 3
+  loser_id: 16
+  match_id: 71
+  created_at: '2011-08-21 20:06:17.901645+0000'
+  updated_at: '2011-08-21 20:06:17.901645+0000'
+ballots_068:
+  id: 68
+  winner_id: 26
+  loser_id: 57
+  match_id: 70
+  created_at: '2011-08-21 20:06:19.462765+0000'
+  updated_at: '2011-08-21 20:06:19.462765+0000'
+ballots_069:
+  id: 69
+  winner_id: 20
+  loser_id: 4
+  match_id: 73
+  created_at: '2011-08-21 20:06:22.796420+0000'
+  updated_at: '2011-08-21 20:06:22.796420+0000'
+ballots_070:
+  id: 70
+  winner_id: 30
+  loser_id: 36
+  match_id: 74
+  created_at: '2011-08-21 20:06:26.625299+0000'
+  updated_at: '2011-08-21 20:06:26.625299+0000'
+ballots_071:
+  id: 71
+  winner_id: 24
+  loser_id: 46
+  match_id: 75
+  created_at: '2011-08-21 20:06:33.648407+0000'
+  updated_at: '2011-08-21 20:06:33.648407+0000'
+ballots_072:
+  id: 72
+  winner_id: 35
+  loser_id: 43
+  match_id: 76
+  created_at: '2011-08-21 20:06:38.099588+0000'
+  updated_at: '2011-08-21 20:06:38.099588+0000'
+ballots_073:
+  id: 73
+  winner_id: 47
+  loser_id: 16
+  match_id: 77
+  created_at: '2011-08-21 20:06:40.702593+0000'
+  updated_at: '2011-08-21 20:06:40.702593+0000'
+ballots_074:
+  id: 74
+  winner_id: 6
+  loser_id: 11
+  match_id: 72
+  created_at: '2011-08-21 20:06:42.459372+0000'
+  updated_at: '2011-08-21 20:06:42.459372+0000'
+ballots_075:
+  id: 75
+  winner_id: 29
+  loser_id: 49
+  match_id: 79
+  created_at: '2011-08-21 20:06:47.608115+0000'
+  updated_at: '2011-08-21 20:06:47.608115+0000'
+ballots_076:
+  id: 76
+  winner_id: 19
+  loser_id: 14
+  match_id: 80
+  created_at: '2011-08-21 20:06:53.198441+0000'
+  updated_at: '2011-08-21 20:06:53.198441+0000'
+ballots_077:
+  id: 77
+  winner_id: 53
+  loser_id: 40
+  match_id: 81
+  created_at: '2011-08-21 20:06:57.972692+0000'
+  updated_at: '2011-08-21 20:06:57.972692+0000'
+ballots_078:
+  id: 78
+  winner_id: 15
+  loser_id: 13
+  match_id: 82
+  created_at: '2011-08-21 20:07:02.278859+0000'
+  updated_at: '2011-08-21 20:07:02.278859+0000'
+ballots_079:
+  id: 79
+  winner_id: 55
+  loser_id: 7
+  match_id: 83
+  created_at: '2011-08-21 20:07:07.570134+0000'
+  updated_at: '2011-08-21 20:07:07.570134+0000'
+ballots_080:
+  id: 80
+  winner_id: 24
+  loser_id: 38
+  match_id: 84
+  created_at: '2011-08-21 20:07:13.215847+0000'
+  updated_at: '2011-08-21 20:07:13.215847+0000'
+ballots_081:
+  id: 81
+  winner_id: 9
+  loser_id: 23
+  match_id: 86
+  created_at: '2011-08-21 20:07:17.298776+0000'
+  updated_at: '2011-08-21 20:07:17.298776+0000'
+ballots_082:
+  id: 82
+  winner_id: 2
+  loser_id: 53
+  match_id: 85
+  created_at: '2011-08-21 20:07:18.668022+0000'
+  updated_at: '2011-08-21 20:07:18.668022+0000'
+ballots_083:
+  id: 83
+  winner_id: 50
+  loser_id: 19
+  match_id: 87
+  created_at: '2011-08-21 20:07:19.858736+0000'
+  updated_at: '2011-08-21 20:07:19.858736+0000'
+ballots_084:
+  id: 84
+  winner_id: 32
+  loser_id: 30
+  match_id: 89
+  created_at: '2011-08-21 20:07:22.824433+0000'
+  updated_at: '2011-08-21 20:07:22.824433+0000'
+ballots_085:
+  id: 85
+  winner_id: 27
+  loser_id: 36
+  match_id: 88
+  created_at: '2011-08-21 20:07:24.827658+0000'
+  updated_at: '2011-08-21 20:07:24.827658+0000'
+ballots_086:
+  id: 86
+  winner_id: 35
+  loser_id: 34
+  match_id: 90
+  created_at: '2011-08-21 20:07:26.347426+0000'
+  updated_at: '2011-08-21 20:07:26.347426+0000'
+ballots_087:
+  id: 87
+  winner_id: 2
+  loser_id: 45
+  match_id: 92
+  created_at: '2011-08-21 20:07:28.216166+0000'
+  updated_at: '2011-08-21 20:07:28.216166+0000'
+ballots_088:
+  id: 88
+  winner_id: 5
+  loser_id: 8
+  match_id: 91
+  created_at: '2011-08-21 20:07:31.752594+0000'
+  updated_at: '2011-08-21 20:07:31.752594+0000'
+ballots_089:
+  id: 89
+  winner_id: 14
+  loser_id: 33
+  match_id: 93
+  created_at: '2011-08-21 20:07:34.352120+0000'
+  updated_at: '2011-08-21 20:07:34.352120+0000'
+ballots_090:
+  id: 90
+  winner_id: 4
+  loser_id: 39
+  match_id: 94
+  created_at: '2011-08-21 20:07:37.258048+0000'
+  updated_at: '2011-08-21 20:07:37.258048+0000'
+ballots_091:
+  id: 91
+  winner_id: 41
+  loser_id: 51
+  match_id: 95
+  created_at: '2011-08-21 20:07:41.876873+0000'
+  updated_at: '2011-08-21 20:07:41.876873+0000'
+ballots_092:
+  id: 92
+  winner_id: 32
+  loser_id: 5
+  match_id: 96
+  created_at: '2011-08-21 20:07:44.018151+0000'
+  updated_at: '2011-08-21 20:07:44.018151+0000'
+ballots_093:
+  id: 93
+  winner_id: 35
+  loser_id: 9
+  match_id: 98
+  created_at: '2011-08-21 20:07:49.768308+0000'
+  updated_at: '2011-08-21 20:07:49.768308+0000'
+ballots_094:
+  id: 94
+  winner_id: 31
+  loser_id: 15
+  match_id: 97
+  created_at: '2011-08-21 20:07:54.359916+0000'
+  updated_at: '2011-08-21 20:07:54.359916+0000'
+ballots_095:
+  id: 95
+  winner_id: 17
+  loser_id: 1
+  match_id: 99
+  created_at: '2011-08-21 20:07:54.967991+0000'
+  updated_at: '2011-08-21 20:07:54.967991+0000'
+ballots_096:
+  id: 96
+  winner_id: 10
+  loser_id: 13
+  match_id: 101
+  created_at: '2011-08-21 20:07:58.541759+0000'
+  updated_at: '2011-08-21 20:07:58.541759+0000'
+ballots_097:
+  id: 97
+  winner_id: 52
+  loser_id: 1
+  match_id: 100
+  created_at: '2011-08-21 20:08:00.326072+0000'
+  updated_at: '2011-08-21 20:08:00.326072+0000'
+ballots_098:
+  id: 98
+  winner_id: 18
+  loser_id: 51
+  match_id: 103
+  created_at: '2011-08-21 20:08:02.983594+0000'
+  updated_at: '2011-08-21 20:08:02.983594+0000'
+ballots_099:
+  id: 99
+  winner_id: 29
+  loser_id: 50
+  match_id: 102
+  created_at: '2011-08-21 20:08:05.552881+0000'
+  updated_at: '2011-08-21 20:08:05.552881+0000'
+ballots_100:
+  id: 100
+  winner_id: 57
+  loser_id: 16
+  match_id: 105
+  created_at: '2011-08-21 20:08:10.451735+0000'
+  updated_at: '2011-08-21 20:08:10.451735+0000'
+ballots_101:
+  id: 101
+  winner_id: 37
+  loser_id: 41
+  match_id: 106
+  created_at: '2011-08-21 20:08:15.770638+0000'
+  updated_at: '2011-08-21 20:08:15.770638+0000'
+ballots_102:
+  id: 102
+  winner_id: 32
+  loser_id: 28
+  match_id: 107
+  created_at: '2011-08-21 20:08:18.809878+0000'
+  updated_at: '2011-08-21 20:08:18.809878+0000'
+ballots_103:
+  id: 103
+  winner_id: 8
+  loser_id: 35
+  match_id: 108
+  created_at: '2011-08-21 20:08:23.814982+0000'
+  updated_at: '2011-08-21 20:08:23.814982+0000'
+ballots_104:
+  id: 104
+  winner_id: 37
+  loser_id: 29
+  match_id: 104
+  created_at: '2011-08-21 20:08:26.512834+0000'
+  updated_at: '2011-08-21 20:08:26.512834+0000'
+ballots_105:
+  id: 105
+  winner_id: 33
+  loser_id: 20
+  match_id: 110
+  created_at: '2011-08-21 20:08:30.003925+0000'
+  updated_at: '2011-08-21 20:08:30.003925+0000'
+ballots_106:
+  id: 106
+  winner_id: 54
+  loser_id: 23
+  match_id: 109
+  created_at: '2011-08-21 20:08:31.833470+0000'
+  updated_at: '2011-08-21 20:08:31.833470+0000'
+ballots_107:
+  id: 107
+  winner_id: 29
+  loser_id: 53
+  match_id: 111
+  created_at: '2011-08-21 20:08:35.816483+0000'
+  updated_at: '2011-08-21 20:08:35.816483+0000'
+ballots_108:
+  id: 108
+  winner_id: 44
+  loser_id: 17
+  match_id: 112
+  created_at: '2011-08-21 20:08:39.326701+0000'
+  updated_at: '2011-08-21 20:08:39.326701+0000'
+ballots_109:
+  id: 109
+  winner_id: 56
+  loser_id: 17
+  match_id: 113
+  created_at: '2011-08-21 20:08:41.026733+0000'
+  updated_at: '2011-08-21 20:08:41.026733+0000'
+ballots_110:
+  id: 110
+  winner_id: 11
+  loser_id: 42
+  match_id: 114
+  created_at: '2011-08-21 20:08:45.650199+0000'
+  updated_at: '2011-08-21 20:08:45.650199+0000'
+ballots_111:
+  id: 111
+  winner_id: 48
+  loser_id: 30
+  match_id: 115
+  created_at: '2011-08-21 20:08:47.169841+0000'
+  updated_at: '2011-08-21 20:08:47.169841+0000'
+ballots_112:
+  id: 112
+  winner_id: 51
+  loser_id: 9
+  match_id: 116
+  created_at: '2011-08-21 20:08:50.509515+0000'
+  updated_at: '2011-08-21 20:08:50.509515+0000'
+ballots_113:
+  id: 113
+  winner_id: 10
+  loser_id: 20
+  match_id: 117
+  created_at: '2011-08-21 20:08:57.756628+0000'
+  updated_at: '2011-08-21 20:08:57.756628+0000'
+ballots_114:
+  id: 114
+  winner_id: 57
+  loser_id: 35
+  match_id: 118
+  created_at: '2011-08-21 20:09:00.446592+0000'
+  updated_at: '2011-08-21 20:09:00.446592+0000'
+ballots_115:
+  id: 115
+  winner_id: 8
+  loser_id: 11
+  match_id: 119
+  created_at: '2011-08-21 20:09:03.140768+0000'
+  updated_at: '2011-08-21 20:09:03.140768+0000'
+ballots_116:
+  id: 116
+  winner_id: 57
+  loser_id: 24
+  match_id: 120
+  created_at: '2011-08-21 20:09:16.214934+0000'
+  updated_at: '2011-08-21 20:09:16.214934+0000'
+ballots_117:
+  id: 117
+  winner_id: 27
+  loser_id: 11
+  match_id: 121
+  created_at: '2011-08-21 20:09:18.567173+0000'
+  updated_at: '2011-08-21 20:09:18.567173+0000'
+ballots_118:
+  id: 118
+  winner_id: 17
+  loser_id: 36
+  match_id: 122
+  created_at: '2011-08-21 20:09:24.932159+0000'
+  updated_at: '2011-08-21 20:09:24.932159+0000'
+ballots_119:
+  id: 119
+  winner_id: 24
+  loser_id: 53
+  match_id: 123
+  created_at: '2011-08-21 20:09:34.826189+0000'
+  updated_at: '2011-08-21 20:09:34.826189+0000'
+ballots_120:
+  id: 120
+  winner_id: 11
+  loser_id: 12
+  match_id: 124
+  created_at: '2011-08-21 20:09:37.324666+0000'
+  updated_at: '2011-08-21 20:09:37.324666+0000'
+ballots_121:
+  id: 121
+  winner_id: 41
+  loser_id: 57
+  match_id: 12
+  created_at: '2011-08-21 20:09:44.165373+0000'
+  updated_at: '2011-08-21 20:09:44.165373+0000'
+ballots_122:
+  id: 122
+  winner_id: 2
+  loser_id: 21
+  match_id: 126
+  created_at: '2011-08-21 20:10:06.656700+0000'
+  updated_at: '2011-08-21 20:10:06.656700+0000'
+ballots_123:
+  id: 123
+  winner_id: 15
+  loser_id: 4
+  match_id: 127
+  created_at: '2011-08-21 20:10:17.980152+0000'
+  updated_at: '2011-08-21 20:10:17.980152+0000'
+ballots_124:
+  id: 124
+  winner_id: 57
+  loser_id: 31
+  match_id: 125
+  created_at: '2011-08-21 20:10:20.540274+0000'
+  updated_at: '2011-08-21 20:10:20.540274+0000'
+ballots_125:
+  id: 125
+  winner_id: 5
+  loser_id: 41
+  match_id: 129
+  created_at: '2011-08-21 20:10:26.902154+0000'
+  updated_at: '2011-08-21 20:10:26.902154+0000'
+ballots_126:
+  id: 126
+  winner_id: 45
+  loser_id: 42
+  match_id: 128
+  created_at: '2011-08-21 20:10:30.181477+0000'
+  updated_at: '2011-08-21 20:10:30.181477+0000'
+ballots_127:
+  id: 127
+  winner_id: 19
+  loser_id: 9
+  match_id: 131
+  created_at: '2011-08-21 20:10:35.868931+0000'
+  updated_at: '2011-08-21 20:10:35.868931+0000'
+ballots_128:
+  id: 128
+  winner_id: 3
+  loser_id: 42
+  match_id: 130
+  created_at: '2011-08-21 20:10:37.467169+0000'
+  updated_at: '2011-08-21 20:10:37.467169+0000'
+ballots_129:
+  id: 129
+  winner_id: 32
+  loser_id: 37
+  match_id: 133
+  created_at: '2011-08-21 20:10:47.058918+0000'
+  updated_at: '2011-08-21 20:10:47.058918+0000'
+ballots_130:
+  id: 130
+  winner_id: 51
+  loser_id: 19
+  match_id: 132
+  created_at: '2011-08-21 20:10:49.051863+0000'
+  updated_at: '2011-08-21 20:10:49.051863+0000'
+ballots_131:
+  id: 131
+  winner_id: 29
+  loser_id: 15
+  match_id: 134
+  created_at: '2011-08-21 20:10:51.081019+0000'
+  updated_at: '2011-08-21 20:10:51.081019+0000'
+ballots_132:
+  id: 132
+  winner_id: 16
+  loser_id: 53
+  match_id: 135
+  created_at: '2011-08-21 20:10:57.427261+0000'
+  updated_at: '2011-08-21 20:10:57.427261+0000'
+ballots_133:
+  id: 133
+  winner_id: 19
+  loser_id: 54
+  match_id: 136
+  created_at: '2011-08-21 20:10:59.221757+0000'
+  updated_at: '2011-08-21 20:10:59.221757+0000'
+ballots_134:
+  id: 134
+  winner_id: 21
+  loser_id: 57
+  match_id: 137
+  created_at: '2011-08-21 20:11:02.252229+0000'
+  updated_at: '2011-08-21 20:11:02.252229+0000'
+ballots_135:
+  id: 135
+  winner_id: 21
+  loser_id: 18
+  match_id: 138
+  created_at: '2011-08-21 20:11:04.278990+0000'
+  updated_at: '2011-08-21 20:11:04.278990+0000'
+ballots_136:
+  id: 136
+  winner_id: 33
+  loser_id: 42
+  match_id: 139
+  created_at: '2011-08-21 20:11:06.931334+0000'
+  updated_at: '2011-08-21 20:11:06.931334+0000'
+ballots_137:
+  id: 137
+  winner_id: 36
+  loser_id: 20
+  match_id: 141
+  created_at: '2011-08-21 20:11:12.105548+0000'
+  updated_at: '2011-08-21 20:11:12.105548+0000'
+ballots_138:
+  id: 138
+  winner_id: 48
+  loser_id: 25
+  match_id: 140
+  created_at: '2011-08-21 20:11:30.896849+0000'
+  updated_at: '2011-08-21 20:11:30.896849+0000'
+ballots_139:
+  id: 139
+  winner_id: 49
+  loser_id: 53
+  match_id: 143
+  created_at: '2011-08-21 20:11:34.851860+0000'
+  updated_at: '2011-08-21 20:11:34.851860+0000'
+ballots_140:
+  id: 140
+  winner_id: 49
+  loser_id: 6
+  match_id: 144
+  created_at: '2011-08-21 20:11:38.157244+0000'
+  updated_at: '2011-08-21 20:11:38.157244+0000'
+ballots_141:
+  id: 141
+  winner_id: 52
+  loser_id: 38
+  match_id: 145
+  created_at: '2011-08-21 20:11:43.008788+0000'
+  updated_at: '2011-08-21 20:11:43.008788+0000'
+ballots_142:
+  id: 142
+  winner_id: 38
+  loser_id: 34
+  match_id: 146
+  created_at: '2011-08-21 20:11:44.755972+0000'
+  updated_at: '2011-08-21 20:11:44.755972+0000'
+ballots_143:
+  id: 143
+  winner_id: 32
+  loser_id: 29
+  match_id: 147
+  created_at: '2011-08-21 20:11:50.116818+0000'
+  updated_at: '2011-08-21 20:11:50.116818+0000'
+ballots_144:
+  id: 144
+  winner_id: 42
+  loser_id: 34
+  match_id: 148
+  created_at: '2011-08-21 20:11:58.331105+0000'
+  updated_at: '2011-08-21 20:11:58.331105+0000'
+ballots_145:
+  id: 145
+  winner_id: 27
+  loser_id: 8
+  match_id: 149
+  created_at: '2011-08-21 20:12:01.846579+0000'
+  updated_at: '2011-08-21 20:12:01.846579+0000'
+ballots_146:
+  id: 146
+  winner_id: 27
+  loser_id: 5
+  match_id: 150
+  created_at: '2011-08-21 20:12:05.071475+0000'
+  updated_at: '2011-08-21 20:12:05.071475+0000'
+ballots_147:
+  id: 147
+  winner_id: 37
+  loser_id: 21
+  match_id: 142
+  created_at: '2011-08-21 20:12:07.239780+0000'
+  updated_at: '2011-08-21 20:12:07.239780+0000'
+ballots_148:
+  id: 148
+  winner_id: 46
+  loser_id: 54
+  match_id: 2
+  created_at: '2011-08-21 20:12:11.778016+0000'
+  updated_at: '2011-08-21 20:12:11.778016+0000'
+ballots_149:
+  id: 149
+  winner_id: 57
+  loser_id: 16
+  match_id: 105
+  created_at: '2011-08-21 20:12:15.004555+0000'
+  updated_at: '2011-08-21 20:12:15.004555+0000'
+ballots_150:
+  id: 150
+  winner_id: 31
+  loser_id: 10
+  match_id: 151
+  created_at: '2011-08-21 20:12:16.891115+0000'
+  updated_at: '2011-08-21 20:12:16.891115+0000'
+ballots_151:
+  id: 151
+  winner_id: 28
+  loser_id: 43
+  match_id: 152
+  created_at: '2011-08-21 20:12:19.088205+0000'
+  updated_at: '2011-08-21 20:12:19.088205+0000'
+ballots_152:
+  id: 152
+  winner_id: 38
+  loser_id: 31
+  match_id: 153
+  created_at: '2011-08-21 20:12:26.439368+0000'
+  updated_at: '2011-08-21 20:12:26.439368+0000'
+ballots_153:
+  id: 153
+  winner_id: 12
+  loser_id: 4
+  match_id: 154
+  created_at: '2011-08-21 20:12:28.069991+0000'
+  updated_at: '2011-08-21 20:12:28.069991+0000'
+ballots_154:
+  id: 154
+  winner_id: 30
+  loser_id: 46
+  match_id: 155
+  created_at: '2011-08-21 20:12:33.060824+0000'
+  updated_at: '2011-08-21 20:12:33.060824+0000'
+ballots_155:
+  id: 155
+  winner_id: 27
+  loser_id: 46
+  match_id: 157
+  created_at: '2011-08-21 20:12:36.860646+0000'
+  updated_at: '2011-08-21 20:12:36.860646+0000'
+ballots_156:
+  id: 156
+  winner_id: 38
+  loser_id: 10
+  match_id: 158
+  created_at: '2011-08-21 20:12:41.128507+0000'
+  updated_at: '2011-08-21 20:12:41.128507+0000'
+ballots_157:
+  id: 157
+  winner_id: 10
+  loser_id: 42
+  match_id: 159
+  created_at: '2011-08-21 20:13:21.076418+0000'
+  updated_at: '2011-08-21 20:13:21.076418+0000'
+ballots_158:
+  id: 158
+  winner_id: 32
+  loser_id: 27
+  match_id: 160
+  created_at: '2011-08-21 20:14:27.602018+0000'
+  updated_at: '2011-08-21 20:14:27.602018+0000'
+ballots_159:
+  id: 159
+  winner_id: 50
+  loser_id: 24
+  match_id: 162
+  created_at: '2011-08-21 20:14:34.271838+0000'
+  updated_at: '2011-08-21 20:14:34.271838+0000'
+ballots_160:
+  id: 160
+  winner_id: 22
+  loser_id: 6
+  match_id: 163
+  created_at: '2011-08-21 20:14:38.533631+0000'
+  updated_at: '2011-08-21 20:14:38.533631+0000'
+ballots_161:
+  id: 161
+  winner_id: 30
+  loser_id: 52
+  match_id: 164
+  created_at: '2011-08-21 20:14:41.641050+0000'
+  updated_at: '2011-08-21 20:14:41.641050+0000'
+ballots_162:
+  id: 162
+  winner_id: 1
+  loser_id: 23
+  match_id: 165
+  created_at: '2011-08-21 20:14:47.788326+0000'
+  updated_at: '2011-08-21 20:14:47.788326+0000'
+ballots_163:
+  id: 163
+  winner_id: 47
+  loser_id: 35
+  match_id: 166
+  created_at: '2011-08-21 20:14:52.068623+0000'
+  updated_at: '2011-08-21 20:14:52.068623+0000'
+ballots_164:
+  id: 164
+  winner_id: 11
+  loser_id: 31
+  match_id: 167
+  created_at: '2011-08-21 20:15:20.617776+0000'
+  updated_at: '2011-08-21 20:15:20.617776+0000'
+ballots_165:
+  id: 165
+  winner_id: 47
+  loser_id: 57
+  match_id: 168
+  created_at: '2011-08-21 20:15:23.807841+0000'
+  updated_at: '2011-08-21 20:15:23.807841+0000'
+ballots_166:
+  id: 166
+  winner_id: 7
+  loser_id: 13
+  match_id: 169
+  created_at: '2011-08-21 20:15:27.337707+0000'
+  updated_at: '2011-08-21 20:15:27.337707+0000'
+ballots_167:
+  id: 167
+  winner_id: 56
+  loser_id: 14
+  match_id: 170
+  created_at: '2011-08-21 20:15:31.915661+0000'
+  updated_at: '2011-08-21 20:15:31.915661+0000'
+ballots_168:
+  id: 168
+  winner_id: 21
+  loser_id: 41
+  match_id: 171
+  created_at: '2011-08-21 20:15:35.390795+0000'
+  updated_at: '2011-08-21 20:15:35.390795+0000'
+ballots_169:
+  id: 169
+  winner_id: 43
+  loser_id: 13
+  match_id: 172
+  created_at: '2011-08-21 20:15:50.579994+0000'
+  updated_at: '2011-08-21 20:15:50.579994+0000'
+ballots_170:
+  id: 170
+  winner_id: 22
+  loser_id: 24
+  match_id: 173
+  created_at: '2011-08-21 20:15:55.447869+0000'
+  updated_at: '2011-08-21 20:15:55.447869+0000'
+ballots_171:
+  id: 171
+  winner_id: 44
+  loser_id: 33
+  match_id: 174
+  created_at: '2011-08-21 20:16:06.557438+0000'
+  updated_at: '2011-08-21 20:16:06.557438+0000'
+ballots_172:
+  id: 172
+  winner_id: 5
+  loser_id: 13
+  match_id: 175
+  created_at: '2011-08-21 20:16:09.762248+0000'
+  updated_at: '2011-08-21 20:16:09.762248+0000'
+ballots_173:
+  id: 173
+  winner_id: 40
+  loser_id: 7
+  match_id: 161
+  created_at: '2011-08-21 20:16:21.542406+0000'
+  updated_at: '2011-08-21 20:16:21.542406+0000'
+ballots_174:
+  id: 174
+  winner_id: 25
+  loser_id: 30
+  match_id: 176
+  created_at: '2011-08-21 20:16:29.226866+0000'
+  updated_at: '2011-08-21 20:16:29.226866+0000'
+ballots_175:
+  id: 175
+  winner_id: 46
+  loser_id: 9
+  match_id: 177
+  created_at: '2011-08-21 20:16:42.818781+0000'
+  updated_at: '2011-08-21 20:16:42.818781+0000'
+ballots_176:
+  id: 176
+  winner_id: 29
+  loser_id: 53
+  match_id: 111
+  created_at: '2011-08-21 20:16:49.224350+0000'
+  updated_at: '2011-08-21 20:16:49.224350+0000'
+ballots_177:
+  id: 177
+  winner_id: 18
+  loser_id: 16
+  match_id: 178
+  created_at: '2011-08-21 20:17:01.737665+0000'
+  updated_at: '2011-08-21 20:17:01.737665+0000'
+ballots_178:
+  id: 178
+  winner_id: 32
+  loser_id: 43
+  match_id: 179
+  created_at: '2011-08-21 20:17:06.983948+0000'
+  updated_at: '2011-08-21 20:17:06.983948+0000'
+ballots_179:
+  id: 179
+  winner_id: 12
+  loser_id: 55
+  match_id: 180
+  created_at: '2011-08-21 20:17:19.418288+0000'
+  updated_at: '2011-08-21 20:17:19.418288+0000'
+ballots_180:
+  id: 180
+  winner_id: 57
+  loser_id: 14
+  match_id: 181
+  created_at: '2011-08-21 20:17:27.555528+0000'
+  updated_at: '2011-08-21 20:17:27.555528+0000'
+ballots_181:
+  id: 181
+  winner_id: 20
+  loser_id: 4
+  match_id: 73
+  created_at: '2011-08-21 20:17:30.953448+0000'
+  updated_at: '2011-08-21 20:17:30.953448+0000'
+ballots_182:
+  id: 182
+  winner_id: 39
+  loser_id: 4
+  match_id: 94
+  created_at: '2011-08-21 20:17:37.289073+0000'
+  updated_at: '2011-08-21 20:17:37.289073+0000'
+ballots_183:
+  id: 183
+  winner_id: 1
+  loser_id: 20
+  match_id: 182
+  created_at: '2011-08-21 20:17:40.730472+0000'
+  updated_at: '2011-08-21 20:17:40.730472+0000'
+ballots_184:
+  id: 184
+  winner_id: 43
+  loser_id: 34
+  match_id: 183
+  created_at: '2011-08-21 20:17:49.314081+0000'
+  updated_at: '2011-08-21 20:17:49.314081+0000'
+ballots_185:
+  id: 185
+  winner_id: 30
+  loser_id: 19
+  match_id: 184
+  created_at: '2011-08-21 20:17:56.521445+0000'
+  updated_at: '2011-08-21 20:17:56.521445+0000'
+ballots_186:
+  id: 186
+  winner_id: 47
+  loser_id: 55
+  match_id: 185
+  created_at: '2011-08-21 20:17:58.229114+0000'
+  updated_at: '2011-08-21 20:17:58.229114+0000'
+ballots_187:
+  id: 187
+  winner_id: 15
+  loser_id: 1
+  match_id: 186
+  created_at: '2011-08-21 20:18:04.762326+0000'
+  updated_at: '2011-08-21 20:18:04.762326+0000'
+ballots_188:
+  id: 188
+  winner_id: 8
+  loser_id: 56
+  match_id: 187
+  created_at: '2011-08-21 20:18:16.059757+0000'
+  updated_at: '2011-08-21 20:18:16.059757+0000'
+ballots_189:
+  id: 189
+  winner_id: 40
+  loser_id: 42
+  match_id: 188
+  created_at: '2011-08-21 20:18:22.981201+0000'
+  updated_at: '2011-08-21 20:18:22.981201+0000'
+ballots_190:
+  id: 190
+  winner_id: 29
+  loser_id: 47
+  match_id: 189
+  created_at: '2011-08-21 20:18:29.058913+0000'
+  updated_at: '2011-08-21 20:18:29.058913+0000'
+ballots_191:
+  id: 191
+  winner_id: 25
+  loser_id: 10
+  match_id: 190
+  created_at: '2011-08-21 20:18:31.016046+0000'
+  updated_at: '2011-08-21 20:18:31.016046+0000'
+ballots_192:
+  id: 192
+  winner_id: 21
+  loser_id: 38
+  match_id: 191
+  created_at: '2011-08-21 20:18:41.924634+0000'
+  updated_at: '2011-08-21 20:18:41.924634+0000'
+ballots_193:
+  id: 193
+  winner_id: 27
+  loser_id: 48
+  match_id: 192
+  created_at: '2011-08-21 20:18:46.841291+0000'
+  updated_at: '2011-08-21 20:18:46.841291+0000'
+ballots_194:
+  id: 194
+  winner_id: 28
+  loser_id: 9
+  match_id: 193
+  created_at: '2011-08-21 20:18:50.212337+0000'
+  updated_at: '2011-08-21 20:18:50.212337+0000'
+ballots_195:
+  id: 195
+  winner_id: 5
+  loser_id: 21
+  match_id: 194
+  created_at: '2011-08-21 20:18:55.177846+0000'
+  updated_at: '2011-08-21 20:18:55.177846+0000'
+ballots_196:
+  id: 196
+  winner_id: 54
+  loser_id: 34
+  match_id: 195
+  created_at: '2011-08-21 20:19:01.295439+0000'
+  updated_at: '2011-08-21 20:19:01.295439+0000'
+ballots_197:
+  id: 197
+  winner_id: 37
+  loser_id: 32
+  match_id: 133
+  created_at: '2011-08-21 20:19:08.460472+0000'
+  updated_at: '2011-08-21 20:19:08.460472+0000'
+ballots_198:
+  id: 198
+  winner_id: 8
+  loser_id: 49
+  match_id: 197
+  created_at: '2011-08-21 20:19:22.846356+0000'
+  updated_at: '2011-08-21 20:19:22.846356+0000'
+ballots_199:
+  id: 199
+  winner_id: 28
+  loser_id: 19
+  match_id: 198
+  created_at: '2011-08-21 20:19:28.037669+0000'
+  updated_at: '2011-08-21 20:19:28.037669+0000'
+ballots_200:
+  id: 200
+  winner_id: 48
+  loser_id: 23
+  match_id: 199
+  created_at: '2011-08-21 20:19:30.966784+0000'
+  updated_at: '2011-08-21 20:19:30.966784+0000'
+ballots_201:
+  id: 201
+  winner_id: 35
+  loser_id: 13
+  match_id: 200
+  created_at: '2011-08-21 20:19:34.096033+0000'
+  updated_at: '2011-08-21 20:19:34.096033+0000'
+ballots_202:
+  id: 202
+  winner_id: 47
+  loser_id: 22
+  match_id: 201
+  created_at: '2011-08-21 20:20:34.314292+0000'
+  updated_at: '2011-08-21 20:20:34.314292+0000'
+ballots_203:
+  id: 203
+  winner_id: 8
+  loser_id: 25
+  match_id: 202
+  created_at: '2011-08-21 20:20:40.715225+0000'
+  updated_at: '2011-08-21 20:20:40.715225+0000'
+ballots_204:
+  id: 204
+  winner_id: 23
+  loser_id: 13
+  match_id: 204
+  created_at: '2011-08-21 20:20:45.413626+0000'
+  updated_at: '2011-08-21 20:20:45.413626+0000'
+ballots_205:
+  id: 205
+  winner_id: 34
+  loser_id: 4
+  match_id: 63
+  created_at: '2011-08-21 20:20:49.040911+0000'
+  updated_at: '2011-08-21 20:20:49.040911+0000'
+ballots_206:
+  id: 206
+  winner_id: 35
+  loser_id: 12
+  match_id: 205
+  created_at: '2011-08-21 20:20:52.525306+0000'
+  updated_at: '2011-08-21 20:20:52.525306+0000'
+ballots_207:
+  id: 207
+  winner_id: 21
+  loser_id: 48
+  match_id: 206
+  created_at: '2011-08-21 20:21:00.726615+0000'
+  updated_at: '2011-08-21 20:21:00.726615+0000'
+ballots_208:
+  id: 208
+  winner_id: 17
+  loser_id: 19
+  match_id: 203
+  created_at: '2011-08-21 20:21:05.436955+0000'
+  updated_at: '2011-08-21 20:21:05.436955+0000'
+ballots_209:
+  id: 209
+  winner_id: 57
+  loser_id: 38
+  match_id: 207
+  created_at: '2011-08-21 20:21:07.290227+0000'
+  updated_at: '2011-08-21 20:21:07.290227+0000'
+ballots_210:
+  id: 210
+  winner_id: 41
+  loser_id: 43
+  match_id: 209
+  created_at: '2011-08-21 20:21:11.238334+0000'
+  updated_at: '2011-08-21 20:21:11.238334+0000'
+ballots_211:
+  id: 211
+  winner_id: 19
+  loser_id: 53
+  match_id: 208
+  created_at: '2011-08-21 20:21:13.458416+0000'
+  updated_at: '2011-08-21 20:21:13.458416+0000'
+ballots_212:
+  id: 212
+  winner_id: 50
+  loser_id: 44
+  match_id: 211
+  created_at: '2011-08-21 20:21:19.164088+0000'
+  updated_at: '2011-08-21 20:21:19.164088+0000'
+ballots_213:
+  id: 213
+  winner_id: 48
+  loser_id: 49
+  match_id: 210
+  created_at: '2011-08-21 20:21:36.392738+0000'
+  updated_at: '2011-08-21 20:21:36.392738+0000'
+ballots_214:
+  id: 214
+  winner_id: 5
+  loser_id: 8
+  match_id: 91
+  created_at: '2011-08-21 20:22:12.795048+0000'
+  updated_at: '2011-08-21 20:22:12.795048+0000'
+ballots_215:
+  id: 215
+  winner_id: 21
+  loser_id: 54
+  match_id: 212
+  created_at: '2011-08-21 20:22:15.807151+0000'
+  updated_at: '2011-08-21 20:22:15.807151+0000'
+ballots_216:
+  id: 216
+  winner_id: 12
+  loser_id: 15
+  match_id: 213
+  created_at: '2011-08-21 20:22:22.309309+0000'
+  updated_at: '2011-08-21 20:22:22.309309+0000'
+ballots_217:
+  id: 217
+  winner_id: 26
+  loser_id: 1
+  match_id: 214
+  created_at: '2011-08-21 20:22:25.101885+0000'
+  updated_at: '2011-08-21 20:22:25.101885+0000'
+ballots_218:
+  id: 218
+  winner_id: 53
+  loser_id: 34
+  match_id: 215
+  created_at: '2011-08-21 20:22:54.343694+0000'
+  updated_at: '2011-08-21 20:22:54.343694+0000'
+ballots_219:
+  id: 219
+  winner_id: 51
+  loser_id: 22
+  match_id: 216
+  created_at: '2011-08-21 20:23:02.316077+0000'
+  updated_at: '2011-08-21 20:23:02.316077+0000'
+ballots_220:
+  id: 220
+  winner_id: 46
+  loser_id: 55
+  match_id: 217
+  created_at: '2011-08-21 20:23:06.946108+0000'
+  updated_at: '2011-08-21 20:23:06.946108+0000'
+ballots_221:
+  id: 221
+  winner_id: 32
+  loser_id: 37
+  match_id: 133
+  created_at: '2011-08-21 20:23:11.190453+0000'
+  updated_at: '2011-08-21 20:23:11.190453+0000'
+ballots_222:
+  id: 222
+  winner_id: 37
+  loser_id: 32
+  match_id: 133
+  created_at: '2011-08-21 20:23:15.859355+0000'
+  updated_at: '2011-08-21 20:23:15.859355+0000'
+ballots_223:
+  id: 223
+  winner_id: 6
+  loser_id: 15
+  match_id: 218
+  created_at: '2011-08-21 20:23:24.358829+0000'
+  updated_at: '2011-08-21 20:23:24.358829+0000'
+ballots_224:
+  id: 224
+  winner_id: 37
+  loser_id: 21
+  match_id: 142
+  created_at: '2011-08-21 20:23:36.592854+0000'
+  updated_at: '2011-08-21 20:23:36.592854+0000'
+ballots_225:
+  id: 225
+  winner_id: 46
+  loser_id: 11
+  match_id: 221
+  created_at: '2011-08-21 20:23:50.360217+0000'
+  updated_at: '2011-08-21 20:23:50.360217+0000'
+ballots_226:
+  id: 226
+  winner_id: 22
+  loser_id: 12
+  match_id: 220
+  created_at: '2011-08-21 20:24:18.146093+0000'
+  updated_at: '2011-08-21 20:24:18.146093+0000'
+ballots_227:
+  id: 227
+  winner_id: 23
+  loser_id: 4
+  match_id: 223
+  created_at: '2011-08-21 20:24:21.745196+0000'
+  updated_at: '2011-08-21 20:24:21.745196+0000'
+ballots_228:
+  id: 228
+  winner_id: 46
+  loser_id: 55
+  match_id: 217
+  created_at: '2011-08-21 20:24:38.512409+0000'
+  updated_at: '2011-08-21 20:24:38.512409+0000'
+ballots_229:
+  id: 229
+  winner_id: 45
+  loser_id: 15
+  match_id: 224
+  created_at: '2011-08-21 20:24:47.101029+0000'
+  updated_at: '2011-08-21 20:24:47.101029+0000'
+ballots_230:
+  id: 230
+  winner_id: 24
+  loser_id: 38
+  match_id: 84
+  created_at: '2011-08-21 20:24:53.901681+0000'
+  updated_at: '2011-08-21 20:24:53.901681+0000'
+ballots_231:
+  id: 231
+  winner_id: 11
+  loser_id: 16
+  match_id: 225
+  created_at: '2011-08-21 20:25:07.243773+0000'
+  updated_at: '2011-08-21 20:25:07.243773+0000'
+ballots_232:
+  id: 232
+  winner_id: 52
+  loser_id: 55
+  match_id: 226
+  created_at: '2011-08-21 20:25:11.156283+0000'
+  updated_at: '2011-08-21 20:25:11.156283+0000'
+ballots_233:
+  id: 233
+  winner_id: 15
+  loser_id: 13
+  match_id: 82
+  created_at: '2011-08-21 20:25:13.319972+0000'
+  updated_at: '2011-08-21 20:25:13.319972+0000'
+ballots_234:
+  id: 234
+  winner_id: 54
+  loser_id: 1
+  match_id: 227
+  created_at: '2011-08-21 20:25:26.356748+0000'
+  updated_at: '2011-08-21 20:25:26.356748+0000'
+ballots_235:
+  id: 235
+  winner_id: 12
+  loser_id: 54
+  match_id: 228
+  created_at: '2011-08-21 20:25:32.013093+0000'
+  updated_at: '2011-08-21 20:25:32.013093+0000'
+ballots_236:
+  id: 236
+  winner_id: 28
+  loser_id: 18
+  match_id: 222
+  created_at: '2011-08-21 20:25:34.972717+0000'
+  updated_at: '2011-08-21 20:25:34.972717+0000'
+ballots_237:
+  id: 237
+  winner_id: 49
+  loser_id: 17
+  match_id: 68
+  created_at: '2011-08-21 20:25:36.762411+0000'
+  updated_at: '2011-08-21 20:25:36.762411+0000'
+ballots_238:
+  id: 238
+  winner_id: 31
+  loser_id: 54
+  match_id: 229
+  created_at: '2011-08-21 20:25:46.760510+0000'
+  updated_at: '2011-08-21 20:25:46.760510+0000'
+ballots_239:
+  id: 239
+  winner_id: 24
+  loser_id: 52
+  match_id: 230
+  created_at: '2011-08-21 20:25:46.987143+0000'
+  updated_at: '2011-08-21 20:25:46.987143+0000'
+ballots_240:
+  id: 240
+  winner_id: 24
+  loser_id: 19
+  match_id: 231
+  created_at: '2011-08-21 20:25:53.505264+0000'
+  updated_at: '2011-08-21 20:25:53.505264+0000'
+ballots_241:
+  id: 241
+  winner_id: 33
+  loser_id: 31
+  match_id: 8
+  created_at: '2011-08-21 20:25:58.078632+0000'
+  updated_at: '2011-08-21 20:25:58.078632+0000'
+ballots_242:
+  id: 242
+  winner_id: 32
+  loser_id: 5
+  match_id: 96
+  created_at: '2011-08-21 20:26:31.012379+0000'
+  updated_at: '2011-08-21 20:26:31.012379+0000'
+ballots_243:
+  id: 243
+  winner_id: 4
+  loser_id: 39
+  match_id: 94
+  created_at: '2011-08-21 20:26:36.810534+0000'
+  updated_at: '2011-08-21 20:26:36.810534+0000'
+ballots_244:
+  id: 244
+  winner_id: 28
+  loser_id: 56
+  match_id: 233
+  created_at: '2011-08-21 20:27:33.229516+0000'
+  updated_at: '2011-08-21 20:27:33.229516+0000'
+ballots_245:
+  id: 245
+  winner_id: 47
+  loser_id: 52
+  match_id: 234
+  created_at: '2011-08-21 20:27:36.886576+0000'
+  updated_at: '2011-08-21 20:27:36.886576+0000'
+ballots_246:
+  id: 246
+  winner_id: 26
+  loser_id: 17
+  match_id: 235
+  created_at: '2011-08-21 20:27:41.422059+0000'
+  updated_at: '2011-08-21 20:27:41.422059+0000'
+ballots_247:
+  id: 247
+  winner_id: 38
+  loser_id: 52
+  match_id: 145
+  created_at: '2011-08-21 20:27:49.452037+0000'
+  updated_at: '2011-08-21 20:27:49.452037+0000'
+ballots_248:
+  id: 248
+  winner_id: 49
+  loser_id: 33
+  match_id: 236
+  created_at: '2011-08-21 20:27:57.143916+0000'
+  updated_at: '2011-08-21 20:27:57.143916+0000'
+ballots_249:
+  id: 249
+  winner_id: 49
+  loser_id: 46
+  match_id: 237
+  created_at: '2011-08-21 20:28:01.670859+0000'
+  updated_at: '2011-08-21 20:28:01.670859+0000'
+ballots_250:
+  id: 250
+  winner_id: 36
+  loser_id: 43
+  match_id: 238
+  created_at: '2011-08-21 20:28:06.671097+0000'
+  updated_at: '2011-08-21 20:28:06.671097+0000'
+ballots_251:
+  id: 251
+  winner_id: 18
+  loser_id: 45
+  match_id: 239
+  created_at: '2011-08-21 20:28:12.125881+0000'
+  updated_at: '2011-08-21 20:28:12.125881+0000'
+ballots_252:
+  id: 252
+  winner_id: 32
+  loser_id: 2
+  match_id: 240
+  created_at: '2011-08-21 20:28:18.061227+0000'
+  updated_at: '2011-08-21 20:28:18.061227+0000'
+ballots_253:
+  id: 253
+  winner_id: 17
+  loser_id: 15
+  match_id: 241
+  created_at: '2011-08-21 20:28:23.555278+0000'
+  updated_at: '2011-08-21 20:28:23.555278+0000'
+ballots_254:
+  id: 254
+  winner_id: 8
+  loser_id: 50
+  match_id: 242
+  created_at: '2011-08-21 20:28:28.882056+0000'
+  updated_at: '2011-08-21 20:28:28.882056+0000'
+ballots_255:
+  id: 255
+  winner_id: 16
+  loser_id: 31
+  match_id: 243
+  created_at: '2011-08-21 20:28:34.369866+0000'
+  updated_at: '2011-08-21 20:28:34.369866+0000'
+ballots_256:
+  id: 256
+  winner_id: 54
+  loser_id: 23
+  match_id: 109
+  created_at: '2011-08-21 20:28:39.579564+0000'
+  updated_at: '2011-08-21 20:28:39.579564+0000'
+ballots_257:
+  id: 257
+  winner_id: 35
+  loser_id: 14
+  match_id: 244
+  created_at: '2011-08-21 20:28:44.927025+0000'
+  updated_at: '2011-08-21 20:28:44.927025+0000'
+ballots_258:
+  id: 258
+  winner_id: 1
+  loser_id: 23
+  match_id: 165
+  created_at: '2011-08-21 20:28:51.512964+0000'
+  updated_at: '2011-08-21 20:28:51.512964+0000'
+ballots_259:
+  id: 259
+  winner_id: 20
+  loser_id: 1
+  match_id: 182
+  created_at: '2011-08-21 20:28:58.709226+0000'
+  updated_at: '2011-08-21 20:28:58.709226+0000'
+ballots_260:
+  id: 260
+  winner_id: 46
+  loser_id: 7
+  match_id: 245
+  created_at: '2011-08-21 20:29:01.979360+0000'
+  updated_at: '2011-08-21 20:29:01.979360+0000'
+ballots_261:
+  id: 261
+  winner_id: 32
+  loser_id: 27
+  match_id: 160
+  created_at: '2011-08-21 20:29:11.536644+0000'
+  updated_at: '2011-08-21 20:29:11.536644+0000'
+ballots_262:
+  id: 262
+  winner_id: 21
+  loser_id: 41
+  match_id: 171
+  created_at: '2011-08-21 20:29:16.829352+0000'
+  updated_at: '2011-08-21 20:29:16.829352+0000'
+ballots_263:
+  id: 263
+  winner_id: 30
+  loser_id: 41
+  match_id: 246
+  created_at: '2011-08-21 20:29:23.270821+0000'
+  updated_at: '2011-08-21 20:29:23.270821+0000'
+ballots_264:
+  id: 264
+  winner_id: 56
+  loser_id: 6
+  match_id: 247
+  created_at: '2011-08-21 20:29:28.120658+0000'
+  updated_at: '2011-08-21 20:29:28.120658+0000'
+ballots_265:
+  id: 265
+  winner_id: 56
+  loser_id: 41
+  match_id: 248
+  created_at: '2011-08-21 20:29:37.903430+0000'
+  updated_at: '2011-08-21 20:29:37.903430+0000'
+ballots_266:
+  id: 266
+  winner_id: 5
+  loser_id: 51
+  match_id: 249
+  created_at: '2011-08-21 20:29:44.055425+0000'
+  updated_at: '2011-08-21 20:29:44.055425+0000'
+ballots_267:
+  id: 267
+  winner_id: 8
+  loser_id: 50
+  match_id: 242
+  created_at: '2011-08-21 20:29:47.055841+0000'
+  updated_at: '2011-08-21 20:29:47.055841+0000'
+ballots_268:
+  id: 268
+  winner_id: 49
+  loser_id: 30
+  match_id: 250
+  created_at: '2011-08-21 20:29:54.693558+0000'
+  updated_at: '2011-08-21 20:29:54.693558+0000'
+ballots_269:
+  id: 269
+  winner_id: 30
+  loser_id: 46
+  match_id: 155
+  created_at: '2011-08-21 20:30:01.724749+0000'
+  updated_at: '2011-08-21 20:30:01.724749+0000'
+ballots_270:
+  id: 270
+  winner_id: 22
+  loser_id: 44
+  match_id: 251
+  created_at: '2011-08-21 20:30:18.539364+0000'
+  updated_at: '2011-08-21 20:30:18.539364+0000'
+ballots_271:
+  id: 271
+  winner_id: 24
+  loser_id: 30
+  match_id: 252
+  created_at: '2011-08-21 20:30:24.422006+0000'
+  updated_at: '2011-08-21 20:30:24.422006+0000'
+ballots_272:
+  id: 272
+  winner_id: 38
+  loser_id: 13
+  match_id: 253
+  created_at: '2011-08-21 20:30:28.876389+0000'
+  updated_at: '2011-08-21 20:30:28.876389+0000'
+ballots_273:
+  id: 273
+  winner_id: 49
+  loser_id: 24
+  match_id: 254
+  created_at: '2011-08-21 20:30:35.945946+0000'
+  updated_at: '2011-08-21 20:30:35.945946+0000'
+ballots_274:
+  id: 274
+  winner_id: 32
+  loser_id: 52
+  match_id: 255
+  created_at: '2011-08-21 20:30:38.878338+0000'
+  updated_at: '2011-08-21 20:30:38.878338+0000'
+ballots_275:
+  id: 275
+  winner_id: 3
+  loser_id: 10
+  match_id: 256
+  created_at: '2011-08-21 20:30:44.223224+0000'
+  updated_at: '2011-08-21 20:30:44.223224+0000'
+ballots_276:
+  id: 276
+  winner_id: 45
+  loser_id: 12
+  match_id: 232
+  created_at: '2011-08-21 20:30:48.260597+0000'
+  updated_at: '2011-08-21 20:30:48.260597+0000'
+ballots_277:
+  id: 277
+  winner_id: 37
+  loser_id: 2
+  match_id: 257
+  created_at: '2011-08-21 20:30:55.056331+0000'
+  updated_at: '2011-08-21 20:30:55.056331+0000'
+ballots_278:
+  id: 278
+  winner_id: 27
+  loser_id: 8
+  match_id: 149
+  created_at: '2011-08-21 20:31:00.712400+0000'
+  updated_at: '2011-08-21 20:31:00.712400+0000'
+ballots_279:
+  id: 279
+  winner_id: 19
+  loser_id: 40
+  match_id: 258
+  created_at: '2011-08-21 20:31:05.874644+0000'
+  updated_at: '2011-08-21 20:31:05.874644+0000'
+ballots_280:
+  id: 280
+  winner_id: 16
+  loser_id: 33
+  match_id: 260
+  created_at: '2011-08-21 20:31:13.851900+0000'
+  updated_at: '2011-08-21 20:31:13.851900+0000'
+ballots_281:
+  id: 281
+  winner_id: 2
+  loser_id: 5
+  match_id: 261
+  created_at: '2011-08-21 20:31:20.526098+0000'
+  updated_at: '2011-08-21 20:31:20.526098+0000'
+ballots_282:
+  id: 282
+  winner_id: 19
+  loser_id: 9
+  match_id: 131
+  created_at: '2011-08-21 20:31:24.440394+0000'
+  updated_at: '2011-08-21 20:31:24.440394+0000'
+ballots_283:
+  id: 283
+  winner_id: 57
+  loser_id: 51
+  match_id: 262
+  created_at: '2011-08-21 20:31:28.248105+0000'
+  updated_at: '2011-08-21 20:31:28.248105+0000'
+ballots_284:
+  id: 284
+  winner_id: 37
+  loser_id: 29
+  match_id: 104
+  created_at: '2011-08-21 20:31:36.824998+0000'
+  updated_at: '2011-08-21 20:31:36.824998+0000'
+ballots_285:
+  id: 285
+  winner_id: 43
+  loser_id: 54
+  match_id: 259
+  created_at: '2011-08-21 20:31:38.264330+0000'
+  updated_at: '2011-08-21 20:31:38.264330+0000'
+ballots_286:
+  id: 286
+  winner_id: 47
+  loser_id: 44
+  match_id: 263
+  created_at: '2011-08-21 20:31:40.316913+0000'
+  updated_at: '2011-08-21 20:31:40.316913+0000'
+ballots_287:
+  id: 287
+  winner_id: 7
+  loser_id: 4
+  match_id: 264
+  created_at: '2011-08-21 20:31:41.993722+0000'
+  updated_at: '2011-08-21 20:31:41.993722+0000'
+ballots_288:
+  id: 288
+  winner_id: 48
+  loser_id: 1
+  match_id: 265
+  created_at: '2011-08-21 20:31:44.119931+0000'
+  updated_at: '2011-08-21 20:31:44.119931+0000'
+ballots_289:
+  id: 289
+  winner_id: 37
+  loser_id: 32
+  match_id: 133
+  created_at: '2011-08-21 20:31:46.405499+0000'
+  updated_at: '2011-08-21 20:31:46.405499+0000'
+ballots_290:
+  id: 290
+  winner_id: 19
+  loser_id: 1
+  match_id: 266
+  created_at: '2011-08-21 20:31:48.007184+0000'
+  updated_at: '2011-08-21 20:31:48.007184+0000'
+ballots_291:
+  id: 291
+  winner_id: 7
+  loser_id: 23
+  match_id: 267
+  created_at: '2011-08-21 20:31:51.411932+0000'
+  updated_at: '2011-08-21 20:31:51.411932+0000'
+ballots_292:
+  id: 292
+  winner_id: 43
+  loser_id: 15
+  match_id: 268
+  created_at: '2011-08-21 20:31:58.501131+0000'
+  updated_at: '2011-08-21 20:31:58.501131+0000'
+ballots_293:
+  id: 293
+  winner_id: 36
+  loser_id: 53
+  match_id: 269
+  created_at: '2011-08-21 20:32:03.749865+0000'
+  updated_at: '2011-08-21 20:32:03.749865+0000'
+ballots_294:
+  id: 294
+  winner_id: 6
+  loser_id: 13
+  match_id: 270
+  created_at: '2011-08-21 20:32:06.419944+0000'
+  updated_at: '2011-08-21 20:32:06.419944+0000'
+ballots_295:
+  id: 295
+  winner_id: 47
+  loser_id: 8
+  match_id: 271
+  created_at: '2011-08-21 20:32:11.977635+0000'
+  updated_at: '2011-08-21 20:32:11.977635+0000'
+ballots_296:
+  id: 296
+  winner_id: 21
+  loser_id: 57
+  match_id: 137
+  created_at: '2011-08-21 20:32:16.053988+0000'
+  updated_at: '2011-08-21 20:32:16.053988+0000'
+ballots_297:
+  id: 297
+  winner_id: 27
+  loser_id: 33
+  match_id: 272
+  created_at: '2011-08-21 20:32:19.900178+0000'
+  updated_at: '2011-08-21 20:32:19.900178+0000'
+ballots_298:
+  id: 298
+  winner_id: 27
+  loser_id: 41
+  match_id: 273
+  created_at: '2011-08-21 20:32:22.206104+0000'
+  updated_at: '2011-08-21 20:32:22.206104+0000'
+ballots_299:
+  id: 299
+  winner_id: 31
+  loser_id: 7
+  match_id: 274
+  created_at: '2011-08-21 20:32:26.697342+0000'
+  updated_at: '2011-08-21 20:32:26.697342+0000'
+ballots_300:
+  id: 300
+  winner_id: 11
+  loser_id: 16
+  match_id: 225
+  created_at: '2011-08-21 20:32:35.647679+0000'
+  updated_at: '2011-08-21 20:32:35.647679+0000'
+ballots_301:
+  id: 301
+  winner_id: 42
+  loser_id: 23
+  match_id: 275
+  created_at: '2011-08-21 20:32:43.810601+0000'
+  updated_at: '2011-08-21 20:32:43.810601+0000'
+ballots_302:
+  id: 302
+  winner_id: 57
+  loser_id: 22
+  match_id: 276
+  created_at: '2011-08-21 20:33:07.051136+0000'
+  updated_at: '2011-08-21 20:33:07.051136+0000'
+ballots_303:
+  id: 303
+  winner_id: 53
+  loser_id: 40
+  match_id: 81
+  created_at: '2011-08-21 20:33:11.027900+0000'
+  updated_at: '2011-08-21 20:33:11.027900+0000'
+ballots_304:
+  id: 304
+  winner_id: 18
+  loser_id: 30
+  match_id: 277
+  created_at: '2011-08-21 20:33:13.938822+0000'
+  updated_at: '2011-08-21 20:33:13.938822+0000'
+ballots_305:
+  id: 305
+  winner_id: 51
+  loser_id: 7
+  match_id: 278
+  created_at: '2011-08-21 20:33:17.232378+0000'
+  updated_at: '2011-08-21 20:33:17.232378+0000'
+ballots_306:
+  id: 306
+  winner_id: 48
+  loser_id: 43
+  match_id: 279
+  created_at: '2011-08-21 20:33:19.032884+0000'
+  updated_at: '2011-08-21 20:33:19.032884+0000'
+ballots_307:
+  id: 307
+  winner_id: 9
+  loser_id: 1
+  match_id: 280
+  created_at: '2011-08-21 20:33:25.317751+0000'
+  updated_at: '2011-08-21 20:33:25.317751+0000'
+ballots_308:
+  id: 308
+  winner_id: 41
+  loser_id: 17
+  match_id: 281
+  created_at: '2011-08-21 20:33:28.499634+0000'
+  updated_at: '2011-08-21 20:33:28.499634+0000'
+ballots_309:
+  id: 309
+  winner_id: 51
+  loser_id: 22
+  match_id: 216
+  created_at: '2011-08-21 20:33:33.870218+0000'
+  updated_at: '2011-08-21 20:33:33.870218+0000'
+ballots_310:
+  id: 310
+  winner_id: 49
+  loser_id: 48
+  match_id: 210
+  created_at: '2011-08-21 20:33:35.603612+0000'
+  updated_at: '2011-08-21 20:33:35.603612+0000'
+ballots_311:
+  id: 311
+  winner_id: 25
+  loser_id: 48
+  match_id: 140
+  created_at: '2011-08-21 20:33:43.285234+0000'
+  updated_at: '2011-08-21 20:33:43.285234+0000'
+ballots_312:
+  id: 312
+  winner_id: 42
+  loser_id: 23
+  match_id: 275
+  created_at: '2011-08-21 20:33:46.798917+0000'
+  updated_at: '2011-08-21 20:33:46.798917+0000'
+ballots_313:
+  id: 313
+  winner_id: 32
+  loser_id: 26
+  match_id: 43
+  created_at: '2011-08-21 20:33:49.782950+0000'
+  updated_at: '2011-08-21 20:33:49.782950+0000'
+ballots_314:
+  id: 314
+  winner_id: 57
+  loser_id: 11
+  match_id: 282
+  created_at: '2011-08-21 20:33:54.370754+0000'
+  updated_at: '2011-08-21 20:33:54.370754+0000'
+ballots_315:
+  id: 315
+  winner_id: 7
+  loser_id: 9
+  match_id: 283
+  created_at: '2011-08-21 20:33:55.896094+0000'
+  updated_at: '2011-08-21 20:33:55.896094+0000'
+ballots_316:
+  id: 316
+  winner_id: 1
+  loser_id: 4
+  match_id: 284
+  created_at: '2011-08-21 20:34:00.807484+0000'
+  updated_at: '2011-08-21 20:34:00.807484+0000'
+ballots_317:
+  id: 317
+  winner_id: 32
+  loser_id: 27
+  match_id: 160
+  created_at: '2011-08-21 20:34:05.351610+0000'
+  updated_at: '2011-08-21 20:34:05.351610+0000'
+ballots_318:
+  id: 318
+  winner_id: 53
+  loser_id: 7
+  match_id: 286
+  created_at: '2011-08-21 20:34:10.287664+0000'
+  updated_at: '2011-08-21 20:34:10.287664+0000'
+ballots_319:
+  id: 319
+  winner_id: 14
+  loser_id: 6
+  match_id: 287
+  created_at: '2011-08-21 20:34:21.543483+0000'
+  updated_at: '2011-08-21 20:34:21.543483+0000'
+ballots_320:
+  id: 320
+  winner_id: 37
+  loser_id: 9
+  match_id: 288
+  created_at: '2011-08-21 20:34:27.411907+0000'
+  updated_at: '2011-08-21 20:34:27.411907+0000'
+ballots_321:
+  id: 321
+  winner_id: 29
+  loser_id: 28
+  match_id: 289
+  created_at: '2011-08-21 20:34:31.824508+0000'
+  updated_at: '2011-08-21 20:34:31.824508+0000'
+ballots_322:
+  id: 322
+  winner_id: 44
+  loser_id: 39
+  match_id: 290
+  created_at: '2011-08-21 20:34:33.938147+0000'
+  updated_at: '2011-08-21 20:34:33.938147+0000'
+ballots_323:
+  id: 323
+  winner_id: 49
+  loser_id: 17
+  match_id: 68
+  created_at: '2011-08-21 20:34:45.513656+0000'
+  updated_at: '2011-08-21 20:34:45.513656+0000'
+ballots_324:
+  id: 324
+  winner_id: 46
+  loser_id: 55
+  match_id: 217
+  created_at: '2011-08-21 20:34:47.644976+0000'
+  updated_at: '2011-08-21 20:34:47.644976+0000'
+ballots_325:
+  id: 325
+  winner_id: 43
+  loser_id: 10
+  match_id: 285
+  created_at: '2011-08-21 20:34:57.296108+0000'
+  updated_at: '2011-08-21 20:34:57.296108+0000'
+ballots_326:
+  id: 326
+  winner_id: 12
+  loser_id: 31
+  match_id: 291
+  created_at: '2011-08-21 20:34:58.606913+0000'
+  updated_at: '2011-08-21 20:34:58.606913+0000'
+ballots_327:
+  id: 327
+  winner_id: 32
+  loser_id: 50
+  match_id: 292
+  created_at: '2011-08-21 20:35:01.325010+0000'
+  updated_at: '2011-08-21 20:35:01.325010+0000'
+ballots_328:
+  id: 328
+  winner_id: 51
+  loser_id: 18
+  match_id: 103
+  created_at: '2011-08-21 20:35:03.241186+0000'
+  updated_at: '2011-08-21 20:35:03.241186+0000'
+ballots_329:
+  id: 329
+  winner_id: 40
+  loser_id: 20
+  match_id: 294
+  created_at: '2011-08-21 20:35:08.441426+0000'
+  updated_at: '2011-08-21 20:35:08.441426+0000'
+ballots_330:
+  id: 330
+  winner_id: 52
+  loser_id: 7
+  match_id: 295
+  created_at: '2011-08-21 20:35:12.650693+0000'
+  updated_at: '2011-08-21 20:35:12.650693+0000'
+ballots_331:
+  id: 331
+  winner_id: 29
+  loser_id: 49
+  match_id: 79
+  created_at: '2011-08-21 20:35:18.981341+0000'
+  updated_at: '2011-08-21 20:35:18.981341+0000'
+ballots_332:
+  id: 332
+  winner_id: 53
+  loser_id: 6
+  match_id: 293
+  created_at: '2011-08-21 20:35:21.689685+0000'
+  updated_at: '2011-08-21 20:35:21.689685+0000'
+ballots_333:
+  id: 333
+  winner_id: 16
+  loser_id: 20
+  match_id: 297
+  created_at: '2011-08-21 20:35:23.554782+0000'
+  updated_at: '2011-08-21 20:35:23.554782+0000'
+ballots_334:
+  id: 334
+  winner_id: 27
+  loser_id: 29
+  match_id: 296
+  created_at: '2011-08-21 20:35:25.468373+0000'
+  updated_at: '2011-08-21 20:35:25.468373+0000'
+ballots_335:
+  id: 335
+  winner_id: 14
+  loser_id: 22
+  match_id: 299
+  created_at: '2011-08-21 20:35:31.410698+0000'
+  updated_at: '2011-08-21 20:35:31.410698+0000'
+ballots_336:
+  id: 336
+  winner_id: 52
+  loser_id: 3
+  match_id: 300
+  created_at: '2011-08-21 20:35:36.254617+0000'
+  updated_at: '2011-08-21 20:35:36.254617+0000'
+ballots_337:
+  id: 337
+  winner_id: 41
+  loser_id: 45
+  match_id: 301
+  created_at: '2011-08-21 20:35:40.101349+0000'
+  updated_at: '2011-08-21 20:35:40.101349+0000'
+ballots_338:
+  id: 338
+  winner_id: 11
+  loser_id: 22
+  match_id: 298
+  created_at: '2011-08-21 20:35:42.571645+0000'
+  updated_at: '2011-08-21 20:35:42.571645+0000'
+ballots_339:
+  id: 339
+  winner_id: 56
+  loser_id: 51
+  match_id: 302
+  created_at: '2011-08-21 20:35:46.260987+0000'
+  updated_at: '2011-08-21 20:35:46.260987+0000'
+ballots_340:
+  id: 340
+  winner_id: 11
+  loser_id: 52
+  match_id: 303
+  created_at: '2011-08-21 20:35:49.506603+0000'
+  updated_at: '2011-08-21 20:35:49.506603+0000'
+ballots_341:
+  id: 341
+  winner_id: 9
+  loser_id: 34
+  match_id: 304
+  created_at: '2011-08-21 20:35:51.661847+0000'
+  updated_at: '2011-08-21 20:35:51.661847+0000'
+ballots_342:
+  id: 342
+  winner_id: 5
+  loser_id: 49
+  match_id: 305
+  created_at: '2011-08-21 20:35:56.056510+0000'
+  updated_at: '2011-08-21 20:35:56.056510+0000'
+ballots_343:
+  id: 343
+  winner_id: 35
+  loser_id: 51
+  match_id: 306
+  created_at: '2011-08-21 20:35:57.451806+0000'
+  updated_at: '2011-08-21 20:35:57.451806+0000'
+ballots_344:
+  id: 344
+  winner_id: 8
+  loser_id: 28
+  match_id: 16
+  created_at: '2011-08-21 20:36:01.940345+0000'
+  updated_at: '2011-08-21 20:36:01.940345+0000'
+ballots_345:
+  id: 345
+  winner_id: 29
+  loser_id: 7
+  match_id: 308
+  created_at: '2011-08-21 20:36:05.208862+0000'
+  updated_at: '2011-08-21 20:36:05.208862+0000'
+ballots_346:
+  id: 346
+  winner_id: 9
+  loser_id: 15
+  match_id: 307
+  created_at: '2011-08-21 20:36:06.721691+0000'
+  updated_at: '2011-08-21 20:36:06.721691+0000'
+ballots_347:
+  id: 347
+  winner_id: 9
+  loser_id: 15
+  match_id: 307
+  created_at: '2011-08-21 20:36:11.301715+0000'
+  updated_at: '2011-08-21 20:36:11.301715+0000'
+ballots_348:
+  id: 348
+  winner_id: 15
+  loser_id: 7
+  match_id: 310
+  created_at: '2011-08-21 20:36:23.496646+0000'
+  updated_at: '2011-08-21 20:36:23.496646+0000'
+ballots_349:
+  id: 349
+  winner_id: 3
+  loser_id: 40
+  match_id: 311
+  created_at: '2011-08-21 20:36:28.971603+0000'
+  updated_at: '2011-08-21 20:36:28.971603+0000'
+ballots_350:
+  id: 350
+  winner_id: 41
+  loser_id: 12
+  match_id: 312
+  created_at: '2011-08-21 20:36:34.320738+0000'
+  updated_at: '2011-08-21 20:36:34.320738+0000'
+ballots_351:
+  id: 351
+  winner_id: 55
+  loser_id: 4
+  match_id: 313
+  created_at: '2011-08-21 20:36:39.753846+0000'
+  updated_at: '2011-08-21 20:36:39.753846+0000'
+ballots_352:
+  id: 352
+  winner_id: 18
+  loser_id: 28
+  match_id: 222
+  created_at: '2011-08-21 20:36:54.271793+0000'
+  updated_at: '2011-08-21 20:36:54.271793+0000'
+ballots_353:
+  id: 353
+  winner_id: 27
+  loser_id: 29
+  match_id: 296
+  created_at: '2011-08-21 20:38:04.861987+0000'
+  updated_at: '2011-08-21 20:38:04.861987+0000'
+ballots_354:
+  id: 354
+  winner_id: 55
+  loser_id: 20
+  match_id: 314
+  created_at: '2011-08-21 20:38:11.396101+0000'
+  updated_at: '2011-08-21 20:38:11.396101+0000'
+ballots_355:
+  id: 355
+  winner_id: 27
+  loser_id: 41
+  match_id: 273
+  created_at: '2011-08-21 20:38:15.161048+0000'
+  updated_at: '2011-08-21 20:38:15.161048+0000'
+ballots_356:
+  id: 356
+  winner_id: 50
+  loser_id: 53
+  match_id: 315
+  created_at: '2011-08-21 20:38:49.044005+0000'
+  updated_at: '2011-08-21 20:38:49.044005+0000'
+ballots_357:
+  id: 357
+  winner_id: 55
+  loser_id: 4
+  match_id: 313
+  created_at: '2011-08-21 20:38:54.182617+0000'
+  updated_at: '2011-08-21 20:38:54.182617+0000'
+ballots_358:
+  id: 358
+  winner_id: 54
+  loser_id: 42
+  match_id: 309
+  created_at: '2011-08-21 20:39:00.190874+0000'
+  updated_at: '2011-08-21 20:39:00.190874+0000'
+ballots_359:
+  id: 359
+  winner_id: 49
+  loser_id: 35
+  match_id: 316
+  created_at: '2011-08-21 20:39:00.524593+0000'
+  updated_at: '2011-08-21 20:39:00.524593+0000'
+ballots_360:
+  id: 360
+  winner_id: 2
+  loser_id: 9
+  match_id: 317
+  created_at: '2011-08-21 20:39:03.240599+0000'
+  updated_at: '2011-08-21 20:39:03.240599+0000'
+ballots_361:
+  id: 361
+  winner_id: 4
+  loser_id: 39
+  match_id: 94
+  created_at: '2011-08-21 20:39:08.009214+0000'
+  updated_at: '2011-08-21 20:39:08.009214+0000'
+ballots_362:
+  id: 362
+  winner_id: 24
+  loser_id: 48
+  match_id: 319
+  created_at: '2011-08-21 20:39:16.251414+0000'
+  updated_at: '2011-08-21 20:39:16.251414+0000'
+ballots_363:
+  id: 363
+  winner_id: 30
+  loser_id: 41
+  match_id: 246
+  created_at: '2011-08-21 20:39:21.402801+0000'
+  updated_at: '2011-08-21 20:39:21.402801+0000'
+ballots_364:
+  id: 364
+  winner_id: 52
+  loser_id: 42
+  match_id: 318
+  created_at: '2011-08-21 20:39:26.420288+0000'
+  updated_at: '2011-08-21 20:39:26.420288+0000'
+ballots_365:
+  id: 365
+  winner_id: 28
+  loser_id: 16
+  match_id: 320
+  created_at: '2011-08-21 20:39:28.008884+0000'
+  updated_at: '2011-08-21 20:39:28.008884+0000'
+ballots_366:
+  id: 366
+  winner_id: 37
+  loser_id: 32
+  match_id: 133
+  created_at: '2011-08-21 20:39:33.066472+0000'
+  updated_at: '2011-08-21 20:39:33.066472+0000'
+ballots_367:
+  id: 367
+  winner_id: 28
+  loser_id: 16
+  match_id: 320
+  created_at: '2011-08-21 20:39:37.385630+0000'
+  updated_at: '2011-08-21 20:39:37.385630+0000'
+ballots_368:
+  id: 368
+  winner_id: 3
+  loser_id: 36
+  match_id: 322
+  created_at: '2011-08-21 20:39:42.753486+0000'
+  updated_at: '2011-08-21 20:39:42.753486+0000'
+ballots_369:
+  id: 369
+  winner_id: 6
+  loser_id: 31
+  match_id: 323
+  created_at: '2011-08-21 20:39:49.600122+0000'
+  updated_at: '2011-08-21 20:39:49.600122+0000'
+ballots_370:
+  id: 370
+  winner_id: 26
+  loser_id: 10
+  match_id: 324
+  created_at: '2011-08-21 20:39:51.381282+0000'
+  updated_at: '2011-08-21 20:39:51.381282+0000'
+ballots_371:
+  id: 371
+  winner_id: 6
+  loser_id: 45
+  match_id: 219
+  created_at: '2011-08-21 20:40:00.504794+0000'
+  updated_at: '2011-08-21 20:40:00.504794+0000'
+ballots_372:
+  id: 372
+  winner_id: 29
+  loser_id: 24
+  match_id: 31
+  created_at: '2011-08-21 20:40:04.180363+0000'
+  updated_at: '2011-08-21 20:40:04.180363+0000'
+ballots_373:
+  id: 373
+  winner_id: 41
+  loser_id: 14
+  match_id: 325
+  created_at: '2011-08-21 20:40:07.485099+0000'
+  updated_at: '2011-08-21 20:40:07.485099+0000'
+ballots_374:
+  id: 374
+  winner_id: 44
+  loser_id: 10
+  match_id: 326
+  created_at: '2011-08-21 20:40:10.993973+0000'
+  updated_at: '2011-08-21 20:40:10.993973+0000'
+ballots_375:
+  id: 375
+  winner_id: 36
+  loser_id: 9
+  match_id: 327
+  created_at: '2011-08-21 20:40:15.952466+0000'
+  updated_at: '2011-08-21 20:40:15.952466+0000'
+ballots_376:
+  id: 376
+  winner_id: 26
+  loser_id: 45
+  match_id: 328
+  created_at: '2011-08-21 20:40:27.085163+0000'
+  updated_at: '2011-08-21 20:40:27.085163+0000'
+ballots_377:
+  id: 377
+  winner_id: 47
+  loser_id: 26
+  match_id: 321
+  created_at: '2011-08-21 20:40:51.624762+0000'
+  updated_at: '2011-08-21 20:40:51.624762+0000'
+ballots_378:
+  id: 378
+  winner_id: 46
+  loser_id: 9
+  match_id: 177
+  created_at: '2011-08-21 20:40:54.266219+0000'
+  updated_at: '2011-08-21 20:40:54.266219+0000'
+ballots_379:
+  id: 379
+  winner_id: 28
+  loser_id: 18
+  match_id: 222
+  created_at: '2011-08-21 20:41:01.225812+0000'
+  updated_at: '2011-08-21 20:41:01.225812+0000'
+ballots_380:
+  id: 380
+  winner_id: 56
+  loser_id: 46
+  match_id: 330
+  created_at: '2011-08-21 20:41:05.588738+0000'
+  updated_at: '2011-08-21 20:41:05.588738+0000'
+ballots_381:
+  id: 381
+  winner_id: 8
+  loser_id: 29
+  match_id: 329
+  created_at: '2011-08-21 20:41:07.846538+0000'
+  updated_at: '2011-08-21 20:41:07.846538+0000'
+ballots_382:
+  id: 382
+  winner_id: 42
+  loser_id: 39
+  match_id: 331
+  created_at: '2011-08-21 20:41:09.167533+0000'
+  updated_at: '2011-08-21 20:41:09.167533+0000'
+ballots_383:
+  id: 383
+  winner_id: 37
+  loser_id: 51
+  match_id: 332
+  created_at: '2011-08-21 20:41:16.135270+0000'
+  updated_at: '2011-08-21 20:41:16.135270+0000'
+ballots_384:
+  id: 384
+  winner_id: 28
+  loser_id: 35
+  match_id: 333
+  created_at: '2011-08-21 20:41:21.336603+0000'
+  updated_at: '2011-08-21 20:41:21.336603+0000'
+ballots_385:
+  id: 385
+  winner_id: 50
+  loser_id: 44
+  match_id: 211
+  created_at: '2011-08-21 20:41:21.613576+0000'
+  updated_at: '2011-08-21 20:41:21.613576+0000'
+ballots_386:
+  id: 386
+  winner_id: 29
+  loser_id: 57
+  match_id: 335
+  created_at: '2011-08-21 20:41:25.334609+0000'
+  updated_at: '2011-08-21 20:41:25.334609+0000'
+ballots_387:
+  id: 387
+  winner_id: 38
+  loser_id: 23
+  match_id: 334
+  created_at: '2011-08-21 20:41:26.681327+0000'
+  updated_at: '2011-08-21 20:41:26.681327+0000'
+ballots_388:
+  id: 388
+  winner_id: 32
+  loser_id: 2
+  match_id: 240
+  created_at: '2011-08-21 20:41:31.899279+0000'
+  updated_at: '2011-08-21 20:41:31.899279+0000'
+ballots_389:
+  id: 389
+  winner_id: 29
+  loser_id: 56
+  match_id: 339
+  created_at: '2011-08-21 20:48:06.507415+0000'
+  updated_at: '2011-08-21 20:48:06.507415+0000'
+ballots_390:
+  id: 390
+  winner_id: 40
+  loser_id: 15
+  match_id: 341
+  created_at: '2011-08-21 21:04:27.969622+0000'
+  updated_at: '2011-08-21 21:04:27.969622+0000'
+ballots_391:
+  id: 391
+  winner_id: 3
+  loser_id: 44
+  match_id: 342
+  created_at: '2011-08-21 21:04:40.442958+0000'
+  updated_at: '2011-08-21 21:04:40.442958+0000'
+ballots_392:
+  id: 392
+  winner_id: 2
+  loser_id: 21
+  match_id: 126
+  created_at: '2011-08-21 21:04:49.966617+0000'
+  updated_at: '2011-08-21 21:04:49.966617+0000'
+ballots_393:
+  id: 393
+  winner_id: 15
+  loser_id: 1
+  match_id: 186
+  created_at: '2011-08-21 21:04:57.529967+0000'
+  updated_at: '2011-08-21 21:04:57.529967+0000'
+ballots_394:
+  id: 394
+  winner_id: 8
+  loser_id: 54
+  match_id: 344
+  created_at: '2011-08-21 21:10:39.294638+0000'
+  updated_at: '2011-08-21 21:10:39.294638+0000'
+ballots_395:
+  id: 395
+  winner_id: 58
+  loser_id: 39
+  match_id: 345
+  created_at: '2011-08-21 21:10:43.568594+0000'
+  updated_at: '2011-08-21 21:10:43.568594+0000'
+ballots_396:
+  id: 396
+  winner_id: 59
+  loser_id: 13
+  match_id: 346
+  created_at: '2011-08-21 21:10:50.303363+0000'
+  updated_at: '2011-08-21 21:10:50.303363+0000'
+ballots_397:
+  id: 397
+  winner_id: 60
+  loser_id: 31
+  match_id: 347
+  created_at: '2011-08-21 21:10:56.466719+0000'
+  updated_at: '2011-08-21 21:10:56.466719+0000'
+ballots_398:
+  id: 398
+  winner_id: 27
+  loser_id: 5
+  match_id: 150
+  created_at: '2011-08-21 21:11:09.440407+0000'
+  updated_at: '2011-08-21 21:11:09.440407+0000'
+ballots_399:
+  id: 399
+  winner_id: 37
+  loser_id: 60
+  match_id: 348
+  created_at: '2011-08-21 21:11:15.937032+0000'
+  updated_at: '2011-08-21 21:11:15.937032+0000'
+ballots_400:
+  id: 400
+  winner_id: 48
+  loser_id: 38
+  match_id: 349
+  created_at: '2011-08-21 21:11:20.586127+0000'
+  updated_at: '2011-08-21 21:11:20.586127+0000'
+ballots_401:
+  id: 401
+  winner_id: 32
+  loser_id: 59
+  match_id: 350
+  created_at: '2011-08-21 21:11:28.477967+0000'
+  updated_at: '2011-08-21 21:11:28.477967+0000'
+ballots_402:
+  id: 402
+  winner_id: 18
+  loser_id: 30
+  match_id: 277
+  created_at: '2011-08-21 21:11:34.614851+0000'
+  updated_at: '2011-08-21 21:11:34.614851+0000'
+ballots_403:
+  id: 403
+  winner_id: 32
+  loser_id: 13
+  match_id: 351
+  created_at: '2011-08-21 21:11:40.626927+0000'
+  updated_at: '2011-08-21 21:11:40.626927+0000'
+ballots_404:
+  id: 404
+  winner_id: 21
+  loser_id: 57
+  match_id: 137
+  created_at: '2011-08-21 21:11:47.924472+0000'
+  updated_at: '2011-08-21 21:11:47.924472+0000'
+ballots_405:
+  id: 405
+  winner_id: 41
+  loser_id: 51
+  match_id: 95
+  created_at: '2011-08-21 21:11:56.150808+0000'
+  updated_at: '2011-08-21 21:11:56.150808+0000'
+ballots_406:
+  id: 406
+  winner_id: 9
+  loser_id: 42
+  match_id: 352
+  created_at: '2011-08-21 21:12:16.077704+0000'
+  updated_at: '2011-08-21 21:12:16.077704+0000'
+ballots_407:
+  id: 407
+  winner_id: 9
+  loser_id: 54
+  match_id: 353
+  created_at: '2011-08-21 21:12:21.695539+0000'
+  updated_at: '2011-08-21 21:12:21.695539+0000'
+ballots_408:
+  id: 408
+  winner_id: 12
+  loser_id: 39
+  match_id: 354
+  created_at: '2011-08-21 21:12:26.054489+0000'
+  updated_at: '2011-08-21 21:12:26.054489+0000'
+ballots_409:
+  id: 409
+  winner_id: 44
+  loser_id: 13
+  match_id: 355
+  created_at: '2011-08-21 21:12:30.340609+0000'
+  updated_at: '2011-08-21 21:12:30.340609+0000'
+ballots_410:
+  id: 410
+  winner_id: 23
+  loser_id: 39
+  match_id: 356
+  created_at: '2011-08-21 21:12:36.023368+0000'
+  updated_at: '2011-08-21 21:12:36.023368+0000'
+ballots_411:
+  id: 411
+  winner_id: 27
+  loser_id: 47
+  match_id: 357
+  created_at: '2011-08-21 21:13:01.215607+0000'
+  updated_at: '2011-08-21 21:13:01.215607+0000'
+ballots_412:
+  id: 412
+  winner_id: 28
+  loser_id: 56
+  match_id: 233
+  created_at: '2011-08-21 21:13:07.370856+0000'
+  updated_at: '2011-08-21 21:13:07.370856+0000'
+ballots_413:
+  id: 413
+  winner_id: 1
+  loser_id: 20
+  match_id: 182
+  created_at: '2011-08-21 21:13:19.246474+0000'
+  updated_at: '2011-08-21 21:13:19.246474+0000'
+ballots_414:
+  id: 414
+  winner_id: 32
+  loser_id: 47
+  match_id: 358
+  created_at: '2011-08-21 21:13:23.560864+0000'
+  updated_at: '2011-08-21 21:13:23.560864+0000'
+ballots_415:
+  id: 415
+  winner_id: 7
+  loser_id: 42
+  match_id: 359
+  created_at: '2011-08-21 21:13:36.415165+0000'
+  updated_at: '2011-08-21 21:13:36.415165+0000'
+ballots_416:
+  id: 416
+  winner_id: 51
+  loser_id: 38
+  match_id: 360
+  created_at: '2011-08-21 21:13:40.287033+0000'
+  updated_at: '2011-08-21 21:13:40.287033+0000'
+ballots_417:
+  id: 417
+  winner_id: 21
+  loser_id: 10
+  match_id: 361
+  created_at: '2011-08-21 21:13:42.101051+0000'
+  updated_at: '2011-08-21 21:13:42.101051+0000'
+ballots_418:
+  id: 418
+  winner_id: 20
+  loser_id: 23
+  match_id: 362
+  created_at: '2011-08-21 21:13:47.387319+0000'
+  updated_at: '2011-08-21 21:13:47.387319+0000'
+ballots_419:
+  id: 419
+  winner_id: 52
+  loser_id: 36
+  match_id: 363
+  created_at: '2011-08-21 21:13:52.224898+0000'
+  updated_at: '2011-08-21 21:13:52.224898+0000'
+ballots_420:
+  id: 420
+  winner_id: 32
+  loser_id: 58
+  match_id: 364
+  created_at: '2011-08-21 21:13:58.133660+0000'
+  updated_at: '2011-08-21 21:13:58.133660+0000'
+ballots_421:
+  id: 421
+  winner_id: 21
+  loser_id: 47
+  match_id: 365
+  created_at: '2011-08-21 21:14:05.350584+0000'
+  updated_at: '2011-08-21 21:14:05.350584+0000'
+ballots_422:
+  id: 422
+  winner_id: 41
+  loser_id: 3
+  match_id: 366
+  created_at: '2011-08-21 21:14:09.543525+0000'
+  updated_at: '2011-08-21 21:14:09.543525+0000'
+ballots_423:
+  id: 423
+  winner_id: 42
+  loser_id: 23
+  match_id: 275
+  created_at: '2011-08-21 21:14:16.588082+0000'
+  updated_at: '2011-08-21 21:14:16.588082+0000'
+ballots_424:
+  id: 424
+  winner_id: 32
+  loser_id: 60
+  match_id: 367
+  created_at: '2011-08-21 21:14:27.085972+0000'
+  updated_at: '2011-08-21 21:14:27.085972+0000'
+ballots_425:
+  id: 425
+  winner_id: 52
+  loser_id: 59
+  match_id: 368
+  created_at: '2011-08-21 21:14:28.851500+0000'
+  updated_at: '2011-08-21 21:14:28.851500+0000'
+ballots_426:
+  id: 426
+  winner_id: 29
+  loser_id: 17
+  match_id: 369
+  created_at: '2011-08-21 21:14:35.027590+0000'
+  updated_at: '2011-08-21 21:14:35.027590+0000'
+ballots_427:
+  id: 427
+  winner_id: 44
+  loser_id: 6
+  match_id: 370
+  created_at: '2011-08-21 21:14:41.038377+0000'
+  updated_at: '2011-08-21 21:14:41.038377+0000'
+ballots_428:
+  id: 428
+  winner_id: 30
+  loser_id: 44
+  match_id: 371
+  created_at: '2011-08-21 21:14:45.898480+0000'
+  updated_at: '2011-08-21 21:14:45.898480+0000'
+ballots_429:
+  id: 429
+  winner_id: 50
+  loser_id: 24
+  match_id: 162
+  created_at: '2011-08-21 21:14:50.516061+0000'
+  updated_at: '2011-08-21 21:14:50.516061+0000'
+ballots_430:
+  id: 430
+  winner_id: 58
+  loser_id: 6
+  match_id: 372
+  created_at: '2011-08-21 21:15:06.124901+0000'
+  updated_at: '2011-08-21 21:15:06.124901+0000'
+ballots_431:
+  id: 431
+  winner_id: 17
+  loser_id: 59
+  match_id: 373
+  created_at: '2011-08-21 21:15:11.511075+0000'
+  updated_at: '2011-08-21 21:15:11.511075+0000'
+ballots_432:
+  id: 432
+  winner_id: 33
+  loser_id: 45
+  match_id: 374
+  created_at: '2011-08-21 21:15:15.291573+0000'
+  updated_at: '2011-08-21 21:15:15.291573+0000'
+ballots_433:
+  id: 433
+  winner_id: 7
+  loser_id: 15
+  match_id: 310
+  created_at: '2011-08-21 21:15:21.309932+0000'
+  updated_at: '2011-08-21 21:15:21.309932+0000'
+ballots_434:
+  id: 434
+  winner_id: 42
+  loser_id: 55
+  match_id: 375
+  created_at: '2011-08-21 21:15:40.319869+0000'
+  updated_at: '2011-08-21 21:15:40.319869+0000'
+ballots_435:
+  id: 435
+  winner_id: 30
+  loser_id: 46
+  match_id: 155
+  created_at: '2011-08-21 21:15:44.070141+0000'
+  updated_at: '2011-08-21 21:15:44.070141+0000'
+ballots_436:
+  id: 436
+  winner_id: 60
+  loser_id: 54
+  match_id: 376
+  created_at: '2011-08-21 21:15:50.736630+0000'
+  updated_at: '2011-08-21 21:15:50.736630+0000'
+ballots_437:
+  id: 437
+  winner_id: 52
+  loser_id: 46
+  match_id: 377
+  created_at: '2011-08-21 21:15:57.775231+0000'
+  updated_at: '2011-08-21 21:15:57.775231+0000'
+ballots_438:
+  id: 438
+  winner_id: 58
+  loser_id: 43
+  match_id: 378
+  created_at: '2011-08-21 21:16:00.641983+0000'
+  updated_at: '2011-08-21 21:16:00.641983+0000'
+ballots_439:
+  id: 439
+  winner_id: 45
+  loser_id: 15
+  match_id: 224
+  created_at: '2011-08-21 21:16:07.195281+0000'
+  updated_at: '2011-08-21 21:16:07.195281+0000'
+ballots_440:
+  id: 440
+  winner_id: 3
+  loser_id: 33
+  match_id: 379
+  created_at: '2011-08-21 21:16:12.609996+0000'
+  updated_at: '2011-08-21 21:16:12.609996+0000'
+ballots_441:
+  id: 441
+  winner_id: 28
+  loser_id: 23
+  match_id: 380
+  created_at: '2011-08-21 21:16:23.245744+0000'
+  updated_at: '2011-08-21 21:16:23.245744+0000'
+ballots_442:
+  id: 442
+  winner_id: 27
+  loser_id: 58
+  match_id: 381
+  created_at: '2011-08-21 21:16:30.792230+0000'
+  updated_at: '2011-08-21 21:16:30.792230+0000'
+ballots_443:
+  id: 443
+  winner_id: 41
+  loser_id: 24
+  match_id: 382
+  created_at: '2011-08-21 21:16:34.228043+0000'
+  updated_at: '2011-08-21 21:16:34.228043+0000'
+ballots_444:
+  id: 444
+  winner_id: 51
+  loser_id: 23
+  match_id: 383
+  created_at: '2011-08-21 21:16:36.900211+0000'
+  updated_at: '2011-08-21 21:16:36.900211+0000'
+ballots_445:
+  id: 445
+  winner_id: 32
+  loser_id: 27
+  match_id: 160
+  created_at: '2011-08-21 21:16:44.315844+0000'
+  updated_at: '2011-08-21 21:16:44.315844+0000'
+ballots_446:
+  id: 446
+  winner_id: 58
+  loser_id: 43
+  match_id: 378
+  created_at: '2011-08-21 21:16:46.219541+0000'
+  updated_at: '2011-08-21 21:16:46.219541+0000'
+ballots_447:
+  id: 447
+  winner_id: 53
+  loser_id: 16
+  match_id: 135
+  created_at: '2011-08-21 21:17:08.505820+0000'
+  updated_at: '2011-08-21 21:17:08.505820+0000'
+ballots_448:
+  id: 448
+  winner_id: 59
+  loser_id: 20
+  match_id: 384
+  created_at: '2011-08-21 21:17:14.753245+0000'
+  updated_at: '2011-08-21 21:17:14.753245+0000'
+ballots_449:
+  id: 449
+  winner_id: 43
+  loser_id: 15
+  match_id: 268
+  created_at: '2011-08-21 21:17:18.499123+0000'
+  updated_at: '2011-08-21 21:17:18.499123+0000'
+ballots_450:
+  id: 450
+  winner_id: 24
+  loser_id: 35
+  match_id: 385
+  created_at: '2011-08-21 21:17:25.150995+0000'
+  updated_at: '2011-08-21 21:17:25.150995+0000'
+ballots_451:
+  id: 451
+  winner_id: 55
+  loser_id: 15
+  match_id: 386
+  created_at: '2011-08-21 21:17:31.198757+0000'
+  updated_at: '2011-08-21 21:17:31.198757+0000'
+ballots_452:
+  id: 452
+  winner_id: 5
+  loser_id: 34
+  match_id: 387
+  created_at: '2011-08-21 21:17:33.808803+0000'
+  updated_at: '2011-08-21 21:17:33.808803+0000'
+ballots_453:
+  id: 453
+  winner_id: 51
+  loser_id: 52
+  match_id: 388
+  created_at: '2011-08-21 21:17:38.184761+0000'
+  updated_at: '2011-08-21 21:17:38.184761+0000'
+ballots_454:
+  id: 454
+  winner_id: 54
+  loser_id: 15
+  match_id: 389
+  created_at: '2011-08-21 21:17:53.204004+0000'
+  updated_at: '2011-08-21 21:17:53.204004+0000'
+ballots_455:
+  id: 455
+  winner_id: 33
+  loser_id: 40
+  match_id: 390
+  created_at: '2011-08-21 21:18:05.936770+0000'
+  updated_at: '2011-08-21 21:18:05.936770+0000'
+ballots_456:
+  id: 456
+  winner_id: 39
+  loser_id: 13
+  match_id: 391
+  created_at: '2011-08-21 21:18:11.820193+0000'
+  updated_at: '2011-08-21 21:18:11.820193+0000'
+ballots_457:
+  id: 457
+  winner_id: 24
+  loser_id: 33
+  match_id: 196
+  created_at: '2011-08-21 21:23:48.697620+0000'
+  updated_at: '2011-08-21 21:23:48.697620+0000'
+ballots_458:
+  id: 458
+  winner_id: 15
+  loser_id: 55
+  match_id: 386
+  created_at: '2011-08-21 22:12:54.517253+0000'
+  updated_at: '2011-08-21 22:12:54.517253+0000'
+ballots_459:
+  id: 459
+  winner_id: 34
+  loser_id: 4
+  match_id: 63
+  created_at: '2011-08-21 22:13:05.001102+0000'
+  updated_at: '2011-08-21 22:13:05.001102+0000'
+ballots_460:
+  id: 460
+  winner_id: 46
+  loser_id: 35
+  match_id: 397
+  created_at: '2011-08-21 22:13:20.535644+0000'
+  updated_at: '2011-08-21 22:13:20.535644+0000'
+ballots_461:
+  id: 461
+  winner_id: 29
+  loser_id: 52
+  match_id: 398
+  created_at: '2011-08-21 22:13:34.774288+0000'
+  updated_at: '2011-08-21 22:13:34.774288+0000'
+ballots_462:
+  id: 462
+  winner_id: 47
+  loser_id: 50
+  match_id: 399
+  created_at: '2011-08-21 22:13:56.322916+0000'
+  updated_at: '2011-08-21 22:13:56.322916+0000'
+ballots_463:
+  id: 463
+  winner_id: 42
+  loser_id: 54
+  match_id: 309
+  created_at: '2011-08-21 22:14:13.817942+0000'
+  updated_at: '2011-08-21 22:14:13.817942+0000'
+ballots_464:
+  id: 464
+  winner_id: 40
+  loser_id: 55
+  match_id: 337
+  created_at: '2011-08-21 22:15:02.864741+0000'
+  updated_at: '2011-08-21 22:15:02.864741+0000'
+ballots_465:
+  id: 465
+  winner_id: 29
+  loser_id: 52
+  match_id: 398
+  created_at: '2011-08-21 22:15:12.742814+0000'
+  updated_at: '2011-08-21 22:15:12.742814+0000'
+ballots_466:
+  id: 466
+  winner_id: 50
+  loser_id: 3
+  match_id: 400
+  created_at: '2011-08-21 22:15:24.606481+0000'
+  updated_at: '2011-08-21 22:15:24.606481+0000'
+ballots_467:
+  id: 467
+  winner_id: 58
+  loser_id: 1
+  match_id: 401
+  created_at: '2011-08-21 22:15:33.416117+0000'
+  updated_at: '2011-08-21 22:15:33.416117+0000'
+ballots_468:
+  id: 468
+  winner_id: 25
+  loser_id: 19
+  match_id: 402
+  created_at: '2011-08-21 22:15:43.679369+0000'
+  updated_at: '2011-08-21 22:15:43.679369+0000'
+ballots_469:
+  id: 469
+  winner_id: 27
+  loser_id: 29
+  match_id: 296
+  created_at: '2011-08-21 22:15:52.476356+0000'
+  updated_at: '2011-08-21 22:15:52.476356+0000'
+ballots_470:
+  id: 470
+  winner_id: 60
+  loser_id: 16
+  match_id: 403
+  created_at: '2011-08-21 22:16:02.310496+0000'
+  updated_at: '2011-08-21 22:16:02.310496+0000'
+ballots_471:
+  id: 471
+  winner_id: 53
+  loser_id: 52
+  match_id: 404
+  created_at: '2011-08-21 22:16:14.328613+0000'
+  updated_at: '2011-08-21 22:16:14.328613+0000'
+ballots_472:
+  id: 472
+  winner_id: 60
+  loser_id: 13
+  match_id: 405
+  created_at: '2011-08-21 22:16:28.805692+0000'
+  updated_at: '2011-08-21 22:16:28.805692+0000'
+ballots_473:
+  id: 473
+  winner_id: 47
+  loser_id: 52
+  match_id: 234
+  created_at: '2011-08-21 22:16:38.828566+0000'
+  updated_at: '2011-08-21 22:16:38.828566+0000'
+ballots_474:
+  id: 474
+  winner_id: 37
+  loser_id: 59
+  match_id: 406
+  created_at: '2011-08-21 22:16:48.129325+0000'
+  updated_at: '2011-08-21 22:16:48.129325+0000'
+ballots_475:
+  id: 475
+  winner_id: 58
+  loser_id: 49
+  match_id: 407
+  created_at: '2011-08-21 22:17:06.688751+0000'
+  updated_at: '2011-08-21 22:17:06.688751+0000'
+ballots_476:
+  id: 476
+  winner_id: 11
+  loser_id: 38
+  match_id: 408
+  created_at: '2011-08-21 22:17:22.637746+0000'
+  updated_at: '2011-08-21 22:17:22.637746+0000'
+ballots_477:
+  id: 477
+  winner_id: 60
+  loser_id: 43
+  match_id: 409
+  created_at: '2011-08-21 22:17:31.690796+0000'
+  updated_at: '2011-08-21 22:17:31.690796+0000'
+ballots_478:
+  id: 478
+  winner_id: 54
+  loser_id: 7
+  match_id: 410
+  created_at: '2011-08-21 22:18:09.535758+0000'
+  updated_at: '2011-08-21 22:18:09.535758+0000'
+ballots_479:
+  id: 479
+  winner_id: 32
+  loser_id: 29
+  match_id: 147
+  created_at: '2011-08-21 22:18:14.647582+0000'
+  updated_at: '2011-08-21 22:18:14.647582+0000'
+ballots_480:
+  id: 480
+  winner_id: 57
+  loser_id: 11
+  match_id: 282
+  created_at: '2011-08-21 22:18:39.072615+0000'
+  updated_at: '2011-08-21 22:18:39.072615+0000'
+ballots_481:
+  id: 481
+  winner_id: 41
+  loser_id: 50
+  match_id: 411
+  created_at: '2011-08-21 22:19:04.300196+0000'
+  updated_at: '2011-08-21 22:19:04.300196+0000'
+ballots_482:
+  id: 482
+  winner_id: 49
+  loser_id: 28
+  match_id: 412
+  created_at: '2011-08-21 22:19:19.343333+0000'
+  updated_at: '2011-08-21 22:19:19.343333+0000'
+ballots_483:
+  id: 483
+  winner_id: 41
+  loser_id: 30
+  match_id: 246
+  created_at: '2011-08-21 22:19:30.755090+0000'
+  updated_at: '2011-08-21 22:19:30.755090+0000'
+ballots_484:
+  id: 484
+  winner_id: 59
+  loser_id: 1
+  match_id: 413
+  created_at: '2011-08-21 22:19:51.315416+0000'
+  updated_at: '2011-08-21 22:19:51.315416+0000'
+ballots_485:
+  id: 485
+  winner_id: 22
+  loser_id: 40
+  match_id: 414
+  created_at: '2011-08-21 22:20:03.472623+0000'
+  updated_at: '2011-08-21 22:20:03.472623+0000'
+ballots_486:
+  id: 486
+  winner_id: 43
+  loser_id: 31
+  match_id: 415
+  created_at: '2011-08-21 22:20:16.746584+0000'
+  updated_at: '2011-08-21 22:20:16.746584+0000'
+ballots_487:
+  id: 487
+  winner_id: 24
+  loser_id: 56
+  match_id: 416
+  created_at: '2011-08-21 22:20:29.260304+0000'
+  updated_at: '2011-08-21 22:20:29.260304+0000'
+ballots_488:
+  id: 488
+  winner_id: 37
+  loser_id: 40
+  match_id: 417
+  created_at: '2011-08-21 22:20:37.265639+0000'
+  updated_at: '2011-08-21 22:20:37.265639+0000'
+ballots_489:
+  id: 489
+  winner_id: 32
+  loser_id: 58
+  match_id: 364
+  created_at: '2011-08-21 22:20:49.972227+0000'
+  updated_at: '2011-08-21 22:20:49.972227+0000'
+ballots_490:
+  id: 490
+  winner_id: 41
+  loser_id: 28
+  match_id: 418
+  created_at: '2011-08-21 22:20:59.677267+0000'
+  updated_at: '2011-08-21 22:20:59.677267+0000'
+ballots_491:
+  id: 491
+  winner_id: 40
+  loser_id: 34
+  match_id: 419
+  created_at: '2011-08-21 22:21:08.571571+0000'
+  updated_at: '2011-08-21 22:21:08.571571+0000'
+ballots_492:
+  id: 492
+  winner_id: 5
+  loser_id: 60
+  match_id: 420
+  created_at: '2011-08-21 22:21:27.059200+0000'
+  updated_at: '2011-08-21 22:21:27.059200+0000'
+ballots_493:
+  id: 493
+  winner_id: 11
+  loser_id: 52
+  match_id: 303
+  created_at: '2011-08-21 22:21:34.751844+0000'
+  updated_at: '2011-08-21 22:21:34.751844+0000'
+ballots_494:
+  id: 494
+  winner_id: 47
+  loser_id: 59
+  match_id: 421
+  created_at: '2011-08-21 22:21:43.670964+0000'
+  updated_at: '2011-08-21 22:21:43.670964+0000'
+ballots_495:
+  id: 495
+  winner_id: 24
+  loser_id: 19
+  match_id: 231
+  created_at: '2011-08-21 22:21:56.789504+0000'
+  updated_at: '2011-08-21 22:21:56.789504+0000'
+ballots_496:
+  id: 496
+  winner_id: 60
+  loser_id: 57
+  match_id: 422
+  created_at: '2011-08-21 22:22:21.840890+0000'
+  updated_at: '2011-08-21 22:22:21.840890+0000'
+ballots_497:
+  id: 497
+  winner_id: 7
+  loser_id: 59
+  match_id: 423
+  created_at: '2011-08-21 22:22:35.641718+0000'
+  updated_at: '2011-08-21 22:22:35.641718+0000'
+ballots_498:
+  id: 498
+  winner_id: 43
+  loser_id: 40
+  match_id: 1
+  created_at: '2011-08-21 22:22:57.694747+0000'
+  updated_at: '2011-08-21 22:22:57.694747+0000'
+ballots_499:
+  id: 499
+  winner_id: 10
+  loser_id: 4
+  match_id: 424
+  created_at: '2011-08-21 22:23:09.000503+0000'
+  updated_at: '2011-08-21 22:23:09.000503+0000'
+ballots_500:
+  id: 500
+  winner_id: 44
+  loser_id: 53
+  match_id: 425
+  created_at: '2011-08-21 22:23:37.420232+0000'
+  updated_at: '2011-08-21 22:23:37.420232+0000'
+ballots_501:
+  id: 501
+  winner_id: 13
+  loser_id: 4
+  match_id: 426
+  created_at: '2011-08-21 22:23:50.059992+0000'
+  updated_at: '2011-08-21 22:23:50.059992+0000'
+ballots_502:
+  id: 502
+  winner_id: 3
+  loser_id: 14
+  match_id: 427
+  created_at: '2011-08-21 22:24:01.546730+0000'
+  updated_at: '2011-08-21 22:24:01.546730+0000'
+ballots_503:
+  id: 503
+  winner_id: 23
+  loser_id: 13
+  match_id: 204
+  created_at: '2011-08-21 22:24:08.980210+0000'
+  updated_at: '2011-08-21 22:24:08.980210+0000'
+ballots_504:
+  id: 504
+  winner_id: 20
+  loser_id: 34
+  match_id: 428
+  created_at: '2011-08-21 22:24:17.466065+0000'
+  updated_at: '2011-08-21 22:24:17.466065+0000'
+ballots_505:
+  id: 505
+  winner_id: 9
+  loser_id: 54
+  match_id: 353
+  created_at: '2011-08-21 22:24:25.576665+0000'
+  updated_at: '2011-08-21 22:24:25.576665+0000'
+ballots_506:
+  id: 506
+  winner_id: 27
+  loser_id: 37
+  match_id: 429
+  created_at: '2011-08-21 22:25:31.069031+0000'
+  updated_at: '2011-08-21 22:25:31.069031+0000'
+ballots_507:
+  id: 507
+  winner_id: 55
+  loser_id: 1
+  match_id: 430
+  created_at: '2011-08-21 22:25:41.592746+0000'
+  updated_at: '2011-08-21 22:25:41.592746+0000'
+ballots_508:
+  id: 508
+  winner_id: 57
+  loser_id: 51
+  match_id: 262
+  created_at: '2011-08-21 22:25:51.568510+0000'
+  updated_at: '2011-08-21 22:25:51.568510+0000'
+ballots_509:
+  id: 509
+  winner_id: 38
+  loser_id: 4
+  match_id: 431
+  created_at: '2011-08-21 22:25:59.604891+0000'
+  updated_at: '2011-08-21 22:25:59.604891+0000'
+ballots_510:
+  id: 510
+  winner_id: 49
+  loser_id: 47
+  match_id: 432
+  created_at: '2011-08-21 22:26:22.279278+0000'
+  updated_at: '2011-08-21 22:26:22.279278+0000'
+ballots_511:
+  id: 511
+  winner_id: 49
+  loser_id: 36
+  match_id: 433
+  created_at: '2011-08-21 22:26:28.713687+0000'
+  updated_at: '2011-08-21 22:26:28.713687+0000'
+ballots_512:
+  id: 512
+  winner_id: 42
+  loser_id: 7
+  match_id: 359
+  created_at: '2011-08-21 22:28:47.961596+0000'
+  updated_at: '2011-08-21 22:28:47.961596+0000'
+ballots_513:
+  id: 513
+  winner_id: 39
+  loser_id: 4
+  match_id: 94
+  created_at: '2011-08-21 22:29:02.952538+0000'
+  updated_at: '2011-08-21 22:29:02.952538+0000'
+ballots_514:
+  id: 514
+  winner_id: 5
+  loser_id: 8
+  match_id: 91
+  created_at: '2011-08-21 22:29:19.152570+0000'
+  updated_at: '2011-08-21 22:29:19.152570+0000'
+ballots_515:
+  id: 515
+  winner_id: 49
+  loser_id: 8
+  match_id: 197
+  created_at: '2011-08-21 22:29:27.994742+0000'
+  updated_at: '2011-08-21 22:29:27.994742+0000'
+ballots_516:
+  id: 516
+  winner_id: 21
+  loser_id: 26
+  match_id: 434
+  created_at: '2011-08-21 22:30:14.910596+0000'
+  updated_at: '2011-08-21 22:30:14.910596+0000'
+ballots_517:
+  id: 517
+  winner_id: 23
+  loser_id: 39
+  match_id: 356
+  created_at: '2011-08-21 23:05:56.930329+0000'
+  updated_at: '2011-08-21 23:05:56.930329+0000'
+ballots_518:
+  id: 518
+  winner_id: 60
+  loser_id: 28
+  match_id: 436
+  created_at: '2011-08-21 23:06:02.567251+0000'
+  updated_at: '2011-08-21 23:06:02.567251+0000'
+ballots_519:
+  id: 519
+  winner_id: 56
+  loser_id: 3
+  match_id: 438
+  created_at: '2011-08-21 23:06:15.083914+0000'
+  updated_at: '2011-08-21 23:06:15.083914+0000'
+ballots_520:
+  id: 520
+  winner_id: 9
+  loser_id: 42
+  match_id: 352
+  created_at: '2011-08-21 23:06:22.947427+0000'
+  updated_at: '2011-08-21 23:06:22.947427+0000'
+ballots_521:
+  id: 521
+  winner_id: 32
+  loser_id: 2
+  match_id: 240
+  created_at: '2011-08-21 23:06:58.937740+0000'
+  updated_at: '2011-08-21 23:06:58.937740+0000'
+ballots_522:
+  id: 522
+  winner_id: 56
+  loser_id: 28
+  match_id: 233
+  created_at: '2011-08-21 23:07:15.261925+0000'
+  updated_at: '2011-08-21 23:07:15.261925+0000'
+ballots_523:
+  id: 523
+  winner_id: 50
+  loser_id: 14
+  match_id: 437
+  created_at: '2011-08-21 23:07:18.098244+0000'
+  updated_at: '2011-08-21 23:07:18.098244+0000'
+ballots_524:
+  id: 524
+  winner_id: 53
+  loser_id: 12
+  match_id: 439
+  created_at: '2011-08-21 23:07:26.427290+0000'
+  updated_at: '2011-08-21 23:07:26.427290+0000'
+ballots_525:
+  id: 525
+  winner_id: 36
+  loser_id: 54
+  match_id: 440
+  created_at: '2011-08-21 23:07:37.605338+0000'
+  updated_at: '2011-08-21 23:07:37.605338+0000'
+ballots_526:
+  id: 526
+  winner_id: 35
+  loser_id: 12
+  match_id: 205
+  created_at: '2011-08-21 23:07:45.963899+0000'
+  updated_at: '2011-08-21 23:07:45.963899+0000'
+ballots_527:
+  id: 527
+  winner_id: 14
+  loser_id: 33
+  match_id: 93
+  created_at: '2011-08-21 23:08:58.413055+0000'
+  updated_at: '2011-08-21 23:08:58.413055+0000'
+ballots_528:
+  id: 528
+  winner_id: 37
+  loser_id: 32
+  match_id: 133
+  created_at: '2011-08-21 23:09:10.167251+0000'
+  updated_at: '2011-08-21 23:09:10.167251+0000'
+ballots_529:
+  id: 529
+  winner_id: 10
+  loser_id: 23
+  match_id: 441
+  created_at: '2011-08-21 23:10:17.333400+0000'
+  updated_at: '2011-08-21 23:10:17.333400+0000'
+ballots_530:
+  id: 530
+  winner_id: 6
+  loser_id: 19
+  match_id: 442
+  created_at: '2011-08-21 23:10:29.296227+0000'
+  updated_at: '2011-08-21 23:10:29.296227+0000'
+ballots_531:
+  id: 531
+  winner_id: 13
+  loser_id: 39
+  match_id: 391
+  created_at: '2011-08-21 23:10:30.869731+0000'
+  updated_at: '2011-08-21 23:10:30.869731+0000'
+ballots_532:
+  id: 532
+  winner_id: 2
+  loser_id: 5
+  match_id: 261
+  created_at: '2011-08-21 23:10:41.433936+0000'
+  updated_at: '2011-08-21 23:10:41.433936+0000'
+ballots_533:
+  id: 533
+  winner_id: 20
+  loser_id: 1
+  match_id: 182
+  created_at: '2011-08-21 23:10:51.760379+0000'
+  updated_at: '2011-08-21 23:10:51.760379+0000'
+ballots_534:
+  id: 534
+  winner_id: 24
+  loser_id: 50
+  match_id: 162
+  created_at: '2011-08-21 23:11:35.988444+0000'
+  updated_at: '2011-08-21 23:11:35.988444+0000'
+ballots_535:
+  id: 535
+  winner_id: 34
+  loser_id: 1
+  match_id: 444
+  created_at: '2011-08-21 23:11:53.895701+0000'
+  updated_at: '2011-08-21 23:11:53.895701+0000'
+ballots_536:
+  id: 536
+  winner_id: 30
+  loser_id: 44
+  match_id: 371
+  created_at: '2011-08-21 23:12:11.053042+0000'
+  updated_at: '2011-08-21 23:12:11.053042+0000'
+ballots_537:
+  id: 537
+  winner_id: 10
+  loser_id: 31
+  match_id: 151
+  created_at: '2011-08-21 23:12:19.834443+0000'
+  updated_at: '2011-08-21 23:12:19.834443+0000'
+ballots_538:
+  id: 538
+  winner_id: 51
+  loser_id: 46
+  match_id: 443
+  created_at: '2011-08-21 23:12:48.475184+0000'
+  updated_at: '2011-08-21 23:12:48.475184+0000'
+ballots_539:
+  id: 539
+  winner_id: 8
+  loser_id: 35
+  match_id: 108
+  created_at: '2011-08-21 23:13:34.056559+0000'
+  updated_at: '2011-08-21 23:13:34.056559+0000'
+ballots_540:
+  id: 540
+  winner_id: 34
+  loser_id: 1
+  match_id: 444
+  created_at: '2011-08-21 23:13:52.478854+0000'
+  updated_at: '2011-08-21 23:13:52.478854+0000'
+ballots_541:
+  id: 541
+  winner_id: 32
+  loser_id: 23
+  match_id: 445
+  created_at: '2011-08-21 23:14:00.876982+0000'
+  updated_at: '2011-08-21 23:14:00.876982+0000'
+ballots_542:
+  id: 542
+  winner_id: 58
+  loser_id: 57
+  match_id: 446
+  created_at: '2011-08-21 23:14:13.597473+0000'
+  updated_at: '2011-08-21 23:14:13.597473+0000'
+ballots_543:
+  id: 543
+  winner_id: 41
+  loser_id: 24
+  match_id: 382
+  created_at: '2011-08-21 23:14:18.362854+0000'
+  updated_at: '2011-08-21 23:14:18.362854+0000'
+ballots_544:
+  id: 544
+  winner_id: 48
+  loser_id: 56
+  match_id: 447
+  created_at: '2011-08-21 23:14:25.166324+0000'
+  updated_at: '2011-08-21 23:14:25.166324+0000'
+ballots_545:
+  id: 545
+  winner_id: 46
+  loser_id: 28
+  match_id: 449
+  created_at: '2011-08-21 23:14:33.850194+0000'
+  updated_at: '2011-08-21 23:14:33.850194+0000'
+ballots_546:
+  id: 546
+  winner_id: 20
+  loser_id: 7
+  match_id: 450
+  created_at: '2011-08-21 23:14:47.800174+0000'
+  updated_at: '2011-08-21 23:14:47.800174+0000'
+ballots_547:
+  id: 547
+  winner_id: 33
+  loser_id: 45
+  match_id: 374
+  created_at: '2011-08-21 23:15:00.178908+0000'
+  updated_at: '2011-08-21 23:15:00.178908+0000'
+ballots_548:
+  id: 548
+  winner_id: 44
+  loser_id: 59
+  match_id: 451
+  created_at: '2011-08-21 23:15:10.032718+0000'
+  updated_at: '2011-08-21 23:15:10.032718+0000'
+ballots_549:
+  id: 549
+  winner_id: 1
+  loser_id: 13
+  match_id: 448
+  created_at: '2011-08-21 23:15:14.174485+0000'
+  updated_at: '2011-08-21 23:15:14.174485+0000'
+ballots_550:
+  id: 550
+  winner_id: 35
+  loser_id: 16
+  match_id: 156
+  created_at: '2011-08-21 23:15:20.081683+0000'
+  updated_at: '2011-08-21 23:15:20.081683+0000'
+ballots_551:
+  id: 551
+  winner_id: 2
+  loser_id: 60
+  match_id: 452
+  created_at: '2011-08-21 23:15:35.604536+0000'
+  updated_at: '2011-08-21 23:15:35.604536+0000'
+ballots_552:
+  id: 552
+  winner_id: 22
+  loser_id: 14
+  match_id: 299
+  created_at: '2011-08-21 23:16:55.815719+0000'
+  updated_at: '2011-08-21 23:16:55.815719+0000'
+ballots_553:
+  id: 553
+  winner_id: 56
+  loser_id: 18
+  match_id: 14
+  created_at: '2011-08-21 23:19:01.583336+0000'
+  updated_at: '2011-08-21 23:19:01.583336+0000'
+ballots_554:
+  id: 554
+  winner_id: 47
+  loser_id: 5
+  match_id: 455
+  created_at: '2011-08-21 23:20:10.750332+0000'
+  updated_at: '2011-08-21 23:20:10.750332+0000'
+ballots_555:
+  id: 555
+  winner_id: 33
+  loser_id: 6
+  match_id: 456
+  created_at: '2011-08-21 23:23:04.487308+0000'
+  updated_at: '2011-08-21 23:23:04.487308+0000'
+ballots_556:
+  id: 556
+  winner_id: 40
+  loser_id: 17
+  match_id: 457
+  created_at: '2011-08-21 23:23:16.048807+0000'
+  updated_at: '2011-08-21 23:23:16.048807+0000'
+ballots_557:
+  id: 557
+  winner_id: 48
+  loser_id: 56
+  match_id: 447
+  created_at: '2011-08-21 23:23:23.324153+0000'
+  updated_at: '2011-08-21 23:23:23.324153+0000'
+ballots_558:
+  id: 558
+  winner_id: 58
+  loser_id: 47
+  match_id: 458
+  created_at: '2011-08-21 23:23:38.285488+0000'
+  updated_at: '2011-08-21 23:23:38.285488+0000'
+ballots_559:
+  id: 559
+  winner_id: 27
+  loser_id: 9
+  match_id: 459
+  created_at: '2011-08-21 23:23:44.733334+0000'
+  updated_at: '2011-08-21 23:23:44.733334+0000'
+ballots_560:
+  id: 560
+  winner_id: 59
+  loser_id: 54
+  match_id: 460
+  created_at: '2011-08-21 23:23:55.437349+0000'
+  updated_at: '2011-08-21 23:23:55.437349+0000'
+ballots_561:
+  id: 561
+  winner_id: 36
+  loser_id: 43
+  match_id: 238
+  created_at: '2011-08-21 23:24:03.315214+0000'
+  updated_at: '2011-08-21 23:24:03.315214+0000'
+ballots_562:
+  id: 562
+  winner_id: 24
+  loser_id: 30
+  match_id: 252
+  created_at: '2011-08-21 23:24:08.980235+0000'
+  updated_at: '2011-08-21 23:24:08.980235+0000'
+ballots_563:
+  id: 563
+  winner_id: 35
+  loser_id: 28
+  match_id: 333
+  created_at: '2011-08-21 23:24:31.033807+0000'
+  updated_at: '2011-08-21 23:24:31.033807+0000'
+ballots_564:
+  id: 564
+  winner_id: 27
+  loser_id: 25
+  match_id: 462
+  created_at: '2011-08-21 23:24:58.017973+0000'
+  updated_at: '2011-08-21 23:24:58.017973+0000'
+ballots_565:
+  id: 565
+  winner_id: 17
+  loser_id: 41
+  match_id: 281
+  created_at: '2011-08-21 23:28:08.318206+0000'
+  updated_at: '2011-08-21 23:28:08.318206+0000'
+ballots_566:
+  id: 566
+  winner_id: 41
+  loser_id: 17
+  match_id: 281
+  created_at: '2011-08-21 23:28:12.204713+0000'
+  updated_at: '2011-08-21 23:28:12.204713+0000'
+ballots_567:
+  id: 567
+  winner_id: 56
+  loser_id: 30
+  match_id: 464
+  created_at: '2011-08-21 23:30:20.230951+0000'
+  updated_at: '2011-08-21 23:30:20.230951+0000'
+ballots_568:
+  id: 568
+  winner_id: 10
+  loser_id: 54
+  match_id: 465
+  created_at: '2011-08-21 23:31:16.930117+0000'
+  updated_at: '2011-08-21 23:31:16.930117+0000'
+ballots_569:
+  id: 569
+  winner_id: 56
+  loser_id: 42
+  match_id: 466
+  created_at: '2011-08-21 23:31:34.516677+0000'
+  updated_at: '2011-08-21 23:31:34.516677+0000'
+ballots_570:
+  id: 570
+  winner_id: 60
+  loser_id: 33
+  match_id: 396
+  created_at: '2011-08-21 23:32:19.279510+0000'
+  updated_at: '2011-08-21 23:32:19.279510+0000'
+ballots_571:
+  id: 571
+  winner_id: 56
+  loser_id: 53
+  match_id: 470
+  created_at: '2011-08-22 13:29:59.048593+0000'
+  updated_at: '2011-08-22 13:29:59.048593+0000'
+ballots_572:
+  id: 572
+  winner_id: 39
+  loser_id: 4
+  match_id: 94
+  created_at: '2011-08-22 13:30:05.100206+0000'
+  updated_at: '2011-08-22 13:30:05.100206+0000'
+ballots_573:
+  id: 573
+  winner_id: 52
+  loser_id: 42
+  match_id: 318
+  created_at: '2011-08-22 13:30:25.327710+0000'
+  updated_at: '2011-08-22 13:30:25.327710+0000'
+ballots_574:
+  id: 574
+  winner_id: 57
+  loser_id: 56
+  match_id: 46
+  created_at: '2011-08-22 13:30:30.878159+0000'
+  updated_at: '2011-08-22 13:30:30.878159+0000'
+ballots_575:
+  id: 575
+  winner_id: 9
+  loser_id: 13
+  match_id: 61
+  created_at: '2011-08-22 13:30:43.832413+0000'
+  updated_at: '2011-08-22 13:30:43.832413+0000'
+ballots_576:
+  id: 576
+  winner_id: 52
+  loser_id: 12
+  match_id: 471
+  created_at: '2011-08-22 13:30:51.768542+0000'
+  updated_at: '2011-08-22 13:30:51.768542+0000'
+ballots_577:
+  id: 577
+  winner_id: 2
+  loser_id: 27
+  match_id: 472
+  created_at: '2011-08-22 13:32:09.648371+0000'
+  updated_at: '2011-08-22 13:32:09.648371+0000'
+ballots_578:
+  id: 578
+  winner_id: 28
+  loser_id: 30
+  match_id: 473
+  created_at: '2011-08-22 13:32:19.873441+0000'
+  updated_at: '2011-08-22 13:32:19.873441+0000'
+ballots_579:
+  id: 579
+  winner_id: 58
+  loser_id: 20
+  match_id: 474
+  created_at: '2011-08-22 13:32:22.918379+0000'
+  updated_at: '2011-08-22 13:32:22.918379+0000'
+ballots_580:
+  id: 580
+  winner_id: 50
+  loser_id: 56
+  match_id: 475
+  created_at: '2011-08-22 13:32:29.381104+0000'
+  updated_at: '2011-08-22 13:32:29.381104+0000'
+ballots_581:
+  id: 581
+  winner_id: 33
+  loser_id: 6
+  match_id: 456
+  created_at: '2011-08-22 13:32:55.301106+0000'
+  updated_at: '2011-08-22 13:32:55.301106+0000'
+ballots_582:
+  id: 582
+  winner_id: 46
+  loser_id: 44
+  match_id: 476
+  created_at: '2011-08-22 13:33:21.748195+0000'
+  updated_at: '2011-08-22 13:33:21.748195+0000'
+ballots_583:
+  id: 583
+  winner_id: 17
+  loser_id: 42
+  match_id: 477
+  created_at: '2011-08-22 13:33:25.903208+0000'
+  updated_at: '2011-08-22 13:33:25.903208+0000'
+ballots_584:
+  id: 584
+  winner_id: 19
+  loser_id: 17
+  match_id: 203
+  created_at: '2011-08-22 13:34:44.719554+0000'
+  updated_at: '2011-08-22 13:34:44.719554+0000'
+ballots_585:
+  id: 585
+  winner_id: 29
+  loser_id: 59
+  match_id: 478
+  created_at: '2011-08-22 13:34:50.592924+0000'
+  updated_at: '2011-08-22 13:34:50.592924+0000'
+ballots_586:
+  id: 586
+  winner_id: 53
+  loser_id: 33
+  match_id: 479
+  created_at: '2011-08-22 13:35:00.343061+0000'
+  updated_at: '2011-08-22 13:35:00.343061+0000'
+ballots_587:
+  id: 587
+  winner_id: 32
+  loser_id: 2
+  match_id: 240
+  created_at: '2011-08-22 13:35:26.377717+0000'
+  updated_at: '2011-08-22 13:35:26.377717+0000'
+ballots_588:
+  id: 588
+  winner_id: 47
+  loser_id: 24
+  match_id: 480
+  created_at: '2011-08-22 13:35:34.670382+0000'
+  updated_at: '2011-08-22 13:35:34.670382+0000'
+ballots_589:
+  id: 589
+  winner_id: 45
+  loser_id: 59
+  match_id: 481
+  created_at: '2011-08-22 13:35:41.499175+0000'
+  updated_at: '2011-08-22 13:35:41.499175+0000'
+ballots_590:
+  id: 590
+  winner_id: 7
+  loser_id: 42
+  match_id: 359
+  created_at: '2011-08-22 13:35:53.376263+0000'
+  updated_at: '2011-08-22 13:35:53.376263+0000'
+ballots_591:
+  id: 591
+  winner_id: 58
+  loser_id: 49
+  match_id: 407
+  created_at: '2011-08-22 13:36:48.308368+0000'
+  updated_at: '2011-08-22 13:36:48.308368+0000'
+ballots_592:
+  id: 592
+  winner_id: 18
+  loser_id: 51
+  match_id: 103
+  created_at: '2011-08-22 13:37:00.324025+0000'
+  updated_at: '2011-08-22 13:37:00.324025+0000'
+ballots_593:
+  id: 593
+  winner_id: 19
+  loser_id: 33
+  match_id: 482
+  created_at: '2011-08-22 13:37:28.257808+0000'
+  updated_at: '2011-08-22 13:37:28.257808+0000'
+ballots_594:
+  id: 594
+  winner_id: 48
+  loser_id: 24
+  match_id: 319
+  created_at: '2011-08-22 13:37:49.806302+0000'
+  updated_at: '2011-08-22 13:37:49.806302+0000'
+ballots_595:
+  id: 595
+  winner_id: 52
+  loser_id: 9
+  match_id: 483
+  created_at: '2011-08-22 13:37:55.755753+0000'
+  updated_at: '2011-08-22 13:37:55.755753+0000'
+ballots_596:
+  id: 596
+  winner_id: 8
+  loser_id: 49
+  match_id: 197
+  created_at: '2011-08-22 13:38:04.321343+0000'
+  updated_at: '2011-08-22 13:38:04.321343+0000'
+ballots_597:
+  id: 597
+  winner_id: 51
+  loser_id: 56
+  match_id: 302
+  created_at: '2011-08-22 13:38:13.969601+0000'
+  updated_at: '2011-08-22 13:38:13.969601+0000'
+ballots_598:
+  id: 598
+  winner_id: 18
+  loser_id: 36
+  match_id: 484
+  created_at: '2011-08-22 13:38:17.370717+0000'
+  updated_at: '2011-08-22 13:38:17.370717+0000'
+ballots_599:
+  id: 599
+  winner_id: 5
+  loser_id: 26
+  match_id: 338
+  created_at: '2011-08-22 13:38:22.555480+0000'
+  updated_at: '2011-08-22 13:38:22.555480+0000'
+ballots_600:
+  id: 600
+  winner_id: 8
+  loser_id: 48
+  match_id: 485
+  created_at: '2011-08-22 13:38:27.492557+0000'
+  updated_at: '2011-08-22 13:38:27.492557+0000'
+ballots_601:
+  id: 601
+  winner_id: 19
+  loser_id: 17
+  match_id: 203
+  created_at: '2011-08-22 13:38:33.143473+0000'
+  updated_at: '2011-08-22 13:38:33.143473+0000'
+ballots_602:
+  id: 602
+  winner_id: 32
+  loser_id: 21
+  match_id: 486
+  created_at: '2011-08-22 13:38:50.370803+0000'
+  updated_at: '2011-08-22 13:38:50.370803+0000'
+ballots_603:
+  id: 603
+  winner_id: 10
+  loser_id: 20
+  match_id: 117
+  created_at: '2011-08-22 13:38:57.212548+0000'
+  updated_at: '2011-08-22 13:38:57.212548+0000'
+ballots_604:
+  id: 604
+  winner_id: 26
+  loser_id: 59
+  match_id: 487
+  created_at: '2011-08-22 13:45:56.508875+0000'
+  updated_at: '2011-08-22 13:45:56.508875+0000'
+ballots_605:
+  id: 605
+  winner_id: 44
+  loser_id: 38
+  match_id: 488
+  created_at: '2011-08-22 13:46:04.166476+0000'
+  updated_at: '2011-08-22 13:46:04.166476+0000'
+ballots_606:
+  id: 606
+  winner_id: 33
+  loser_id: 10
+  match_id: 489
+  created_at: '2011-08-22 13:46:08.989110+0000'
+  updated_at: '2011-08-22 13:46:08.989110+0000'
+ballots_607:
+  id: 607
+  winner_id: 12
+  loser_id: 10
+  match_id: 491
+  created_at: '2011-08-22 22:11:10.094533+0000'
+  updated_at: '2011-08-22 22:11:10.094533+0000'
+ballots_608:
+  id: 608
+  winner_id: 10
+  loser_id: 7
+  match_id: 492
+  created_at: '2011-08-22 22:11:17.846445+0000'
+  updated_at: '2011-08-22 22:11:17.846445+0000'
+ballots_609:
+  id: 609
+  winner_id: 58
+  loser_id: 12
+  match_id: 493
+  created_at: '2011-08-22 22:11:22.329001+0000'
+  updated_at: '2011-08-22 22:11:22.329001+0000'
+ballots_610:
+  id: 610
+  winner_id: 21
+  loser_id: 8
+  match_id: 490
+  created_at: '2011-08-22 22:12:03.617974+0000'
+  updated_at: '2011-08-22 22:12:03.617974+0000'
+ballots_611:
+  id: 611
+  winner_id: 35
+  loser_id: 34
+  match_id: 90
+  created_at: '2011-08-22 22:12:05.644901+0000'
+  updated_at: '2011-08-22 22:12:05.644901+0000'
+ballots_612:
+  id: 612
+  winner_id: 40
+  loser_id: 1
+  match_id: 494
+  created_at: '2011-08-22 22:12:08.649662+0000'
+  updated_at: '2011-08-22 22:12:08.649662+0000'
+ballots_613:
+  id: 613
+  winner_id: 11
+  loser_id: 14
+  match_id: 495
+  created_at: '2011-08-22 22:12:16.167197+0000'
+  updated_at: '2011-08-22 22:12:16.167197+0000'
+ballots_614:
+  id: 614
+  winner_id: 3
+  loser_id: 52
+  match_id: 300
+  created_at: '2011-08-22 22:12:44.774304+0000'
+  updated_at: '2011-08-22 22:12:44.774304+0000'
+ballots_615:
+  id: 615
+  winner_id: 33
+  loser_id: 1
+  match_id: 496
+  created_at: '2011-08-22 22:12:47.479695+0000'
+  updated_at: '2011-08-22 22:12:47.479695+0000'
+ballots_616:
+  id: 616
+  winner_id: 23
+  loser_id: 13
+  match_id: 204
+  created_at: '2011-08-22 22:12:59.697434+0000'
+  updated_at: '2011-08-22 22:12:59.697434+0000'
+ballots_617:
+  id: 617
+  winner_id: 1
+  loser_id: 34
+  match_id: 444
+  created_at: '2011-08-22 22:13:02.160323+0000'
+  updated_at: '2011-08-22 22:13:02.160323+0000'
+ballots_618:
+  id: 618
+  winner_id: 22
+  loser_id: 38
+  match_id: 497
+  created_at: '2011-08-22 22:13:05.675433+0000'
+  updated_at: '2011-08-22 22:13:05.675433+0000'
+ballots_619:
+  id: 619
+  winner_id: 48
+  loser_id: 57
+  match_id: 498
+  created_at: '2011-08-22 22:13:17.713748+0000'
+  updated_at: '2011-08-22 22:13:17.713748+0000'
+ballots_620:
+  id: 620
+  winner_id: 57
+  loser_id: 35
+  match_id: 118
+  created_at: '2011-08-22 22:13:22.030212+0000'
+  updated_at: '2011-08-22 22:13:22.030212+0000'
+ballots_621:
+  id: 621
+  winner_id: 2
+  loser_id: 27
+  match_id: 472
+  created_at: '2011-08-22 22:13:34.480161+0000'
+  updated_at: '2011-08-22 22:13:34.480161+0000'
+ballots_622:
+  id: 622
+  winner_id: 5
+  loser_id: 60
+  match_id: 420
+  created_at: '2011-08-22 22:13:38.859103+0000'
+  updated_at: '2011-08-22 22:13:38.859103+0000'
+ballots_623:
+  id: 623
+  winner_id: 26
+  loser_id: 25
+  match_id: 57
+  created_at: '2011-08-22 22:13:44.328595+0000'
+  updated_at: '2011-08-22 22:13:44.328595+0000'
+ballots_624:
+  id: 624
+  winner_id: 48
+  loser_id: 26
+  match_id: 499
+  created_at: '2011-08-22 22:13:51.476276+0000'
+  updated_at: '2011-08-22 22:13:51.476276+0000'
+ballots_625:
+  id: 625
+  winner_id: 1
+  loser_id: 23
+  match_id: 165
+  created_at: '2011-08-22 22:13:54.513146+0000'
+  updated_at: '2011-08-22 22:13:54.513146+0000'
+ballots_626:
+  id: 626
+  winner_id: 57
+  loser_id: 18
+  match_id: 500
+  created_at: '2011-08-22 22:14:02.387566+0000'
+  updated_at: '2011-08-22 22:14:02.387566+0000'
+ballots_627:
+  id: 627
+  winner_id: 2
+  loser_id: 58
+  match_id: 501
+  created_at: '2011-08-22 22:14:06.220643+0000'
+  updated_at: '2011-08-22 22:14:06.220643+0000'
+ballots_628:
+  id: 628
+  winner_id: 37
+  loser_id: 58
+  match_id: 502
+  created_at: '2011-08-22 22:14:11.356824+0000'
+  updated_at: '2011-08-22 22:14:11.356824+0000'
+ballots_629:
+  id: 629
+  winner_id: 19
+  loser_id: 53
+  match_id: 208
+  created_at: '2011-08-22 22:14:30.508196+0000'
+  updated_at: '2011-08-22 22:14:30.508196+0000'
+ballots_630:
+  id: 630
+  winner_id: 5
+  loser_id: 21
+  match_id: 194
+  created_at: '2011-08-23 15:52:23.571318+0000'
+  updated_at: '2011-08-23 15:52:23.571318+0000'
+ballots_631:
+  id: 631
+  winner_id: 27
+  loser_id: 60
+  match_id: 512
+  created_at: '2011-08-23 15:52:33.893125+0000'
+  updated_at: '2011-08-23 15:52:33.893125+0000'
+ballots_632:
+  id: 632
+  winner_id: 45
+  loser_id: 43
+  match_id: 513
+  created_at: '2011-08-23 15:52:42.008561+0000'
+  updated_at: '2011-08-23 15:52:42.008561+0000'
+ballots_633:
+  id: 633
+  winner_id: 42
+  loser_id: 31
+  match_id: 514
+  created_at: '2011-08-23 15:52:52.715074+0000'
+  updated_at: '2011-08-23 15:52:52.715074+0000'
+ballots_634:
+  id: 634
+  winner_id: 51
+  loser_id: 24
+  match_id: 515
+  created_at: '2011-08-23 15:53:15.962382+0000'
+  updated_at: '2011-08-23 15:53:15.962382+0000'
+ballots_635:
+  id: 635
+  winner_id: 51
+  loser_id: 50
+  match_id: 516
+  created_at: '2011-08-23 15:53:25.932668+0000'
+  updated_at: '2011-08-23 15:53:25.932668+0000'
+ballots_636:
+  id: 636
+  winner_id: 32
+  loser_id: 27
+  match_id: 160
+  created_at: '2011-08-23 15:53:31.793903+0000'
+  updated_at: '2011-08-23 15:53:31.793903+0000'
+ballots_637:
+  id: 637
+  winner_id: 7
+  loser_id: 55
+  match_id: 83
+  created_at: '2011-08-23 15:53:39.976849+0000'
+  updated_at: '2011-08-23 15:53:39.976849+0000'
+ballots_638:
+  id: 638
+  winner_id: 25
+  loser_id: 9
+  match_id: 517
+  created_at: '2011-08-23 15:53:43.571918+0000'
+  updated_at: '2011-08-23 15:53:43.571918+0000'
+ballots_639:
+  id: 639
+  winner_id: 34
+  loser_id: 4
+  match_id: 63
+  created_at: '2011-08-23 15:53:47.366330+0000'
+  updated_at: '2011-08-23 15:53:47.366330+0000'
+ballots_640:
+  id: 640
+  winner_id: 41
+  loser_id: 47
+  match_id: 518
+  created_at: '2011-08-23 15:53:52.140864+0000'
+  updated_at: '2011-08-23 15:53:52.140864+0000'
+ballots_641:
+  id: 641
+  winner_id: 26
+  loser_id: 11
+  match_id: 519
+  created_at: '2011-08-23 15:53:57.094650+0000'
+  updated_at: '2011-08-23 15:53:57.094650+0000'
+ballots_642:
+  id: 642
+  winner_id: 60
+  loser_id: 16
+  match_id: 403
+  created_at: '2011-08-23 15:54:01.032327+0000'
+  updated_at: '2011-08-23 15:54:01.032327+0000'
+ballots_643:
+  id: 643
+  winner_id: 6
+  loser_id: 10
+  match_id: 520
+  created_at: '2011-08-23 15:55:47.055952+0000'
+  updated_at: '2011-08-23 15:55:47.055952+0000'
+ballots_644:
+  id: 644
+  winner_id: 2
+  loser_id: 29
+  match_id: 521
+  created_at: '2011-08-23 15:55:59.806908+0000'
+  updated_at: '2011-08-23 15:55:59.806908+0000'
+ballots_645:
+  id: 645
+  winner_id: 58
+  loser_id: 35
+  match_id: 522
+  created_at: '2011-08-23 15:56:08.255232+0000'
+  updated_at: '2011-08-23 15:56:08.255232+0000'
+ballots_646:
+  id: 646
+  winner_id: 27
+  loser_id: 58
+  match_id: 381
+  created_at: '2011-08-23 15:56:32.616213+0000'
+  updated_at: '2011-08-23 15:56:32.616213+0000'
+ballots_647:
+  id: 647
+  winner_id: 29
+  loser_id: 36
+  match_id: 525
+  created_at: '2011-08-23 16:04:02.667434+0000'
+  updated_at: '2011-08-23 16:04:02.667434+0000'
+ballots_648:
+  id: 648
+  winner_id: 31
+  loser_id: 1
+  match_id: 526
+  created_at: '2011-08-23 16:04:13.683059+0000'
+  updated_at: '2011-08-23 16:04:13.683059+0000'
+ballots_649:
+  id: 649
+  winner_id: 53
+  loser_id: 30
+  match_id: 527
+  created_at: '2011-08-23 16:04:26.137270+0000'
+  updated_at: '2011-08-23 16:04:26.137270+0000'
+ballots_650:
+  id: 650
+  winner_id: 31
+  loser_id: 4
+  match_id: 529
+  created_at: '2011-08-23 16:20:01.216839+0000'
+  updated_at: '2011-08-23 16:20:01.216839+0000'
