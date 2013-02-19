@@ -17,8 +17,6 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 
 gem "jammit"
 
-gem 'rmagick'
-
 gem "taps"
 
 gem "ruby-prof"
