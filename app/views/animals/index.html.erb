@@ -7,11 +7,27 @@
 			<% rank = 1%>
 			<% @animals_ranked.each do |animal| %>
 			<div class = "ranked_animal_row">
-				<div class="rank_numeral_container">
-					<h3 class="rank_numeral"><%= rank %>.</h3>
-				</div>
+					<% if rank == 1 %>
+					<div class="rank_indicator_container coin first_place">
+					<img src="/images/1st_place.png"></img>
+					</div>
+					<% elsif rank == 2 %>
+					<div class="rank_indicator_container coin">
+					<img src="/images/2nd_place.png"></img>
+					</div>
+					<% elsif rank == 3 %>
+					<div class="rank_indicator_container coin">
+					<img src="/images/3rd_place.png"></img>
+					</div>
+					<% else %>
+					<div class="rank_indicator_container board">
+					<img src="/images/4thPlus_place.png"></img>
+					<h3 class="board_number"><%= rank %></h3>
+					</div>
+					<% end %>
+				
 				<div class= "ranked_animal_figure">
-				<%= image_tag(animal.image.url(:medium))%>
+				<%= image_tag(animal.image.url(:medium), :class => "animal_img")%>
 				<h4 class ="figure_caption">
 				<%= animal.name %>
 			</h4>

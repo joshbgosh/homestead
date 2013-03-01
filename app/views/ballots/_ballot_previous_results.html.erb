@@ -2,19 +2,19 @@
 <div class="picked results_animal">
 <% if previous_ballot.stats.had_prior_votes? %>
 <div id="picked_animal_header">Your Last Pick</div>
-<img src="<%=previous_ballot.winner.image.url(:medium) %>">	
+<img class="animal_img" src="<%=previous_ballot.winner.image.url(:medium) %>">	
 <div id="agree_text"> <span class="percentage_text"><%=previous_ballot.stats.percent_agreed.round(0).to_i%>%</span> agree </div>
 </div>
 <div class="not_picked results_animal">
-<img src="<%=previous_ballot.loser.image.url(:medium) %>">	
+<img class="animal_img" src="<%=previous_ballot.loser.image.url(:medium) %>">	
 <div id="disagree_text"> <span class="percentage_text"><%=previous_ballot.stats.percent_disagreed.round(0).to_i%>%</span> disagree </div>
 </div>
 <% else %>
 <div id="picked_animal_header">Your Last Pick</div>
-<img src="<%=previous_ballot.winner.image.url(:medium) %>">	
+<img class="animal_img" src="<%=previous_ballot.winner.image.url(:medium) %>">	
 </div>
 <div class="not_picked results_animal">
-<img src="<%=previous_ballot.loser.image.url(:medium) %>">	
+<img class="animal_img" src="<%=previous_ballot.loser.image.url(:medium) %>">	
 </div>
 <p id="no_prior_votes_text"> You were the first to vote on this battle! </p>
 <% end %>

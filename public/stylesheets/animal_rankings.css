@@ -3,7 +3,7 @@
 	margin: 0px auto;
     text-align: left;
 	width: 560px;
-	padding-left: 40px;
+	padding-left: 52px;
 	padding-right: 40px;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -14,8 +14,8 @@
 	width: 500px;
 	height: 180px;
 	position: relative;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .ranked_animal_figure {
@@ -34,18 +34,43 @@
 	width:  150px; /* should be equal to image width */
 }
 
-.rank_numeral {
-	font-size: 24px;
-	width: 40px;
-	text-align: right;
+
+.rank_indicator_container {
+	display: inline;
+	position:absolute;
 }
 
-.rank_numeral_container {
-	display: inline;
-	position:absolute; top:50%; height:60px; margin-top:-56px; 
-	left: -48px;	
-	text-align: right;
+.rank_indicator_container.coin.first_place {
+	top: -65px;
+	left: -65px;
 }
+
+.rank_indicator_container.coin {
+	top: -30px;
+	left: -39px;
+	
+}
+
+.rank_indicator_container.board {
+	top: -40px;
+	left: -62px;
+	
+}
+
+.board_number {
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 34px;
+	font-size: 48px;
+	width: 40px;
+	text-align: right;
+	color: #ac1d05;
+	text-shadow: #000 2px 0px 1px rgba(0,0,0,.75);
+}
+
+
+
 .stats_area {
 	display: inline-block;
 	position: relative;
