@@ -88,9 +88,6 @@
 
 .animal_image {
 	border: 2px solid black;
-	
-	width: 198px;
-	height: 160px;
 }
 
 .animal_image:hover {

@@ -51,11 +51,11 @@ class Ballot < ActiveRecord::Base
 def self.pick_opponents
   n = rand(100)
   
-  if n < 70
+  if n < 93
     Ballot.make_random_close_match
-  elsif n < 75
+  elsif false #TODO: not sure this should be done at all any more. Leaving in for now though
     Ballot.make_new_close_match
-  elsif n < 95
+  elsif n < 96
     Ballot.make_random_match
   else
     Ballot.make_new_random_match
@@ -89,7 +89,7 @@ def self.make_new_close_match
   animals_ranked_by_fewest_ballots = Animal.by_fewest_ballots
   opponent_1 = animals_ranked_by_fewest_ballots.first
   opponent_2 = opponent_1.closely_matched_opponent
-  if rand(1) == 1
+  if rand(1) == 1 #randomize their order?
     tmp = opponent_1
     opponent_1 = opponent_2
     opponent_2 = tmp

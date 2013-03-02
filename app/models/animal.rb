@@ -1,7 +1,7 @@
 class Animal < ActiveRecord::Base
   
 	has_attached_file :image, 
-	  {:styles => {:medium => "224x224"},
+	  {:styles => {:large => "300x240#", :medium => "198x158#", :small=>"160x128#"},
 	  #{:styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"},
   }.merge(PAPERCLIP_STORAGE_OPTIONS)
 	  
@@ -64,8 +64,8 @@ class Animal < ActiveRecord::Base
 	  end 
 	  
 	  my_index = animals_ranked_by_win_percentage.index(self)
-	  distance = 3
-	  nearby_opponents = neighbors(animals_ranked_by_win_percentage, my_index, 3);
+	  distance = 2 #Make this higher to increase number of potential matches, but decrease closeness
+	  nearby_opponents = neighbors(animals_ranked_by_win_percentage, my_index, distance);
 	  closely_matched_opponent = nearby_opponents[rand(nearby_opponents.length)]
 	end
 	

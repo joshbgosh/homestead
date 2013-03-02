@@ -27,7 +27,10 @@
 					<% end %>
 				
 				<div class= "ranked_animal_figure">
-				<%= image_tag(animal.image.url(:medium), :class => "animal_img")%>
+				<%= link_to image_tag(animal.image.url(:medium), :class => "animal_img"), 
+				animal %>
+
+				
 				<h4 class ="figure_caption">
 				<%= animal.name %>
 			</h4>
