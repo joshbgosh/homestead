@@ -1,6 +1,6 @@
 class AddFacingToAnimal < ActiveRecord::Migration
   def self.up
-    add_column :animals, :facing, :varchar
+    add_column :animals, :facing, :varchar, :default => "Right"
   end
 
   def self.down
