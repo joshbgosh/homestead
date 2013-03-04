@@ -3,6 +3,7 @@
 <head>
 	<title>Both Are Totally Enraged</title>
 	<%= include_javascripts :workspace %>
+	 <%= analytics_init if Rails.env.production? %>
 	<%= include_stylesheets :workspace %>
 	<%= csrf_meta_tag %>
 	<link rel="shortcut icon" href="/favicon.ico" />

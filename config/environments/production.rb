@@ -3,6 +3,8 @@ BothAreTotallyEnraged::Application.configure do
   PAPERCLIP_STORAGE_OPTIONS = {:storage => :s3,
       :s3_credentials => "#{Rails.root}/config/s3.yml",
       :path => "/:style/:id/:filename"}
+
+  GA.tracker = "UA-38934815-1"
       
   # Settings specified here will take precedence over those in config/application.rb
   #ENV['RECAPTCHA_PUBLIC_KEY'] = 'MY_PUBLIC_KEY'

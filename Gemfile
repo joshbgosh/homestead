@@ -1,12 +1,14 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
-gem "paperclip", "~> 2.3"
+gem "paperclip"
 gem "paperclip-meta"
 gem 'jquery-rails', '>= 1.0.3'
 gem "tasteful_routes", "~> 0.1.3"
 
 gem "rake", "0.9.2"
+
+gem 'google-analytics-rails'
 
 
 gem "factory_girl_rails"
