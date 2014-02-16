@@ -48,7 +48,6 @@ $(document).ready(function() {
 		}
 	};
 	
-	$(".vote_button_panel button").tooltip({ predelay: 220, effect: "fade"});
 	
 	function on_voteUp_click() {
 		var buttonPanel = $(this).parent();
@@ -97,14 +96,14 @@ $(document).ready(function() {
 	}
 	
 	if (USER_SIGNED_IN) {
-		$("button.vote_up").click(on_voteUp_click);
-		$("button.vote_down").click(on_voteDown_click);
+		$(".vote_button.vote_up").click(on_voteUp_click);
+		$(".vote_button.vote_down").click(on_voteDown_click);
 	} else {
 		//TODO: make it so we can select both buttons with one css selector
-		$("button.vote_up").attr("rel", "#signup_signin_overlay");
-		$("button.vote_down").attr("rel", "#signup_signin_overlay");
-		$("button.vote_up[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
-		$("button.vote_down[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
+		$(".vote_button.vote_up").attr("rel", "#signup_signin_overlay");
+		$(".vote_button.vote_down").attr("rel", "#signup_signin_overlay");
+		$(".vote_button.vote_up[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
+		$(".vote_button.vote_down[rel]").overlay(SIGNUP_SIGNIN_OVERLAY_PARAMETERS);
 	}
 
 	

@@ -61,11 +61,11 @@
 	margin: 0;
 }
 
-.vote_button_panel button.vote_up img {
-	background: url("/images/Thumbs_up_faded.png")
+.vote_button_panel .vote_button.vote_up {
+	background: url("/images/commentVoteUp_unselected.png")
 }
-.vote_button_panel button.vote_down img {
-	background: url("/images/Thumbs_down_faded.png");
+.vote_button_panel .vote_button.vote_down {
+	background: url("/images/commentVoteDown_unselected.png");
 }
 
 /**
@@ -77,42 +77,41 @@
 }
 **/
 
-.vote_button_panel button.vote_up img:active {
+.vote_button_panel .vote_button.vote_up:active {
 	position: relative;
 	top: 2px;
-	background: url("/images/Thumbs_up.png");
+	background: url("/images/commentVoteUp_selected.png");
 }
-.vote_button_panel button.vote_down img:active {
+.vote_button_panel .vote_button.vote_down:active {
 	position: relative;
 	top: 2px;
-	background: url("/images/Thumbs_down.png");
+	background: url("/images/commentVoteDown_selected.png");
 }
 
-.vote_button_panel button:active {
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#dbce79),to(#faf0aa));
+.vote_button_panel .vote_button:active {
+	
 }
 
 
-.vote_button_panel.voted_for button.vote_up img {
-	background: url("/images/Thumbs_up.png");
+.vote_button_panel.voted_for .vote_button.vote_up {
+	background: url("/images/commentVoteUp_selected.png");
 }
-.vote_button_panel.voted_for button.vote_down img {
-	background: url("/images/Thumbs_down_faded.png")
-}
-
-.vote_button_panel.voted_against button.vote_up img {
-	background: url("/images/Thumbs_up_faded.png");
-}
-.vote_button_panel.voted_against button.vote_down img {
-	background: url("/images/Thumbs_down.png");
+.vote_button_panel.voted_for .vote_button.vote_down {
+	background: url("/images/commentVoteDown_unselected.png")
 }
 
-.vote_button_panel button {
-	border-radius: 3px;
-	border: 1px solid #CCC;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#faf0aa),to(#dbce79));
-	width: 30px;
-	height: 30px;
+.vote_button_panel.voted_against .vote_button.vote_up {
+	background: url("/images/commentVoteUp_unselected.png");
+}
+.vote_button_panel.voted_against .vote_button.vote_down {
+	background: url("/images/commentVoteDown_selected.png");
+}
+
+.vote_button_panel .vote_button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .comment .metadata {

@@ -7,6 +7,3 @@ javascripts:
 stylesheets:
     workspace:
         - public/stylesheets/*.css
-
-        
-        
