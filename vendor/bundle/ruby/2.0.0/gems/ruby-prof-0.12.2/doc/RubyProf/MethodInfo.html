@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class RubyProf::MethodInfo - ruby-prof</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/ruby-prof/method_info.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Comparable</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    
+    <li><a href="#method-i-aggregate_children">#aggregate_children</a>
+    
+    <li><a href="#method-i-aggregate_parents">#aggregate_parents</a>
+    
+    <li><a href="#method-i-called">#called</a>
+    
+    <li><a href="#method-i-children">#children</a>
+    
+    <li><a href="#method-i-children_time">#children_time</a>
+    
+    <li><a href="#method-i-eliminate-21">#eliminate!</a>
+    
+    <li><a href="#method-i-min_depth">#min_depth</a>
+    
+    <li><a href="#method-i-recursive-3F">#recursive?</a>
+    
+    <li><a href="#method-i-root-3F">#root?</a>
+    
+    <li><a href="#method-i-self_time">#self_time</a>
+    
+    <li><a href="#method-i-to_s">#to_s</a>
+    
+    <li><a href="#method-i-total_time">#total_time</a>
+    
+    <li><a href="#method-i-wait_time">#wait_time</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../examples/flat_txt.html">flat</a>
+  
+    <li class="file"><a href="../examples/graph_txt.html">graph</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../RubyProf.html">RubyProf</a>
+  
+    <li><a href="../RubyProf/AbstractPrinter.html">RubyProf::AbstractPrinter</a>
+  
+    <li><a href="../RubyProf/AggregateCallInfo.html">RubyProf::AggregateCallInfo</a>
+  
+    <li><a href="../RubyProf/CallInfo.html">RubyProf::CallInfo</a>
+  
+    <li><a href="../RubyProf/CallInfoPrinter.html">RubyProf::CallInfoPrinter</a>
+  
+    <li><a href="../RubyProf/CallInfoVisitor.html">RubyProf::CallInfoVisitor</a>
+  
+    <li><a href="../RubyProf/CallStackPrinter.html">RubyProf::CallStackPrinter</a>
+  
+    <li><a href="../RubyProf/CallTreePrinter.html">RubyProf::CallTreePrinter</a>
+  
+    <li><a href="../RubyProf/Cmd.html">RubyProf::Cmd</a>
+  
+    <li><a href="../RubyProf/DotPrinter.html">RubyProf::DotPrinter</a>
+  
+    <li><a href="../RubyProf/FlatPrinter.html">RubyProf::FlatPrinter</a>
+  
+    <li><a href="../RubyProf/FlatPrinterWithLineNumbers.html">RubyProf::FlatPrinterWithLineNumbers</a>
+  
+    <li><a href="../RubyProf/GraphHtmlPrinter.html">RubyProf::GraphHtmlPrinter</a>
+  
+    <li><a href="../RubyProf/GraphPrinter.html">RubyProf::GraphPrinter</a>
+  
+    <li><a href="../RubyProf/MethodInfo.html">RubyProf::MethodInfo</a>
+  
+    <li><a href="../RubyProf/MultiPrinter.html">RubyProf::MultiPrinter</a>
+  
+    <li><a href="../RubyProf/Profile.html">RubyProf::Profile</a>
+  
+    <li><a href="../RubyProf/ProfileTask.html">RubyProf::ProfileTask</a>
+  
+    <li><a href="../RubyProf/Test.html">RubyProf::Test</a>
+  
+    <li><a href="../RubyProf/Thread.html">RubyProf::Thread</a>
+  
+    <li><a href="../Rack.html">Rack</a>
+  
+    <li><a href="../Rack/RubyProf.html">Rack::RubyProf</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class RubyProf::MethodInfo</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-3C-3D-3E" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">&lt;=&gt;</span><span
+            class="method-args">(other)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="3C-3D-3E-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">other</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">total_time</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">total_time</span>
+    <span class="ruby-value">-1</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">total_time</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">total_time</span>
+    <span class="ruby-value">1</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">min_depth</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">min_depth</span>
+    <span class="ruby-value">1</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">min_depth</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">min_depth</span>
+    <span class="ruby-value">-1</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">full_name</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">full_name</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 3C-3D-3E-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 3C-3D-3E-method -->
+
+    
+      <div id="method-i-aggregate_children" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aggregate_children</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="aggregate_children-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">aggregate_children</span>
+  <span class="ruby-comment"># Group call info's based on their targets</span>
+  <span class="ruby-identifier">groups</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">children</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">key</span> = <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>
+    (<span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] <span class="ruby-operator">||=</span> []) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">call_info</span>
+    <span class="ruby-identifier">hash</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">groups</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-constant">AggregateCallInfo</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">value</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- aggregate_children-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- aggregate_children-method -->
+
+    
+      <div id="method-i-aggregate_parents" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aggregate_parents</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="aggregate_parents-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">aggregate_parents</span>
+  <span class="ruby-comment"># Group call info's based on their parents</span>
+  <span class="ruby-identifier">groups</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">key</span> = <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">parent</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">parent</span>.<span class="ruby-identifier">target</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>
+    (<span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] <span class="ruby-operator">||=</span> []) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">call_info</span>
+    <span class="ruby-identifier">hash</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">groups</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-constant">AggregateCallInfo</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">value</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- aggregate_parents-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- aggregate_parents-method -->
+
+    
+      <div id="method-i-called" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">called</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="called-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">called</span>
+  <span class="ruby-ivar">@called</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">called</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- called-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- called-method -->
+
+    
+      <div id="method-i-children" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">children</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="children-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">children</span>
+  <span class="ruby-ivar">@children</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">children</span>
+    <span class="ruby-keyword">end</span>.<span class="ruby-identifier">flatten</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- children-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- children-method -->
+
+    
+      <div id="method-i-children_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">children_time</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="children_time-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">children_time</span>
+  <span class="ruby-ivar">@children_time</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">children_time</span>  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span>
+      <span class="ruby-identifier">sum</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- children_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- children_time-method -->
+
+    
+      <div id="method-i-eliminate-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eliminate!</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>remove method from the call graph. should not be called directly.</p>
+          
+
+          
+          <div class="method-source-code" id="eliminate-21-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 123</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eliminate!</span>
+  <span class="ruby-comment"># $stderr.puts &quot;eliminating #{self}&quot;</span>
+  <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">eliminate!</span> }
+  <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">clear</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eliminate-21-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eliminate-21-method -->
+
+    
+      <div id="method-i-min_depth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">min_depth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="min_depth-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">min_depth</span>
+  <span class="ruby-ivar">@min_depth</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">depth</span>
+  <span class="ruby-keyword">end</span>.<span class="ruby-identifier">min</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- min_depth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- min_depth-method -->
+
+    
+      <div id="method-i-recursive-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">recursive?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="recursive-3F-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">recursive?</span>
+  <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">detect</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- recursive-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- recursive-3F-method -->
+
+    
+      <div id="method-i-root-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">root?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="root-3F-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">root?</span>
+  <span class="ruby-ivar">@root</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">find</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">not</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">root?</span>
+    <span class="ruby-keyword">end</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- root-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- root-3F-method -->
+
+    
+      <div id="method-i-self_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">self_time</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="self_time-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">self_time</span>
+  <span class="ruby-ivar">@self_time</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">self_time</span>  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span>
+      <span class="ruby-identifier">sum</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- self_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- self_time-method -->
+
+    
+      <div id="method-i-to_s" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_s</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="to_s-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
+  <span class="ruby-node">&quot;#{self.full_name} (c: #{self.called}, tt: #{self.total_time}, st: #{self.self_time}, ct: #{self.children_time})&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- to_s-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- to_s-method -->
+
+    
+      <div id="method-i-total_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">total_time</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="total_time-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">total_time</span>
+  <span class="ruby-ivar">@total_time</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">total_time</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span>
+      <span class="ruby-identifier">sum</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- total_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- total_time-method -->
+
+    
+      <div id="method-i-wait_time" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">wait_time</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="wait_time-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/method_info.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">wait_time</span>
+  <span class="ruby-ivar">@wait_time</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">call_infos</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">call_info</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">wait_time</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span>
+      <span class="ruby-identifier">sum</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- wait_time-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- wait_time-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

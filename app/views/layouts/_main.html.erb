@@ -13,18 +13,7 @@
 	
 	<div id="header_bar">
 		<div id="header_contents">
-			<h1 id="logo">Both Are Totally Enraged</h1>
-
-			<div id="header_and_user_links">
-			<ul id="header_nav_links">
-				<li><%= link_to "Most Enraged", animals_path %></li>
-				<% if local_assigns[:showing_ballot] && showing_ballot %>
-				<li><%= link_to "New Battle", new_ballot_path %></li>
-				<% else %>
-				<li><%= link_to "Back to Battle", show_current_ballots_path %></li>
-				<% end %>
-			</ul>
-
+			<h1 id="logo">Both Are Totally Enraged</h1>	
 			<ul id="user_links">
 				<% if signed_in?(:user) %>
 				<% if signed_in?(:admin)%>
@@ -36,7 +25,17 @@
 				<li> <%= link_to "Sign In", new_user_session_path %></li>
 				<% end %>
 			</ul>
-		</div>
+
+			<ul id="header_nav_links">
+				<li><%= link_to "Most Enraged", animals_path %></li>
+				<% if local_assigns[:showing_ballot] && showing_ballot %>
+				<li><%= link_to "New Battle", new_ballot_path %></li>
+				<% else %>
+				<li><%= link_to "Back to Battle", show_current_ballots_path %></li>
+				<% end %>
+			</ul>
+
+		
 		</div>
 	</div>
 	<% if notice %>

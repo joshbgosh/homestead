@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class RubyProf::Profile - ruby-prof</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/ruby-prof/profile.rb
+    <li>ext/ruby_prof/ruby_prof.c
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-profile">::profile</a>
+    
+    <li><a href="#method-i-detect_recursion">#detect_recursion</a>
+    
+    <li><a href="#method-i-eliminate_methods-21">#eliminate_methods!</a>
+    
+    <li><a href="#method-i-pause">#pause</a>
+    
+    <li><a href="#method-i-paused-3F">#paused?</a>
+    
+    <li><a href="#method-i-post_process">#post_process</a>
+    
+    <li><a href="#method-i-resume">#resume</a>
+    
+    <li><a href="#method-i-running-3F">#running?</a>
+    
+    <li><a href="#method-i-start">#start</a>
+    
+    <li><a href="#method-i-stop">#stop</a>
+    
+    <li><a href="#method-i-threads">#threads</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../LICENSE.html">LICENSE</a>
+  
+    <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../examples/flat_txt.html">flat</a>
+  
+    <li class="file"><a href="../examples/graph_txt.html">graph</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../RubyProf.html">RubyProf</a>
+  
+    <li><a href="../RubyProf/AbstractPrinter.html">RubyProf::AbstractPrinter</a>
+  
+    <li><a href="../RubyProf/AggregateCallInfo.html">RubyProf::AggregateCallInfo</a>
+  
+    <li><a href="../RubyProf/CallInfo.html">RubyProf::CallInfo</a>
+  
+    <li><a href="../RubyProf/CallInfoPrinter.html">RubyProf::CallInfoPrinter</a>
+  
+    <li><a href="../RubyProf/CallInfoVisitor.html">RubyProf::CallInfoVisitor</a>
+  
+    <li><a href="../RubyProf/CallStackPrinter.html">RubyProf::CallStackPrinter</a>
+  
+    <li><a href="../RubyProf/CallTreePrinter.html">RubyProf::CallTreePrinter</a>
+  
+    <li><a href="../RubyProf/Cmd.html">RubyProf::Cmd</a>
+  
+    <li><a href="../RubyProf/DotPrinter.html">RubyProf::DotPrinter</a>
+  
+    <li><a href="../RubyProf/FlatPrinter.html">RubyProf::FlatPrinter</a>
+  
+    <li><a href="../RubyProf/FlatPrinterWithLineNumbers.html">RubyProf::FlatPrinterWithLineNumbers</a>
+  
+    <li><a href="../RubyProf/GraphHtmlPrinter.html">RubyProf::GraphHtmlPrinter</a>
+  
+    <li><a href="../RubyProf/GraphPrinter.html">RubyProf::GraphPrinter</a>
+  
+    <li><a href="../RubyProf/MethodInfo.html">RubyProf::MethodInfo</a>
+  
+    <li><a href="../RubyProf/MultiPrinter.html">RubyProf::MultiPrinter</a>
+  
+    <li><a href="../RubyProf/Profile.html">RubyProf::Profile</a>
+  
+    <li><a href="../RubyProf/ProfileTask.html">RubyProf::ProfileTask</a>
+  
+    <li><a href="../RubyProf/Test.html">RubyProf::Test</a>
+  
+    <li><a href="../RubyProf/Thread.html">RubyProf::Thread</a>
+  
+    <li><a href="../Rack.html">Rack</a>
+  
+    <li><a href="../Rack/RubyProf.html">Rack::RubyProf</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class RubyProf::Profile</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            RubyProf::Profile.new(mode, exclude_threads) &rarr; instance
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Returns a new profiler.</p>
+
+<h2 id="method-c-new-label-Parameters">Parameters</h2>
+<dl class="rdoc-list note-list"><dt>mode
+<dd>
+<p>Measure mode (optional). Specifies the profile measure mode.  If not
+specified, defaults to RubyProf::WALL_TIME.</p>
+</dd><dt>exclude_threads
+<dd>
+<p>Threads to exclude from the profiling results (optional).</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre>static VALUE
+prof_initialize(int argc,  VALUE *argv, VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+    VALUE mode;
+    prof_measure_mode_t measurer = MEASURE_WALL_TIME;
+    VALUE exclude_threads;
+    int i;
+    
+    switch (rb_scan_args(argc, argv, &quot;02&quot;, &amp;mode, &amp;exclude_threads))
+    {
+      case 0:
+      {
+        measurer = MEASURE_WALL_TIME;
+        exclude_threads = rb_ary_new();
+        break;
+      }
+      case 1:
+      {
+        measurer = (prof_measure_mode_t)NUM2INT(mode);
+        exclude_threads = rb_ary_new();
+        break;
+      }
+      case 2:
+      {
+        Check_Type(exclude_threads, T_ARRAY);
+        measurer = (prof_measure_mode_t)NUM2INT(mode);
+        break;
+      }
+    }
+
+    profile-&gt;measurer = prof_get_measurer(measurer);
+
+    for (i = 0; i &lt; RARRAY_LEN(exclude_threads); i++)
+    {
+        VALUE thread = rb_ary_entry(exclude_threads, i);
+        VALUE thread_id = rb_obj_id(thread);
+        st_insert(profile-&gt;exclude_threads_tbl, thread_id, Qtrue);
+    }
+
+    return self;
+}</pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-profile" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            profile {block} &rarr; RubyProf::Result
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Profiles the specified block and returns a RubyProf::Result object.</p>
+          
+
+          
+          <div class="method-source-code" id="profile-source">
+            <pre>static VALUE
+prof_profile(int argc,  VALUE *argv, VALUE klass)
+{
+    int result;
+    VALUE profile = rb_class_new_instance(argc, argv, cProfile);
+
+    if (!rb_block_given_p())
+    {
+        rb_raise(rb_eArgError, &quot;A block must be provided to the profile method.&quot;);
+    }
+
+    prof_start(profile);
+    rb_protect(rb_yield, profile, &amp;result);
+    return prof_stop(profile);
+}</pre>
+          </div><!-- profile-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- profile-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-detect_recursion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">detect_recursion</span><span
+            class="method-args">(thread)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method detect recursive calls in the call graph.</p>
+          
+
+          
+          <div class="method-source-code" id="detect_recursion-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/profile.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">detect_recursion</span>(<span class="ruby-identifier">thread</span>)
+  <span class="ruby-identifier">visited_methods</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, <span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">visitor</span> = <span class="ruby-constant">CallInfoVisitor</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">thread</span>)
+  <span class="ruby-identifier">visitor</span>.<span class="ruby-identifier">visit</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">call_info</span>, <span class="ruby-identifier">event</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">event</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:enter</span>
+      <span class="ruby-identifier">visited_methods</span>[<span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">recursive</span> = (<span class="ruby-identifier">visited_methods</span>[<span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:exit</span>
+      <span class="ruby-identifier">visited_methods</span>[<span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>] <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">visited_methods</span>[<span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+        <span class="ruby-identifier">visited_methods</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">call_info</span>.<span class="ruby-identifier">target</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- detect_recursion-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- detect_recursion-method -->
+
+    
+      <div id="method-i-eliminate_methods-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eliminate_methods!</span><span
+            class="method-args">(matchers)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>eliminate some calls from the graph by merging the information into
+callers. matchers can be a list of strings or regular expressions or the
+name of a file containing regexps.</p>
+          
+
+          
+          <div class="method-source-code" id="eliminate_methods-21-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/profile.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eliminate_methods!</span>(<span class="ruby-identifier">matchers</span>)
+  <span class="ruby-identifier">matchers</span> = <span class="ruby-identifier">read_regexps_from_file</span>(<span class="ruby-identifier">matchers</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">matchers</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+  <span class="ruby-identifier">eliminated</span> = []
+  <span class="ruby-identifier">threads</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">thread</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">matchers</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">matcher</span><span class="ruby-operator">|</span> <span class="ruby-identifier">eliminated</span>.<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">eliminate_methods</span>(<span class="ruby-identifier">thread</span>.<span class="ruby-identifier">methods</span>, <span class="ruby-identifier">matcher</span>)) }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">eliminated</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eliminate_methods-21-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eliminate_methods-21-method -->
+
+    
+      <div id="method-i-pause" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            pause &rarr; RubyProf
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Pauses collecting profile data.</p>
+          
+
+          
+          <div class="method-source-code" id="pause-source">
+            <pre>static VALUE
+prof_pause(VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+    if (profile-&gt;running == Qfalse)
+    {
+        rb_raise(rb_eRuntimeError, &quot;RubyProf is not running.&quot;);
+    }
+
+    if (profile-&gt;paused == Qfalse)
+    {
+        profile-&gt;paused = Qtrue;
+        profile-&gt;measurement_at_pause_resume = profile-&gt;measurer-&gt;measure();
+        st_foreach(profile-&gt;threads_tbl, pause_thread, (st_data_t) profile);
+    }
+
+    return self;
+}</pre>
+          </div><!-- pause-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- pause-method -->
+
+    
+      <div id="method-i-paused-3F" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            paused? &rarr; boolean
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Returns whether a profile is currently paused.</p>
+          
+
+          
+          <div class="method-source-code" id="paused-3F-source">
+            <pre>static VALUE
+prof_paused(VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+    return profile-&gt;paused;
+}</pre>
+          </div><!-- paused-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- paused-3F-method -->
+
+    
+      <div id="method-i-post_process" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_process</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method gets called once profiling has been completed but before
+results are returned to the user.  Thus it provides a hook to do any
+necessary post-processing on the call graph.</p>
+          
+
+          
+          <div class="method-source-code" id="post_process-source">
+            <pre><span class="ruby-comment"># File lib/ruby-prof/profile.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_process</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">threads</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">thread</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">detect_recursion</span>(<span class="ruby-identifier">thread</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_process-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_process-method -->
+
+    
+      <div id="method-i-resume" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            resume {block} &rarr; RubyProf
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Resumes recording profile data.</p>
+          
+
+          
+          <div class="method-source-code" id="resume-source">
+            <pre>static VALUE
+prof_resume(VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+    if (profile-&gt;running == Qfalse)
+    {
+        rb_raise(rb_eRuntimeError, &quot;RubyProf is not running.&quot;);
+    }
+
+    if (profile-&gt;paused == Qtrue)
+    {
+        profile-&gt;paused = Qfalse;
+        profile-&gt;measurement_at_pause_resume = profile-&gt;measurer-&gt;measure();
+        st_foreach(profile-&gt;threads_tbl, unpause_thread, (st_data_t) profile);
+    }
+
+    return rb_block_given_p() ? rb_ensure(rb_yield, self, prof_pause, self) : self;
+}</pre>
+          </div><!-- resume-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- resume-method -->
+
+    
+      <div id="method-i-running-3F" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            running? &rarr; boolean
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Returns whether a profile is currently running.</p>
+          
+
+          
+          <div class="method-source-code" id="running-3F-source">
+            <pre>static VALUE
+prof_running(VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+    return profile-&gt;running;
+}</pre>
+          </div><!-- running-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- running-3F-method -->
+
+    
+      <div id="method-i-start" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            start &rarr; RubyProf
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Starts recording profile data.</p>
+          
+
+          
+          <div class="method-source-code" id="start-source">
+            <pre>static VALUE
+prof_start(VALUE self)
+{
+    char* trace_file_name;
+
+    prof_profile_t* profile = prof_get_profile(self);
+        
+    if (profile-&gt;running == Qtrue)
+    {
+        rb_raise(rb_eRuntimeError, &quot;RubyProf.start was already called&quot;);
+    }
+
+#ifndef RUBY_VM
+        if (pCurrentProfile != NULL)
+    {
+        rb_raise(rb_eRuntimeError, &quot;Only one profile can run at a time on Ruby 1.8.*&quot;);
+    }
+#endif
+
+    profile-&gt;running = Qtrue;
+    profile-&gt;paused = Qfalse;
+    profile-&gt;last_thread_data = NULL;
+
+
+    /* open trace file if environment wants it */
+    trace_file_name = getenv(&quot;RUBY_PROF_TRACE&quot;);
+    if (trace_file_name != NULL) 
+    {
+      if (strcmp(trace_file_name, &quot;stdout&quot;) == 0) 
+      {
+        trace_file = stdout;
+      } 
+      else if (strcmp(trace_file_name, &quot;stderr&quot;) == 0)
+      {
+        trace_file = stderr;
+      }
+      else 
+      {
+        trace_file = fopen(trace_file_name, &quot;w&quot;);
+      }
+    }
+
+    prof_install_hook(self);
+    return self;
+}</pre>
+          </div><!-- start-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- start-method -->
+
+    
+      <div id="method-i-stop" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            stop &rarr; self
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Stops collecting profile data.</p>
+          
+
+          
+          <div class="method-source-code" id="stop-source">
+            <pre>static VALUE
+prof_stop(VALUE self)
+{
+    prof_profile_t* profile = prof_get_profile(self);
+
+    if (profile-&gt;running == Qfalse)
+    {
+        rb_raise(rb_eRuntimeError, &quot;RubyProf.start was not yet called&quot;);
+    }
+  
+    prof_remove_hook();
+
+    /* close trace file if open */
+    if (trace_file != NULL) 
+    {
+      if (trace_file !=stderr &amp;&amp; trace_file != stdout)
+      {
+#ifdef _MSC_VER
+          _fcloseall();
+#else
+        fclose(trace_file);
+#endif
+      }
+      trace_file = NULL;
+    }
+    
+    prof_pop_threads(profile);
+
+    /* Unset the last_thread_data (very important!)
+       and the threads table */
+    profile-&gt;running = profile-&gt;paused = Qfalse;
+    profile-&gt;last_thread_data = NULL;
+
+    /* Post process result */
+    rb_funcall(self, rb_intern(&quot;post_process&quot;) , 0);
+
+    return self;
+}</pre>
+          </div><!-- stop-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- stop-method -->
+
+    
+      <div id="method-i-threads" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            threads &rarr; Array of RubyProf::Thread
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Returns an array of <a href="Thread.html">RubyProf::Thread</a> instances
+that were executed while the the program was being run.</p>
+          
+
+          
+          <div class="method-source-code" id="threads-source">
+            <pre>static VALUE
+prof_threads(VALUE self)
+{
+        VALUE result = rb_ary_new();
+    prof_profile_t* profile = prof_get_profile(self);
+    st_foreach(profile-&gt;threads_tbl, collect_threads, result);
+    return result;
+}</pre>
+          </div><!-- threads-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- threads-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

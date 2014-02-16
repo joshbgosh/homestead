@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20130217234922) do
     t.integer  "wins_count"
     t.integer  "losses_count"
     t.text     "image_meta"
-    t.string   "facing",             :limit => nil
+    t.string   "facing",             :limit => nil, :default => "Right"
   end
 
   create_table "ballots", :force => true do |t|
