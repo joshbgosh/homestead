@@ -1,6 +1,11 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
+
+
+#gem 'cf-autoconfig', :require => 'cfautoconfig'
+gem 'pg'
+
 gem "paperclip"
 gem "paperclip-meta"
 gem 'jquery-rails', '>= 1.0.3'

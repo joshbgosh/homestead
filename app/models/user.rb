@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  acts_as_voter
+  #acts_as_voter TODO: uncomment when I can figure out why this throws an error
   
   USERNAME_LENGTH = 1..24
   

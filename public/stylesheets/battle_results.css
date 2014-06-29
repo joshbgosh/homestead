@@ -3,13 +3,36 @@
 	float: left;
 	height: 250px;
 	width: 128px;
-	margin-left: 64px;
 	margin-top: 44px;
 	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
 -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0.75);
 box-shadow:         0px 1px 1px rgba(0, 0, 0, 0.75);
 	border-radius: 16px;
 }
+
+@media (min-width: 1061px) {
+#ballot_results_sidebar {
+	margin-left: 64px;
+}
+}
+
+@media (max-width: 1060px) {
+#ballot_results_sidebar {
+	margin-left: 16px;	
+}
+}
+
+@media (max-width: 925px) {
+#ballot_results_sidebar {
+	margin-left: 16px;	
+	background-color: rgba(0,0,0,.5);
+}
+}
+
+
+
+
+
 
 .results_animal {
 	margin-bottom: 16px;
