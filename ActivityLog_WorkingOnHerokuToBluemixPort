@@ -1,0 +1,40 @@
+~11:00 AM
+How do I get to the target info and all that if I'm only intending to make an app from the command line?
+Logging out of bluemix taking  > 20 seconds. I finally close the window on my own
+Went to my account. Said my session/login was expired. Logged me back in again. Went to account. etc.
+Trying stage1 in firefox
+After login, went to dead page.
+Let's try the public ACE
+Can I not change my password from ACE? Weird.
+let's try password from command-line again
+Finally remember which password I'm using (not my current IBM password I dont' think?)
+11:31 AM - Holy shit, is my app really that big?
+11:34 AM - I wish there was a progress indicator of some sort on the command-line. How do I know this thing isn't just dead?
+11:42 AM - I'm finally seeing it install my dependencies
+11:55 AM - Check back in and it looks like something failed.
+11:57 AM - Can't figure out what's wrong the command-line logs. Let's try UI (might be nice if it referred me to UI here?)
+11:58 AM - Why don't I get the Ruby buildpack icon? I assume that's what it's using.
+12:01 PM - cf logs botharetotallyenraged seems to not give me all the logs. Time to look at command-line docs.
+12:02 PM - apparently there's no way to recover my logs now. Only one arg to cf logs, and it's --recent. So neither works.
+12:04 PM - Try to start app and it claims it's aready started. WTF?
+12:05 PM - UI claims app is not running
+12:06 PM - I am able to successfully stop my app from the command-line (it wasn't really started though...
+12:07 PM - Looks like it's "flapping"
+12:09 PM - Luckily the database URL error shows in the ''--recent'' this time. Makes sense to me. Debugging time.
+12:13 PM - Can't remember how connecting to DB works in Rails (automagically somehow.) Go looking for info. Maybe article on connecting to DB in CloudFoundry.
+12:14 PM - Looks like I'll be using a "manifest.yml" file. Haven't done this before...
+12:15 PM - No way to run one-off tasks other than through push? Yikes...
+12:18 PM - Article didn't really answer my question on using DB as a service. Looking elsewhere on Google.
+12:18 PM - Google search directs me to sample apps on CF. Maybe that will help me.
+12:19 PM - Decide to download this sample app and see if it works on Bluemix. Then I'll know it's a good resource to muck with.
+12:22 PM - Seems to kinda work, but "Could not find service rails_postgres" to bind to rails_sample_app'. Ok. Let's go create it from UI.
+12:22 PM - NOTE: this is why I have to be able to give services explicit names up front. It has to match my yml file.
+12:23 PM - NOTE: Leave unbound was kind of hard to find. Could've also actually bound it up front to my app.
+12:25 PM - Taking a break
+12:29 PM - Back. And it worked! Let's go confirm to see what's up there.
+12:29 PM - Woot. It made something.
+12:30 PM - Check on a lark to see if there's an article exactly about porting rails app from heroku to cf. Nope. Oh well. Wish I saw some stackoverflow links around.
+12:37 PM - NO sqlite in catalog. Oh well. Let's try with postgresql. Can't remember if I was using postgresql in production on heroku. I think I was.
+12:38 PM - Installing cf-autoconfig and pg gems per README's instructions. Not 100% sure what these do but let's see.
+12:42 PM - Looks like I was using sqlite for my production DB before. Now I have to switch to postgres... . Big hassle, and I worry about porting my production db contents over on heroku...
+12:42 PM - Going to stop to record all this on wiki

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 
-
+gem 'ruby' '1.9.3'
 #gem 'cf-autoconfig', :require => 'cfautoconfig'
 gem 'pg'
 
@@ -39,7 +39,7 @@ gem "dalli"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3' Heroku says it's a no-no to install this, even if we're not using it in the cloud
 
 gem "acts_as_commentable", "~> 3.0.1"
 
