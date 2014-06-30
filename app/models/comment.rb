@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-  acts_as_voteable
+  # acts_as_voteable Killed due to Heroku angriness. Not sure if used.
   
   include ActsAsCommentable::Comment
 
