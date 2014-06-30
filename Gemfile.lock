@@ -160,7 +160,6 @@ DEPENDENCIES
   recaptcha
   ruby-graphviz
   ruby-prof
-  sqlite3
   taps
   tasteful_routes (~> 0.1.3)
   test-unit

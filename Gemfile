@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '3.0.7'
 
-gem 'ruby' '1.9.3'
 #gem 'cf-autoconfig', :require => 'cfautoconfig'
 gem 'pg'
 
