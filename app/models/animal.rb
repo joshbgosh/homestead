@@ -4,6 +4,7 @@ class Animal < ActiveRecord::Base
 	  {:styles => {:large => "300x240#", :medium => "198x158#", :small=>"160x128#"},
 	  #{:styles => { :large => "300x300>", :medium => "250x250", :thumb => "150x150>"},
   }.merge(PAPERCLIP_STORAGE_OPTIONS)
+  validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 	  
 	  
 	
