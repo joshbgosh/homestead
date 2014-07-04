@@ -3,8 +3,9 @@ ruby '1.9.3'
 
 gem 'rails', '3.0.7'
 
-#gem 'cf-autoconfig', :require => 'cfautoconfig'
+gem 'cf-autoconfig'
 gem 'pg'
+
 
 gem "paperclip"
 gem "paperclip-meta"
