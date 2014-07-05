@@ -6,6 +6,8 @@ gem 'rails', '3.0.7'
 gem 'cf-autoconfig'
 gem 'pg'
 
+gem 'travis'
+
 
 gem "paperclip"
 gem "paperclip-meta"
