@@ -19,7 +19,7 @@ gem "rake", "0.9.2"
 gem 'google-analytics-rails'
 
 
-gem "factory_girl_rails"
+gem "factory_girl_rails", '1.1.0' #TODO: update to latest version and use new syntax
 
 gem "devise"
 gem "aws-s3"
