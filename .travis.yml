@@ -7,8 +7,7 @@ before_script:
 - bundle exec jammit
 script: bundle exec rake test
 deploy:
-  provider:
-    provider: cloudfoundry
+  provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username: mlinnem@us.ibm.com
   password:
