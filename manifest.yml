@@ -6,4 +6,4 @@ applications:
   domain: mybluemix.net
   path: .
   services:
-  	postgres-totallyenraged
+  	- postgres-totallyenraged
