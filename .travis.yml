@@ -1,18 +1,19 @@
 language: ruby
 rvm:
-  - 1.9.3
-before_script: 
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - bundle exec rake db:drop db:create db:migrate
-  - bundle exec jammit
-
-script: "bundle exec rake test"
-
+- 1.9.3
+before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
+- bundle exec rake db:drop db:create db:migrate
+- bundle exec jammit
+script: bundle exec rake test
 deploy:
-  - edge: true
-  - provider: cloudfoundry
-  - username: mlinnem@us.ibm.com
-  - secure: "W6lt35k5cMHBhbASxaSVsV8Yvwh+lFMFxpNpk7qeyVv1MLfeE7f2XPj+2F+AQHyf+/E3Ls3yAAfbyrC4RqoAXZ1VS2sQDMDpYNJdV8a/fuGFP2/m2z3ddJh0BKRXcfkc6mw0+1Dd/ijIy9AdUYFJmN+453tJEKc67acmiURjjWI="
-  - api: https://api.ng.bluemix.net
-  - organization: micahslittleorg
-  - space: dev
+  provider:
+    provider: cloudfoundry
+  api: https://api.ng.bluemix.net
+  username: mlinnem@us.ibm.com
+  password:
+    secure: ZXyvo3iVdaoJsUZBSi7y2QYrSHhDau8I4S13EdusEDo+U20EkO3kCKGKZQzbl5BpAah2ugn5C7hN7lOyCeqQLah7CSWQkQDeHsuoJnkoydJvkgBJ8fKk3CzRo9G/Mdds+UilVCClOw1SrFljRVp6nfI9Y+Ipm8MUo8ZsRwiUuy8=
+  organization: micahslittleorg
+  space: dev
+  on:
+    repo: mlinnem/botharetotallyenraged
