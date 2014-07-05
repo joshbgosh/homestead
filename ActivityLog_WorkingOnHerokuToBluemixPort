@@ -1,0 +1,108 @@
+~11:00 AM
+How do I get to the target info and all that if I'm only intending to make an app from the command line?
+Logging out of bluemix taking  > 20 seconds. I finally close the window on my own
+Went to my account. Said my session/login was expired. Logged me back in again. Went to account. etc.
+Trying stage1 in firefox
+After login, went to dead page.
+Let's try the public ACE
+Can I not change my password from ACE? Weird.
+let's try password from command-line again
+Finally remember which password I'm using (not my current IBM password I dont' think?)
+11:31 AM - Holy shit, is my app really that big?
+11:34 AM - I wish there was a progress indicator of some sort on the command-line. How do I know this thing isn't just dead?
+11:42 AM - I'm finally seeing it install my dependencies
+11:55 AM - Check back in and it looks like something failed.
+11:57 AM - Can't figure out what's wrong the command-line logs. Let's try UI (might be nice if it referred me to UI here?)
+11:58 AM - Why don't I get the Ruby buildpack icon? I assume that's what it's using.
+12:01 PM - cf logs botharetotallyenraged seems to not give me all the logs. Time to look at command-line docs.
+12:02 PM - apparently there's no way to recover my logs now. Only one arg to cf logs, and it's --recent. So neither works.
+12:04 PM - Try to start app and it claims it's aready started. WTF?
+12:05 PM - UI claims app is not running
+12:06 PM - I am able to successfully stop my app from the command-line (it wasn't really started though...
+12:07 PM - Looks like it's "flapping"
+12:09 PM - Luckily the database URL error shows in the ''--recent'' this time. Makes sense to me. Debugging time.
+12:13 PM - Can't remember how connecting to DB works in Rails (automagically somehow.) Go looking for info. Maybe article on connecting to DB in CloudFoundry.
+12:14 PM - Looks like I'll be using a "manifest.yml" file. Haven't done this before...
+12:15 PM - No way to run one-off tasks other than through push? Yikes...
+12:18 PM - Article didn't really answer my question on using DB as a service. Looking elsewhere on Google.
+12:18 PM - Google search directs me to sample apps on CF. Maybe that will help me.
+12:19 PM - Decide to download this sample app and see if it works on Bluemix. Then I'll know it's a good resource to muck with.
+12:22 PM - Seems to kinda work, but "Could not find service rails_postgres" to bind to rails_sample_app'. Ok. Let's go create it from UI.
+12:22 PM - NOTE: this is why I have to be able to give services explicit names up front. It has to match my yml file.
+12:23 PM - NOTE: Leave unbound was kind of hard to find. Could've also actually bound it up front to my app.
+12:25 PM - Taking a break
+12:29 PM - Back. And it worked! Let's go confirm to see what's up there.
+12:29 PM - Woot. It made something.
+12:30 PM - Check on a lark to see if there's an article exactly about porting rails app from heroku to cf. Nope. Oh well. Wish I saw some stackoverflow links around.
+12:37 PM - NO sqlite in catalog. Oh well. Let's try with postgresql. Can't remember if I was using postgresql in production on heroku. I think I was.
+12:38 PM - Installing cf-autoconfig and pg gems per README's instructions. Not 100% sure what these do but let's see.
+12:42 PM - Looks like I was using sqlite for my production DB before. Now I have to switch to postgres... . Big hassle, and I worry about porting my production db contents over on heroku...
+12:42 PM - Going to stop to record all this on wiki
+
+
+-----
+
+July 3, 2014
+
+5:06 PM - Added .cfignore based on my .gitignore . Not sure if format is right 
+5:11 PM - Re-registering for the public bluemix. Something weird happened where I hit 'submit' but it didn't seem like it worked, then 5 seconds later my screen changed to the success screen.
+5:14 PM - It doesn't like the credentials I just created, so after trying 3 times I decide to make an IBM ID (did I just make one or was that something else?)
+5:15 PM - Ok apparently I did indeed create an IBM ID before. Time to go try it again.
+5:18 PM - I search for my error message on google. I click on a devworks page, and wait minutes for it to load. No luck.
+
+5:21 PM - I Give up and decide to log in with my IBM id.
+5:22 PM - Strangely, when I go to log in I automatically log in without putting any credentials in, and its under my personal email I just signed up with!
+5:23 PM - I get an error when I try to creat an app with a taken name. Error tells me to refer to help topic, but doesn't link me there. Error sucks.
+5:24 PM - I try to read the guide, but when I bring up my terminal to put stuff in, it goes away. Whoops.
+5:31 PM - Another bad error message. Is super long but should just say "Can't get logs while restarting"
+5:33 PM - Buildpack asks me to refer to heroku dev center for help. Clear knockoff here.
+5:36 PM - Success! I was able to get a sample app built for cloud foundry on Bluemix. Baby steps.
+
+
+July 4
+
+~12:45 According to pivotal I should be able to push my app with no additional work. Let's see how it goes:
+
+http://blog.cloudfoundry.org/2012/03/12/using-cloud-foundry-services-with-ruby-part-1-auto-reconfiguration/
+
+12:53 It flaps and then gives up. Error seems to be around not having a database. Makes sense since I didn't add one to the app. Let's do that.
+
+1:00 Out of org. memory, so I'm doing some cleaning. When I delete an app, the page has two tabs. One for cleaning related services and one for cleanign routes. But the routes tab isn't shown by default. I've been leaving stray routes around becuase of this! Need to make this one page or something.
+
+1:04 PM - after deleting about half my apps, including one big one, I try to push again. It claims I've still exceeded my organization's memory limits. Nothing about how to rectify this. Also, the dial on the home page says i'm using 1 of 8 GB for my org. WHat gives?
+
+7:41 PM - I try again thinking it's a time based thing and they will let me start doing things again since it's later. Nope.
+
+8:10 PM - I think I'm experiencing some bug with my new account merging with my old account (Ace thinks I'm in one org but the cli thinks I'm in another).
+Trying to sign up for fake accounts with mailinator but I'm not getting the emails. Is it slow or what?
+
+July 5
+
+8:04 AM - Ok, so I think I was logged into one account on the cli and another on the GUI despite that the GUI had the name of my gmail address as its org name.
+
+8:10 AM - Yay, the app went green! Will it really work?
+
+8:12 AM - Nope. Something wrong. Better check logs.
+
+8:14 AM - A slight bit hard to find the right log. Scrolling in the logs pane is off. 
+
+8:15 AM - Turns out that my db isn't set up. Gotta run a push command that builds everything like I saw in that tutorial. Time to hunt that tutorial down in fact.
+
+8:22 AM - I find the Cloud Foundry article and paste the command. I could've probably figured it out manually but I wanted to be safe and take it "right from the horse's mouth" so to speak.
+
+8:26 AM - Upload successful...and it's working! 
+8:28 AM - I upload an image of an animal. Oops. Failure. I know it'll be that I haven't put my AWS keys in my environment.
+
+NOTE: Need to have CLONE capability in Bluemix
+
+NOTE: Why haven't environment variables been put on the left-hand side yet? I thought we were going to do that. Right now they are hidden like crazy.
+
+8:32 AM - I copied keys over from Heroku. Should work now.
+
+8:34 AM - IT WORKS!!!! I may be done porting now... Going to do a bit more testing.
+
+8:36 AM - All the basic functionality works. It's a miracle. On reflection it shouldn't have been too hard since they are both based on heroku buildpacks.
+
+--
+
+2:09 PM - Did a bunch of work to get tests up and running locally (had used them before but disabled them. Had to tweak to get them re-enabled.) Then worked to get the build running properly on travis-ci. Now I have the build running and unit tests passing on Travis-ci! Next step is make travis deploy to CloudFoundry
