@@ -1,5 +1,8 @@
 language: ruby
 rvm:
   - 1.9.3
-before_script: "bundle exec rake db:drop:all db:create:all db:migrate"
+before_script: "bundle exec rake db:drop:all db:create:all db:migrate" 
+before_script: "jammit"
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
 script: "bundle exec rake test"

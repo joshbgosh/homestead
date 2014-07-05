@@ -8,10 +8,11 @@ development:
   username: micahlinnemeier
   password:
 
+
+
 test:
   adapter: postgresql
-  encoding: unicode
-  database: botharetotallyenragedtest
+  database: travis_ci_test
+  username: postgres
   pool: 5
-  username: micahlinnemeier
-  password:
+  encoding: unicode
