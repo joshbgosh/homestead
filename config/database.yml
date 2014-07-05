@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: botharetotallyenraged
+  database: botharetotallyenragedtest
   pool: 5
-  username: botharetotallyenraged
+  username: micahlinnemeier
   password:
