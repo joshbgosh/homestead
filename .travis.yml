@@ -7,3 +7,12 @@ before_script:
   - bundle exec jammit
 
 script: "bundle exec rake test"
+
+deploy:
+  - edge: true
+  - provider: cloudfoundry
+  - username: mlinnem@us.ibm.com
+  - secure: "W6lt35k5cMHBhbASxaSVsV8Yvwh+lFMFxpNpk7qeyVv1MLfeE7f2XPj+2F+AQHyf+/E3Ls3yAAfbyrC4RqoAXZ1VS2sQDMDpYNJdV8a/fuGFP2/m2z3ddJh0BKRXcfkc6mw0+1Dd/ijIy9AdUYFJmN+453tJEKc67acmiURjjWI="
+  - api: https://api.ng.bluemix.net
+  - organization: micahslittleorg
+  - space: dev
