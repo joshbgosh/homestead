@@ -1,14 +1,12 @@
 require 'test_helper'
-require 'logger'
+#require 'logger'
 
 class AnimalsControllerTest < ActionController::TestCase
   setup do
-    logger.info "About to create fake animal thing"
     @animal = create(:animal)
   end
   
   teardown do
-    logger.info "destroying animal thing"
     @animal.destroy
   end
 
@@ -55,10 +53,10 @@ class AnimalsControllerTest < ActionController::TestCase
   end
 
   test "should destroy animal" do
-    logger.info "In should destroy animal"
+    #logger.info "In should destroy animal"
     a = create(:admin)
     sign_in(a)
-    logger.info "right after sign-in, should destroy animal"
+    #logger.info "right after sign-in, should destroy animal"
     assert_difference('Animal.count', -1) do
       delete :destroy, :id => @animal.id
     end

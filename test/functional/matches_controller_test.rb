@@ -18,14 +18,6 @@ class MatchesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:matches)
   end
 
-  test "should get new" do
-    a = create(:admin)
-    sign_in a
-    
-    get :new
-    assert_response :success
-  end
-
   test "should create match" do
     a = create(:admin)
     sign_in a
@@ -70,13 +62,6 @@ class MatchesControllerTest < ActionController::TestCase
     end
     
       assert_redirected_to matches_path
-  end
-  
-  test "should render some comments" do
-    @comment = create(:comment)
-    put :show_comments, :id => @match.id
-    assert_response :success
-    assert_select '.comment_text', @comment.comment
   end
     
 end
