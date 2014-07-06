@@ -4,6 +4,15 @@
 	background-image: url("/images/Speed_Lines.png");
 }
 
+@media (max-width: 660px) {
+	.ballot.content_area_wrapper {
+		background-image: url("/images/Speed_Lines_Vertical.png");
+		height: 601px;
+		margin-top: 0px;
+		border-radius: 0px;
+	}
+}
+
 #ballot_content_area_bottom {
 	background-color: #ffffbf;	
 	margin-left: auto;
@@ -35,6 +44,13 @@
 	display: inline;
 	position: relative;
 	top: -112px;
+}
+
+@media (max-width: 660px) {
+#vs {
+	display: block;
+	position: static;
+}
 }
 
 .animal_area {
