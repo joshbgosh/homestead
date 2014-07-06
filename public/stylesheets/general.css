@@ -252,6 +252,18 @@ box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
 }
 }
 
+#menu-icon {
+	background: url("/images/menu.png");
+	float: right;
+	display: none;
+	width: 52px;
+	height: 40px;
+}
+
+#menu-icon:active {
+	background: url("/images/menu_clicked.png");
+}
+
 @media (max-width: 660px) {
   #logo {
     display: block;
@@ -260,17 +272,29 @@ box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
 	font-size: 20px;
   }
 
+  #menu-icon {
+  	display: inline-block;
+  }
+
 #header_nav_links {
-	display: inline-block;
+	display: none;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 22px;
 }
 
  #user_links {
-	display: inline-block;
+	display: none;
 	font-size: 12px;
 	font-weight: bold;
+}
+
+.nav:hover #user_links, .nav:hover #header_nav_links {
+	display: inline-block;
+}
+
+#menu-icon {
+	display: inline-block;
 }
 }
 
@@ -305,7 +329,10 @@ box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
     margin-top: 36px;
     margin-bottom: 36px;
 
-}	
+}
+
+
+
 
 /* TODO: make this a common class? */
 #comments_content_wrapper, .content_area_wrapper {

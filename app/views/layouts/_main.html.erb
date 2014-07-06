@@ -16,7 +16,8 @@
 	<div id="header_bar">
 		<div id="header_contents">
 			<h1 id="logo">Both Are Totally Enraged</h1>	
-
+			<div class="nav">
+			<a href="#" id="menu-icon"></a>
 			<ul id="header_nav_links">
 				<li><%= link_to "Most Enraged", animals_path %></li>
 				<% if local_assigns[:showing_ballot] && showing_ballot %>
@@ -37,7 +38,7 @@
 				<li> <%= link_to "Sign In", new_user_session_path %></li>
 				<% end %>
 			</ul>
-
+			</div>
 		
 		</div>
 	</div>
