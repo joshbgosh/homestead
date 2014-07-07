@@ -288,10 +288,10 @@ display:none;
     display: block;
 	line-height: 40px;
 	margin: 0 auto;
-	font-size: 22px;
+	font-size: 18px;
   }
 
-  #menu-icon {
+  #menu-label {
   	display: inline-block;
   	position: absolute;
   	top: 0px;
@@ -300,13 +300,13 @@ display:none;
 
 
 #header_nav_links {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	line-height: 22px;
 }
 
  #user_links {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 }
 
@@ -316,19 +316,20 @@ display:none;
 	top: 40px;
 	right: 0px;
 	background: url("/images/Header_Scratched_Background.png") repeat;
+	z-index: 99;
 }
 
 #menu-icon:checked + .nav {
 	display: block;
 }
 
-#menu-icon {
+#menu-label {	
+	background: url("/images/menu.png"); 
+	width: 52px;
+	height: 40px;
 	display: inline-block;
 	cursor: pointer;
-}
-
-#menu-icon:before { content:""; display:inline-block; width:52px; height:40px; background: url("/images/menu.png"); }
-#menu-icon:checked:before { background: url("/images/menu_clicked.png"); }
+} 
 
 #header_nav_links li {
 	list-style-type: none;
@@ -336,7 +337,7 @@ display:none;
 	line-height: 40px;
 	margin: 0px;
 	text-align: right;
-	font-size: 14px;
+	font-size: 12px;
 	border-top: 1px solid black;
 	padding: 0px 8px 0px 8px;
 }
@@ -347,7 +348,7 @@ display:none;
 	line-height: 40px;
 	display: block;
 	text-align: right;
-	font-size: 14px;
+	font-size: 12px;
 	border-top: 1px solid black;
 	padding: 0px 8px 0px 8px;
 }
