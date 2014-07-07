@@ -253,49 +253,66 @@ box-shadow:         0px 5px 4px rgba(0, 0, 0, 0.75);
 }
 
 #menu-icon {
-	background: url("/images/menu.png");
 	float: right;
 	display: none;
 	width: 52px;
 	height: 40px;
+	margin: 0px;
+	padding: 0px;
 }
 
-#menu-icon:active {
-	background: url("/images/menu_clicked.png");
+#menu-icon:checked {
+	
 }
+
+#menu-icon {
+display:none;
+}
+ 
 
 @media (max-width: 660px) {
   #logo {
     display: block;
-	line-height: 32px;
+	line-height: 40px;
 	margin: 0 auto;
-	font-size: 20px;
+	font-size: 22px;
   }
 
   #menu-icon {
   	display: inline-block;
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
   }
 
+
 #header_nav_links {
-	display: none;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 22px;
 }
 
  #user_links {
-	display: none;
 	font-size: 12px;
 	font-weight: bold;
 }
 
-.nav:hover #user_links, .nav:hover #header_nav_links {
-	display: inline-block;
+.nav {
+	display: none;
+}
+
+#menu-icon:checked + .nav {
+	display: block;
 }
 
 #menu-icon {
 	display: inline-block;
+	cursor: pointer;
 }
+
+#menu-icon:before { content:""; display:inline-block; width:52px; height:40px; background: url("/images/menu.png"); }
+#menu-icon:checked:before { background: url("/images/menu_clicked.png"); }
+
 }
 
 
