@@ -105,4 +105,6 @@ NOTE: Why haven't environment variables been put on the left-hand side yet? I th
 
 --
 
+July 6?
+
 2:09 PM - Did a bunch of work to get tests up and running locally (had used them before but disabled them. Had to tweak to get them re-enabled.) Then worked to get the build running properly on travis-ci. Now I have the build running and unit tests passing on Travis-ci! Next step is make travis deploy to CloudFoundry
