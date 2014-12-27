@@ -5,7 +5,6 @@ before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
 - bundle exec rake db:drop db:create db:migrate
 - bundle exec jammit
-#script: bundle exec rake test
 deploy:
   provider: cloudfoundry
   api: https://api.ng.bluemix.net
@@ -16,3 +15,6 @@ deploy:
   space: dev
   on:
     repo: mlinnem/botharetotallyenraged
+env:
+  global:
+    secure: NzZ0q2v9AKuEvaTi0Ynd6PtRjqhq6qZuqwlngYGE2hVMe2if+fd+9KxDsDaJUQvgFLYGQvBmm9aysNXAbBeQiwb2eo0OFU3dLr13LvG2jAP9XlWR4g54e1el0rd/pGfXS1Lv01ugyHWQmmZ1HpvfH7g+KD+T6ZPV/EpniktRm5w=
