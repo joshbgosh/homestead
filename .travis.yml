@@ -9,12 +9,9 @@ deploy:
   provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username: mlinnem@us.ibm.com
-  password:
-    secure: ZXyvo3iVdaoJsUZBSi7y2QYrSHhDau8I4S13EdusEDo+U20EkO3kCKGKZQzbl5BpAah2ugn5C7hN7lOyCeqQLah7CSWQkQDeHsuoJnkoydJvkgBJ8fKk3CzRo9G/Mdds+UilVCClOw1SrFljRVp6nfI9Y+Ipm8MUo8ZsRwiUuy8=
   organization: micahslittleorg
   space: dev
   on:
     repo: mlinnem/botharetotallyenraged
-env:
-  global:
-    secure: NzZ0q2v9AKuEvaTi0Ynd6PtRjqhq6qZuqwlngYGE2hVMe2if+fd+9KxDsDaJUQvgFLYGQvBmm9aysNXAbBeQiwb2eo0OFU3dLr13LvG2jAP9XlWR4g54e1el0rd/pGfXS1Lv01ugyHWQmmZ1HpvfH7g+KD+T6ZPV/EpniktRm5w=
+  password:
+    secure: OpLnmCL7Icly5i/a6oHf/UiZADQjB1JXvVXhWTz+dwrmc/5NHgOjRQ51zbinwvuyth55n/MesFK7PNvC2/2mY3Bd/xBOmoFqnEzBEw506uIKhL0NCkym1Y7n+g9lE8DHVqxTFddZfARghDJBSz6lRXefA+QIzEOozxpnPcy2NAY=
