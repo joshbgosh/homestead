@@ -14,4 +14,4 @@ deploy:
   on:
     repo: mlinnem/botharetotallyenraged
   password:
-    secure: SpF0RkLkHmZ/tAChMwxRwtIM6wO+ir3lFCkKGZX8nQ2XxaZ25y97lYQqQGanwrIHKenxnL5+bfrPAi0knEQyBuMmRyNJ52WZrNBfGJTJSmZ7Kf3pF4MbBHGdsKDNAuYw2PXc58RRCcD9dtOaqtvfmxgE7On7K3O4dd2seOlq2zE=
+    secure: OpLnmCL7Icly5i/a6oHf/UiZADQjB1JXvVXhWTz+dwrmc/5NHgOjRQ51zbinwvuyth55n/MesFK7PNvC2/2mY3Bd/xBOmoFqnEzBEw506uIKhL0NCkym1Y7n+g9lE8DHVqxTFddZfARghDJBSz6lRXefA+QIzEOozxpnPcy2NAY=
