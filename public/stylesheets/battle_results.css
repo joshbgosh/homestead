@@ -24,6 +24,7 @@ box-shadow:         0px 1px 1px rgba(0, 0, 0, 0.75);
 
 @media (max-width: 925px) {
 #ballot_results_sidebar {
+	display: none;
 	margin-left: 16px;	
 	background-color: rgba(0,0,0,.5);
 }

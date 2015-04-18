@@ -1,3 +1,4 @@
+<% if Rails.application.config.comments_enabled %>
 <div class="comment" 
 <% if local_assigns[:hide_at_first] %>
 style="display: none;"
@@ -20,3 +21,4 @@ style="display: none;"
 	<div class="vote_button vote_down"></div>
 	</div>
 </div>
+<% end %>

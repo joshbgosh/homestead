@@ -1,3 +1,4 @@
+<% if Rails.application.config.comments_enabled %>
 <div id="add_comment_box">
 <% if user_signed_in? %>
 	<%= form_tag add_comment_match_path(match),:id => "add_comment", :remote => true, :method => "post", :action => 'add_comment' do %>
@@ -72,3 +73,5 @@ function recentCommentsAreaExists() {
 }
 
 </script>
+
+<% end %>

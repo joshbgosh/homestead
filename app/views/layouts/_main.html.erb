@@ -28,6 +28,7 @@
 				<% end %>
 			</ul>
 
+			<% if Rails.application.config.signin_enabled %>
 			<ul id="user_links">
 				<% if signed_in?(:user) %>
 				<% if signed_in?(:admin)%>
@@ -39,6 +40,7 @@
 				<li> <%= link_to "Sign In", new_user_session_path %></li>
 				<% end %>
 			</ul>
+			<% end %>
 			</div>
 		
 		</div>

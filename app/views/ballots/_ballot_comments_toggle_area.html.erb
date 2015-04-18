@@ -1,3 +1,4 @@
+<% if Rails.application.config.comments_enabled %>
 <div id="comments_container">
 	
 	<% if show_comments %>
@@ -92,3 +93,4 @@ $(document).ready(function() {
 
 </script>
 </div>
+<% end %>

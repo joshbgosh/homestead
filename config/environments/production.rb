@@ -58,4 +58,9 @@ BothAreTotallyEnraged::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  
+  #TODO: Replace with feature flags eventually
+  config.comments_enabled? = false
+  config.signin_enabled? = false
 end

@@ -37,5 +37,10 @@ BothAreTotallyEnraged::Application.configure do
     config.active_support.deprecation = :stderr
     
      Paperclip.options[:command_path] = "/opt/local/bin" #what happens with this on heroku though?
+
+     
+  #TODO: Replace with feature flags eventually
+  config.comments_enabled? = false
+  config.signin_enabled? = false
   end
   

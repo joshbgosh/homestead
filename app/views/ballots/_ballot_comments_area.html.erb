@@ -1,3 +1,4 @@
+<% if Rails.application.config.comments_enabled %>
 <% if show_comments %>
 <div id="comments_content_wrapper">
 	<div id="comments_content">
@@ -11,4 +12,5 @@
 	<div id="comments_content"></div>
 </div>
 
+<% end %>
 <% end %>

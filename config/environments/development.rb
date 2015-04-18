@@ -33,7 +33,12 @@ BothAreTotallyEnraged::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
   
   Paperclip.options[:command_path] = "/opt/local/bin" #what happens with this on heroku though?
+
+  #TODO: Replace with feature flags eventually
+  config.comments_enabled = false
+  config.signin_enabled = false
 end
 
