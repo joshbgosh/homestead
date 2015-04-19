@@ -1,7 +1,7 @@
 BothAreTotallyEnraged::Application.configure do
   
   PAPERCLIP_STORAGE_OPTIONS = {:storage => :s3,
-      :s3_credentials => "#{Rails.root}/config/s3.yml",
+      :s3_credentials => "#{Rails.root}/config/s3_production.yml",
       :path => "/:style/:id/:filename"}
 
   GA.tracker = "UA-38934815-1"
