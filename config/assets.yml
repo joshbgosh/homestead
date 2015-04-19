@@ -1,4 +1,5 @@
 #embed_assets: on
+package_assets: off #TODO: Turn back on to start jammin' it again
 
 javascripts:
     workspace:
