@@ -1,3 +1,3 @@
 #!sh/bin/bash
 
-cf push totallyenraged-quicktest -f quicktest_manifest.yml -b ruby_buildpack
+cf push -f quicktest_manifest.yml

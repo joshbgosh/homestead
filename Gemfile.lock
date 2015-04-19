@@ -196,7 +196,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86-mingw32
 
 DEPENDENCIES
   acts_as_commentable (~> 3.0.1)
