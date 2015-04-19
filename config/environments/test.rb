@@ -40,7 +40,7 @@ BothAreTotallyEnraged::Application.configure do
 
      
   #TODO: Replace with feature flags eventually
-  config.comments_enabled? = false
-  config.signin_enabled? = false
+  config.comments_enabled = false
+  config.signin_enabled = false
   end
   
