@@ -16,11 +16,13 @@
 Who will win?
 </h2>
 
+<% if Rails.application.config.comments_enabled %>
 <div id="toggle_comments">
 <span id="throbber_area">
 </span>
 </div>
 </div>
+<% end %>
 
 <script type="text/javascript">
 function animalLabel_mouseOver(animalID) {
