@@ -4,6 +4,7 @@ applications:
   instances: 3
   host: totallyenraged-quicktest
   domain: mybluemix.net
+  command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
   path: .
   services:
   - postgres-totallyenraged-quicktest
