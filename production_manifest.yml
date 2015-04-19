@@ -1,9 +1,9 @@
 applications:
 - name: totallyenraged
   memory: 512MB
-  instances: 1
-  host: totallyenraged-from-travis
+  instances: 3
+  host: totallyenraged-production
   domain: mybluemix.net
   path: .
   services:
-  - postgres-totallyenraged-from-travis
+  - postgres-totallyenraged-production
