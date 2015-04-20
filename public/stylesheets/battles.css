@@ -14,6 +14,12 @@
 	}
 }
 
+@media (min-width: 661px) {
+#ballot_area {
+		height: 280px;
+}
+}
+
 #ballot_content_area_bottom {
 	background-color: #ffffbf;	
 	margin-left: auto;
@@ -52,6 +58,7 @@
 #vs {
 	display: block;
 	position: static;
+	top: -50px;
 }
 }
 
@@ -100,6 +107,17 @@
 	display: inline-block;
 	width: 200px;
 }
+
+@media (max-width: 660px) {
+	.animal_area a {
+	z-index: 10;
+	display: inline;
+}
+
+	.animal_area_verticaltastic_wrapper {
+		display: block;
+	}
+	}
 
 .animal_area a:hover {
 	color: black;
