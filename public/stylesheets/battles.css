@@ -37,6 +37,7 @@
 .animal_area_verticaltastic_wrapper {
 	display: inline-block;
 	margin: 16px 16px 16px 16px;
+	vertical-align: top;
 }
 
 #vs {
@@ -44,7 +45,7 @@
 	font-weight: bold;
 	display: inline;
 	position: relative;
-	top: -112px;
+	top: 112px;
 }
 
 @media (max-width: 660px) {
@@ -87,10 +88,17 @@
 
 
 .animal_area a {
-	font-size: 18px;
-	font-style: bold;
+	font-size: 30px;
+	font-family: Komikax;
 	cursor: pointer;
 	color: black;
+	position: relative;
+	top: -35px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	color: #fffdcf;
+	display: inline-block;
+	width: 200px;
 }
 
 .animal_area a:hover {
