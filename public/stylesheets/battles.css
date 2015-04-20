@@ -1,6 +1,5 @@
 .ballot.content_area_wrapper {
 	margin-bottom: 0px;
-	height: 368px;
 	background-image: url("/images/Speed_Lines.png");
 }
 
@@ -9,16 +8,33 @@
 		background-image: url("/images/Speed_Lines_Vertical.png");
 		background-size: 100% 100%;
 		width: 95%;
-		height: 95%;
+		height: 100%;
 		margin-top: 8px;
+	}
+
+	#who_will_win {
+		margin-top: 44px;
+	}
+
+	#vs {
+		top: 87px;
 	}
 }
 
-@media (min-width: 661px) {
-#ballot_area {
-		height: 280px;
+@media (min-height: 600px) and (min-width: 600px) {
+	.ballot.content_area_wrapper {
+		height: 380px;
+		background-size: 100% 100%;
+	}
+	#who_will_win {
+		margin-top: 54px;
+	}
+
+	#vs {
+		top: 87px;
+	}
 }
-}
+
 
 #ballot_content_area_bottom {
 	background-color: #ffffbf;	
@@ -28,22 +44,21 @@
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
     margin-bottom: 36px;
-	height: 16px;
-}
-
-#ballot {
+	height: 32px;
 }
 
 #ballot_area {
 	margin-top: 8px;
 	position: relative;
 	text-align: center;	
+	margin: 16px;
 }
 
 .animal_area_verticaltastic_wrapper {
 	display: inline-block;
 	margin: 16px 16px 16px 16px;
 	vertical-align: top;
+	height: 170px;
 }
 
 #vs {
@@ -51,7 +66,6 @@
 	font-weight: bold;
 	display: inline;
 	position: relative;
-	top: 112px;
 }
 
 @media (max-width: 660px) {
@@ -150,7 +164,6 @@
 #who_will_win {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: center;
 }
