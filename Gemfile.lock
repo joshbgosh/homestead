@@ -45,11 +45,12 @@ GEM
       uuidtools (~> 2.1)
     backports (3.6.0)
     bcrypt-ruby (3.0.1)
-    bcrypt-ruby (3.0.1-x86-mingw32)
     builder (2.1.2)
     cf-autoconfig (0.2.1)
       cf-runtime (= 0.2.0)
     cf-runtime (0.2.0)
+    childprocess (0.5.6)
+      ffi (~> 1.0, >= 1.0.11)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -73,7 +74,6 @@ GEM
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
     ffi (1.9.3)
-    ffi (1.9.3-x86-mingw32)
     gh (0.13.2)
       addressable
       backports
@@ -104,7 +104,6 @@ GEM
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
     nokogiri (1.5.6)
-    nokogiri (1.5.6-x86-mingw32)
     open4 (1.3.0)
     orm_adapter (0.0.7)
     paperclip (3.4.1)
@@ -116,17 +115,11 @@ GEM
     paperclip-meta (0.4.3)
       paperclip
     pg (0.17.1)
-    pg (0.17.1-x86-mingw32)
     polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry (0.9.12.6-x86-mingw32)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
-      slop (~> 3.4)
-      win32console (~> 1.3)
     pusher-client (0.6.0)
       json
       websocket (~> 1.0)
@@ -154,6 +147,12 @@ GEM
       mime-types (>= 1.16)
     ruby-graphviz (1.0.8)
     ruby-prof (0.12.2)
+    rubyzip (1.1.7)
+    selenium-webdriver (2.45.0)
+      childprocess (~> 0.5)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     sequel (3.20.0)
     sinatra (1.0)
       rack (>= 1.0)
@@ -188,7 +187,6 @@ GEM
     warden (1.2.1)
       rack (>= 1.0)
     websocket (1.1.4)
-    win32console (1.3.2-x86-mingw32)
     xml-simple (1.1.2)
     yaml_db (0.2.3)
     yui-compressor (0.9.6)
@@ -216,6 +214,7 @@ DEPENDENCIES
   recaptcha
   ruby-graphviz
   ruby-prof
+  selenium-webdriver
   taps
   tasteful_routes (~> 0.1.3)
   test-unit

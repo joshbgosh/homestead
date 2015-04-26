@@ -8,6 +8,7 @@ gem 'pg'
 
 gem 'travis'
 
+gem 'selenium-webdriver'
 
 gem "paperclip"
 gem "paperclip-meta"

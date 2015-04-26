@@ -1,5 +1,5 @@
 applications:
-- name: totallyenraged
+- name: totallyenraged-test
   memory: 512MB
   instances: 2
   host: totallyenraged-test
