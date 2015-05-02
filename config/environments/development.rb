@@ -1,5 +1,7 @@
+#Development is local. Quicktest is the cloud equivalent
+
 BothAreTotallyEnraged::Application.configure do
-  
+
   PAPERCLIP_STORAGE_OPTIONS = {}
   
   config.action_mailer.default_url_options = { :host => 'localhost:3000' } #for devise authentication
