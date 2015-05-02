@@ -48,6 +48,7 @@ class MatchesControllerTest < ActionController::TestCase
 
   test "should update match" do
     a = create(:admin)
+    @request.env["devise.mapping"] = Devise.mappings[:admin]
     sign_in a
     
     put :update, :id => @match.to_param, :match => @match.attributes

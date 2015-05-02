@@ -5,25 +5,26 @@ class AnimalsControllerTest < ActionController::TestCase
   setup do
     @animal = create(:animal)
     @animal2 = create(:animal)
+    @animal3 = create(:animal)
 
-    @driver = Selenium::WebDriver.for :firefox
-    @driver.navigate.to "http://localhost:3000" #TODO: Reference a variable here
+    #@driver = Selenium::WebDriver.for :firefox
+    #@driver.navigate.to "http://localhost:3000" #TODO: Reference a variable here
     
   end
   
   teardown do
     @animal.destroy
     @animal2.destroy
+    @animal3.destroy
 
-    @driver.quit
+    #@driver.quit
   end
 
   #TODO: This probably belongs elsewhere
   test "should let admin sign in" do
-     a = create(:admin)
-     @request.env["devise.mapping"] = Devise.mappings[:admin]
-     result = sign_in :admin, a
-     assert(result == true)
+    @request.env["devise.mapping"] = Devise.mappings[:admin]
+    a = create(:admin)
+    result = sign_in :admin, a
   end
 
   test "should get index" do
@@ -32,9 +33,9 @@ class AnimalsControllerTest < ActionController::TestCase
   end
 
   test "should get index selinium" do
-    element = @driver.execute_script("return document.body")
-    shouldbebody = @driver.execute_script("return arguments[0].tagName", element) #=> "BODY"
-    assert_equal(shouldbebody, "BODY");
+  #  element = @driver.execute_script("return document.body")
+  #  shouldbebody = @driver.execute_script("return arguments[0].tagName", element) #=> "BODY"
+  #  assert_equal(shouldbebody, "BODY");
   end
 
   test "should get new" do
@@ -68,11 +69,14 @@ class AnimalsControllerTest < ActionController::TestCase
   end
 
   test "should update animal" do
+    @request.env["devise.mapping"] = Devise.mappings[:admin]
     a = create(:admin)
-    sign_in :admin, a
+    result = sign_in :admin, a
     
     put :update, :id => @animal.to_param, :animal => @animal.attributes
-    assert_redirected_to animal_path(assigns(:animal))
+    assert_redirected_to animal_path(assigns(:animal)
+    assert_equal(@animal.id = @animal.to_param)
+
   end
 
   test "should destroy animal" do

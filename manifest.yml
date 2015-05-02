@@ -1,10 +1,1 @@
-applications:
-- name: totallyenraged
-  memory: 512MB
-  instances: 1
-  host: totallyenraged-from-travis
-  domain: mybluemix.net
-  path: .
-command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
-  services:
-  - postgres-totallyenraged-from-travis
+manifest_test.yml

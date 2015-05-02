@@ -41,7 +41,7 @@ class BallotsControllerTest < ActionController::TestCase
 
   test "should update ballot" do
     @ballot = create(:ballot)
-    
+    @request.env["devise.mapping"] = Devise.mappings[:admin]
     a = create(:admin)
     sign_in a
     
