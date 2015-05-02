@@ -34,8 +34,6 @@ gem "taps"
 
 gem "ruby-prof"
 
-gem "minitest"
-
 gem "dalli"
 
 # Bundle edge Rails instead:
@@ -56,6 +54,7 @@ gem 'yaml_db', "~> 0.2.1"
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 group :development, :test do
 	gem 'ruby-debug19'
+	gem "test-unit"
  end
 
 group :development do 
