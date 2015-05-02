@@ -10,7 +10,7 @@ class VotingTest < ActionDispatch::PerformanceTest
   end
   
   def test_getting_from_scratch_then_voting
-    
+    t
     get '/'
     
     10.times do

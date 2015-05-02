@@ -1,0 +1,3 @@
+#!sh/bin/bash
+
+cf push -f manifest_test.yml

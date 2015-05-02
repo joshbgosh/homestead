@@ -1,0 +1,10 @@
+applications:
+- name: totallyenraged-test
+  memory: 512MB
+  instances: 2
+  host: totallyenraged-test
+  domain: mybluemix.net
+  path: .
+  command: bundle exec rake db:migrate
+  services:
+  - postgres-totallyenraged-test

@@ -1,0 +1,10 @@
+applications:
+- name: totallyenraged-staging
+  memory: 512MB
+  instances: 3
+  host: totallyenraged-staging
+  domain: mybluemix.net
+  command: bundle exec rake db:migrate && bundle exec rake db:seed && bundle exec rails s -p $PORT
+  path: .
+  services:
+  - postgres-totallyenraged-staging
