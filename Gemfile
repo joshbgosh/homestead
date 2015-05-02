@@ -34,7 +34,7 @@ gem "taps"
 
 gem "ruby-prof"
 
-gem "test-unit"
+gem "minitest"
 
 gem "dalli"
 
