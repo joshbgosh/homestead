@@ -7,27 +7,37 @@ class AnimalsControllerTest < ActionController::TestCase
     @animal2 = create(:animal)
     @animal3 = create(:animal)
 
-    #@driver = Selenium::WebDriver.for :firefox
-    #@driver.navigate.to "http://localhost:3000" #TODO: Reference a variable here
-    
+   
   end
   
   teardown do
     @animal.destroy
     @animal2.destroy
     @animal3.destroy
-
-    #@driver.quit
   end
 
   #TODO: This probably belongs elsewhere
   test "should let admin sign in" do
-    @request.env["devise.mapping"] = Devise.mappings[:admin]
-    @admin = FactoryGirl.create :admin
-    debugger
-    sign_in @admin
 
-    assert_equal(session[:user_id], @admin.user_id)
+ @driver = Selenium::WebDriver.for :firefox
+ hostname_and_port = "localhost:3000/admins/sign_in"
+ puts hostname_and_port
+ @driver.navigate.to hostname_and_port
+#wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
+element = ""
+wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
+wait.until { element = @driver.find_element(:id, "admin_username") }
+element.send_keys(ENV["TOTALLYENRAGED_ADMIN_USERNAME"])
+
+wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
+wait.until { element = @driver.find_element(:id, "admin_password") }
+puts ENV["TOTALLYENRAGED_ADMIN_PW"]
+element.send_keys(ENV["TOTALLYENRAGED_ADMIN_PW"])
+
+#wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
+element.submit()
+
+@driver.quit
   end
 
   test "should get index" do
@@ -71,6 +81,8 @@ class AnimalsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+
+#TODO: Fix test. Failing because test harness isn't signing in admin correctly, not because of actual failure.
  # test "should update animal" do
  #   @request.env["devise.mapping"] = Devise.mappings[:admin]
  #   @admin = FactoryGirl.create :admin
