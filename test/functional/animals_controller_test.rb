@@ -75,8 +75,6 @@ class AnimalsControllerTest < ActionController::TestCase
     
     put :update, :id => @animal.to_param, :animal => @animal.attributes
     assert_redirected_to animal_path(assigns(:animal)
-    assert_equal(@animal.id = @animal.to_param)
-
   end
 
   test "should destroy animal" do
