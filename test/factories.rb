@@ -29,5 +29,6 @@ end
 Factory.define(:admin) do |f|
   f.sequence(:username) {|n| "fake_adminname_#{n}"}
   f.sequence(:password) {|n| "fake_admin_password_#{n}"}
+  f.sequence(:password_confirmation) {|n| "fake_admin_password_#{n}"}
 end
   

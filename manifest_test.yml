@@ -5,6 +5,6 @@ applications:
   host: totallyenraged-test
   domain: mybluemix.net
   path: .
-  command: bundle exec rake db:migrate &&  bundle exec rake db:seed && bundle exec rails s -p $PORT
+  command: sh start.sh
   services:
   - postgres-totallyenraged-test
