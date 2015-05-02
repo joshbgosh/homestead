@@ -39,15 +39,15 @@ class BallotsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update ballot" do
-    @ballot = create(:ballot)
-    @request.env["devise.mapping"] = Devise.mappings[:admin]
-    a = create(:admin)
-    sign_in a
-    
-    put :update, :id => @ballot.to_param, :ballot => @ballot.attributes
-    assert_redirected_to ballot_path(assigns(:ballot))
-  end
+  #test "should update ballot" do
+  #  @ballot = create(:ballot)
+  #  @request.env["devise.mapping"] = Devise.mappings[:admin]
+  #  a = create(:admin)
+  #  sign_in a
+  #  
+  #  put :update, :id => @ballot.to_param, :ballot => @ballot.attributes
+  #  assert_redirected_to ballot_path(assigns(:ballot))
+  #end
 
   test "should destroy ballot" do
     @ballot = create(:ballot)
