@@ -18,7 +18,7 @@ class AnimalsControllerTest < ActionController::TestCase
     @animal3.destroy
 
     #@driver.quit
-  end 
+  end
 
   #TODO: This probably belongs elsewhere
   test "should let admin sign in" do
@@ -32,11 +32,11 @@ class AnimalsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
- # test "should get index selinium" do
+  test "should get index selinium" do
   #  element = @driver.execute_script("return document.body")
   #  shouldbebody = @driver.execute_script("return arguments[0].tagName", element) #=> "BODY"
   #  assert_equal(shouldbebody, "BODY");
- # end
+  end
 
   test "should get new" do
     a = create(:admin)
@@ -74,7 +74,7 @@ class AnimalsControllerTest < ActionController::TestCase
     result = sign_in :admin, a
     
     put :update, :id => @animal.to_param, :animal => @animal.attributes
-    assert_redirected_to animal_path(assigns(:animal)
+    assert_redirected_to animal_path(assigns(:animal))
   end
 
   test "should destroy animal" do
