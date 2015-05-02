@@ -57,6 +57,7 @@ class BallotsControllerTest < ActionController::TestCase
     
     assert_difference('Ballot.count', -1) do
       delete :destroy, :id => @ballot.to_param
+      return Ballot.count
     end
 
     assert_redirected_to ballots_path

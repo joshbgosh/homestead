@@ -10,6 +10,13 @@ class AnimalsControllerTest < ActionController::TestCase
     @animal.destroy
   end
 
+  #TODO: This probably belongs elsewhere
+  test "should let admin sign in" do
+     a = create(:admin)
+     result = sign_in a
+     assert(result == true)
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -27,6 +34,7 @@ class AnimalsControllerTest < ActionController::TestCase
     result = sign_in :admin, a
     assert_difference('Animal.count') do
       r = post :create, :animal_id => @animal.id
+      return Animal.count
     end
 
     assert_redirected_to animal_path(assigns(:animal))
@@ -59,6 +67,7 @@ class AnimalsControllerTest < ActionController::TestCase
     #logger.info "right after sign-in, should destroy animal"
     assert_difference('Animal.count', -1) do
       delete :destroy, :id => @animal.id
+      return Animal.count
     end
 
     assert_redirected_to animals_path

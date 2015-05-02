@@ -24,6 +24,7 @@ class MatchesControllerTest < ActionController::TestCase
     
     assert_difference('Match.count') do
       post :create, :match => @match.attributes
+      return Match.count;
     end
 
     assert_redirected_to match_path(assigns(:match))
@@ -59,6 +60,7 @@ class MatchesControllerTest < ActionController::TestCase
     
     assert_difference('Match.count', -1) do
       delete :destroy, :id => @match.to_param
+      return Match.count;
     end
     
       assert_redirected_to matches_path
