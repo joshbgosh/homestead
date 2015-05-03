@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "system specified port is ${PORT}"
-if [[ -z ${PORT} ]]
-	then export PORT=3000;
+if [[ -z ${PORT} ]]; then 
+	export PORT=3000
 	echo "assigning default port ${PORT}"
 else
 	echo "using system specified port ${PORT}"
