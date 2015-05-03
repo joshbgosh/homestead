@@ -6,8 +6,8 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-ADMIN_USERNAME = ENV["TOTALLYENRAGED_ADMIN_USERNAME"].dup
-ADMIN_PASSWORD = ENV["TOTALLYENRAGED_ADMIN_PW"].dup
+ADMIN_USERNAME = ENV["TOTALLYENRAGED_ADMIN_USERNAME"].dup || "admin"
+ADMIN_PASSWORD = ENV["TOTALLYENRAGED_ADMIN_PW"].dup || "changeme"
 
 admin_accounts_that_look_like_me = Admin.where(:username => ADMIN_USERNAME)
 
