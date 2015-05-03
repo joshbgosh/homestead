@@ -14,3 +14,10 @@ test:
   username: postgres
   pool: 5
   encoding: unicode
+
+quicktest_docker:
+  adapter: postgresql
+  database: botharetotallyenraged
+  pool: 5
+  username: postgres
+  encoding: unicode

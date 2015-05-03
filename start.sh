@@ -8,4 +8,4 @@ else
 	PORT=${PORT}
 fi
 echo "PORT variable used is now ${PORT}"
-bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed && bundle exec jammit && bundle exec rails s -p ${PORT}
+bundle exec rake db:create --trace && bundle exec rake db:migrate --trace && bundle exec rake db:seed --trace && bundle exec jammit && bundle exec rails s -p ${PORT}

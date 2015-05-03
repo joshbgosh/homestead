@@ -57,6 +57,7 @@ group :development, :test, :quicktest do
 	gem "test-unit"
 	gem 'phantomjs'
 	#gem 'selenium-phantomjs'
+	gem "building"
  end
 
 group :development do 
