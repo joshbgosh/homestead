@@ -1,3 +1,18 @@
 #!/bin/bash
 
-cf push -f manifest_quicktest.yml
+#Must be run from shell launched from docker environment (on OS X, from boot2docker or kitematic)
+
+echo "system specified port is ${PORT}"
+if [[ -z ${PORT} ]]; then 
+	export PORT=3000
+	echo "assigning default port ${PORT}"
+else
+	echo "using system specified port ${PORT}"
+	PORT=${PORT}
+fi
+echo "PORT variable used is now ${PORT}"
+
+bundle exec building mlinnem/totallyenraged
+docker stop totallyenraged_quicktest_docker
+docker rm totallyenraged_quicktest_docker
+docker run --name=totallyenraged_quicktest_docker -d -p ${PORT}:${PORT} -e "PORT=${PORT}" -e "DATABASE_URL=postgresql://totallyenraged:docker_pw@192.168.99.100:5432/botharetotallyenraged" -e "S3_ACCESS_KEY_ID=${S3_ACCESS_KEY_ID}" -e "S3_SECRET_ACCESS_KEY=${S3_SECRET_ACCESS_KEY}" totallyenraged
