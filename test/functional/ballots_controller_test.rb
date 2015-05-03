@@ -39,6 +39,7 @@ class BallotsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+#TODO: Fix test. Failing because test harness isn't signing in admin correctly, not because of actual failure.
   #test "should update ballot" do
   #  @ballot = create(:ballot)
   #  @request.env["devise.mapping"] = Devise.mappings[:admin]

@@ -119,6 +119,7 @@ GEM
     paperclip-meta (0.4.3)
       paperclip
     pg (0.17.1)
+    phantomjs (1.9.8.0)
     polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -223,6 +224,7 @@ DEPENDENCIES
   paperclip
   paperclip-meta
   pg
+  phantomjs
   rails (= 3.0.7)
   rake (= 0.9.2)
   recaptcha

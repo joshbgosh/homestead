@@ -1,3 +1,4 @@
+#This just fixes a little bug where tests would run successfully but then report back as 0% passed.
 require 'active_support/concern'
 require 'active_support/callbacks'
 

@@ -31,7 +31,6 @@ element.send_keys(ENV["TOTALLYENRAGED_ADMIN_USERNAME"])
 
 wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
 wait.until { element = @driver.find_element(:id, "admin_password") }
-puts ENV["TOTALLYENRAGED_ADMIN_PW"]
 element.send_keys(ENV["TOTALLYENRAGED_ADMIN_PW"])
 
 #wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds

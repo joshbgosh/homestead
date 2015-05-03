@@ -52,9 +52,11 @@ gem 'yaml_db', "~> 0.2.1"
 # gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-group :development, :test do
+group :development, :test, :quicktest do
 	gem 'ruby-debug19'
 	gem "test-unit"
+	gem 'phantomjs'
+	#gem 'selenium-phantomjs'
  end
 
 group :development do 
