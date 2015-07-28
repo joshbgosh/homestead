@@ -59,7 +59,7 @@
 .board_number {
 	text-align: right;
 	position: absolute;
-	top: 0px;
+	top: 17px;
 	right: 34px;
 	font-size: 48px;
 	width: 40px;
